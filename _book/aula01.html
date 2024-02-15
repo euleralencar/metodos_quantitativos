@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.433">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>metodos_quantitativos - 3&nbsp; Aula 1:</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./references.html" rel="next">
+<link href="./summary.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./aula01.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Aula 1:</span></a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">metodos_quantitativos</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./summary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./aula01.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Aula 1:</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#definição-1-espaço-amostral" id="toc-definição-1-espaço-amostral" class="nav-link active" data-scroll-target="#definição-1-espaço-amostral"><span class="header-section-number">3.1</span> Definição 1 (Espaço amostral):</a>
+  <ul class="collapse">
+  <li><a href="#exemplos" id="toc-exemplos" class="nav-link" data-scroll-target="#exemplos"><span class="header-section-number">3.1.1</span> Exemplos:</a></li>
+  <li><a href="#outros-exemplos" id="toc-outros-exemplos" class="nav-link" data-scroll-target="#outros-exemplos"><span class="header-section-number">3.1.2</span> Outros exemplos:</a></li>
+  <li><a href="#exercícios" id="toc-exercícios" class="nav-link" data-scroll-target="#exercícios"><span class="header-section-number">3.1.3</span> Exercícios:</a></li>
+  </ul></li>
+  <li><a href="#definição-2-evento" id="toc-definição-2-evento" class="nav-link" data-scroll-target="#definição-2-evento"><span class="header-section-number">3.2</span> Definição 2 (Evento)</a></li>
+  <li><a href="#definição-3-eventos-disjuntos" id="toc-definição-3-eventos-disjuntos" class="nav-link" data-scroll-target="#definição-3-eventos-disjuntos"><span class="header-section-number">3.3</span> Definição 3 (Eventos disjuntos):</a></li>
+  <li><a href="#definição-4-partição" id="toc-definição-4-partição" class="nav-link" data-scroll-target="#definição-4-partição"><span class="header-section-number">3.4</span> Definição 4 (Partição):</a></li>
+  <li><a href="#definição-5-complemento-de-um-conjunto" id="toc-definição-5-complemento-de-um-conjunto" class="nav-link" data-scroll-target="#definição-5-complemento-de-um-conjunto"><span class="header-section-number">3.5</span> Definição 5 (complemento de um conjunto):</a></li>
+  <li><a href="#definição-6-σ-algebra" id="toc-definição-6-σ-algebra" class="nav-link" data-scroll-target="#definição-6-σ-algebra"><span class="header-section-number">3.6</span> Definição 6 (σ-algebra):</a></li>
+  <li><a href="#definição-7-σ-algebra-de-borel" id="toc-definição-7-σ-algebra-de-borel" class="nav-link" data-scroll-target="#definição-7-σ-algebra-de-borel"><span class="header-section-number">3.7</span> Definição 7 (σ-algebra de borel):</a></li>
+  <li><a href="#definição-8-medida" id="toc-definição-8-medida" class="nav-link" data-scroll-target="#definição-8-medida"><span class="header-section-number">3.8</span> Definição 8 (Medida):</a></li>
+  <li><a href="#definição-9-espaço-mesurável" id="toc-definição-9-espaço-mesurável" class="nav-link" data-scroll-target="#definição-9-espaço-mesurável"><span class="header-section-number">3.9</span> Definição 9 (Espaço mesurável):</a></li>
+  <li><a href="#definição-10-axiomas-de-kolmogorov" id="toc-definição-10-axiomas-de-kolmogorov" class="nav-link" data-scroll-target="#definição-10-axiomas-de-kolmogorov"><span class="header-section-number">3.10</span> Definição 10: (Axiomas de Kolmogorov)</a></li>
+  <li><a href="#definição-11-espaço-de-probabilidade" id="toc-definição-11-espaço-de-probabilidade" class="nav-link" data-scroll-target="#definição-11-espaço-de-probabilidade"><span class="header-section-number">3.11</span> Definição 11 (Espaço de probabilidade):</a></li>
+  <li><a href="#teorema-1" id="toc-teorema-1" class="nav-link" data-scroll-target="#teorema-1"><span class="header-section-number">3.12</span> Teorema 1</a></li>
+  <li><a href="#teorema-2" id="toc-teorema-2" class="nav-link" data-scroll-target="#teorema-2"><span class="header-section-number">3.13</span> Teorema 2</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Aula 1:</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<p>Conceitos Básicos de Probabilidade</p>
+<section id="definição-1-espaço-amostral" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="definição-1-espaço-amostral"><span class="header-section-number">3.1</span> Definição 1 (Espaço amostral):</h2>
+<p>O espaço amostral (denotado por Ω) é o conjunto de todos os possíveis resultados de um experimento.</p>
+<p>Como o espaço amostral é um conjunto, e pode ser definido de dois tipos:</p>
+<ul>
+<li><p>Finito: possui um número finito de elementos</p></li>
+<li><p>Infinito: possui um número infinito de elementos</p></li>
+</ul>
+<p>Os conjuntos infinitos podem ser classificados em dois grupos:</p>
+<ul>
+<li><p>Enumeráveis (ou contáveis)</p></li>
+<li><p>Não enumeráveis (não contáveis)</p></li>
+</ul>
+<section id="exemplos" class="level3" data-number="3.1.1">
+<h3 data-number="3.1.1" class="anchored" data-anchor-id="exemplos"><span class="header-section-number">3.1.1</span> Exemplos:</h3>
+<section id="conjuntos-finitos" class="level4" data-number="3.1.1.1">
+<h4 data-number="3.1.1.1" class="anchored" data-anchor-id="conjuntos-finitos"><span class="header-section-number">3.1.1.1</span> Conjuntos finitos</h4>
+<p>{1,2,3,4,5,6}</p>
+<p>{2,4,6,8,10}</p>
+<p>{Número de ganhadores da Mega Sena da virada}</p>
+<p>{Número de mundiais do Flamengo}</p>
+<p>{Número de mundiais do Palmeiras}</p>
+</section>
+<section id="conjuntos-infinitos" class="level4" data-number="3.1.1.2">
+<h4 data-number="3.1.1.2" class="anchored" data-anchor-id="conjuntos-infinitos"><span class="header-section-number">3.1.1.2</span> Conjuntos infinitos</h4>
+<p>- Conjuntos enumeráveis ou contáveis</p>
+<p>{1,2,3,4,5,…}</p>
+<p>{1,1/2,1/3,1/4,…}</p>
+<p>{0,1,-1,2,-2,3,-3,4,-4,…}</p>
+<p>- Conjuntos não enumeráveis</p>
+</section>
+</section>
+<section id="outros-exemplos" class="level3" data-number="3.1.2">
+<h3 data-number="3.1.2" class="anchored" data-anchor-id="outros-exemplos"><span class="header-section-number">3.1.2</span> Outros exemplos:</h3>
+<ul>
+<li><p>{conjuntos de todos os números reais}</p></li>
+<li><p>{qualquer intervalo, aberto ou fechado, de números reais}</p></li>
+<li><p>(1, 4)</p></li>
+<li><p>(-2, 10]</p></li>
+<li><p>O conjunto A=[1, 2] é não enumerável.</p></li>
+<li><p>{uniões e interseções de intervalos}</p></li>
+<li><p>Para o caso de conjuntos finitos podemos calcular a partir do número de resultados (n) o número de eventos (subconjuntos do espaço amostral) que podem ser gerados por meio da formula:</p></li>
+<li><p>Número de eventos = 2^n (inclui o vazio)</p></li>
+<li><p>A= { 2,3}</p></li>
+<li><p>Podemos formar Número de eventos = 2^2=4 elementos</p></li>
+</ul>
+</section>
+<section id="exercícios" class="level3" data-number="3.1.3">
+<h3 data-number="3.1.3" class="anchored" data-anchor-id="exercícios"><span class="header-section-number">3.1.3</span> Exercícios:</h3>
+<section id="experimento-1" class="level4" data-number="3.1.3.1">
+<h4 data-number="3.1.3.1" class="anchored" data-anchor-id="experimento-1"><span class="header-section-number">3.1.3.1</span> Experimento 1:</h4>
+<p>Considere o experimento de jogar um dado e observar o resultado. Encontre o espaço amostral deste experimento.</p>
+<p><strong>Solução:</strong></p>
+<p>Como existem seis possíveis resultados o espaço amostral é</p>
+<p>Ω= {1,2,3,4,5,6}</p>
+<p>Podemos afirmar que:</p>
+<p>1 ∈ Ω, 2 ∈ Ω, etc.</p>
+<p>Usando a notação de {} definimos um subconjunto do espaço amostra e podemos fazer as seguintes afirmações:</p>
+<p>{1} ⊆Ω</p>
+<p>{1,2} ⊆Ω</p>
+</section>
+<section id="experimento-2" class="level4" data-number="3.1.3.2">
+<h4 data-number="3.1.3.2" class="anchored" data-anchor-id="experimento-2"><span class="header-section-number">3.1.3.2</span> Experimento 2:</h4>
+<p>Jogar uma moeda e ver o resultado. Encontre o espaço amostral deste experimento.</p>
+<p><strong>Solução:</strong></p>
+<p>Ω= {cara,coroa}</p>
+<p>Podemos afirmar:</p>
+<p>cara ∈ Ω</p>
+</section>
+<section id="experimento-3" class="level4" data-number="3.1.3.3">
+<h4 data-number="3.1.3.3" class="anchored" data-anchor-id="experimento-3"><span class="header-section-number">3.1.3.3</span> Experimento 3:</h4>
+<p>Jogar duas moedas simultaneamente e observe os resultados de cara (H) e coroa (T). Encontre o espaço amostral.</p>
+<p><strong>Solução:</strong></p>
+<p>Ω= {HH, TT, HT, TH}</p>
+<p>Experimento 4:</p>
+<p>Jogar uma moeda três vezes, e observamos a sequência de caras de caras (H) e coroas (T).</p>
+<p>Ω= {HHH,HHT,HTT,TTT,TTH,THH,HTH,THT}</p>
+<p>Experimento 5:</p>
+<p>Registra-se o tempo de vida de uma lâmpada (t) até queimar. O espaço amostral é</p>
+<p>Ω= {t^*:t≥0}</p>
+<p>Este exemplo corresponde a um espaço amostral NÃO ENUMERÁL.</p>
+<p>Experimento 6:</p>
+<p>Programa para o fim de semana. Sair um domingo às 19 horas</p>
+<p>Ω= {cinema,teatro,ficar em casa}</p>
+<p>Neste último experimento as possibilidades são várias e não teríamos apenas três resultados. O número de resultados possíveis vai depender do estudo que o pesquisador deseje desenvolver.</p>
+</section>
+</section>
+</section>
+<section id="definição-2-evento" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="definição-2-evento"><span class="header-section-number">3.2</span> Definição 2 (Evento)</h2>
+<p>Um evento (denotado por E), é a coleção de possíveis resultados de um experimento. Em outras palavras, um subconjunto do espaço amostral, isto é, E ⊆ Ω.</p>
+<p>Exemplo: No experimento 1 “de jogar um dado”, definimos três eventos: Números pares, Números ímpares e Números maiores que 5.</p>
+<p>Lembre que o espaço amostral deste experimento é Ω= {1,2,3,4,5,6}.</p>
+<ul>
+<li><p>$Números : pares → <span class="math inline">\(E_1\)</span>={2,4,6}$</p></li>
+<li><p>$Números :ímpares → <span class="math inline">\(E_2\)</span>={1,3,5}$</p></li>
+<li><p>$Números : maiores :que :5 → <span class="math inline">\(E_3\)</span>={6}$</p></li>
+</ul>
+<p><span class="math inline">\(E_1\)</span> ⊆ Ω.</p>
+<p><span class="math inline">\(E_2\)</span> ⊆ Ω.</p>
+<p><strong>Observações:</strong></p>
+<p>Não confundir o resultado 6 como o evento <span class="math inline">\(E_3\)</span>={6}</p>
+<p>6 ∈ Ω e <span class="math inline">\(E_3\)</span> ⊆ Ω</p>
+<p><strong>Eventos simples e compostos</strong></p>
+<p>Os eventos 1 e 2 estão formados por mais de um resultado do espaço amostral e são chamados de eventos compostos. Por outro lado, o evento 3 é chamado de evento simples.</p>
+</section>
+<section id="definição-3-eventos-disjuntos" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="definição-3-eventos-disjuntos"><span class="header-section-number">3.3</span> Definição 3 (Eventos disjuntos):</h2>
+<p>Dois eventos <span class="math inline">\(E_1\)</span> e <span class="math inline">\(E_2\)</span> são disjuntos ou mutuamente exclusivos se a sua interseção <span class="math inline">\(E_1\)</span> ∩ <span class="math inline">\(E_2\)</span> é igual ao conjunto vazio ϕ.</p>
+<p>No exemplo, os eventos <span class="math inline">\(E_1\)</span>e <span class="math inline">\(E_2\)</span> são disjuntos dado que a sua interseção é o conjunto vazio. Os eventos <span class="math inline">\(E_1\)</span>e <span class="math inline">\(E_3\)</span> não são disjuntos devido a que sua interseção é {6}.</p>
+</section>
+<section id="definição-4-partição" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="definição-4-partição"><span class="header-section-number">3.4</span> Definição 4 (Partição):</h2>
+<p>Se os eventos <span class="math inline">\(E_1\)</span>, <span class="math inline">\(E_2\)</span>, <span class="math inline">\(E_3\)</span>, <span class="math inline">\(E_4\)</span> … são dois a dois disjuntos e a sua união <span class="math inline">\(E_1\)</span>∪<span class="math inline">\(E_2\)</span>∪ <span class="math inline">\(E_3\)</span> ∪ <span class="math inline">\(E_4\)</span>… é igual ao espaço amostral, então a coleção <span class="math inline">\(E_1\)</span>, <span class="math inline">\(E_2\)</span>, <span class="math inline">\(E_3\)</span>, <span class="math inline">\(E_4\)</span>, … forma uma partição do espaço amostral.</p>
+<p><strong>Exemplo 2</strong></p>
+<p>Para o experimento de jogar um dado e observar o resultado, considere os eventos definidos como:</p>
+<ul>
+<li><p><span class="math inline">\(E_1\)</span>={1,2,3},</p></li>
+<li><p><span class="math inline">\(E_2\)</span>={4},</p></li>
+<li><p><span class="math inline">\(E_3\)</span>= {5, 6}.</p></li>
+</ul>
+<p>Verifique se eles formam uma partição.</p>
+</section>
+<section id="definição-5-complemento-de-um-conjunto" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="definição-5-complemento-de-um-conjunto"><span class="header-section-number">3.5</span> Definição 5 (complemento de um conjunto):</h2>
+<p>O complementar de um conjunto A, denotado como <span class="math display">\[A^c\]</span> ou <span class="math inline">\(A^{-}\)</span>, é definido como:</p>
+<p>$A^c$=¯A={Elementos do espaço amostral que não pertencem ao conjunto A}</p>
+<p>Exemplo 3</p>
+<p>No exemplo de jogar um dado. Encontre o complementar do evento A={3,4,5}.</p>
+<p>Solução:</p>
+<p>¯A={1,2,6}</p>
+<p>¯A∪A={1,2,3,4,5,6}=Ω</p>
+<p>Figura 1 - Complemento do conjunto A</p>
+</section>
+<section id="definição-6-σ-algebra" class="level2" data-number="3.6">
+<h2 data-number="3.6" class="anchored" data-anchor-id="definição-6-σ-algebra"><span class="header-section-number">3.6</span> Definição 6 (σ-algebra):</h2>
+<p>Uma coleção F de subconjuntos de Ω é uma σ-algebra se satisfaz as seguintes condições:</p>
+<pre><code>O conjunto vazio e o espaço amostral pertencem a F, isto é, ϕ∈ F e Ω ∈ F.
+
+Se E∈F então seu complemento E\^c={w∈Ω\|w∉E}∈F (onde w representa um resultado do espaço amostral)
+
+F é fechado na união contável, ou seja, se $E_1$∈F, $E_2$∈F, $E_3$∈F, ... então $E_1$ U$E_2$ U$E_3$....=∪\_(i=1)\^∞ E_i∈F</code></pre>
+<p>No item 3, se apenas a união finita está em F temos uma classe menos restrita, denominada álgebra.</p>
+<p>Exercício 1: No experimento de jogar um dado Ω={1,2,3,4,5,6}:</p>
+<p>F_1={ϕ,Ω} e F_2={ϕ,Ω,{1},{2,3,4,5,6}} são σ-álgebras de subconjuntos de Ω?</p>
+<p>Exemplo:</p>
+<pre><code>F={{2,4,6},{1,3,5},{6}}</code></pre>
+</section>
+<section id="definição-7-σ-algebra-de-borel" class="level2" data-number="3.7">
+<h2 data-number="3.7" class="anchored" data-anchor-id="definição-7-σ-algebra-de-borel"><span class="header-section-number">3.7</span> Definição 7 (σ-algebra de borel):</h2>
+<p>Uma σ-algebra de borel é denotado por B(R)=σ{(-∞,x]:x∈R}, ou seja, é a σ-álgebra contendo conjuntos abertos da forma (-∞,x]. A medida de Borel pode também ser definida (gerada) pelos intervalos da forma (a,b) ou (x,∞).</p>
+<p>Outra σ-álgebra de importância é definida no espaço Euclidiano R^n de todos os conjuntos mensuráveis de Lebesgue. Essa σ-álgebra contém mais conjuntos que a σ-álgebra de Borel em R^n e é preferida na teoria de integração, posto que ela dá um espaço mensurável completo.</p>
+</section>
+<section id="definição-8-medida" class="level2" data-number="3.8">
+<h2 data-number="3.8" class="anchored" data-anchor-id="definição-8-medida"><span class="header-section-number">3.8</span> Definição 8 (Medida):</h2>
+<p>Defina F como uma σ-algebra de subconjuntos de Ω. A função</p>
+<p>μ:F→R^+</p>
+<p>é dito ser uma medida em F se satisfaz os seguintes axiomas:</p>
+<pre><code>μ(E)≥0 para todo E∈F
+
+μ(ϕ)=0
+
+Se $E_1$, $E_2$, $E_3$, ... são eventos dois a dois disjuntos (mutuamente exclusivos), então μ(⋃\_(i=1)\^∞▒E_i )=∑\_(i=1)\^∞▒μ(E_i ) .</code></pre>
+<p>A terceira condição pode também ser representado como:</p>
+<p>μ(<span class="math inline">\(E_1\)</span> U<span class="math inline">\(E_2\)</span> U<span class="math inline">\(E_3\)</span>….)=μ(<span class="math inline">\(E_1\)</span> )+μ(<span class="math inline">\(E_2\)</span> )+μ(<span class="math inline">\(E_3\)</span> )+⋯</p>
+</section>
+<section id="definição-9-espaço-mesurável" class="level2" data-number="3.9">
+<h2 data-number="3.9" class="anchored" data-anchor-id="definição-9-espaço-mesurável"><span class="header-section-number">3.9</span> Definição 9 (Espaço mesurável):</h2>
+<p>O espaço mesurável é definido como a tripla (Ω,F,μ), em que Ω é um conjunto arbitrário, F é a σ-algebra de subconjuntos de Ω, e μ é uma medida em F.</p>
+</section>
+<section id="definição-10-axiomas-de-kolmogorov" class="level2" data-number="3.10">
+<h2 data-number="3.10" class="anchored" data-anchor-id="definição-10-axiomas-de-kolmogorov"><span class="header-section-number">3.10</span> Definição 10: (Axiomas de Kolmogorov)</h2>
+<p>Dado o espaço amostral Ω e uma σ- álgebra F, a função (denotado por P)</p>
+<p>P:F→[0,1]</p>
+<p>é dito ser uma medida de probabilidade se satisfaz os seguintes axiomas:</p>
+<ol type="1">
+<li><p><span class="math inline">\(P(E)≥0, ∀ E ∈ \digamma\)</span>;</p></li>
+<li><p><span class="math inline">\(P(\)</span><span class="math inline">\() = 1\)</span>;</p></li>
+<li><p><span class="math inline">\(P(⋃_{i=1}^{\infty}E_i )\)</span> = <span class="math inline">\(\sum_{i=1}^{\infty} P(E_i)\)</span></p></li>
+</ol>
+<p>em que <span class="math inline">\(E_1\)</span>, <span class="math inline">\(E_2\)</span>, <span class="math inline">\(E_3\)</span>, … são eventos dois a dois disjuntos ou mutuamente exclusivos.</p>
+<p>A terceira propriedade pode ser representada da seguinte forma:</p>
+<p>P(<span class="math inline">\(E_1\)</span>⋃<span class="math inline">\(E_2\)</span>⋃<span class="math inline">\(E_3\)</span>….)=P(<span class="math inline">\(E_1\)</span> )+P(<span class="math inline">\(E_2\)</span> )+P(<span class="math inline">\(E_3\)</span> )+⋯</p>
+</section>
+<section id="definição-11-espaço-de-probabilidade" class="level2" data-number="3.11">
+<h2 data-number="3.11" class="anchored" data-anchor-id="definição-11-espaço-de-probabilidade"><span class="header-section-number">3.11</span> Definição 11 (Espaço de probabilidade):</h2>
+<p>O espaço de probabilidade é definido como a tripla (Ω,F,P), em que Ω é o espaço amostral, F é a σ-algebra de subconjuntos de Ω, e P a medida de probabilidade.</p>
+<p>Exemplo 4: Mostre a seguinte proposição</p>
+<p>i) P(ϕ)=0; em que ϕ é o conjunto vazio.</p>
+<p>Solução:</p>
+<p>Encontrar que P(ϕ)=0, em que ϕ é o conjunto vazio.</p>
+<p>Note primeiro que</p>
+<p>Ω=Ω∪ϕ e Ω∩ϕ=ϕ</p>
+<p>(Ω e ϕ são eventos disjuntos)</p>
+<p>Então pelo axioma 2 e 3 temos:</p>
+<p>P(Ω)=P(Ω∪ϕ)=P(ϕ)+P(Ω)</p>
+<p>1=P(ϕ)+P(Ω)</p>
+<p>1=P(ϕ)+ 1</p>
+<p>P(ϕ)=0</p>
+<p>Exercício 2: Mostre as seguintes propriedades:</p>
+</section>
+<section id="teorema-1" class="level2" data-number="3.12">
+<h2 data-number="3.12" class="anchored" data-anchor-id="teorema-1"><span class="header-section-number">3.12</span> Teorema 1</h2>
+<pre><code>P(E\^c )=1-P(E);
+
+P(E)≤1, ∀E∈F</code></pre>
+</section>
+<section id="teorema-2" class="level2" data-number="3.13">
+<h2 data-number="3.13" class="anchored" data-anchor-id="teorema-2"><span class="header-section-number">3.13</span> Teorema 2</h2>
+<p>Se P é uma função probabilidade e <span class="math inline">\(E_1\)</span>,<span class="math inline">\(E_2\)</span>∈F então:</p>
+<pre><code>Se $E_1$⊆$E_2$ então P($E_1$ )≤P($E_2$ )
+
+P($E_1$∪$E_2$ )=P($E_1$ )+P($E_2$ )-P($E_1$∩$E_2$ )
+
+P($E_1$∩〖$E_2$〗\^c )=P($E_1$ )-P($E_1$∩$E_2$ )</code></pre>
+<p>Exemplo 5</p>
+<p>Considere o experimento de jogar um dado. Sabendo que o dado não é “justo”, as probabilidades associadas aos resultados são:</p>
+<p>P({1})=1/6; P({2})=1/6; P({3})=1/6; P({4})=1/6; P({5})=1/7</p>
+<p>Usando apenas os Axiomas de Kolmogorov, pede-se:</p>
+<pre><code>Encontre a probabilidade de encontrar o número 6
+
+Encontre a probabilidade de encontrar um número par.</code></pre>
+<p>Solução:</p>
+<p>a)</p>
+<p>Inicialmente, observa-se que o espaço amostral Ω do experimento de jogar um dado é,</p>
+<p>Ω={1,2,3┤,4,5,6}</p>
+<p>O espaço amostral pode ser escrito como a união de eventos simples compostos pelos resultados:</p>
+<p>Ω={1,2,3┤,4,5,6}={1}⋃{2}⋃{3}⋃{4}⋃{5}⋃{6}</p>
+<p>Considerando os eventos simples serem dois a dois disjuntos (mutuamente exclusivos), ou seja, {1}∩{2}=ϕ, {1}∩{3}=ϕ,….., temos que o terceiro axioma, P(⋃_(i=1)^∞▒E_i )=∑_(i=1)^∞▒P(E_i ) , se cumpre. Então:</p>
+<p>P(Ω)=P({1,2,3┤,4,5,6})= P({1}⋃{2}⋃{3}⋃{4}⋃{5}⋃{6})=</p>
+<p>P{(1)}+P{(2)}+P{(3)}+P{(4)}+P{(5)}+P{(6)}</p>
+<p>Além disso, o segundo axioma dispõe que P(Ω)=1, portanto,</p>
+<p>P({1,2,3┤,4,5,6})=P(Ω)=1</p>
+<p>Assim,</p>
+<p>P{(1)}+P{(2)}+P{(3)}+P{(4)}+P{(5)}+P{(6)}=1</p>
+<p>1/6+1/6+1/6+1/6+1/7+P{(6)}=1</p>
+<p>1/6+1/6+1/6+1/6+1/7+P{(6)}=1</p>
+<p>P{(6)}=4/21</p>
+<p>b)</p>
+<p>Para calcular a probabilidade de um número ser par definimos o evento E dos números pares:</p>
+<p>E={2,4,6}</p>
+<p>P(E)=P({2,4,6})= P({2}⋃{4}⋃{6})=</p>
+<p>Segundo Axioma 3,</p>
+<p>P(E)=P({2}⋃{4}⋃{6})=P{(2)}+P{(4)}+P{(6)}</p>
+<p>P(E)=1/6+1/6+4/21=11/21</p>
+<p>Combinação de Eventos:</p>
+<pre><code>Sejam dois eventos A e B, do espaço amostral S. Como A e B são conjuntos, podemos aplicar a eles operações, tais como:
+
+União: A B</code></pre>
+<p>Exemplo</p>
+<p>A={2,3}</p>
+<p>B={3,4}</p>
+<p>A∪B={2,3,4}</p>
+<pre><code>Intersecção: A B</code></pre>
+<p>Exemplo</p>
+<p>A={2,3}</p>
+<p>B={3,4}</p>
+<p>A∩B={3}</p>
+<pre><code>Complementar de A:</code></pre>
+<p>Exemplo</p>
+<p>Seja o espaço amostral:</p>
+<p>S=Ω={1,2,3,4,5,6}</p>
+<p>A={2,3}</p>
+<p><span class="math inline">\(A^{-}\)</span>={1,4,5,6}</p>
+<pre><code>Subtração: A-B</code></pre>
+<p>Exemplo</p>
+<p>Seja o espaço amostral:</p>
+<p>Ω={1,2,3,4,5,6}</p>
+<p>A={2,3}</p>
+<p>B={3,4}</p>
+<p>A-B={2}</p>
+<p>Leis de Morgan</p>
+<pre><code>$(A∪B)^{-}$=$A^{-}$∩$B^{-}$
+
+(A∩B) ̅=$A^{-}$∪$B^{-}$
+
+A-B=A∩$B^{-}$
+
+A ̿=A</code></pre>
+<p>Exemplo: Lançam-se duas moedas honestas simultaneamente. Seja A: saída de faces iguais; e B: saída de cara na primeira moeda. Defina: c=cara e r=coroa. Determinar os eventos:</p>
+<p>Espaço amostral:</p>
+<p>Ω= {cc,cr,rc,rr}</p>
+<p>A={cc,rr}</p>
+<p>B={cr,cc}</p>
+<pre><code>A∪B</code></pre>
+<p>A∪B={(cc),(rr),(cr)}</p>
+<pre><code>A∩B</code></pre>
+<p>A∩B={(cc)}</p>
+<pre><code>$A^{-}$</code></pre>
+<p>O complementar de um evento A denotado por $A^c$ ou ( A) ̅, é a negação de A. Então, o complementar de A é formado pelos elementos que não pertencem a A.</p>
+<p><span class="math inline">\(A^{-}\)</span>=saída de faces diferentes</p>
+<p><span class="math inline">\(A^{-}\)</span>={rc,cr}</p>
+<pre><code>$B^{-}$</code></pre>
+<p><span class="math inline">\(B^{-}\)</span>=não saída de cara na 1ª moeda</p>
+<p><span class="math inline">\(B^{-}\)</span>={(rc),(rr)}</p>
+<pre><code>($(A∪B)^{-}$ )</code></pre>
+<p>(<span class="math inline">\((A∪B)^{-}\)</span> )=<span class="math inline">\(A^{-}\)</span>∩<span class="math inline">\(B^{-}\)</span></p>
+<p><span class="math inline">\(A^{-}\)</span>∩<span class="math inline">\(B^{-}\)</span>={rc}</p>
+<pre><code>((A∩B) ̅ )</code></pre>
+<p>((A∩B) ̅ )=<span class="math inline">\(A^{-}\)</span>∪<span class="math inline">\(B^{-}\)</span></p>
+<p><span class="math inline">\(A^{-}\)</span>∪<span class="math inline">\(B^{-}\)</span>={(rr),(cr),(rc)}</p>
+<p>Ver mais no link https://bookdown.org/rfdapaz/eventos/eventos.html</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./summary.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Summary</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./references.html" class="pagination-link">
+        <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+</body></html>

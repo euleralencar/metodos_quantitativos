@@ -22,40 +22,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -154,6 +120,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./aula01.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Aula 1: Conceitos Básicos de Probabilidade</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./references.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">References</span></a>
   </div>
@@ -168,7 +140,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#preface" id="toc-preface" class="nav-link active" data-scroll-target="#preface">Preface</a></li>
+  <li><a href="#preface" id="toc-preface" class="nav-link active" data-scroll-target="#preface">Preface</a>
+  <ul class="collapse">
+  <li><a href="#métodos-quantitativos-para-doutorado-em-economia" id="toc-métodos-quantitativos-para-doutorado-em-economia" class="nav-link" data-scroll-target="#métodos-quantitativos-para-doutorado-em-economia">Métodos Quantitativos para Doutorado em Economia</a>
+  <ul class="collapse">
+  <li><a href="#autor" id="toc-autor" class="nav-link" data-scroll-target="#autor">Autor:</a></li>
+  <li><a href="#colaboradores" id="toc-colaboradores" class="nav-link" data-scroll-target="#colaboradores">Colaboradores:</a></li>
+  </ul></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -206,16 +185,35 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="preface" class="level1 unnumbered">
 <h1 class="unnumbered">Preface</h1>
-<p>This is a Quarto book.</p>
-<p>To learn more about Quarto books visit <a href="https://quarto.org/docs/books" class="uri">https://quarto.org/docs/books</a>.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 2</code></pre>
-</div>
-</div>
+<section id="métodos-quantitativos-para-doutorado-em-economia" class="level2">
+<h2 class="anchored" data-anchor-id="métodos-quantitativos-para-doutorado-em-economia">Métodos Quantitativos para Doutorado em Economia</h2>
+<p>Bem-vindo ao livro <strong>“Métodos Quantitativos para Doutorado em Economia”</strong>. Este material foi cuidadosamente desenvolvido para oferecer aos estudantes de doutorado uma compreensão sólida e prática das ferramentas quantitativas essenciais necessárias para a pesquisa avançada em economia.</p>
+<p>O curso de doutorado em economia é uma jornada desafiadora e estimulante, onde os alunos são desafiados a explorar a fronteira do conhecimento em suas áreas de interesse. Uma proficiência sólida em métodos quantitativos é fundamental para a formulação de pesquisas robustas e a análise de dados complexos, tornando-se uma habilidade essencial para o sucesso neste campo dinâmico.</p>
+<p>Este livro foi concebido como uma ferramenta de nivelamento, atendendo a uma gama diversificada de estudantes, desde aqueles que buscam reforçar suas habilidades matemáticas até os que desejam aprimorar sua compreensão das técnicas estatísticas permitindo que o aluno avance nas matérias mais avançadas do programa. Cada capítulo foi estruturado de forma didática, fornecendo explicações claras, exemplos práticos e exercícios desafiadores para solidificar o aprendizado.</p>
+<p>Principais Características deste Livro:</p>
+<ol type="1">
+<li><p><strong>Abordagem Progressiva</strong>: Iniciamos com conceitos fundamentais, guiando os leitores por uma jornada gradual que culmina em métodos avançados essenciais para a pesquisa em economia;</p></li>
+<li><p><strong>Relevância para Pesquisas em Economia</strong>: Todos os métodos apresentados são contextualizados com exemplos específicos da economia, demonstrando sua aplicação prática na resolução de problemas reais.</p></li>
+<li><p><strong>Foco na Aplicação Prática</strong>: Valorizamos a aplicação prática dos métodos quantitativos. O livro apresenta estudos de caso reais e destaca como essas técnicas podem ser incorporadas em pesquisas acadêmicas e na formulação de políticas.</p></li>
+<li><p><strong>Recursos Online Interativos</strong>: Complementando o material, oferecemos recursos online, incluindo exercícios interativos, vídeos explicativos e material suplementar para aprofundar o entendimento.</p></li>
+<li><p><strong>Adaptação a Diferentes Estilos de Aprendizagem</strong>: Reconhecemos a diversidade de estilos de aprendizagem. Portanto, apresentamos conceitos de maneiras variadas, utilizando gráficos, exemplos numéricos e narrativas para atender às diferentes necessidades dos estudantes.</p></li>
+</ol>
+<p>Este livro é uma ferramenta valiosa para estudantes de doutorado em economia, independente de sua formação prévia. Nosso objetivo é equipá-los com as habilidades quantitativas necessárias para enfrentar os desafios complexos da pesquisa econômica contemporânea.</p>
+<p>Desejamos a vocês uma jornada acadêmica frutífera e estimulante.</p>
+<section id="autor" class="level3">
+<h3 class="anchored" data-anchor-id="autor">Autor:</h3>
+<ul>
+<li><p>Prof.&nbsp;Dr.&nbsp;Carlos Enrique Carrasco Gutierrez</p></li>
+<li><p>E-mail: carlos.carrasco.gutierrez@gmail.com</p></li>
+<li><p>Personal page:&nbsp;<a href="https://sites.google.com/view/carloscarrascogutierrez" class="uri">https://sites.google.com/view/carloscarrascogutierrez</a></p></li>
+</ul>
+</section>
+<section id="colaboradores" class="level3">
+<h3 class="anchored" data-anchor-id="colaboradores">Colaboradores:</h3>
 
 
+</section>
+</section>
 </section>
 
 </main> <!-- /main -->

@@ -1,9 +1,35 @@
 # Preface {.unnumbered}
 
-This is a Quarto book.
+## Métodos Quantitativos para Doutorado em Economia
 
-To learn more about Quarto books visit <https://quarto.org/docs/books>.
+Bem-vindo ao livro **"Métodos Quantitativos para Doutorado em Economia"**. Este material foi cuidadosamente desenvolvido para oferecer aos estudantes de doutorado uma compreensão sólida e prática das ferramentas quantitativas essenciais necessárias para a pesquisa avançada em economia.
 
-```{r}
-1 + 1
-```
+O curso de doutorado em economia é uma jornada desafiadora e estimulante, onde os alunos são desafiados a explorar a fronteira do conhecimento em suas áreas de interesse. Uma proficiência sólida em métodos quantitativos é fundamental para a formulação de pesquisas robustas e a análise de dados complexos, tornando-se uma habilidade essencial para o sucesso neste campo dinâmico.
+
+Este livro foi concebido como uma ferramenta de nivelamento, atendendo a uma gama diversificada de estudantes, desde aqueles que buscam reforçar suas habilidades matemáticas até os que desejam aprimorar sua compreensão das técnicas estatísticas permitindo que o aluno avance nas matérias mais avançadas do programa. Cada capítulo foi estruturado de forma didática, fornecendo explicações claras, exemplos práticos e exercícios desafiadores para solidificar o aprendizado.
+
+Principais Características deste Livro:
+
+1.  **Abordagem Progressiva**: Iniciamos com conceitos fundamentais, guiando os leitores por uma jornada gradual que culmina em métodos avançados essenciais para a pesquisa em economia;
+
+2.  **Relevância para Pesquisas em Economia**: Todos os métodos apresentados são contextualizados com exemplos específicos da economia, demonstrando sua aplicação prática na resolução de problemas reais.
+
+3.  **Foco na Aplicação Prática**: Valorizamos a aplicação prática dos métodos quantitativos. O livro apresenta estudos de caso reais e destaca como essas técnicas podem ser incorporadas em pesquisas acadêmicas e na formulação de políticas.
+
+4.  **Recursos Online Interativos**: Complementando o material, oferecemos recursos online, incluindo exercícios interativos, vídeos explicativos e material suplementar para aprofundar o entendimento.
+
+5.  **Adaptação a Diferentes Estilos de Aprendizagem**: Reconhecemos a diversidade de estilos de aprendizagem. Portanto, apresentamos conceitos de maneiras variadas, utilizando gráficos, exemplos numéricos e narrativas para atender às diferentes necessidades dos estudantes.
+
+Este livro é uma ferramenta valiosa para estudantes de doutorado em economia, independente de sua formação prévia. Nosso objetivo é equipá-los com as habilidades quantitativas necessárias para enfrentar os desafios complexos da pesquisa econômica contemporânea.
+
+Desejamos a vocês uma jornada acadêmica frutífera e estimulante.
+
+### Autor:
+
+-   Prof. Dr. Carlos Enrique Carrasco Gutierrez
+
+-   E-mail: carlos.carrasco.gutierrez\@gmail.com
+
+-   Personal page: <https://sites.google.com/view/carloscarrascogutierrez>
+
+### Colaboradores:
