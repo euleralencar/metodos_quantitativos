@@ -1,10 +1,347 @@
-# Aula 1:
+# Aula 01
+
+## Definição 1 (Espaço amostral):
+
+O **espaço amostral** (denotado por Ω) é o conjunto de todos os possíveis resultados de um experimento. Como o espaço amostral é um conjunto, ele pode ser definido de dois tipos:
+
+-   **Finito**: possui um número finito de elementos
+-   **Infinito**: possui um número infinito de elementos
+
+Os conjuntos infinitos podem ser classificados em dois grupos:
+
+-   **Enumeráveis** (ou contáveis)
+-   **Não** **enumeráveis** (não contáveis)
+
+**Exemplos:**
+
+**Conjuntos finitos** - {1,2,3,4,5,6} - {2,4,6,8,10} - {Número de ganhadores da Mega Sena da virada} - {Número de mundiais do Flamengo} - {Número de mundiais do Palmeiras}
+
+**Conjuntos infinitos** - **Conjuntos enumeráveis ou contáveis** - {1,2,3,4,5,...} - {1,1/2,1/3,1/4,...} - {0,1,-1,2,-2,3,-3,4,-4,...}
+
+-   **Conjuntos não enumeráveis**
+    -   {conjuntos de todos os números reais}
+    -   {qualquer intervalo, aberto ou fechado, de números reais}
+    -   Exemplo: (1, 4), (-2, 10\]
+    -   O conjunto A=\[1, 2\] é não enumerável.
+    -   {uniões e interseções de intervalos}
+
+Para o caso de conjuntos finitos, podemos calcular a partir do número de resultados (n) o número de eventos (subconjuntos do espaço amostral) que podem ser gerados por meio da fórmula:
+
+$\text{Número de eventos} = 2^n$ (inclui o vazio)
+
+**Exemplo:**
+
+$A = \{2,3\}$ Podemos formar Número de eventos = $2^2 = 4$ elementos
+
+**Experimento 1:** Considere o experimento de jogar um dado e observar o resultado. Encontre o espaço amostral deste experimento.
+
+**Solução:** Como existem seis possíveis resultados, o espaço amostral é $\Omega = \{1,2,3,4,5,6\}$ Podemos afirmar que: $1 \in \Omega$, $2 \in \Omega$, etc. Usando a notação de {} definimos um subconjunto do espaço amostral e podemos fazer as seguintes afirmações: $\{1\} \subseteq \Omega$, $\{1,2\} \subseteq \Omega$
+
+**Experimento 2:** Jogar uma moeda e ver o resultado. Encontre o espaço amostral deste experimento.
+
+**Solução:** $\Omega = \{\text{cara, coroa}\}$. Podemos afirmar: **cara** $\in \Omega$
+
+**Experimento 3:** Jogar duas moedas simultaneamente e observar os resultados de cara (H) e coroa (T). Encontre o espaço amostral.
+
+**Solução:** $\Omega = \{HH, TT, HT, TH\}$
+
+**Experimento 4:** Jogar uma moeda três vezes e observar a sequência de caras (H) e coroas (T). \$ \Omega = {HHH, HHT, HTT, TTT, TTH, THH, HTH, THT} \$
+
+**Experimento 5:** Registrar o tempo de vida de uma lâmpada ($t$) até queimar. O espaço amostral é $\Omega = \{t^*: t \geq 0\}$ Este exemplo corresponde a um espaço amostral **NÃO ENUMERÁVEL**.
+
+**Experimento 6:** Programa para o fim de semana. Sair um domingo às 19 horas \$ \Omega = {\text{cinema, teatro, ficar em casa}} \$ Neste último experimento, as possibilidades são várias e não teríamos apenas três resultados. O número de resultados possíveis vai depender do estudo que o pesquisador deseje desenvolver.
+
+## Definição 2 (Evento)
+
+Um evento (denotado por $E$), é a coleção de possíveis resultados de um experimento. Em outras palavras, um subconjunto do espaço amostral, isto é, $E \subseteq \Omega$.
+
+**Exemplo:** No experimento 1 "de jogar um dado", definimos três eventos: Números pares, Números ímpares e Números maiores que 5. Lembre que o espaço amostral deste experimento é \$ \Omega = {1, 2, 3, 4, 5, 6} \$
+
+-   Números pares → $E_1 = \{2, 4, 6\}$
+-   Números ímpares → $E_2 = \{1, 3, 5\}$
+-   Números maiores que 5 → $E_3 = \{6\}$
+
+Então:
+
+-   $E_1 \subseteq \Omega$
+-   $E_2 \subseteq \Omega$
+
+**Observações:** Não confundir o resultado 6 como o evento $E_3 = \{6\}$, $\{6\} \in \Omega$ e $E_3 \subseteq \Omega$.
+
+**Eventos simples e compostos:** Os eventos 1 e 2 estão formados por mais de um resultado do espaço amostral e são chamados de eventos compostos. Por outro lado, o evento 3 é chamado de evento simples.
+
+## Definição 3 (Eventos disjuntos):
+
+Dois eventos $E_1$ e $E_2$ são disjuntos ou mutuamente exclusivos se a sua interseção $E_1 \cap E_2$ é igual ao conjunto vazio \$ \emptyset \$. No exemplo, os eventos $E_1$ e $E_2$ são disjuntos, dado que a sua interseção é o conjunto vazio. Os eventos $E_1$ e $E_3$ não são disjuntos devido a que sua interseção é $\{6\}$.
+
+## Definição 4 (Partição):
+
+Se os eventos $E_1, E_2, E_3, E_4, \ldots$ são dois a dois disjuntos e a sua união $E_1 \cup E_2 \cup E_3 \cup E_4 \ldots$ é igual ao espaço amostral, então a coleção $E_1, E_2, E_3, E_4, \ldots$ forma uma partição do espaço amostral.
+
+**Exemplo 2:** Para o experimento de jogar um dado e observar o resultado, considere os eventos definidos como: $E_1 = \{1, 2, 3\}$, $E_2 = \{4\}$, $E_3 = \{5, 6\}$.
+
+**Verifique se eles formam uma partição!**
+
+## Definição 5 (complemento de um conjunto):
+
+O complementar de um conjunto $A$, denotado como $A^c$ ou $\bar{A}$, é definido como: $A^c = \bar{A}$ = {Elementos do espaço amostral que não pertencem ao conjunto A}.
+
+**Exemplo 3:** No exemplo de jogar um dado. Encontre o complementar do evento $A = \{3, 4, 5\}$.
+
+**Solução:**
+
+$\bar{A} = \{1, 2, 6\}$
+
+$\bar{A} \cup A = \{1, 2, 3, 4, 5, 6\} = \Omega$
+
+\[FIGURA\]
+
+## Definição 6 (σ-álgebra):
+
+Uma coleção $F$ de subconjuntos de $\Omega$ é uma σ-álgebra se satisfaz as seguintes condições:
+
+1.  O conjunto vazio e o espaço amostral pertencem a $F$, isto é, $\emptyset \in F$ e $\Omega \in F$.
+2.  Se $E \in F \$, então seu complemento $E^c = \{w \in \Omega \mid w \notin E\}$ também está em $F$ (onde $w$ representa um resultado do espaço amostral).
+3.  $F$ é fechado na união contável, ou seja, se $E_1 \in F$, $E_2 \in F $, $E_3 \in F$, ..., então $E_1 \cup E_2 \cup E_3 \cup \ldots = \bigcup_{i=1}^{\infty} E_i \in F$.
+
+No item 3, se apenas a união finita está em $F$, temos uma classe menos restrita, denominada álgebra.
+
+**Exercício 1:** No experimento de jogar um dado $\Omega = \{1,2,3,4,5,6\}$: - $F_1 = \{\emptyset, \Omega\}$ e $F_2 = \{\emptyset, \Omega, \{1\}, \{2,3,4,5,6\}\}$ são σ-álgebras de subconjuntos de $\Omega$?
+
+**Exemplo:** $F = \{\{2,4,6\}, \{1,3,5\}, \{6\}\}$
+
+## Definição 7 (σ-álgebra de Borel):
+
+Uma σ-álgebra de Borel é denotada por $B (\mathbb{R}) = \sigma{(-\infty, x] : x \in \mathbb{R}}$, ou seja, é a $\sigma$-álgebra contendo conjuntos abertos da forma $(- \infty, x]$. A medida de Borel também pode ser definida (gerada) pelos intervalos da forma $(a, b)$ ou $(x, \infty)$.
+
+Outra σ-álgebra de importância é definida no espaço Euclidiano $\mathbb{R}^n$ de todos os conjuntos mensuráveis de Lebesgue. Essa σ-álgebra contém mais conjuntos que a σ-álgebra de Borel em $\mathbb{R}^n$ e é preferida na teoria de integração, posto que ela dá um espaço mensurável completo.
+
+## Definição 8 (Medida):
+
+Defina $F$ como uma σ-álgebra de subconjuntos de $\Omega$. A função $\mu : F \to \mathbb{R}^+$ é dita ser uma medida em $F$ se satisfaz os seguintes axiomas: 
+
+1. $\mu(E) \geq 0 $ para todo $E \in F$ 
+2. $\mu (\emptyset) = 0$ 
+3. Se $E_1, E_2, E_3, \ldots$ são eventos dois a dois disjuntos (mutuamente exclusivos), então $\mu ( \bigcup_{i=1}^{\infty} E_i ) = \sum_{i=1}^{\infty} \mu(E_i)$. A terceira condição pode também ser representada como $\mu (\bigcup_{i=1}^{\infty} E_i) = \mu(E_1) + \mu(E_2) + \mu(E_3) + \ldots$
+
+
+## Definição 9 (Espaço mensurável):
+
+O espaço mensurável é definido como a tripla ($\Omega, F, \mu$), em que $\Omega$ é um conjunto arbitrário, $F$ é a σ-álgebra de subconjuntos de $\Omega$, e $\mu$ é uma medida em $F$.
+
+## Definição 10: (Axiomas de Kolmogorov)
+
+Dado o espaço amostral $\Omega$ e uma σ-álgebra  $F$, a função (denotada por $P$) $P : F \to [0,1]$ é dita ser uma medida de probabilidade se satisfaz os seguintes axiomas: 
+
+1. $P(E) \geq 0,  \forall E \in F$ 
+2. $P(\Omega) = 1$ 
+3. $P( $\bigcup_{i=1}^{\infty} E_i ) = \sum_{i=1}^{\infty} P(E_i)$, em que $E_1, E_2, E_3, \ldots$ são eventos dois a dois disjuntos ou mutuamente exclusivos. A terceira propriedade pode ser representada da seguinte forma: $P(E_1 \cup E_2 \cup E_3 \ldots) = P(E_1) + P(E_2) + P(E_3) + \ldots$
+
+## Definição 11 (Espaço de probabilidade):
+
+O espaço de probabilidade é definido como a tripla ($\Omega, F, P4$), em que $\Omega$ é o espaço amostral, $F$ é a σ-álgebra de subconjuntos de $\Omega$, e $P$ a medida de probabilidade.
+
+**Exemplo 4:** Mostre a seguinte proposição:
+
+i\) $P(\emptyset) = 0$; em que $\emptyset$ é o conjunto vazio.
+
+**Solução:**:
+
+Encontrar que $P(\emptyset) = 0$, em que $\emptyset$ é o conjunto vazio. 
+
+Note primeiro que:
+
+$\Omega = \Omega \cup \emptyset$ e 
+
+$\Omega \cap \emptyset = \emptyset$ 
+
+($\Omega$ e $\emptyset$ são eventos disjuntos)
+
+Então pelo axioma 2 e 3 temos: 
+
+$P(\Omega) = P(\Omega \cup \emptyset) = P (\emptyset) + P(\Omega)$ 
+
+1 = $P(\emptyset)$ + 1 
+
+$P (\emptyset) = 0$
+
+
+
+*Exercício 2: Mostre as seguintes propriedades:*
+
+## Teorema 1
+
+$P(E^c) = 1 - P(E)$
+
+$P(E) \leq 1, \forall E \in F$
+
+## Teorema 2
+
+Se $P$ é uma função probabilidade e $E_1, E_2 \in F$ então:
+
+- Se $E_1 \subseteq E_2$ então $P(E_1) \leq P(E_2)$
+
+- $P(E_1 \cup E_2) = P(E_1) + P(E_2) - P(E_1 \cap E_2)$
+
+- $P(E_1 \cap E_2^c) = P(E_1) - P(E_1 \cap E_2)$
+
+
+*Exemplo*
+
+Considere o experimento de jogar um dado. Sabendo que o dado não é “justo”, as probabilidades associadas aos resultados são:
+
+$P(\{1\}) = \frac{1}{6}$
+
+$P(\{2\}) = \frac{1}{6}$
+
+$P(\{3\}) = \frac{1}{6}$
+
+$P(\{4\}) = \frac{1}{6}$
+
+$P(\{5\}) = \frac{1}{7}$
+
+Usando apenas os Axiomas de Kolmogorov, pede-se:
+
+- Encontre a probabilidade de encontrar o número 6;
+
+- Encontre a probabilidade de encontrar um número par.
+
+**Solução:**
+
+a) Inicialmente, observa-se que o espaço amostral \( \Omega \) do experimento de jogar um dado é, $\Omega = \{1,2,3 \overset{\_}{,} 4,5,6\}$. O espaço amostral pode ser escrito como a união de eventos simples compostos pelos resultados:
+
+- $\Omega = \{\{1\},\{2\},\{3\},\{4\},\{5\},\{6\}\}$ = $\{1\} \cup \{2\} \cup \{3\} \cup \{4\} \cup \{5\} \cup \{6\}$. 
+
+Considerando os eventos simples serem dois a dois disjuntos (mutuamente exclusivos), ou seja, $( \{1\} \cap \{2\} = \phi \), \( \{1\} \cap \{3\} = \phi \)$, ..., temos que o terceiro axioma, $( P\left(\bigcup_{i=1}^{\infty} E_i \right) = \sum_{i=1}^{\infty} P(E_i) )$, se cumpre. 
+
+Então:
+
+$P(\Omega) = P(\{1,2,3 \overset{\_}{,} 4,5,6\}) = P(\{1\} \cup \{2\} \cup \{3\} \cup \{4\} \cup \{5\} \cup \{6\}) =$
+
+$P\{(1)\} + P\{(2)\} + P\{(3)\} + P\{(4)\} + P\{(5)\} + P\{(6)\}$
+
+Além disso, o segundo axioma dispõe que $P(\Omega) = 1$, portanto, $P(\{1,2,3, 4,5,6\}) = P(\Omega) = 1$
+
+Assim,
+
+$P\{(1)\} + P\{(2)\} + P\{(3)\} + P\{(4)\} + P\{(5)\} + P\{(6)\} = 1$
+$\frac{1}{6} + \frac{1}{6} + \frac{1}{6} + \frac{1}{6} + \frac{1}{7} + P\{(6)\} = 1$
+$\frac{1}{6} + \frac{1}{6} + \frac{1}{6} + \frac{1}{6} + \frac{1}{7} + P\{(6)\} = 1$
+$P\{(6)\} = \frac{4}{21}$
+
+b)
+Para calcular a probabilidade de um número ser par definimos o evento \( E \) dos números pares:
+$E = \{2,4,6\}$
+$P(E) = P(\{2,4,6\}) = P(\{2\} \cup \{4\} \cup \{6\})$
+Segundo Axioma 3,
+$P(E) = P(\{2\} \cup \{4\} \cup \{6\}) = P\{(2)\} + P\{(4 \{(6)\}$
+$P(E) = \frac{1}{6} + \frac{1}{6} + \frac{4}{21} = \frac{11}{21}$
+
+### Combinação de Eventos:
+
+Sejam dois eventos $A$ e $B$, do espaço amostral $S$. Como $A$ e $B$ são conjuntos, podemos aplicar a eles operações, tais como:
+
+- União: $A \cup B$
+
+
+*Exemplo*
+
+$A = \{2,3\}$
+
+$B = \{3,4\}$
+
+$A \cup B = \{2,3,4\}$
+
+- Intersecção: $A \cap B$
+
+*Exemplo*
+
+$A = \{2,3\}$
+
+$B = \{3,4\}$
+
+$A \cap B = \{3\}$
+
+- Complementar de $A: A^c$
+
+*Exemplo*
+
+Seja o espaço amostral: 
+
+$S = \Omega = \{1,2,3,4,5,6\}$
+
+$A = \{2,3\}$
+
+$A^c = \{1,4,5,6\}$
+
+- Subtração: $A - B$
+
+*Exemplo*
+
+Seja o espaço amostral:
+
+$\Omega = \{1,2,3,4,5,6\}$
+
+$A = \{2,3\}$
+
+$B = \{3,4\}$
+
+$A - B = \{2\}$
+
+*Leis de Morgan*
+
+- $(A \cup B)^c = A^c \cap B^c$
+
+- $(A \cap B)^c = A^c \cup B^c$
+
+- $A - B = A \cap B^c$
+
+- $A^c = \Omega - A$
+
+*Exemplo*
+
+Lançam-se duas moedas honestas simultaneamente. Seja $A$: saída de faces iguais; e $B$: saída de cara na primeira moeda. Defina: $c =$ cara e $r =$ coroa. Determinar os eventos:
+
+Espaço amostral: 
+$\Omega = \{cc,cr,rc,rr\}$
+$A = \{cc,rr\}$
+$B = \{cr,cc\}$
+- \( A \cup B \)
+$A \cup B = \{(cc),(rr),(cr)\}$
+- \( A \cap B \)
+$A \cap B = \{(cc)\}$
+
+- $A^c$
+
+O complementar de um evento $A$ denotado por $A^c$ ou $( A)^c$, é a negação de $A$. Então, o complementar de $A$ é formado pelos elementos que não pertencem a $A$.
+
+$A^c = \text{saída de faces diferentes}$
+$A^c = \{rc,cr\}$
+- \( B^c \)
+$B^c = \text{não saída de cara na 1ª moeda}$
+$B^c = \{(rc),(rr)\}$
+
+- $(A \cup B)^c$
+
+$(A \cup B)^c = A^c \cap B^c$
+$(A \cup B)^c = \{rc\}$
+- \( (A \cap B)^c \)
+$(A \cap B)^c = A^c \cup B^c$
+$(A \cap B)^c = \{(rr),(cr),(rc)\}$
+
+Para mais informações, consulte [este link](https://bookdown.org/rfdapaz/eventos/eventos.html).
+
+
+
+------------------------------------------------------------------------
+
+# Aula 1
 
 Conceitos Básicos de Probabilidade
 
 ## Definição 1 (Espaço amostral):
 
-O espaço amostral (denotado por Ω) é o conjunto de todos os possíveis resultados de um experimento.
+O espaço amostral (denotado por $\omega$ $\Omega$) é o conjunto de todos os possíveis resultados de um experimento.
 
 Como o espaço amostral é um conjunto, e pode ser definido de dois tipos:
 
@@ -76,17 +413,17 @@ Considere o experimento de jogar um dado e observar o resultado. Encontre o espa
 
 Como existem seis possíveis resultados o espaço amostral é
 
-Ω= {1,2,3,4,5,6}
+$\Omega$= {1,2,3,4,5,6}
 
 Podemos afirmar que:
 
-1 ∈ Ω, 2 ∈ Ω, etc.
+1 ∈ $\Omega$, 2 ∈ $\Omega$, etc.
 
 Usando a notação de {} definimos um subconjunto do espaço amostra e podemos fazer as seguintes afirmações:
 
-{1} ⊆Ω
+{1} ⊆$\Omega$
 
-{1,2} ⊆Ω
+{1,2} ⊆$\Omega$
 
 #### Experimento 2:
 
@@ -94,11 +431,11 @@ Jogar uma moeda e ver o resultado. Encontre o espaço amostral deste experimento
 
 **Solução:**
 
-Ω= {cara,coroa}
+$\Omega$= {cara,coroa}
 
 Podemos afirmar:
 
-cara ∈ Ω
+cara ∈ $\Omega$
 
 #### Experimento 3:
 
@@ -106,53 +443,49 @@ Jogar duas moedas simultaneamente e observe os resultados de cara (H) e coroa (T
 
 **Solução:**
 
-Ω= {HH, TT, HT, TH}
+$\Omega$= {HH, TT, HT, TH}
 
-Experimento 4:
+#### Experimento 4:
 
 Jogar uma moeda três vezes, e observamos a sequência de caras de caras (H) e coroas (T).
 
-Ω= {HHH,HHT,HTT,TTT,TTH,THH,HTH,THT}
+$\Omega$= {HHH,HHT,HTT,TTT,TTH,THH,HTH,THT}
 
-Experimento 5:
+#### Experimento 5:
 
-Registra-se o tempo de vida de uma lâmpada (t) até queimar. O espaço amostral é
-
-Ω= {t\^\*:t≥0}
+Registra-se o tempo de vida de uma lâmpada (t) até queimar. O espaço amostral é $\Omega = {t^{*}: t \geq 0 }$.
 
 Este exemplo corresponde a um espaço amostral NÃO ENUMERÁL.
 
-Experimento 6:
+#### Experimento 6:
 
 Programa para o fim de semana. Sair um domingo às 19 horas
 
-Ω= {cinema,teatro,ficar em casa}
+$\Omega$ = {cinema, teatro, ficar em casa}
 
 Neste último experimento as possibilidades são várias e não teríamos apenas três resultados. O número de resultados possíveis vai depender do estudo que o pesquisador deseje desenvolver.
 
 ## Definição 2 (Evento)
 
-Um evento (denotado por E), é a coleção de possíveis resultados de um experimento. Em outras palavras, um subconjunto do espaço amostral, isto é, E ⊆ Ω.
+Um evento (denotado por E), é a coleção de possíveis resultados de um experimento. Em outras palavras, um subconjunto do espaço amostral, isto é, E ⊆ $\Omega$.
 
 Exemplo: No experimento 1 "de jogar um dado", definimos três eventos: Números pares, Números ímpares e Números maiores que 5.
 
-Lembre que o espaço amostral deste experimento é Ω= {1,2,3,4,5,6}.
+Lembre que o espaço amostral deste experimento é $\Omega$= {1,2,3,4,5,6}.
 
--   \$Números : pares → $E_1$={2,4,6}\$
+-   Números : pares → $E_1$={2,4,6}
+-   Números :ímpares → $E_2$={1,3,5}
+-   Números : maiores :que :5 → $E_3$={6}
 
--   \$Números :ímpares → $E_2$={1,3,5}\$
+$E_1$ ⊆ $\Omega$.
 
--   \$Números : maiores :que :5 → $E_3$={6}\$
-
-$E_1$ ⊆ Ω.
-
-$E_2$ ⊆ Ω.
+$E_2$ ⊆ $\Omega$.
 
 **Observações:**
 
 Não confundir o resultado 6 como o evento $E_3$={6}
 
-6 ∈ Ω e $E_3$ ⊆ Ω
+6 ∈ $\Omega$ e $E_3$ ⊆ $\Omega$
 
 **Eventos simples e compostos**
 
@@ -160,7 +493,7 @@ Os eventos 1 e 2 estão formados por mais de um resultado do espaço amostral e 
 
 ## Definição 3 (Eventos disjuntos):
 
-Dois eventos $E_1$ e $E_2$ são disjuntos ou mutuamente exclusivos se a sua interseção $E_1$ ∩ $E_2$ é igual ao conjunto vazio ϕ.
+Dois eventos $E_1$ e $E_2$ são disjuntos ou mutuamente exclusivos se a sua interseção $E_1$ ∩ $E_2$ é igual ao conjunto vazio $\phi$.
 
 No exemplo, os eventos $E_1$e $E_2$ são disjuntos dado que a sua interseção é o conjunto vazio. Os eventos $E_1$e $E_3$ não são disjuntos devido a que sua interseção é {6}.
 
@@ -182,81 +515,65 @@ Verifique se eles formam uma partição.
 
 ## Definição 5 (complemento de um conjunto):
 
-O complementar de um conjunto A, denotado como $$A^c$$ ou $A^{-}$, é definido como:
+O complementar de um conjunto A, denotado como $A^c$ ou $A^{-}$, é definido como:
 
-\$A\^c\$=¯A={Elementos do espaço amostral que não pertencem ao conjunto A}
+$A^{c}$ = {Elementos do espaço amostral que não pertencem ao conjunto $A$}
 
-Exemplo 3
+**Exemplo 3**
 
-No exemplo de jogar um dado. Encontre o complementar do evento A={3,4,5}.
+No exemplo de jogar um dado. Encontre o complementar do evento $A$={3,4,5}.
 
-Solução:
+**Solução:**
 
-¯A={1,2,6}
-
-¯A∪A={1,2,3,4,5,6}=Ω
+$Aˆ{c}$ = {1,2,6}, logo $A^{c} \cup A$ = {1,2,3,4,5,6} = $\Omega$
 
 Figura 1 - Complemento do conjunto A
 
-## Definição 6 (σ-algebra):
+{INSERIR FIGURA}
 
-Uma coleção F de subconjuntos de Ω é uma σ-algebra se satisfaz as seguintes condições:
+## Definição 6 ($\sigma$-algebra):
 
-```         
-O conjunto vazio e o espaço amostral pertencem a F, isto é, ϕ∈ F e Ω ∈ F.
+Uma coleção $\digamma$ de subconjuntos de $\Omega$ é uma $\sigma$-algebra se satisfaz as seguintes condições:
 
-Se E∈F então seu complemento E\^c={w∈Ω\|w∉E}∈F (onde w representa um resultado do espaço amostral)
+-   O conjunto vazio e o espaço amostral pertencem a $\digamma$, isto é, $\phi \in \digamma$ e $\Omega \in \digamma$;
+-   Se $E \in \digamma$ então seu complemento $E^{c} = \{w \in \Omega | w \notin E\} \in \digamma$ (onde $w$ representa um resultado do espaço amostral);
+-   $\digamma$ é fechado na união contável, ou seja, se $E_1 \in \digamma$, $E_2 \in \digamma$, $E_3$ $\in \digamma$, ... então $E_1 \cup E_2 \cup E_3$.... = $U_{i=1}^{\infty} E_{i} \in \digamma$
 
-F é fechado na união contável, ou seja, se $E_1$∈F, $E_2$∈F, $E_3$∈F, ... então $E_1$ U$E_2$ U$E_3$....=∪\_(i=1)\^∞ E_i∈F
-```
+No item 3, se apenas a união finita está em $\digamma$ temos uma classe menos restrita, denominada álgebra.
 
-No item 3, se apenas a união finita está em F temos uma classe menos restrita, denominada álgebra.
+**Exercício 1:** No experimento de jogar um dado $\Omega$= {1,2,3,4,5,6}:
 
-Exercício 1: No experimento de jogar um dado Ω={1,2,3,4,5,6}:
+$F_{1} = \{\phi, \Omega \}$ e $F_{2} = \{\phi,\Omega, {1},\{2,3,4,5,6\}\}$ são $\sigma$-álgebras de subconjuntos de $\Omega$?
 
-F_1={ϕ,Ω} e F_2={ϕ,Ω,{1},{2,3,4,5,6}} são σ-álgebras de subconjuntos de Ω?
+**Exemplo:** $\digamma$ = {{2,4,6},{1,3,5},{6}}
 
-Exemplo:
+## Definição 7 ($\sigma$-algebra de borel):
 
-```         
-F={{2,4,6},{1,3,5},{6}}
-```
+Uma $\sigma$-algebra de borel é denotado por $B(R)=\sigma \{(-\infty,x ] : x \in R\}$, ou seja, é a $\sigma$-álgebra contendo conjuntos abertos da forma $(-\infty,x]$. A medida de Borel pode também ser definida (gerada) pelos intervalos da forma (a,b) ou $(x,\infty)$.
 
-## Definição 7 (σ-algebra de borel):
-
-Uma σ-algebra de borel é denotado por B(R)=σ{(-∞,x\]:x∈R}, ou seja, é a σ-álgebra contendo conjuntos abertos da forma (-∞,x\]. A medida de Borel pode também ser definida (gerada) pelos intervalos da forma (a,b) ou (x,∞).
-
-Outra σ-álgebra de importância é definida no espaço Euclidiano R\^n de todos os conjuntos mensuráveis de Lebesgue. Essa σ-álgebra contém mais conjuntos que a σ-álgebra de Borel em R\^n e é preferida na teoria de integração, posto que ela dá um espaço mensurável completo.
+Outra $\sigma$-álgebra de importância é definida no espaço Euclidiano $R^{n}$ de todos os conjuntos mensuráveis de Lebesgue. Essa $\sigma$-álgebra contém mais conjuntos que a $\sigma$-álgebra de Borel em $R^{n}$ e é preferida na teoria de integração, posto que ela dá um espaço mensurável completo.
 
 ## Definição 8 (Medida):
 
-Defina F como uma σ-algebra de subconjuntos de Ω. A função
+Defina $\digamma$ como uma $\sigma$-algebra de subconjuntos de $\Omega$. A função $\mu: \digamma \to R^{+}$ μ:F→R\^+
 
-μ:F→R\^+
+é dito ser uma medida em $\digamma$ se satisfaz os seguintes axiomas:
 
-é dito ser uma medida em F se satisfaz os seguintes axiomas:
-
-```         
-μ(E)≥0 para todo E∈F
-
-μ(ϕ)=0
-
-Se $E_1$, $E_2$, $E_3$, ... são eventos dois a dois disjuntos (mutuamente exclusivos), então μ(⋃\_(i=1)\^∞▒E_i )=∑\_(i=1)\^∞▒μ(E_i ) .
-```
+$\mu (E) \geq 0$ para todo $E \in \digamma$ $\mu (\phi) = 0$ Se $E_1$, $E_2$, $E_3$, ... são eventos dois a dois disjuntos (mutuamente exclusivos), então $\mu (⋃_{i=1}^{\infty} E_i ) = \sum_{i=1}^{\infty} \mu (E_i)$ .
 
 A terceira condição pode também ser representado como:
 
-μ($E_1$ U$E_2$ U$E_3$....)=μ($E_1$ )+μ($E_2$ )+μ($E_3$ )+⋯
+$μ(E_1 \cup E_2 \cup ... \cup E_n)$ = $\mu (E_1)+\mu(E_2)+ ... + \mu(E_n)$
 
 ## Definição 9 (Espaço mesurável):
 
-O espaço mesurável é definido como a tripla (Ω,F,μ), em que Ω é um conjunto arbitrário, F é a σ-algebra de subconjuntos de Ω, e μ é uma medida em F.
+O espaço mesurável é definido como a tripla $(\Omega, \digamma, \mu)$, em que $\Omega$ é um conjunto arbitrário, $\digammma$ é a $\sigma$-algebra de subconjuntos de $\Omega$, e $\mu$ é uma medida em $\digamma$.
 
 ## Definição 10: (Axiomas de Kolmogorov)
 
-Dado o espaço amostral Ω e uma σ- álgebra F, a função (denotado por P)
+Dado o espaço amostral $\Omega$ e uma $\sigma$-álgebra $\digamma$ a função (denotado por P)
 
-P:F→\[0,1\]
+$P: \digamma \to [0,1]$
 
 é dito ser uma medida de probabilidade se satisfaz os seguintes axiomas:
 
@@ -270,242 +587,240 @@ em que $E_1$, $E_2$, $E_3$, ... são eventos dois a dois disjuntos ou mutuamente
 
 A terceira propriedade pode ser representada da seguinte forma:
 
-P($E_1$⋃$E_2$⋃$E_3$....)=P($E_1$ )+P($E_2$ )+P($E_3$ )+⋯
+$P(E_1 \cup E_2 \cup E_3....)$ = $P(E_1)+P(E_2)+P(E_3)+ ..$
 
 ## Definição 11 (Espaço de probabilidade):
 
-O espaço de probabilidade é definido como a tripla (Ω,F,P), em que Ω é o espaço amostral, F é a σ-algebra de subconjuntos de Ω, e P a medida de probabilidade.
+O espaço de probabilidade é definido como a tripla ($\Omega$,F,P), em que $\Omega$ é o espaço amostral, F é a $\sigma$-algebra de subconjuntos de $\Omega$, e P a medida de probabilidade.
 
 Exemplo 4: Mostre a seguinte proposição
 
-i\) P(ϕ)=0; em que ϕ é o conjunto vazio.
+i\) $P(\phi)=0$; em que $\phi$ é o conjunto vazio.
 
 Solução:
 
-Encontrar que P(ϕ)=0, em que ϕ é o conjunto vazio.
+Encontrar que $P(\phi) = 0$, em que $\phi$ é o conjunto vazio.
 
-Note primeiro que
+Note primeiro que:
 
-Ω=Ω∪ϕ e Ω∩ϕ=ϕ
+::: {.callout-note appearance="minimal" icon="false"}
+$\Omega = \Omega \cup \phi$
 
-(Ω e ϕ são eventos disjuntos)
+e
 
-Então pelo axioma 2 e 3 temos:
+$\Omega \cap \phi = \phi$
+:::
 
-P(Ω)=P(Ω∪ϕ)=P(ϕ)+P(Ω)
+Logo, $\Omega$ e $\phi$ são eventos disjuntos.
 
-1=P(ϕ)+P(Ω)
+Então pelo axioma (2) e (3) temos:
 
-1=P(ϕ)+ 1
+::: {.callout-note appearance="minimal" icon="false"}
+$P(\Omega)=P(\Omega \cup \phi)=P(\phi)+P(\Omega)$
 
-P(ϕ)=0
+$1=P(\phi)+P(\Omega)$
+
+$1=P(\phi)+ 1$
+
+$P(\phi)=0$
+:::
 
 Exercício 2: Mostre as seguintes propriedades:
 
 ## Teorema 1
 
-```         
-P(E\^c )=1-P(E);
+::: {.callout-note appearance="minimal" icon="false"}
+$$ P(E^{c} )=1-P(E); $$
 
-P(E)≤1, ∀E∈F
-```
+$$ P(E) \leq 1, ∀ E \in \digamma $$
+:::
 
 ## Teorema 2
 
-Se P é uma função probabilidade e $E_1$,$E_2$∈F então:
+Se P é uma função probabilidade e $E_1, E_2 \in \digamma$ então:
 
-```         
-Se $E_1$⊆$E_2$ então P($E_1$ )≤P($E_2$ )
+::: {.callout-note appearance="minimal" icon="false"}
+$$    Se \: E_1 ⊆ E_2 \: então \: P(E_1 ) \leq P(E_2 ) $$
 
-P($E_1$∪$E_2$ )=P($E_1$ )+P($E_2$ )-P($E_1$∩$E_2$ )
+$$    P(E_1 \cup E_2 ) = P(E_1 ) + P(E_2 ) - P(E_1 \cap E_2 ) $$
 
-P($E_1$∩〖$E_2$〗\^c )=P($E_1$ )-P($E_1$∩$E_2$ )
-```
+$$    P(E_1 \cap E_2^c ) = P(E_1 ) - P(E_1 \cap E_2 ) $$
+:::
 
 Exemplo 5
 
 Considere o experimento de jogar um dado. Sabendo que o dado não é "justo", as probabilidades associadas aos resultados são:
 
-P({1})=1/6; P({2})=1/6; P({3})=1/6; P({4})=1/6; P({5})=1/7
+-   P({1})=1/6;
+-   P({2})=1/6;
+-   P({3})=1/6;
+-   P({4})=1/6;
+-   P({5})=1/7
 
 Usando apenas os Axiomas de Kolmogorov, pede-se:
 
-```         
-Encontre a probabilidade de encontrar o número 6
+a\) Encontre a probabilidade de obter o número 6 numa jogada.
 
-Encontre a probabilidade de encontrar um número par.
-```
+b\) Encontre a probabilidade de encontrar um número par.
 
-Solução:
+**Solução:**
 
-a\)
+**a)**
 
-Inicialmente, observa-se que o espaço amostral Ω do experimento de jogar um dado é,
+Inicialmente, observa-se que o espaço amostral $\Omega$ do experimento de jogar um dado é,
 
-Ω={1,2,3┤,4,5,6}
+$\Omega = \{1,2,3,4,5,6\}$
 
 O espaço amostral pode ser escrito como a união de eventos simples compostos pelos resultados:
 
-Ω={1,2,3┤,4,5,6}={1}⋃{2}⋃{3}⋃{4}⋃{5}⋃{6}
+$\Omega = {1,2,3,4,5,6}={1}⋃{2}⋃{3}⋃{4}⋃{5}⋃{6}$
 
-Considerando os eventos simples serem dois a dois disjuntos (mutuamente exclusivos), ou seja, {1}∩{2}=ϕ, {1}∩{3}=ϕ,....., temos que o terceiro axioma, P(⋃\_(i=1)\^∞▒E_i )=∑\_(i=1)\^∞▒P(E_i ) , se cumpre. Então:
+Considerando os eventos simples serem dois a dois disjuntos (mutuamente exclusivos), ou seja, $\{1\} \cap \{2\} = \phi, \{1\} \cap \{3\}=\phi ,…,$ temos que o terceiro axioma, $P(\cup_{i=1}^{\infty} E_i )=\sum_{i=1}^{\infty} P(E_i)$ , se cumpre. Então:
 
-P(Ω)=P({1,2,3┤,4,5,6})= P({1}⋃{2}⋃{3}⋃{4}⋃{5}⋃{6})=
+$P(\Omega) = P({1, 2, 3, 4, 5, 6 }) = P({1} \cup {2} \cup{3} \cup {4} \cup {5} \cup {6})$ =
 
-P{(1)}+P{(2)}+P{(3)}+P{(4)}+P{(5)}+P{(6)}
+$P{(1)}+P{(2)}+P{(3)}+P{(4)}+P{(5)}+P{(6)}$
 
-Além disso, o segundo axioma dispõe que P(Ω)=1, portanto,
+Além disso, o segundo axioma dispõe que $P(\Omega) = 1$, portanto,
 
-P({1,2,3┤,4,5,6})=P(Ω)=1
+$P(\{1,2,3,4,5,6\}) = P(\Omega) = 1$
 
 Assim,
 
-P{(1)}+P{(2)}+P{(3)}+P{(4)}+P{(5)}+P{(6)}=1
+$P \{(1) \}+P \{(2) \}+P \{(3) \}+P \{(4) \}+P \{(5) \}+P \{(6) \}=1$
 
-1/6+1/6+1/6+1/6+1/7+P{(6)}=1
+$1/6+1/6+1/6+1/6+1/7+P \{(6) \}=1$
 
-1/6+1/6+1/6+1/6+1/7+P{(6)}=1
+$1/6+1/6+1/6+1/6+1/7+P \{(6) \}=1$
 
-P{(6)}=4/21
+$P \{(6) \}=4/21$\
 
-b\)
+**b)**
 
-Para calcular a probabilidade de um número ser par definimos o evento E dos números pares:
+Para calcular a probabilidade de um número ser par, definimos o evento \\(E\\) dos números pares:
 
-E={2,4,6}
+\\\[E = \\{2,4,6\\}\\\]
 
-P(E)=P({2,4,6})= P({2}⋃{4}⋃{6})=
+\\\[P(E) = P(\\{2,4,6\\}) = P(\\{2\\} \\cup \\{4\\} \\cup \\{6\\})\\\]
 
-Segundo Axioma 3,
+Segundo o Axioma 3,
 
-P(E)=P({2}⋃{4}⋃{6})=P{(2)}+P{(4)}+P{(6)}
+\\\[P(E) = P(\\{2\\} \\cup \\{4\\} \\cup \\{6\\}) = P(\\{2\\}) + P(\\{4\\}) + P(\\{6\\})\\\]
 
-P(E)=1/6+1/6+4/21=11/21
+\\\[P(E) = \\frac{1}{6} + \\frac{1}{6} + \\frac{4}{21} = \\frac{11}{21}\\\]
 
-Combinação de Eventos:
+\*\*Combinação de Eventos:\*\*
 
-```         
-Sejam dois eventos A e B, do espaço amostral S. Como A e B são conjuntos, podemos aplicar a eles operações, tais como:
+Sejam dois eventos \\(A\\) e \\(B\\), do espaço amostral \\(S\\). Como \\(A\\) e \\(B\\) são conjuntos, podemos aplicar a eles operações, tais como:
 
-União: A B
-```
+**União**:
 
-Exemplo
+\\\[A \\cup B\\\]
 
-A={2,3}
+**Exemplo**:
 
-B={3,4}
+\\\[A = \\{2,3\\}\\\]
 
-A∪B={2,3,4}
+\\\[B = \\{3,4\\}\\\]
 
-```         
-Intersecção: A B
-```
+\\\[A \\cup B = \\{2,3,4\\}\\\]
 
-Exemplo
+**Intersecção**:
 
-A={2,3}
+\\\[A \\cap B\\\]
 
-B={3,4}
+**Exemplo**:
 
-A∩B={3}
+\\\[A = \\{2,3\\}\\\]
 
-```         
-Complementar de A:
-```
+\\\[B = \\{3,4\\}\\\]
 
-Exemplo
+\\\[A \\cap B = \\{3\\}\\\]
 
-Seja o espaço amostral:
+**Complementar de \\(A\\)**:
 
-S=Ω={1,2,3,4,5,6}
+\\\[A\^c\\\]
 
-A={2,3}
-
-$A^{-}$={1,4,5,6}
-
-```         
-Subtração: A-B
-```
-
-Exemplo
+**Exemplo**:
 
 Seja o espaço amostral:
 
-Ω={1,2,3,4,5,6}
+\\\[S = \\Omega = \\{1,2,3,4,5,6\\}\\\]
 
-A={2,3}
+\\\[A = \\{2,3\\}\\\]
 
-B={3,4}
+\\\[A\^c = \\{1,4,5,6\\}\\\]
 
-A-B={2}
+**Subtração**:
 
-Leis de Morgan
+\\\[A - B\\\]
 
-```         
-$(A∪B)^{-}$=$A^{-}$∩$B^{-}$
+**Exemplo**:
 
-(A∩B) ̅=$A^{-}$∪$B^{-}$
+Seja o espaço amostral:
 
-A-B=A∩$B^{-}$
+\\\[\\Omega = \\{1,2,3,4,5,6\\}\\\]
 
-A ̿=A
-```
+\\\[A = \\{2,3\\}\\\]
 
-Exemplo: Lançam-se duas moedas honestas simultaneamente. Seja A: saída de faces iguais; e B: saída de cara na primeira moeda. Defina: c=cara e r=coroa. Determinar os eventos:
+\\\[B = \\{3,4\\}\\\]
 
-Espaço amostral:
+\\\[A - B = \\{2\\}\\\]
 
-Ω= {cc,cr,rc,rr}
+**Leis de Morgan:**
 
-A={cc,rr}
+\\\[(A \\cup B)\^c = A\^c \\cap B\^c\\\]
 
-B={cr,cc}
+\\\[(A \\cap B)\^c = A\^c \\cup B\^c\\\]
 
-```         
-A∪B
-```
+\\\[A - B = A \\cap B\^c\\\]
 
-A∪B={(cc),(rr),(cr)}
+\\\[A\^c = A\^c\\\]
 
-```         
-A∩B
-```
+**Exemplo**:
 
-A∩B={(cc)}
+Lançam-se duas moedas honestas simultaneamente. Seja \\(A\\): saída de faces iguais; e \\(B\\): saída de cara na primeira moeda. Defina: \\(c\\) = cara e \\(r\\) = coroa. Determinar os eventos:
 
-```         
-$A^{-}$
-```
+**Espaço amostral:**
 
-O complementar de um evento A denotado por \$A\^c\$ ou ( A) ̅, é a negação de A. Então, o complementar de A é formado pelos elementos que não pertencem a A.
+\\\[\\Omega = \\{cc,cr,rc,rr\\}\\\]
 
-$A^{-}$=saída de faces diferentes
+\\\[A = \\{cc,rr\\}\\\]
 
-$A^{-}$={rc,cr}
+\\\[B = \\{cr,cc\\}\\\]
 
-```         
-$B^{-}$
-```
+a\) $A \cup B$
 
-$B^{-}$=não saída de cara na 1ª moeda
+\\\[A \\cup B = \\{(cc),(rr),(cr)\\}\\\]
 
-$B^{-}$={(rc),(rr)}
+b\) $A \cap B$
 
-```         
-($(A∪B)^{-}$ )
-```
+\\\[A \\cap B = \\{(cc)\\}\\\]
 
-($(A∪B)^{-}$ )=$A^{-}$∩$B^{-}$
+c\) $A^c$
 
-$A^{-}$∩$B^{-}$={rc}
+O complementar de um evento \\(A\\), denotado por \\(A\^c\\) ou \\((A)\^c\\), é a negação de \\(A\\). Então, o complementar de \\(A\\) é formado pelos elementos que não pertencem a \\(A\\).
 
-```         
-((A∩B) ̅ )
-```
+<center>$A^{c}$ = saída de faces diferentes</center>
 
-((A∩B) ̅ )=$A^{-}$∪$B^{-}$
+\\\[A\^c = \\{rc,cr\\}\\\]
 
-$A^{-}$∪$B^{-}$={(rr),(cr),(rc)}
+d\) $B^c$
 
-Ver mais no link https://bookdown.org/rfdapaz/eventos/eventos.html
+<center>$B^{c}$ = não saída de cara na 1ª moeda</center>
+
+\\\[B\^c = \\{(rc),(rr)\\}\\\]
+
+e\) $(A \cup B)^c$
+
+\\\[(A \cup B)\^c = A\^c \\cap B\^c\\\]
+
+\\\[A\^c \\cap B\^c = \\{rc\\}\\\]
+
+f\) $(A \cap B)^c$
+
+\\\[(A \\cap B)\^c = A\^c \\cup B\^c\\\]
+
+\\\[A\^c \\cup B\^c = \\{(rr),(cr),(rc)\\}\\\]
+
+Ver mais no link [Eventos](https://bookdown.org/rfdapaz/eventos/eventos.html).
