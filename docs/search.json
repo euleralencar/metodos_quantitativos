@@ -1,0 +1,393 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "metodos_quantitativos",
+    "section": "",
+    "text": "Preface",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "1  Introduction",
+    "section": "",
+    "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "summary.html",
+    "href": "summary.html",
+    "title": "2  Summary",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Summary</span>"
+    ]
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "crumbs": [
+      "References"
+    ]
+  },
+  {
+    "objectID": "index.html#métodos-quantitativos-para-doutorado-em-economia",
+    "href": "index.html#métodos-quantitativos-para-doutorado-em-economia",
+    "title": "metodos_quantitativos",
+    "section": "Métodos Quantitativos para Doutorado em Economia",
+    "text": "Métodos Quantitativos para Doutorado em Economia\nBem-vindo ao livro “Métodos Quantitativos para Doutorado em Economia”. Este material foi cuidadosamente desenvolvido para oferecer aos estudantes de doutorado uma compreensão sólida e prática das ferramentas quantitativas essenciais necessárias para a pesquisa avançada em economia.\nO curso de doutorado em economia é uma jornada desafiadora e estimulante, onde os alunos são desafiados a explorar a fronteira do conhecimento em suas áreas de interesse. Uma proficiência sólida em métodos quantitativos é fundamental para a formulação de pesquisas robustas e a análise de dados complexos, tornando-se uma habilidade essencial para o sucesso neste campo dinâmico.\nEste livro foi concebido como uma ferramenta de nivelamento, atendendo a uma gama diversificada de estudantes, desde aqueles que buscam reforçar suas habilidades matemáticas até os que desejam aprimorar sua compreensão das técnicas estatísticas permitindo que o aluno avance nas matérias mais avançadas do programa. Cada capítulo foi estruturado de forma didática, fornecendo explicações claras, exemplos práticos e exercícios desafiadores para solidificar o aprendizado.\nPrincipais Características deste Livro:\n\nAbordagem Progressiva: Iniciamos com conceitos fundamentais, guiando os leitores por uma jornada gradual que culmina em métodos avançados essenciais para a pesquisa em economia;\nRelevância para Pesquisas em Economia: Todos os métodos apresentados são contextualizados com exemplos específicos da economia, demonstrando sua aplicação prática na resolução de problemas reais.\nFoco na Aplicação Prática: Valorizamos a aplicação prática dos métodos quantitativos. O livro apresenta estudos de caso reais e destaca como essas técnicas podem ser incorporadas em pesquisas acadêmicas e na formulação de políticas.\nRecursos Online Interativos: Complementando o material, oferecemos recursos online, incluindo exercícios interativos, vídeos explicativos e material suplementar para aprofundar o entendimento.\nAdaptação a Diferentes Estilos de Aprendizagem: Reconhecemos a diversidade de estilos de aprendizagem. Portanto, apresentamos conceitos de maneiras variadas, utilizando gráficos, exemplos numéricos e narrativas para atender às diferentes necessidades dos estudantes.\n\nEste livro é uma ferramenta valiosa para estudantes de doutorado em economia, independente de sua formação prévia. Nosso objetivo é equipá-los com as habilidades quantitativas necessárias para enfrentar os desafios complexos da pesquisa econômica contemporânea.\nDesejamos a vocês uma jornada acadêmica frutífera e estimulante.\n\nAutor:\n\nProf. Dr. Carlos Enrique Carrasco Gutierrez\nE-mail: carlos.carrasco.gutierrez@gmail.com\nPersonal page: https://sites.google.com/view/carloscarrascogutierrez\n\n\n\nColaboradores:",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "aula01.html#definição-1-espaço-amostral",
+    "href": "aula01.html#definição-1-espaço-amostral",
+    "title": "3  Aula 01",
+    "section": "3.1 Definição 1 (Espaço amostral):",
+    "text": "3.1 Definição 1 (Espaço amostral):\nO espaço amostral (denotado por Ω) é o conjunto de todos os possíveis resultados de um experimento. Como o espaço amostral é um conjunto, ele pode ser definido de dois tipos:\n\nFinito: possui um número finito de elementos\nInfinito: possui um número infinito de elementos\n\nOs conjuntos infinitos podem ser classificados em dois grupos:\n\nEnumeráveis (ou contáveis)\nNão enumeráveis (não contáveis)\n\nExemplos:\nConjuntos finitos - {1,2,3,4,5,6} - {2,4,6,8,10} - {Número de ganhadores da Mega Sena da virada} - {Número de mundiais do Flamengo} - {Número de mundiais do Palmeiras}\nConjuntos infinitos - Conjuntos enumeráveis ou contáveis - {1,2,3,4,5,…} - {1,1/2,1/3,1/4,…} - {0,1,-1,2,-2,3,-3,4,-4,…}\n\nConjuntos não enumeráveis\n\n{conjuntos de todos os números reais}\n{qualquer intervalo, aberto ou fechado, de números reais}\nExemplo: (1, 4), (-2, 10]\nO conjunto A=[1, 2] é não enumerável.\n{uniões e interseções de intervalos}\n\n\nPara o caso de conjuntos finitos, podemos calcular a partir do número de resultados (n) o número de eventos (subconjuntos do espaço amostral) que podem ser gerados por meio da fórmula:\n\\(\\text{Número de eventos} = 2^n\\) (inclui o vazio)\nExemplo:\n\\(A = \\{2,3\\}\\) Podemos formar Número de eventos = \\(2^2 = 4\\) elementos\nExperimento 1: Considere o experimento de jogar um dado e observar o resultado. Encontre o espaço amostral deste experimento.\nSolução: Como existem seis possíveis resultados, o espaço amostral é \\(\\Omega = \\{1,2,3,4,5,6\\}\\) Podemos afirmar que: \\(1 \\in \\Omega\\), \\(2 \\in \\Omega\\), etc. Usando a notação de {} definimos um subconjunto do espaço amostral e podemos fazer as seguintes afirmações: \\(\\{1\\} \\subseteq \\Omega\\), \\(\\{1,2\\} \\subseteq \\Omega\\)\nExperimento 2: Jogar uma moeda e ver o resultado. Encontre o espaço amostral deste experimento.\nSolução: \\(\\Omega = \\{\\text{cara, coroa}\\}\\). Podemos afirmar: cara \\(\\in \\Omega\\)\nExperimento 3: Jogar duas moedas simultaneamente e observar os resultados de cara (H) e coroa (T). Encontre o espaço amostral.\nSolução: \\(\\Omega = \\{HH, TT, HT, TH\\}\\)\nExperimento 4: Jogar uma moeda três vezes e observar a sequência de caras (H) e coroas (T). $ = {HHH, HHT, HTT, TTT, TTH, THH, HTH, THT} $\nExperimento 5: Registrar o tempo de vida de uma lâmpada (\\(t\\)) até queimar. O espaço amostral é \\(\\Omega = \\{t^*: t \\geq 0\\}\\) Este exemplo corresponde a um espaço amostral NÃO ENUMERÁVEL.\nExperimento 6: Programa para o fim de semana. Sair um domingo às 19 horas $ = {} $ Neste último experimento, as possibilidades são várias e não teríamos apenas três resultados. O número de resultados possíveis vai depender do estudo que o pesquisador deseje desenvolver.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Aula 01</span>"
+    ]
+  },
+  {
+    "objectID": "aula01.html#definição-4-partição",
+    "href": "aula01.html#definição-4-partição",
+    "title": "3  Aula 01",
+    "section": "3.4 Definição 4 (Partição):",
+    "text": "3.4 Definição 4 (Partição):\nSe os eventos \\(E_1, E_2, E_3, E_4, \\ldots\\) são dois a dois disjuntos e a sua união \\(E_1 \\cup E_2 \\cup E_3 \\cup E_4 \\ldots\\) é igual ao espaço amostral, então a coleção \\(E_1, E_2, E_3, E_4, \\ldots\\) forma uma partição do espaço amostral.\nExemplo 2: Para o experimento de jogar um dado e observar o resultado, considere os eventos definidos como: \\(E_1 = \\{1, 2, 3\\}\\), \\(E_2 = \\{4\\}\\), \\(E_3 = \\{5, 6\\}\\).\nVerifique se eles formam uma partição!",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Aula 01</span>"
+    ]
+  },
+  {
+    "objectID": "aula01.html#definição-5-complemento-de-um-conjunto",
+    "href": "aula01.html#definição-5-complemento-de-um-conjunto",
+    "title": "3  Aula 01",
+    "section": "3.5 Definição 5 (complemento de um conjunto):",
+    "text": "3.5 Definição 5 (complemento de um conjunto):\nO complementar de um conjunto \\(A\\), denotado como \\(A^c\\) ou \\(\\bar{A}\\), é definido como: \\(A^c = \\bar{A}\\) = {Elementos do espaço amostral que não pertencem ao conjunto A}.\nExemplo 3: No exemplo de jogar um dado. Encontre o complementar do evento \\(A = \\{3, 4, 5\\}\\).\nSolução:\n\\(\\bar{A} = \\{1, 2, 6\\}\\)\n\\(\\bar{A} \\cup A = \\{1, 2, 3, 4, 5, 6\\} = \\Omega\\)\n[FIGURA]",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Aula 01</span>"
+    ]
+  },
+  {
+    "objectID": "aula01.html#definição-7-σ-algebra-de-borel",
+    "href": "aula01.html#definição-7-σ-algebra-de-borel",
+    "title": "3  Aula 1:",
+    "section": "3.7 Definição 7 (σ-algebra de borel):",
+    "text": "3.7 Definição 7 (σ-algebra de borel):\nUma σ-algebra de borel é denotado por B(R)=σ{(-∞,x]:x∈R}, ou seja, é a σ-álgebra contendo conjuntos abertos da forma (-∞,x]. A medida de Borel pode também ser definida (gerada) pelos intervalos da forma (a,b) ou (x,∞).\nOutra σ-álgebra de importância é definida no espaço Euclidiano R^n de todos os conjuntos mensuráveis de Lebesgue. Essa σ-álgebra contém mais conjuntos que a σ-álgebra de Borel em R^n e é preferida na teoria de integração, posto que ela dá um espaço mensurável completo."
+  },
+  {
+    "objectID": "aula01.html#definição-8-medida",
+    "href": "aula01.html#definição-8-medida",
+    "title": "3  Aula 01",
+    "section": "3.8 Definição 8 (Medida):",
+    "text": "3.8 Definição 8 (Medida):\nDefina \\(F\\) como uma σ-álgebra de subconjuntos de \\(\\Omega\\). A função \\(\\mu : F \\to \\mathbb{R}^+\\) é dita ser uma medida em \\(F\\) se satisfaz os seguintes axiomas:\n\n$(E) $ para todo \\(E \\in F\\)\n\\(\\mu (\\emptyset) = 0\\)\nSe \\(E_1, E_2, E_3, \\ldots\\) são eventos dois a dois disjuntos (mutuamente exclusivos), então \\(\\mu ( \\bigcup_{i=1}^{\\infty} E_i ) = \\sum_{i=1}^{\\infty} \\mu(E_i)\\). A terceira condição pode também ser representada como \\(\\mu (\\bigcup_{i=1}^{\\infty} E_i) = \\mu(E_1) + \\mu(E_2) + \\mu(E_3) + \\ldots\\)",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Aula 01</span>"
+    ]
+  },
+  {
+    "objectID": "aula01.html#definição-9-espaço-mesurável",
+    "href": "aula01.html#definição-9-espaço-mesurável",
+    "title": "3  Aula 01",
+    "section": "4.9 Definição 9 (Espaço mesurável):",
+    "text": "4.9 Definição 9 (Espaço mesurável):\nO espaço mesurável é definido como a tripla \\((\\Omega, \\digamma, \\mu)\\), em que \\(\\Omega\\) é um conjunto arbitrário, \\(\\digammma\\) é a \\(\\sigma\\)-algebra de subconjuntos de \\(\\Omega\\), e \\(\\mu\\) é uma medida em \\(\\digamma\\).",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Aula 01</span>"
+    ]
+  },
+  {
+    "objectID": "aula01.html#definição-11-espaço-de-probabilidade",
+    "href": "aula01.html#definição-11-espaço-de-probabilidade",
+    "title": "3  Aula 01",
+    "section": "3.11 Definição 11 (Espaço de probabilidade):",
+    "text": "3.11 Definição 11 (Espaço de probabilidade):\nO espaço de probabilidade é definido como a tripla (\\(\\Omega, F, P4\\)), em que \\(\\Omega\\) é o espaço amostral, \\(F\\) é a σ-álgebra de subconjuntos de \\(\\Omega\\), e \\(P\\) a medida de probabilidade.\nExemplo 4: Mostre a seguinte proposição:\ni) \\(P(\\emptyset) = 0\\); em que \\(\\emptyset\\) é o conjunto vazio.\nSolução::\nEncontrar que \\(P(\\emptyset) = 0\\), em que \\(\\emptyset\\) é o conjunto vazio.\nNote primeiro que:\n\\(\\Omega = \\Omega \\cup \\emptyset\\) e\n\\(\\Omega \\cap \\emptyset = \\emptyset\\)\n(\\(\\Omega\\) e \\(\\emptyset\\) são eventos disjuntos)\nEntão pelo axioma 2 e 3 temos:\n\\(P(\\Omega) = P(\\Omega \\cup \\emptyset) = P (\\emptyset) + P(\\Omega)\\)\n1 = \\(P(\\emptyset)\\) + 1\n\\(P (\\emptyset) = 0\\)\nExercício 2: Mostre as seguintes propriedades:",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Aula 01</span>"
+    ]
+  },
+  {
+    "objectID": "aula01.html#teorema-1",
+    "href": "aula01.html#teorema-1",
+    "title": "3  Aula 01",
+    "section": "3.12 Teorema 1",
+    "text": "3.12 Teorema 1\n\\(P(E^c) = 1 - P(E)\\)\n\\(P(E) \\leq 1, \\forall E \\in F\\)",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Aula 01</span>"
+    ]
+  },
+  {
+    "objectID": "aula01.html#teorema-2",
+    "href": "aula01.html#teorema-2",
+    "title": "3  Aula 01",
+    "section": "3.13 Teorema 2",
+    "text": "3.13 Teorema 2\nSe \\(P\\) é uma função probabilidade e \\(E_1, E_2 \\in F\\) então:\n\nSe \\(E_1 \\subseteq E_2\\) então \\(P(E_1) \\leq P(E_2)\\)\n\\(P(E_1 \\cup E_2) = P(E_1) + P(E_2) - P(E_1 \\cap E_2)\\)\n\\(P(E_1 \\cap E_2^c) = P(E_1) - P(E_1 \\cap E_2)\\)\n\nExemplo\nConsidere o experimento de jogar um dado. Sabendo que o dado não é “justo”, as probabilidades associadas aos resultados são:\n\\(P(\\{1\\}) = \\frac{1}{6}\\)\n\\(P(\\{2\\}) = \\frac{1}{6}\\)\n\\(P(\\{3\\}) = \\frac{1}{6}\\)\n\\(P(\\{4\\}) = \\frac{1}{6}\\)\n\\(P(\\{5\\}) = \\frac{1}{7}\\)\nUsando apenas os Axiomas de Kolmogorov, pede-se:\n\nEncontre a probabilidade de encontrar o número 6;\nEncontre a probabilidade de encontrar um número par.\n\nSolução:\n\nInicialmente, observa-se que o espaço amostral ( ) do experimento de jogar um dado é, \\(\\Omega = \\{1,2,3 \\overset{\\_}{,} 4,5,6\\}\\). O espaço amostral pode ser escrito como a união de eventos simples compostos pelos resultados:\n\n\n\\(\\Omega = \\{\\{1\\},\\{2\\},\\{3\\},\\{4\\},\\{5\\},\\{6\\}\\}\\) = \\(\\{1\\} \\cup \\{2\\} \\cup \\{3\\} \\cup \\{4\\} \\cup \\{5\\} \\cup \\{6\\}\\).\n\nConsiderando os eventos simples serem dois a dois disjuntos (mutuamente exclusivos), ou seja, \\(( \\{1\\} \\cap \\{2\\} = \\phi \\), \\( \\{1\\} \\cap \\{3\\} = \\phi \\)\\), …, temos que o terceiro axioma, \\(( P\\left(\\bigcup_{i=1}^{\\infty} E_i \\right) = \\sum_{i=1}^{\\infty} P(E_i) )\\), se cumpre.\nEntão:\n\\(P(\\Omega) = P(\\{1,2,3 \\overset{\\_}{,} 4,5,6\\}) = P(\\{1\\} \\cup \\{2\\} \\cup \\{3\\} \\cup \\{4\\} \\cup \\{5\\} \\cup \\{6\\}) =\\)\n\\(P\\{(1)\\} + P\\{(2)\\} + P\\{(3)\\} + P\\{(4)\\} + P\\{(5)\\} + P\\{(6)\\}\\)\nAlém disso, o segundo axioma dispõe que \\(P(\\Omega) = 1\\), portanto, \\(P(\\{1,2,3, 4,5,6\\}) = P(\\Omega) = 1\\)\nAssim,\n\\(P\\{(1)\\} + P\\{(2)\\} + P\\{(3)\\} + P\\{(4)\\} + P\\{(5)\\} + P\\{(6)\\} = 1\\) \\(\\frac{1}{6} + \\frac{1}{6} + \\frac{1}{6} + \\frac{1}{6} + \\frac{1}{7} + P\\{(6)\\} = 1\\) \\(\\frac{1}{6} + \\frac{1}{6} + \\frac{1}{6} + \\frac{1}{6} + \\frac{1}{7} + P\\{(6)\\} = 1\\) \\(P\\{(6)\\} = \\frac{4}{21}\\)\n\nPara calcular a probabilidade de um número ser par definimos o evento ( E ) dos números pares: \\(E = \\{2,4,6\\}\\) \\(P(E) = P(\\{2,4,6\\}) = P(\\{2\\} \\cup \\{4\\} \\cup \\{6\\})\\) Segundo Axioma 3, \\(P(E) = P(\\{2\\} \\cup \\{4\\} \\cup \\{6\\}) = P\\{(2)\\} + P\\{(4 \\{(6)\\}\\) \\(P(E) = \\frac{1}{6} + \\frac{1}{6} + \\frac{4}{21} = \\frac{11}{21}\\)\n\n\n3.13.1 Combinação de Eventos:\nSejam dois eventos \\(A\\) e \\(B\\), do espaço amostral \\(S\\). Como \\(A\\) e \\(B\\) são conjuntos, podemos aplicar a eles operações, tais como:\n\nUnião: \\(A \\cup B\\)\n\nExemplo\n\\(A = \\{2,3\\}\\)\n\\(B = \\{3,4\\}\\)\n\\(A \\cup B = \\{2,3,4\\}\\)\n\nIntersecção: \\(A \\cap B\\)\n\nExemplo\n\\(A = \\{2,3\\}\\)\n\\(B = \\{3,4\\}\\)\n\\(A \\cap B = \\{3\\}\\)\n\nComplementar de \\(A: A^c\\)\n\nExemplo\nSeja o espaço amostral:\n\\(S = \\Omega = \\{1,2,3,4,5,6\\}\\)\n\\(A = \\{2,3\\}\\)\n\\(A^c = \\{1,4,5,6\\}\\)\n\nSubtração: \\(A - B\\)\n\nExemplo\nSeja o espaço amostral:\n\\(\\Omega = \\{1,2,3,4,5,6\\}\\)\n\\(A = \\{2,3\\}\\)\n\\(B = \\{3,4\\}\\)\n\\(A - B = \\{2\\}\\)\nLeis de Morgan\n\n\\((A \\cup B)^c = A^c \\cap B^c\\)\n\\((A \\cap B)^c = A^c \\cup B^c\\)\n\\(A - B = A \\cap B^c\\)\n\\(A^c = \\Omega - A\\)\n\nExemplo\nLançam-se duas moedas honestas simultaneamente. Seja \\(A\\): saída de faces iguais; e \\(B\\): saída de cara na primeira moeda. Defina: \\(c =\\) cara e \\(r =\\) coroa. Determinar os eventos:\nEspaço amostral: \\(\\Omega = \\{cc,cr,rc,rr\\}\\) \\(A = \\{cc,rr\\}\\) \\(B = \\{cr,cc\\}\\) - ( A B ) \\(A \\cup B = \\{(cc),(rr),(cr)\\}\\) - ( A B ) \\(A \\cap B = \\{(cc)\\}\\)\n\n\\(A^c\\)\n\nO complementar de um evento \\(A\\) denotado por \\(A^c\\) ou \\(( A)^c\\), é a negação de \\(A\\). Então, o complementar de \\(A\\) é formado pelos elementos que não pertencem a \\(A\\).\n\\(A^c = \\text{saída de faces diferentes}\\) \\(A^c = \\{rc,cr\\}\\) - ( B^c ) \\(B^c = \\text{não saída de cara na 1ª moeda}\\) \\(B^c = \\{(rc),(rr)\\}\\)\n\n\\((A \\cup B)^c\\)\n\n\\((A \\cup B)^c = A^c \\cap B^c\\) \\((A \\cup B)^c = \\{rc\\}\\) - ( (A B)^c ) \\((A \\cap B)^c = A^c \\cup B^c\\) \\((A \\cap B)^c = \\{(rr),(cr),(rc)\\}\\)\nPara mais informações, consulte este link.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Aula 01</span>"
+    ]
+  },
+  {
+    "objectID": "aula01.html#definição-2-evento",
+    "href": "aula01.html#definição-2-evento",
+    "title": "3  Aula 01",
+    "section": "3.2 Definição 2 (Evento)",
+    "text": "3.2 Definição 2 (Evento)\nUm evento (denotado por \\(E\\)), é a coleção de possíveis resultados de um experimento. Em outras palavras, um subconjunto do espaço amostral, isto é, \\(E \\subseteq \\Omega\\).\nExemplo: No experimento 1 “de jogar um dado”, definimos três eventos: Números pares, Números ímpares e Números maiores que 5. Lembre que o espaço amostral deste experimento é $ = {1, 2, 3, 4, 5, 6} $\n\nNúmeros pares → \\(E_1 = \\{2, 4, 6\\}\\)\nNúmeros ímpares → \\(E_2 = \\{1, 3, 5\\}\\)\nNúmeros maiores que 5 → \\(E_3 = \\{6\\}\\)\n\nEntão:\n\n\\(E_1 \\subseteq \\Omega\\)\n\\(E_2 \\subseteq \\Omega\\)\n\nObservações: Não confundir o resultado 6 como o evento \\(E_3 = \\{6\\}\\), \\(\\{6\\} \\in \\Omega\\) e \\(E_3 \\subseteq \\Omega\\).\nEventos simples e compostos: Os eventos 1 e 2 estão formados por mais de um resultado do espaço amostral e são chamados de eventos compostos. Por outro lado, o evento 3 é chamado de evento simples.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Aula 01</span>"
+    ]
+  },
+  {
+    "objectID": "aula01.html#eventos-simples-e-compostos",
+    "href": "aula01.html#eventos-simples-e-compostos",
+    "title": "3  Aula 1:",
+    "section": "3.3 Eventos simples e compostos",
+    "text": "3.3 Eventos simples e compostos\nOs eventos 1 e 2 estão formados por mais de um resultado do espaço amostral e são chamados de eventos compostos. Por outro lado, o evento 3 é chamado de evento simples."
+  },
+  {
+    "objectID": "aula01.html#definição-3-eventos-disjuntos",
+    "href": "aula01.html#definição-3-eventos-disjuntos",
+    "title": "3  Aula 01",
+    "section": "3.3 Definição 3 (Eventos disjuntos):",
+    "text": "3.3 Definição 3 (Eventos disjuntos):\nDois eventos \\(E_1\\) e \\(E_2\\) são disjuntos ou mutuamente exclusivos se a sua interseção \\(E_1 \\cap E_2\\) é igual ao conjunto vazio $ $. No exemplo, os eventos \\(E_1\\) e \\(E_2\\) são disjuntos, dado que a sua interseção é o conjunto vazio. Os eventos \\(E_1\\) e \\(E_3\\) não são disjuntos devido a que sua interseção é \\(\\{6\\}\\).",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Aula 01</span>"
+    ]
+  },
+  {
+    "objectID": "aula01.html#definição-6-σ-algebra",
+    "href": "aula01.html#definição-6-σ-algebra",
+    "title": "3  Aula 1:",
+    "section": "3.6 Definição 6 (σ-algebra):",
+    "text": "3.6 Definição 6 (σ-algebra):\nUma coleção F de subconjuntos de Ω é uma σ-algebra se satisfaz as seguintes condições:\nO conjunto vazio e o espaço amostral pertencem a F, isto é, ϕ∈ F e Ω ∈ F.\n\nSe E∈F então seu complemento E\\^c={w∈Ω\\|w∉E}∈F (onde w representa um resultado do espaço amostral)\n\nF é fechado na união contável, ou seja, se $E_1$∈F, $E_2$∈F, $E_3$∈F, ... então $E_1$ U$E_2$ U$E_3$....=∪\\_(i=1)\\^∞ E_i∈F\nNo item 3, se apenas a união finita está em F temos uma classe menos restrita, denominada álgebra.\nExercício 1: No experimento de jogar um dado Ω={1,2,3,4,5,6}:\nF_1={ϕ,Ω} e F_2={ϕ,Ω,{1},{2,3,4,5,6}} são σ-álgebras de subconjuntos de Ω?\nExemplo:\nF={{2,4,6},{1,3,5},{6}}"
+  },
+  {
+    "objectID": "aula01.html#definição-10-axiomas-de-kolmogorov",
+    "href": "aula01.html#definição-10-axiomas-de-kolmogorov",
+    "title": "3  Aula 01",
+    "section": "3.10 Definição 10: (Axiomas de Kolmogorov)",
+    "text": "3.10 Definição 10: (Axiomas de Kolmogorov)\nDado o espaço amostral \\(\\Omega\\) e uma σ-álgebra \\(F\\), a função (denotada por \\(P\\)) \\(P : F \\to [0,1]\\) é dita ser uma medida de probabilidade se satisfaz os seguintes axiomas:\n\n\\(P(E) \\geq 0, \\forall E \\in F\\)\n\\(P(\\Omega) = 1\\)\n$P( \\(\\bigcup_{i=1}^{\\infty} E_i ) = \\sum_{i=1}^{\\infty} P(E_i)\\), em que \\(E_1, E_2, E_3, \\ldots\\) são eventos dois a dois disjuntos ou mutuamente exclusivos. A terceira propriedade pode ser representada da seguinte forma: \\(P(E_1 \\cup E_2 \\cup E_3 \\ldots) = P(E_1) + P(E_2) + P(E_3) + \\ldots\\)",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Aula 01</span>"
+    ]
+  },
+  {
+    "objectID": "aula01.html",
+    "href": "aula01.html",
+    "title": "3  Aula 01",
+    "section": "",
+    "text": "4 Aula 1\nConceitos Básicos de Probabilidade",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Aula 01</span>"
+    ]
+  },
+  {
+    "objectID": "aula01.html#definição-6-σ-álgebra",
+    "href": "aula01.html#definição-6-σ-álgebra",
+    "title": "3  Aula 01",
+    "section": "3.6 Definição 6 (σ-álgebra):",
+    "text": "3.6 Definição 6 (σ-álgebra):\nUma coleção \\(F\\) de subconjuntos de \\(\\Omega\\) é uma σ-álgebra se satisfaz as seguintes condições:\n\nO conjunto vazio e o espaço amostral pertencem a \\(F\\), isto é, \\(\\emptyset \\in F\\) e \\(\\Omega \\in F\\).\nSe $E F $, então seu complemento \\(E^c = \\{w \\in \\Omega \\mid w \\notin E\\}\\) também está em \\(F\\) (onde \\(w\\) representa um resultado do espaço amostral).\n\\(F\\) é fechado na união contável, ou seja, se \\(E_1 \\in F\\), $E_2 F $, \\(E_3 \\in F\\), …, então \\(E_1 \\cup E_2 \\cup E_3 \\cup \\ldots = \\bigcup_{i=1}^{\\infty} E_i \\in F\\).\n\nNo item 3, se apenas a união finita está em \\(F\\), temos uma classe menos restrita, denominada álgebra.\nExercício 1: No experimento de jogar um dado \\(\\Omega = \\{1,2,3,4,5,6\\}\\): - \\(F_1 = \\{\\emptyset, \\Omega\\}\\) e \\(F_2 = \\{\\emptyset, \\Omega, \\{1\\}, \\{2,3,4,5,6\\}\\}\\) são σ-álgebras de subconjuntos de \\(\\Omega\\)?\nExemplo: \\(F = \\{\\{2,4,6\\}, \\{1,3,5\\}, \\{6\\}\\}\\)",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Aula 01</span>"
+    ]
+  },
+  {
+    "objectID": "aula01.html#definição-7-σ-álgebra-de-borel",
+    "href": "aula01.html#definição-7-σ-álgebra-de-borel",
+    "title": "3  Aula 01",
+    "section": "3.7 Definição 7 (σ-álgebra de Borel):",
+    "text": "3.7 Definição 7 (σ-álgebra de Borel):\nUma σ-álgebra de Borel é denotada por \\(B (\\mathbb{R}) = \\sigma{(-\\infty, x] : x \\in \\mathbb{R}}\\), ou seja, é a \\(\\sigma\\)-álgebra contendo conjuntos abertos da forma \\((- \\infty, x]\\). A medida de Borel também pode ser definida (gerada) pelos intervalos da forma \\((a, b)\\) ou \\((x, \\infty)\\).\nOutra σ-álgebra de importância é definida no espaço Euclidiano \\(\\mathbb{R}^n\\) de todos os conjuntos mensuráveis de Lebesgue. Essa σ-álgebra contém mais conjuntos que a σ-álgebra de Borel em \\(\\mathbb{R}^n\\) e é preferida na teoria de integração, posto que ela dá um espaço mensurável completo.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Aula 01</span>"
+    ]
+  },
+  {
+    "objectID": "aula01.html#definição-9-espaço-mensurável",
+    "href": "aula01.html#definição-9-espaço-mensurável",
+    "title": "3  Aula 01",
+    "section": "3.9 Definição 9 (Espaço mensurável):",
+    "text": "3.9 Definição 9 (Espaço mensurável):\nO espaço mensurável é definido como a tripla (\\(\\Omega, F, \\mu\\)), em que \\(\\Omega\\) é um conjunto arbitrário, \\(F\\) é a σ-álgebra de subconjuntos de \\(\\Omega\\), e \\(\\mu\\) é uma medida em \\(F\\).",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Aula 01</span>"
+    ]
+  },
+  {
+    "objectID": "aula01.html#definição-1-espaço-amostral-1",
+    "href": "aula01.html#definição-1-espaço-amostral-1",
+    "title": "3  Aula 01",
+    "section": "4.1 Definição 1 (Espaço amostral):",
+    "text": "4.1 Definição 1 (Espaço amostral):\nO espaço amostral (denotado por \\(\\omega\\) \\(\\Omega\\)) é o conjunto de todos os possíveis resultados de um experimento.\nComo o espaço amostral é um conjunto, e pode ser definido de dois tipos:\n\nFinito: possui um número finito de elementos\nInfinito: possui um número infinito de elementos\n\nOs conjuntos infinitos podem ser classificados em dois grupos:\n\nEnumeráveis (ou contáveis)\nNão enumeráveis (não contáveis)\n\n\n4.1.1 Exemplos:\n\n4.1.1.1 Conjuntos finitos\n{1,2,3,4,5,6}\n{2,4,6,8,10}\n{Número de ganhadores da Mega Sena da virada}\n{Número de mundiais do Flamengo}\n{Número de mundiais do Palmeiras}\n\n\n4.1.1.2 Conjuntos infinitos\n- Conjuntos enumeráveis ou contáveis\n{1,2,3,4,5,…}\n{1,1/2,1/3,1/4,…}\n{0,1,-1,2,-2,3,-3,4,-4,…}\n- Conjuntos não enumeráveis\n\n\n\n4.1.2 Outros exemplos:\n\n{conjuntos de todos os números reais}\n{qualquer intervalo, aberto ou fechado, de números reais}\n(1, 4)\n(-2, 10]\nO conjunto A=[1, 2] é não enumerável.\n{uniões e interseções de intervalos}\nPara o caso de conjuntos finitos podemos calcular a partir do número de resultados (n) o número de eventos (subconjuntos do espaço amostral) que podem ser gerados por meio da formula:\nNúmero de eventos = 2^n (inclui o vazio)\nA= { 2,3}\nPodemos formar Número de eventos = 2^2=4 elementos\n\n\n\n4.1.3 Exercícios:\n\n4.1.3.1 Experimento 1:\nConsidere o experimento de jogar um dado e observar o resultado. Encontre o espaço amostral deste experimento.\nSolução:\nComo existem seis possíveis resultados o espaço amostral é\n\\(\\Omega\\)= {1,2,3,4,5,6}\nPodemos afirmar que:\n1 ∈ \\(\\Omega\\), 2 ∈ \\(\\Omega\\), etc.\nUsando a notação de {} definimos um subconjunto do espaço amostra e podemos fazer as seguintes afirmações:\n{1} ⊆\\(\\Omega\\)\n{1,2} ⊆\\(\\Omega\\)\n\n\n4.1.3.2 Experimento 2:\nJogar uma moeda e ver o resultado. Encontre o espaço amostral deste experimento.\nSolução:\n\\(\\Omega\\)= {cara,coroa}\nPodemos afirmar:\ncara ∈ \\(\\Omega\\)\n\n\n4.1.3.3 Experimento 3:\nJogar duas moedas simultaneamente e observe os resultados de cara (H) e coroa (T). Encontre o espaço amostral.\nSolução:\n\\(\\Omega\\)= {HH, TT, HT, TH}\n\n\n4.1.3.4 Experimento 4:\nJogar uma moeda três vezes, e observamos a sequência de caras de caras (H) e coroas (T).\n\\(\\Omega\\)= {HHH,HHT,HTT,TTT,TTH,THH,HTH,THT}\n\n\n4.1.3.5 Experimento 5:\nRegistra-se o tempo de vida de uma lâmpada (t) até queimar. O espaço amostral é \\(\\Omega = {t^{*}: t \\geq 0 }\\).\nEste exemplo corresponde a um espaço amostral NÃO ENUMERÁL.\n\n\n4.1.3.6 Experimento 6:\nPrograma para o fim de semana. Sair um domingo às 19 horas\n\\(\\Omega\\) = {cinema, teatro, ficar em casa}\nNeste último experimento as possibilidades são várias e não teríamos apenas três resultados. O número de resultados possíveis vai depender do estudo que o pesquisador deseje desenvolver.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Aula 01</span>"
+    ]
+  },
+  {
+    "objectID": "aula01.html#definição-2-evento-1",
+    "href": "aula01.html#definição-2-evento-1",
+    "title": "3  Aula 01",
+    "section": "4.2 Definição 2 (Evento)",
+    "text": "4.2 Definição 2 (Evento)\nUm evento (denotado por E), é a coleção de possíveis resultados de um experimento. Em outras palavras, um subconjunto do espaço amostral, isto é, E ⊆ \\(\\Omega\\).\nExemplo: No experimento 1 “de jogar um dado”, definimos três eventos: Números pares, Números ímpares e Números maiores que 5.\nLembre que o espaço amostral deste experimento é \\(\\Omega\\)= {1,2,3,4,5,6}.\n\nNúmeros : pares → \\(E_1\\)={2,4,6}\nNúmeros :ímpares → \\(E_2\\)={1,3,5}\nNúmeros : maiores :que :5 → \\(E_3\\)={6}\n\n\\(E_1\\) ⊆ \\(\\Omega\\).\n\\(E_2\\) ⊆ \\(\\Omega\\).\nObservações:\nNão confundir o resultado 6 como o evento \\(E_3\\)={6}\n6 ∈ \\(\\Omega\\) e \\(E_3\\) ⊆ \\(\\Omega\\)\nEventos simples e compostos\nOs eventos 1 e 2 estão formados por mais de um resultado do espaço amostral e são chamados de eventos compostos. Por outro lado, o evento 3 é chamado de evento simples.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Aula 01</span>"
+    ]
+  },
+  {
+    "objectID": "aula01.html#definição-3-eventos-disjuntos-1",
+    "href": "aula01.html#definição-3-eventos-disjuntos-1",
+    "title": "3  Aula 01",
+    "section": "4.3 Definição 3 (Eventos disjuntos):",
+    "text": "4.3 Definição 3 (Eventos disjuntos):\nDois eventos \\(E_1\\) e \\(E_2\\) são disjuntos ou mutuamente exclusivos se a sua interseção \\(E_1\\) ∩ \\(E_2\\) é igual ao conjunto vazio \\(\\phi\\).\nNo exemplo, os eventos \\(E_1\\)e \\(E_2\\) são disjuntos dado que a sua interseção é o conjunto vazio. Os eventos \\(E_1\\)e \\(E_3\\) não são disjuntos devido a que sua interseção é {6}.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Aula 01</span>"
+    ]
+  },
+  {
+    "objectID": "aula01.html#definição-4-partição-1",
+    "href": "aula01.html#definição-4-partição-1",
+    "title": "3  Aula 01",
+    "section": "4.4 Definição 4 (Partição):",
+    "text": "4.4 Definição 4 (Partição):\nSe os eventos \\(E_1\\), \\(E_2\\), \\(E_3\\), \\(E_4\\) … são dois a dois disjuntos e a sua união \\(E_1\\)∪\\(E_2\\)∪ \\(E_3\\) ∪ \\(E_4\\)… é igual ao espaço amostral, então a coleção \\(E_1\\), \\(E_2\\), \\(E_3\\), \\(E_4\\), … forma uma partição do espaço amostral.\nExemplo 2\nPara o experimento de jogar um dado e observar o resultado, considere os eventos definidos como:\n\n\\(E_1\\)={1,2,3},\n\\(E_2\\)={4},\n\\(E_3\\)= {5, 6}.\n\nVerifique se eles formam uma partição.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Aula 01</span>"
+    ]
+  },
+  {
+    "objectID": "aula01.html#definição-5-complemento-de-um-conjunto-1",
+    "href": "aula01.html#definição-5-complemento-de-um-conjunto-1",
+    "title": "3  Aula 01",
+    "section": "4.5 Definição 5 (complemento de um conjunto):",
+    "text": "4.5 Definição 5 (complemento de um conjunto):\nO complementar de um conjunto A, denotado como \\(A^c\\) ou \\(A^{-}\\), é definido como:\n\\(A^{c}\\) = {Elementos do espaço amostral que não pertencem ao conjunto \\(A\\)}\nExemplo 3\nNo exemplo de jogar um dado. Encontre o complementar do evento \\(A\\)={3,4,5}.\nSolução:\n\\(Aˆ{c}\\) = {1,2,6}, logo \\(A^{c} \\cup A\\) = {1,2,3,4,5,6} = \\(\\Omega\\)\nFigura 1 - Complemento do conjunto A\n{INSERIR FIGURA}",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Aula 01</span>"
+    ]
+  },
+  {
+    "objectID": "aula01.html#definição-6-sigma-algebra",
+    "href": "aula01.html#definição-6-sigma-algebra",
+    "title": "3  Aula 01",
+    "section": "4.6 Definição 6 (\\(\\sigma\\)-algebra):",
+    "text": "4.6 Definição 6 (\\(\\sigma\\)-algebra):\nUma coleção \\(\\digamma\\) de subconjuntos de \\(\\Omega\\) é uma \\(\\sigma\\)-algebra se satisfaz as seguintes condições:\n\nO conjunto vazio e o espaço amostral pertencem a \\(\\digamma\\), isto é, \\(\\phi \\in \\digamma\\) e \\(\\Omega \\in \\digamma\\);\nSe \\(E \\in \\digamma\\) então seu complemento \\(E^{c} = \\{w \\in \\Omega | w \\notin E\\} \\in \\digamma\\) (onde \\(w\\) representa um resultado do espaço amostral);\n\\(\\digamma\\) é fechado na união contável, ou seja, se \\(E_1 \\in \\digamma\\), \\(E_2 \\in \\digamma\\), \\(E_3\\) \\(\\in \\digamma\\), … então \\(E_1 \\cup E_2 \\cup E_3\\)…. = \\(U_{i=1}^{\\infty} E_{i} \\in \\digamma\\)\n\nNo item 3, se apenas a união finita está em \\(\\digamma\\) temos uma classe menos restrita, denominada álgebra.\nExercício 1: No experimento de jogar um dado \\(\\Omega\\)= {1,2,3,4,5,6}:\n\\(F_{1} = \\{\\phi, \\Omega \\}\\) e \\(F_{2} = \\{\\phi,\\Omega, {1},\\{2,3,4,5,6\\}\\}\\) são \\(\\sigma\\)-álgebras de subconjuntos de \\(\\Omega\\)?\nExemplo: \\(\\digamma\\) = {{2,4,6},{1,3,5},{6}}",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Aula 01</span>"
+    ]
+  },
+  {
+    "objectID": "aula01.html#definição-7-sigma-algebra-de-borel",
+    "href": "aula01.html#definição-7-sigma-algebra-de-borel",
+    "title": "3  Aula 01",
+    "section": "4.7 Definição 7 (\\(\\sigma\\)-algebra de borel):",
+    "text": "4.7 Definição 7 (\\(\\sigma\\)-algebra de borel):\nUma \\(\\sigma\\)-algebra de borel é denotado por \\(B(R)=\\sigma \\{(-\\infty,x ] : x \\in R\\}\\), ou seja, é a \\(\\sigma\\)-álgebra contendo conjuntos abertos da forma \\((-\\infty,x]\\). A medida de Borel pode também ser definida (gerada) pelos intervalos da forma (a,b) ou \\((x,\\infty)\\).\nOutra \\(\\sigma\\)-álgebra de importância é definida no espaço Euclidiano \\(R^{n}\\) de todos os conjuntos mensuráveis de Lebesgue. Essa \\(\\sigma\\)-álgebra contém mais conjuntos que a \\(\\sigma\\)-álgebra de Borel em \\(R^{n}\\) e é preferida na teoria de integração, posto que ela dá um espaço mensurável completo.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Aula 01</span>"
+    ]
+  },
+  {
+    "objectID": "aula01.html#definição-8-medida-1",
+    "href": "aula01.html#definição-8-medida-1",
+    "title": "3  Aula 01",
+    "section": "4.8 Definição 8 (Medida):",
+    "text": "4.8 Definição 8 (Medida):\nDefina \\(\\digamma\\) como uma \\(\\sigma\\)-algebra de subconjuntos de \\(\\Omega\\). A função \\(\\mu: \\digamma \\to R^{+}\\) μ:F→R^+\né dito ser uma medida em \\(\\digamma\\) se satisfaz os seguintes axiomas:\n\\(\\mu (E) \\geq 0\\) para todo \\(E \\in \\digamma\\) \\(\\mu (\\phi) = 0\\) Se \\(E_1\\), \\(E_2\\), \\(E_3\\), … são eventos dois a dois disjuntos (mutuamente exclusivos), então \\(\\mu (⋃_{i=1}^{\\infty} E_i ) = \\sum_{i=1}^{\\infty} \\mu (E_i)\\) .\nA terceira condição pode também ser representado como:\n\\(μ(E_1 \\cup E_2 \\cup ... \\cup E_n)\\) = \\(\\mu (E_1)+\\mu(E_2)+ ... + \\mu(E_n)\\)",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Aula 01</span>"
+    ]
+  },
+  {
+    "objectID": "aula01.html#definição-10-axiomas-de-kolmogorov-1",
+    "href": "aula01.html#definição-10-axiomas-de-kolmogorov-1",
+    "title": "3  Aula 01",
+    "section": "4.10 Definição 10: (Axiomas de Kolmogorov)",
+    "text": "4.10 Definição 10: (Axiomas de Kolmogorov)\nDado o espaço amostral \\(\\Omega\\) e uma \\(\\sigma\\)-álgebra \\(\\digamma\\) a função (denotado por P)\n\\(P: \\digamma \\to [0,1]\\)\né dito ser uma medida de probabilidade se satisfaz os seguintes axiomas:\n\n\\(P(E)≥0, ∀ E ∈ \\digamma\\);\n\\(P(\\)\\() = 1\\);\n\\(P(⋃_{i=1}^{\\infty}E_i )\\) = \\(\\sum_{i=1}^{\\infty} P(E_i)\\)\n\nem que \\(E_1\\), \\(E_2\\), \\(E_3\\), … são eventos dois a dois disjuntos ou mutuamente exclusivos.\nA terceira propriedade pode ser representada da seguinte forma:\n\\(P(E_1 \\cup E_2 \\cup E_3....)\\) = \\(P(E_1)+P(E_2)+P(E_3)+ ..\\)",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Aula 01</span>"
+    ]
+  },
+  {
+    "objectID": "aula01.html#definição-11-espaço-de-probabilidade-1",
+    "href": "aula01.html#definição-11-espaço-de-probabilidade-1",
+    "title": "3  Aula 01",
+    "section": "4.11 Definição 11 (Espaço de probabilidade):",
+    "text": "4.11 Definição 11 (Espaço de probabilidade):\nO espaço de probabilidade é definido como a tripla (\\(\\Omega\\),F,P), em que \\(\\Omega\\) é o espaço amostral, F é a \\(\\sigma\\)-algebra de subconjuntos de \\(\\Omega\\), e P a medida de probabilidade.\nExemplo 4: Mostre a seguinte proposição\ni) \\(P(\\phi)=0\\); em que \\(\\phi\\) é o conjunto vazio.\nSolução:\nEncontrar que \\(P(\\phi) = 0\\), em que \\(\\phi\\) é o conjunto vazio.\nNote primeiro que:\n\n\n\n\n\n\n\\(\\Omega = \\Omega \\cup \\phi\\)\ne\n\\(\\Omega \\cap \\phi = \\phi\\)\n\n\n\nLogo, \\(\\Omega\\) e \\(\\phi\\) são eventos disjuntos.\nEntão pelo axioma (2) e (3) temos:\n\n\n\n\n\n\n\\(P(\\Omega)=P(\\Omega \\cup \\phi)=P(\\phi)+P(\\Omega)\\)\n\\(1=P(\\phi)+P(\\Omega)\\)\n\\(1=P(\\phi)+ 1\\)\n\\(P(\\phi)=0\\)\n\n\n\nExercício 2: Mostre as seguintes propriedades:",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Aula 01</span>"
+    ]
+  },
+  {
+    "objectID": "aula01.html#teorema-1-1",
+    "href": "aula01.html#teorema-1-1",
+    "title": "3  Aula 01",
+    "section": "4.12 Teorema 1",
+    "text": "4.12 Teorema 1\n\n\n\n\n\n\n\\[ P(E^{c} )=1-P(E); \\]\n\\[ P(E) \\leq 1, ∀ E \\in \\digamma \\]",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Aula 01</span>"
+    ]
+  },
+  {
+    "objectID": "aula01.html#teorema-2-1",
+    "href": "aula01.html#teorema-2-1",
+    "title": "3  Aula 01",
+    "section": "4.13 Teorema 2",
+    "text": "4.13 Teorema 2\nSe P é uma função probabilidade e \\(E_1, E_2 \\in \\digamma\\) então:\n\n\n\n\n\n\n\\[    Se \\: E_1 ⊆ E_2 \\: então \\: P(E_1 ) \\leq P(E_2 ) \\]\n\\[    P(E_1 \\cup E_2 ) = P(E_1 ) + P(E_2 ) - P(E_1 \\cap E_2 ) \\]\n\\[    P(E_1 \\cap E_2^c ) = P(E_1 ) - P(E_1 \\cap E_2 ) \\]\n\n\n\nExemplo 5\nConsidere o experimento de jogar um dado. Sabendo que o dado não é “justo”, as probabilidades associadas aos resultados são:\n\nP({1})=1/6;\nP({2})=1/6;\nP({3})=1/6;\nP({4})=1/6;\nP({5})=1/7\n\nUsando apenas os Axiomas de Kolmogorov, pede-se:\na) Encontre a probabilidade de obter o número 6 numa jogada.\nb) Encontre a probabilidade de encontrar um número par.\nSolução:\na)\nInicialmente, observa-se que o espaço amostral \\(\\Omega\\) do experimento de jogar um dado é,\n\\(\\Omega = \\{1,2,3,4,5,6\\}\\)\nO espaço amostral pode ser escrito como a união de eventos simples compostos pelos resultados:\n\\(\\Omega = {1,2,3,4,5,6}={1}⋃{2}⋃{3}⋃{4}⋃{5}⋃{6}\\)\nConsiderando os eventos simples serem dois a dois disjuntos (mutuamente exclusivos), ou seja, \\(\\{1\\} \\cap \\{2\\} = \\phi, \\{1\\} \\cap \\{3\\}=\\phi ,…,\\) temos que o terceiro axioma, \\(P(\\cup_{i=1}^{\\infty} E_i )=\\sum_{i=1}^{\\infty} P(E_i)\\) , se cumpre. Então:\n\\(P(\\Omega) = P({1, 2, 3, 4, 5, 6 }) = P({1} \\cup {2} \\cup{3} \\cup {4} \\cup {5} \\cup {6})\\) =\n\\(P{(1)}+P{(2)}+P{(3)}+P{(4)}+P{(5)}+P{(6)}\\)\nAlém disso, o segundo axioma dispõe que \\(P(\\Omega) = 1\\), portanto,\n\\(P(\\{1,2,3,4,5,6\\}) = P(\\Omega) = 1\\)\nAssim,\n\\(P \\{(1) \\}+P \\{(2) \\}+P \\{(3) \\}+P \\{(4) \\}+P \\{(5) \\}+P \\{(6) \\}=1\\)\n\\(1/6+1/6+1/6+1/6+1/7+P \\{(6) \\}=1\\)\n\\(1/6+1/6+1/6+1/6+1/7+P \\{(6) \\}=1\\)\n\\(P \\{(6) \\}=4/21\\)\n\nb)\nPara calcular a probabilidade de um número ser par, definimos o evento \\(E\\) dos números pares:\n\\[E = \\{2,4,6\\}\\]\n\\[P(E) = P(\\{2,4,6\\}) = P(\\{2\\} \\cup \\{4\\} \\cup \\{6\\})\\]\nSegundo o Axioma 3,\n\\[P(E) = P(\\{2\\} \\cup \\{4\\} \\cup \\{6\\}) = P(\\{2\\}) + P(\\{4\\}) + P(\\{6\\})\\]\n\\[P(E) = \\frac{1}{6} + \\frac{1}{6} + \\frac{4}{21} = \\frac{11}{21}\\]\n**Combinação de Eventos:**\nSejam dois eventos \\(A\\) e \\(B\\), do espaço amostral \\(S\\). Como \\(A\\) e \\(B\\) são conjuntos, podemos aplicar a eles operações, tais como:\nUnião:\n\\[A \\cup B\\]\nExemplo:\n\\[A = \\{2,3\\}\\]\n\\[B = \\{3,4\\}\\]\n\\[A \\cup B = \\{2,3,4\\}\\]\nIntersecção:\n\\[A \\cap B\\]\nExemplo:\n\\[A = \\{2,3\\}\\]\n\\[B = \\{3,4\\}\\]\n\\[A \\cap B = \\{3\\}\\]\nComplementar de \\(A\\):\n\\[A^c\\]\nExemplo:\nSeja o espaço amostral:\n\\[S = \\Omega = \\{1,2,3,4,5,6\\}\\]\n\\[A = \\{2,3\\}\\]\n\\[A^c = \\{1,4,5,6\\}\\]\nSubtração:\n\\[A - B\\]\nExemplo:\nSeja o espaço amostral:\n\\[\\Omega = \\{1,2,3,4,5,6\\}\\]\n\\[A = \\{2,3\\}\\]\n\\[B = \\{3,4\\}\\]\n\\[A - B = \\{2\\}\\]\nLeis de Morgan:\n\\[(A \\cup B)^c = A^c \\cap B^c\\]\n\\[(A \\cap B)^c = A^c \\cup B^c\\]\n\\[A - B = A \\cap B^c\\]\n\\[A^c = A^c\\]\nExemplo:\nLançam-se duas moedas honestas simultaneamente. Seja \\(A\\): saída de faces iguais; e \\(B\\): saída de cara na primeira moeda. Defina: \\(c\\) = cara e \\(r\\) = coroa. Determinar os eventos:\nEspaço amostral:\n\\[\\Omega = \\{cc,cr,rc,rr\\}\\]\n\\[A = \\{cc,rr\\}\\]\n\\[B = \\{cr,cc\\}\\]\na) \\(A \\cup B\\)\n\\[A \\cup B = \\{(cc),(rr),(cr)\\}\\]\nb) \\(A \\cap B\\)\n\\[A \\cap B = \\{(cc)\\}\\]\nc) \\(A^c\\)\nO complementar de um evento \\(A\\), denotado por \\(A^c\\) ou \\((A)^c\\), é a negação de \\(A\\). Então, o complementar de \\(A\\) é formado pelos elementos que não pertencem a \\(A\\).\n\n\\(A^{c}\\) = saída de faces diferentes\n\n\\[A^c = \\{rc,cr\\}\\]\nd) \\(B^c\\)\n\n\\(B^{c}\\) = não saída de cara na 1ª moeda\n\n\\[B^c = \\{(rc),(rr)\\}\\]\ne) \\((A \\cup B)^c\\)\n\\[(A B)^c = A^c \\cap B^c\\]\n\\[A^c \\cap B^c = \\{rc\\}\\]\nf) \\((A \\cap B)^c\\)\n\\[(A \\cap B)^c = A^c \\cup B^c\\]\n\\[A^c \\cup B^c = \\{(rr),(cr),(rc)\\}\\]\nVer mais no link Eventos.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Aula 01</span>"
+    ]
+  },
+  {
+    "objectID": "aula02.html#definição-12",
+    "href": "aula02.html#definição-12",
+    "title": "4  Aula 02",
+    "section": "4.1 Definição 12",
+    "text": "4.1 Definição 12\nA probabilidade condicionada refere-se à probabilidade de um evento \\((E_1)\\) sabendo que ocorreu um outro evento \\((E_2)\\), e representa-se por \\((P(E_1 | E_2 ))\\), informalmente lida como “probabilidade condicional de \\((E_1)\\) dado \\((E_2)\\)”. É definido como:\n\\(P(E_1 | E_2 ) = \\frac{P(E_1 \\cap E_2 )}{P( E_2)}\\)\nObservação:\n\\(P(E_1 | E_2 ) \\neq P(E_1)\\)\nOnde \\((P( E_2 ) &gt; 0)\\). A partir desta definição podemos encontrar a probabilidade da interseção de dois eventos:\n\\(P(E_1 \\cap E_2 ) = P(E_1 | E_2 ) \\times P( E_2)\\)\nOu também para o Evento 2:\n\\(P(E_2 | E_1 ) = \\frac{P(E_2 \\cap E_1 )}{P( E_1)} = \\frac{P(E_1 \\cap E_2 )}{P( E_1)}\\)\n*Obs: \\(P(E_1 | E_2 ) \\neq P(E_1)\\)\nExemplo 1:\nConsideremos 250 alunos que cursam o terceiro período da UCB. Destes alunos, 100 são homens (H) e 150 mulheres (M); 110 cursam Física (F) e 140 cursam Economia (E) das quais têm 40 homens que estudam Física e 80 mulheres que estudam Economia. Existem 40 homens estudando física e 80 mulheres estudando economia. Um aluno é sorteado ao acaso. Pede-se:\na) Qual é a probabilidade de que este cursando Economia dado que é mulher?\n\\(P(E|M) = \\frac{80}{150}\\)\nb) Qual é a probabilidade de que seja mulher e este cursando Economia?\n\\(P(M \\cap E) = \\frac{80}{250}\\)\nc) Qual é a probabilidade de ser mulher?\n\\(P(M) = \\frac{150}{250}\\)\nPodemos também encontrar a probabilidade condicional usando a definição de probabilidade condicional, definição 6, como:\n\\(P(E|M) = \\frac{P(E \\cap M)}{P(M)} = \\frac{\\frac{80}{250}}{\\frac{150}{250}}\\)\n\\(P(E|M) = \\frac{80}{150}\\)\nExemplo 2:\nSeja \\((P(A)=\\frac{1}{3})\\), \\((P(B)=\\frac{3}{4})\\) e \\((P(A \\cup B)=\\frac{11}{12})\\). Calcule \\(P(A | B)\\).\nSolução:\nPela definição de probabilidade condicional:\n\\(P(A | B)=\\frac{P(A \\cap B)}{P(B)} =\\frac{P(A \\cap B)}{\\frac{3}{4}}\\)\nPara encontrar a probabilidade condicionada devemos encontrar primeiramente \\((P(A\\cap B))\\). Podemos encontrar isso da relação: \\((P(A\\cup B)=P(A)+P(B)-P(A\\cap B))\\).\n\\(\\frac{11}{12} = \\frac{1}{3} + \\frac{3}{4} - P(A\\cap B)\\)\n\\(P(A\\cap B)=\\frac{1}{6}\\)\nLogo, em (1) temos:\n\\(P(A | B)=\\frac{\\frac{1}{6}}{\\frac{3}{4}}=\\frac{2}{9}\\)",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Aula 02</span>"
+    ]
+  },
+  {
+    "objectID": "aula02.html#definição-13-independência",
+    "href": "aula02.html#definição-13-independência",
+    "title": "4  Aula 02",
+    "section": "4.2 Definição 13 (Independência):",
+    "text": "4.2 Definição 13 (Independência):\nDois eventos A e B com probabilidades positivas são estatisticamente independentes se:\n\\(P(A | B)=P(A)\\)\nou de forma equivalente:\n\\(P(A\\cap B)=P(A)P(B)\\)\n*Lembre da definição de probabilidade condicional. Se \\((A)\\) e \\((B)\\) são eventos independentes, então:*\n\\(P(A | B)=P(A\\cap B)/P(B) =P(A)\\)\n*Logo:*\n\\(P(A\\cap B)=P(A)P(B)\\)\n*Observação:* \\(P(A| B)=P(A)\\)",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Aula 02</span>"
+    ]
+  },
+  {
+    "objectID": "aula02.html#teorema-de-bayes",
+    "href": "aula02.html#teorema-de-bayes",
+    "title": "4  Aula 02",
+    "section": "4.3 Teorema de Bayes:",
+    "text": "4.3 Teorema de Bayes:\nSe \\((A)\\) e \\((B)\\) são dois eventos com probabilidades conhecidas, então:\n\\(P(A|B) = \\frac{P(B|A) \\times P(A)}{P(B)}\\)\nDemonstração:\nInicialmente, deve-se entender que \\(( (A\\cap B)=(B\\cap A) )\\). Após, aplica-se a definição 12 de probabilidade condicional dada por\n\\(P(E_1 | E_2 ) = P(E_1\\cap E_2 )/(P( E_2)\\).\nDesta forma,\n\\(P(A | B)= \\frac{P(A\\cap B)}{P(B)}\\)\nTodavia, sabemos que \\(A \\cap B = B \\cap A\\), então\n\\(P(B|A)= \\frac{P(B\\cap A)}{P(A)}\\)\nQuando aplicamos a regra vista anteriormente; \\(P(B\\cap A)=P(A)\\times P(B|A)\\)\nPortanto, o Teorema de Bayes,\n\\(P(A | B)= \\frac{P(A\\cap B)}{P(B)}=\\frac{P(B\\cap A)}{P(B)}=\\frac{P(B|A) \\times P(A)}{P(B)}\\)",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Aula 02</span>"
+    ]
+  },
+  {
+    "objectID": "aula02.html#teorema-de-bayes-estendido",
+    "href": "aula02.html#teorema-de-bayes-estendido",
+    "title": "4  Aula 02",
+    "section": "4.4 Teorema de Bayes estendido:",
+    "text": "4.4 Teorema de Bayes estendido:\nSejam \\((A_1, A_2,..., A_n)\\) eventos que formam uma partição do espaço amostral. Seja \\((B)\\) um evento desse espaço. Então para cada \\((j=1, 2, ... ,n)\\):\n\\(P(A_j|B)=\\frac{P(B|A_j) \\times P(A_j)}{P(B)}=\\frac{P(B|A_j) \\times P(A_j)}{\\sum_{i=1}^n P(B|A_i) \\times P(A_i) }\\)\nDemonstração:\nAplicando o Teorema de Bayes em \\(P(A_j|B)\\):\n\\(P(A_j|B)=\\frac{P(A_j \\cap B)}{P(B)}=\\frac{P(B|A_j) \\times P(A_j)}{P(B)}\\)\nComo os \\((A_j)\\)’s constituem partição de \\((\\Omega)\\) podemos escrever \\((B)\\) como:\n\\(B=(A_1 \\cap B)\\cup(A_2\\cap B) \\cup...\\cup (A_j\\cap B)\\)\nAplicando o Axioma 3 de Kolmogorov (Definição 10):\n\\(P(B)=P({A_1\\cap B}\\cup{A_2\\cap B}\\cup...\\cup{A_j\\cap B})=P({A_1\\cap B})+P({A_2\\cap B})+...+P({A_j\\cap B})\\)\nLembre da definição de probabilidade condicional:\n\\(P(B|A_j )=P(A_j\\cap B)/(P(A_j))\\)\nUsando a definição de probabilidade condicional \\(( P({A_j\\cap B})=P(B|A_j )\\times P(A_j) )\\) podemos reescrever \\(P(B)\\) da seguinte forma:\n\\(P(B)=P(B|A_1) \\times P(A_1 ) + P(B|A_2 ) \\times P(A_2 ) +...+ P(B|A_n ) \\times P(A_n )\\) = \\(\\sum_{i=1}^n P(B|A_i) \\times P(A_i)\\)\nSubstituímos \\(P(B)\\) pela expressão acima:\n\\(P(A_j|B)= \\frac{P(B|A_j) \\times P(A_j)}{P(B)} = \\frac{P(B|A_j) \\times P(A_j)}{\\sum\\_{i=1}^n P(B|A_i) \\times P(A_i)}\\)\nExemplo:\nConsidere uma partição como mostrado na figura abaixo \\((A_1, A_2, A_3, A_4)\\).\n\\(Omega\\)\n\\(P(A_1|B) = \\frac{P(B\\cap A_1)}{P(B)}= \\frac{P(A_1)\\times P(B|A_1)}{P(A_1)\\times P(B|A_1)+P(A_2)\\times P(B|A_2)+P(A_3)\\times P(B|A_3)+P(A_4)\\times P(B|A_4)}\\)\nExercício (encontrando a fonte de um item com defeito):\nUm mesmo produto é fabricado por três tipos de máquinas \\((A_1, A_2)\\) e \\((A_3)\\). Algumas informações a seguir são conhecidas:\n\n25% dos itens foram produzidos pela máquina \\((A_1)\\);\n30% dos itens foram produzidos pela máquina \\((A_2)\\);\n45% dos itens foram produzidos pela máquina \\((A_3)\\);\n\nAlém disso:\n\n2% dos itens fabricados por \\((A_1)\\) têm defeito.\n4% dos itens fabricados por \\((A_2)\\) têm defeito.\n6% dos itens fabricados por \\((A_3)\\) têm defeito.\n\nUm produto é selecionado aleatoriamente e é defeituoso. Qual é a probabilidade de que este produto tenha sido fabricado por \\((A_3)\\)?\nSolução:\nConsidere os eventos:\n\\(A_i = {\\text{o item foi fabricado pela máquina } A_i}, \\quad i = 1,2,3\\)\n\\(B = {\\text{o item é defeituoso}}\\)\n\\(P(A_1)=25\\%\\)\n\\(P(A_2)=30\\%\\)\n\\(P(A_3)=45\\%\\)\n\\(P(B|A_1 )=2\\%\\)\n\\(P(B|A_2 )=4\\%\\)\n\\(P(B|A_3 )=6\\%\\)\n\\(P(A_3|B)=?\\)\nConsidere uma partição como mostrado na figura abaixo \\((A_1, A_2, A_3)\\).\n\\(\\Omega\\)\nFIGURA\nPede:\n\\(P(A_3|B)=\\frac{P(B|A_3 )P(A_3)}{P(B)}\\)\n\\(P(B)=P({A_1\\cap B}\\cup{A_2\\cap B}\\cup{A_3\\cap B})=P({A_1\\cap B})+P({A_2\\cap B})+P({A_3\\cap B})\\)\n\\(P(B)=P(B|A_1 )P(A_1 )+P(B|A_2 )P(A_2 )+P(B|A_3 )P(A_3)=\\sum_{i=1}^3 P(B|A_i )P(A_i )\\)\n\\(P(B)=(2\\%)(25\\%)+(4\\%)(30\\%)+(6\\%)(45\\%)\\)",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Aula 02</span>"
+    ]
+  },
+  {
+    "objectID": "aula02.html#definição-12-probabilidade-condicional",
+    "href": "aula02.html#definição-12-probabilidade-condicional",
+    "title": "4  Aula 02",
+    "section": "4.1 Definição 12 (Probabilidade condicional)",
+    "text": "4.1 Definição 12 (Probabilidade condicional)\nA probabilidade condicionada refere-se à probabilidade de um evento \\((E_1)\\) sabendo que ocorreu um outro evento \\((E_2)\\), e representa-se por \\((P(E_1 | E_2 ))\\), informalmente lida como “probabilidade condicional de \\((E_1)\\) dado \\((E_2)\\)”. É definido como:\n\\(P(E_1 | E_2 ) = \\frac{P(E_1 \\cap E_2 )}{P( E_2)}\\)\nObservação:\n\\(P(E_1 | E_2 ) \\neq P(E_1)\\)\nOnde \\((P( E_2 ) &gt; 0)\\). A partir desta definição podemos encontrar a probabilidade da interseção de dois eventos:\n\\(P(E_1 \\cap E_2 ) = P(E_1 | E_2 ) \\times P( E_2)\\)\nOu também para o Evento 2:\n\\(P(E_2 | E_1 ) = \\frac{P(E_2 \\cap E_1 )}{P( E_1)} = \\frac{P(E_1 \\cap E_2 )}{P( E_1)}\\)\n*Obs: \\(P(E_1 | E_2 ) \\neq P(E_1)\\)\nExemplo 1:\nConsideremos 250 alunos que cursam o terceiro período da UCB. Destes alunos, 100 são homens (H) e 150 mulheres (M); 110 cursam Física (F) e 140 cursam Economia (E) das quais têm 40 homens que estudam Física e 80 mulheres que estudam Economia. Existem 40 homens estudando física e 80 mulheres estudando economia. Um aluno é sorteado ao acaso. Pede-se:\na) Qual é a probabilidade de que este cursando Economia dado que é mulher?\n\\(P(E|M) = \\frac{80}{150}\\)\nb) Qual é a probabilidade de que seja mulher e este cursando Economia?\n\\(P(M \\cap E) = \\frac{80}{250}\\)\nc) Qual é a probabilidade de ser mulher?\n\\(P(M) = \\frac{150}{250}\\)\nPodemos também encontrar a probabilidade condicional usando a definição de probabilidade condicional, definição 6, como:\n\\(P(E|M) = \\frac{P(E \\cap M)}{P(M)} = \\frac{\\frac{80}{250}}{\\frac{150}{250}}\\)\n\\(P(E|M) = \\frac{80}{150}\\)\nExemplo 2:\nSeja \\((P(A)=\\frac{1}{3})\\), \\((P(B)=\\frac{3}{4})\\) e \\((P(A \\cup B)=\\frac{11}{12})\\). Calcule \\(P(A | B)\\).\nSolução:\nPela definição de probabilidade condicional:\n\\(P(A | B)=\\frac{P(A \\cap B)}{P(B)} =\\frac{P(A \\cap B)}{\\frac{3}{4}}\\)\nPara encontrar a probabilidade condicionada devemos encontrar primeiramente \\((P(A\\cap B))\\). Podemos encontrar isso da relação: \\((P(A\\cup B)=P(A)+P(B)-P(A\\cap B))\\).\n\\(\\frac{11}{12} = \\frac{1}{3} + \\frac{3}{4} - P(A\\cap B)\\)\n\\(P(A\\cap B)=\\frac{1}{6}\\)\nLogo, em (1) temos:\n\\(P(A | B)=\\frac{\\frac{1}{6}}{\\frac{3}{4}}=\\frac{2}{9}\\)",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Aula 02</span>"
+    ]
+  }
+]
