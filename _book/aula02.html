@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>metodos_quantitativos - References</title>
+<title>metodos_quantitativos - 4&nbsp; Aula 02</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,26 +20,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -49,7 +30,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./aula02.html" rel="prev">
+<link href="./references.html" rel="next">
+<link href="./aula01.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -87,6 +69,35 @@ div.csl-indent {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -99,7 +110,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./references.html">References</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./aula02.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Aula 02</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -150,13 +161,13 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./aula02.html" class="sidebar-item-text sidebar-link">
+  <a href="./aula02.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Aula 02</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link active">
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">References</span></a>
   </div>
 </li>
@@ -166,14 +177,23 @@ div.csl-indent {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#definição-12-probabilidade-condicional" id="toc-definição-12-probabilidade-condicional" class="nav-link active" data-scroll-target="#definição-12-probabilidade-condicional"><span class="header-section-number">4.1</span> Definição 12 (Probabilidade condicional)</a></li>
+  <li><a href="#definição-13-independência" id="toc-definição-13-independência" class="nav-link" data-scroll-target="#definição-13-independência"><span class="header-section-number">4.2</span> Definição 13 (Independência):</a></li>
+  <li><a href="#teorema-de-bayes" id="toc-teorema-de-bayes" class="nav-link" data-scroll-target="#teorema-de-bayes"><span class="header-section-number">4.3</span> Teorema de Bayes:</a></li>
+  <li><a href="#teorema-de-bayes-estendido" id="toc-teorema-de-bayes-estendido" class="nav-link" data-scroll-target="#teorema-de-bayes-estendido"><span class="header-section-number">4.4</span> Teorema de Bayes estendido:</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">References</h1>
+<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Aula 02</span></h1>
 </div>
 
 
@@ -190,14 +210,128 @@ div.csl-indent {
 </header>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
-<div id="ref-knuth84" class="csl-entry" role="listitem">
-Knuth, Donald E. 1984. <span>“Literate Programming.”</span> <em>Comput.
-J.</em> 27 (2): 97–111. <a href="https://doi.org/10.1093/comjnl/27.2.97">https://doi.org/10.1093/comjnl/27.2.97</a>.
-</div>
-</div>
+<ul>
+<li><strong>Aula 2: Probabilidade Condicionada e Independência</strong></li>
+<li><strong>Prof.&nbsp;Dr.&nbsp;Carlos Enrique Carrasco Gutierrez</strong></li>
+<li><strong>E-mail: carlos.carrasco.gutierrez@gmail.com</strong></li>
+</ul>
+<section id="definição-12-probabilidade-condicional" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="definição-12-probabilidade-condicional"><span class="header-section-number">4.1</span> Definição 12 (Probabilidade condicional)</h2>
+<p>A probabilidade condicionada refere-se à probabilidade de um evento <span class="math inline">\((E_1)\)</span> sabendo que ocorreu um outro evento <span class="math inline">\((E_2)\)</span>, e representa-se por <span class="math inline">\((P(E_1 | E_2 ))\)</span>, informalmente lida como “probabilidade condicional de <span class="math inline">\((E_1)\)</span> dado <span class="math inline">\((E_2)\)</span>”. É definido como:</p>
+<p><span class="math inline">\(P(E_1 | E_2 ) = \frac{P(E_1 \cap E_2 )}{P( E_2)}\)</span></p>
+<p><strong>Observação</strong>:</p>
+<p><span class="math inline">\(P(E_1 | E_2 ) \neq P(E_1)\)</span></p>
+<p>Onde <span class="math inline">\((P( E_2 ) &gt; 0)\)</span>. A partir desta definição podemos encontrar a probabilidade da interseção de dois eventos:</p>
+<p><span class="math inline">\(P(E_1 \cap E_2 ) = P(E_1 | E_2 ) \times P( E_2)\)</span></p>
+<p>Ou também para o Evento 2:</p>
+<p><span class="math inline">\(P(E_2 | E_1 ) = \frac{P(E_2 \cap E_1 )}{P( E_1)} = \frac{P(E_1 \cap E_2 )}{P( E_1)}\)</span></p>
+<p>*Obs: <span class="math inline">\(P(E_1 | E_2 ) \neq P(E_1)\)</span></p>
+<p><strong><em>Exemplo 1:</em></strong></p>
+<p>Consideremos 250 alunos que cursam o terceiro período da UCB. Destes alunos, 100 são homens (H) e 150 mulheres (M); 110 cursam Física (F) e 140 cursam Economia (E) das quais têm 40 homens que estudam Física e 80 mulheres que estudam Economia. Existem 40 homens estudando física e 80 mulheres estudando economia. Um aluno é sorteado ao acaso. Pede-se:</p>
+<p>a) Qual é a probabilidade de que este cursando Economia dado que é mulher?</p>
+<p><span class="math inline">\(P(E|M) = \frac{80}{150}\)</span></p>
+<p>b) Qual é a probabilidade de que seja mulher e este cursando Economia?</p>
+<p><span class="math inline">\(P(M \cap E) = \frac{80}{250}\)</span></p>
+<p>c) Qual é a probabilidade de ser mulher?</p>
+<p><span class="math inline">\(P(M) = \frac{150}{250}\)</span></p>
+<p>Podemos também encontrar a probabilidade condicional usando a definição de probabilidade condicional, definição 6, como:</p>
+<p><span class="math inline">\(P(E|M) = \frac{P(E \cap M)}{P(M)} = \frac{\frac{80}{250}}{\frac{150}{250}}\)</span></p>
+<p><span class="math inline">\(P(E|M) = \frac{80}{150}\)</span></p>
+<p><em>Exemplo 2:</em></p>
+<p>Seja <span class="math inline">\((P(A)=\frac{1}{3})\)</span>, <span class="math inline">\((P(B)=\frac{3}{4})\)</span> e <span class="math inline">\((P(A \cup B)=\frac{11}{12})\)</span>. Calcule <span class="math inline">\(P(A | B)\)</span>.</p>
+<p><em>Solução:</em></p>
+<p>Pela definição de probabilidade condicional:</p>
+<p><span class="math inline">\(P(A | B)=\frac{P(A \cap B)}{P(B)} =\frac{P(A \cap B)}{\frac{3}{4}}\)</span></p>
+<p>Para encontrar a probabilidade condicionada devemos encontrar primeiramente <span class="math inline">\((P(A\cap B))\)</span>. Podemos encontrar isso da relação: <span class="math inline">\((P(A\cup B)=P(A)+P(B)-P(A\cap B))\)</span>.</p>
+<p><span class="math inline">\(\frac{11}{12} = \frac{1}{3} + \frac{3}{4} - P(A\cap B)\)</span></p>
+<p><span class="math inline">\(P(A\cap B)=\frac{1}{6}\)</span></p>
+<p>Logo, em (1) temos:</p>
+<p><span class="math inline">\(P(A | B)=\frac{\frac{1}{6}}{\frac{3}{4}}=\frac{2}{9}\)</span></p>
+</section>
+<section id="definição-13-independência" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="definição-13-independência"><span class="header-section-number">4.2</span> Definição 13 (Independência):</h2>
+<p>Dois eventos A e B com probabilidades positivas são estatisticamente independentes se:</p>
+<p><span class="math inline">\(P(A | B)=P(A)\)</span></p>
+<p>ou de forma equivalente:</p>
+<p><span class="math inline">\(P(A\cap B)=P(A)P(B)\)</span></p>
+<p>*Lembre da definição de probabilidade condicional. Se <span class="math inline">\((A)\)</span> e <span class="math inline">\((B)\)</span> são eventos independentes, então:*</p>
+<p><span class="math inline">\(P(A | B)=P(A\cap B)/P(B) =P(A)\)</span></p>
+<p>*Logo:*</p>
+<p><span class="math inline">\(P(A\cap B)=P(A)P(B)\)</span></p>
+<p>*Observação:* <span class="math inline">\(P(A| B)=P(A)\)</span></p>
+</section>
+<section id="teorema-de-bayes" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="teorema-de-bayes"><span class="header-section-number">4.3</span> Teorema de Bayes:</h2>
+<p>Se <span class="math inline">\((A)\)</span> e <span class="math inline">\((B)\)</span> são dois eventos com probabilidades conhecidas, então:</p>
+<p><span class="math inline">\(P(A|B) = \frac{P(B|A) \times P(A)}{P(B)}\)</span></p>
+<p><em>Demonstração:</em></p>
+<p>Inicialmente, deve-se entender que <span class="math inline">\(( (A\cap B)=(B\cap A) )\)</span>. Após, aplica-se a definição 12 de probabilidade condicional dada por</p>
+<p><span class="math inline">\(P(E_1 | E_2 ) = P(E_1\cap E_2 )/(P( E_2)\)</span>.</p>
+<p>Desta forma,</p>
+<p><span class="math inline">\(P(A | B)= \frac{P(A\cap B)}{P(B)}\)</span></p>
+<p>Todavia, sabemos que <span class="math inline">\(A \cap B = B \cap A\)</span>, então</p>
+<p><span class="math inline">\(P(B|A)= \frac{P(B\cap A)}{P(A)}\)</span></p>
+<p>Quando aplicamos a regra vista anteriormente; <span class="math inline">\(P(B\cap A)=P(A)\times P(B|A)\)</span></p>
+<p>Portanto, o Teorema de Bayes,</p>
+<p><span class="math inline">\(P(A | B)= \frac{P(A\cap B)}{P(B)}=\frac{P(B\cap A)}{P(B)}=\frac{P(B|A) \times P(A)}{P(B)}\)</span></p>
+</section>
+<section id="teorema-de-bayes-estendido" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="teorema-de-bayes-estendido"><span class="header-section-number">4.4</span> Teorema de Bayes estendido:</h2>
+<p>Sejam <span class="math inline">\((A_1, A_2,..., A_n)\)</span> eventos que formam uma partição do espaço amostral. Seja <span class="math inline">\((B)\)</span> um evento desse espaço. Então para cada <span class="math inline">\((j=1, 2, ... ,n)\)</span>:</p>
+<p><span class="math inline">\(P(A_j|B)=\frac{P(B|A_j) \times P(A_j)}{P(B)}=\frac{P(B|A_j) \times P(A_j)}{\sum_{i=1}^n P(B|A_i) \times P(A_i) }\)</span></p>
+<p><strong>Demonstração:</strong></p>
+<p>Aplicando o Teorema de Bayes em <span class="math inline">\(P(A_j|B)\)</span>:</p>
+<p><span class="math inline">\(P(A_j|B)=\frac{P(A_j \cap B)}{P(B)}=\frac{P(B|A_j) \times P(A_j)}{P(B)}\)</span></p>
+<p>Como os <span class="math inline">\((A_j)\)</span>’s constituem partição de <span class="math inline">\((\Omega)\)</span> podemos escrever <span class="math inline">\((B)\)</span> como:</p>
+<p><span class="math inline">\(B=(A_1 \cap B)\cup(A_2\cap B) \cup...\cup (A_j\cap B)\)</span></p>
+<p>Aplicando o Axioma 3 de Kolmogorov (Definição 10):</p>
+<p><span class="math inline">\(P(B)=P({A_1\cap B}\cup{A_2\cap B}\cup...\cup{A_j\cap B})=P({A_1\cap B})+P({A_2\cap B})+...+P({A_j\cap B})\)</span></p>
+<p>Lembre da definição de probabilidade condicional:</p>
+<p><span class="math inline">\(P(B|A_j )=P(A_j\cap B)/(P(A_j))\)</span></p>
+<p>Usando a definição de probabilidade condicional <span class="math inline">\(( P({A_j\cap B})=P(B|A_j )\times P(A_j) )\)</span> podemos reescrever <span class="math inline">\(P(B)\)</span> da seguinte forma:</p>
+<p><span class="math inline">\(P(B)=P(B|A_1) \times P(A_1 ) + P(B|A_2 ) \times P(A_2 ) +...+ P(B|A_n ) \times P(A_n )\)</span> = <span class="math inline">\(\sum_{i=1}^n P(B|A_i) \times P(A_i)\)</span></p>
+<p>Substituímos <span class="math inline">\(P(B)\)</span> pela expressão acima:</p>
+<p><span class="math inline">\(P(A_j|B)= \frac{P(B|A_j) \times P(A_j)}{P(B)} = \frac{P(B|A_j) \times P(A_j)}{\sum\_{i=1}^n P(B|A_i) \times P(A_i)}\)</span></p>
+<p><strong>Exemplo:</strong></p>
+<p>Considere uma partição como mostrado na figura abaixo <span class="math inline">\((A_1, A_2, A_3, A_4)\)</span>.</p>
+<p><span class="math inline">\(Omega\)</span></p>
+<p><span class="math inline">\(P(A_1|B) = \frac{P(B\cap A_1)}{P(B)}= \frac{P(A_1)\times P(B|A_1)}{P(A_1)\times P(B|A_1)+P(A_2)\times P(B|A_2)+P(A_3)\times P(B|A_3)+P(A_4)\times P(B|A_4)}\)</span></p>
+<p><strong>Exercício (encontrando a fonte de um item com defeito):</strong></p>
+<p>Um mesmo produto é fabricado por três tipos de máquinas <span class="math inline">\((A_1, A_2)\)</span> e <span class="math inline">\((A_3)\)</span>. Algumas informações a seguir são conhecidas:</p>
+<ul>
+<li><p>25% dos itens foram produzidos pela máquina <span class="math inline">\((A_1)\)</span>;</p></li>
+<li><p>30% dos itens foram produzidos pela máquina <span class="math inline">\((A_2)\)</span>;</p></li>
+<li><p>45% dos itens foram produzidos pela máquina <span class="math inline">\((A_3)\)</span>;</p></li>
+</ul>
+<p>Além disso:</p>
+<ul>
+<li><p>2% dos itens fabricados por <span class="math inline">\((A_1)\)</span> têm defeito.</p></li>
+<li><p>4% dos itens fabricados por <span class="math inline">\((A_2)\)</span> têm defeito.</p></li>
+<li><p>6% dos itens fabricados por <span class="math inline">\((A_3)\)</span> têm defeito.</p></li>
+</ul>
+<p>Um produto é selecionado aleatoriamente e é defeituoso. Qual é a probabilidade de que este produto tenha sido fabricado por <span class="math inline">\((A_3)\)</span>?</p>
+<p><strong>Solução:</strong></p>
+<p>Considere os eventos:</p>
+<p><span class="math inline">\(A_i = {\text{o item foi fabricado pela máquina } A_i}, \quad i = 1,2,3\)</span></p>
+<p><span class="math inline">\(B = {\text{o item é defeituoso}}\)</span></p>
+<p><span class="math inline">\(P(A_1)=25\%\)</span></p>
+<p><span class="math inline">\(P(A_2)=30\%\)</span></p>
+<p><span class="math inline">\(P(A_3)=45\%\)</span></p>
+<p><span class="math inline">\(P(B|A_1 )=2\%\)</span></p>
+<p><span class="math inline">\(P(B|A_2 )=4\%\)</span></p>
+<p><span class="math inline">\(P(B|A_3 )=6\%\)</span></p>
+<p><span class="math inline">\(P(A_3|B)=?\)</span></p>
+<p>Considere uma partição como mostrado na figura abaixo <span class="math inline">\((A_1, A_2, A_3)\)</span>.</p>
+<p><span class="math inline">\(\Omega\)</span></p>
+<p>FIGURA</p>
+<p>Pede:</p>
+<p><span class="math inline">\(P(A_3|B)=\frac{P(B|A_3 )P(A_3)}{P(B)}\)</span></p>
+<p><span class="math inline">\(P(B)=P({A_1\cap B}\cup{A_2\cap B}\cup{A_3\cap B})=P({A_1\cap B})+P({A_2\cap B})+P({A_3\cap B})\)</span></p>
+<p><span class="math inline">\(P(B)=P(B|A_1 )P(A_1 )+P(B|A_2 )P(A_2 )+P(B|A_3 )P(A_3)=\sum_{i=1}^3 P(B|A_i )P(A_i )\)</span></p>
+<p><span class="math inline">\(P(B)=(2\%)(25\%)+(4\%)(30\%)+(6\%)(45\%)\)</span></p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -584,11 +718,14 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./aula02.html" class="pagination-link  aria-label=" &lt;span="" 02&lt;="" span&gt;"="">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Aula 02</span></span>
+      <a href="./aula01.html" class="pagination-link  aria-label=" &lt;span="" 01&lt;="" span&gt;"="">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Aula 01</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
+      <a href="./references.html" class="pagination-link" aria-label="References">
+        <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
   </div>
 </nav>
 </div> <!-- /content -->

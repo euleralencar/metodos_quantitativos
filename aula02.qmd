@@ -1,16 +1,16 @@
 # Aula 02
 
-- **Aula 2: Probabilidade Condicionada e Independência**
-- **Prof. Dr. Carlos Enrique Carrasco Gutierrez**
-- **E-mail: carlos.carrasco.gutierrez\@gmail.com**
+-   **Aula 2: Probabilidade Condicionada e Independência**
+-   **Prof. Dr. Carlos Enrique Carrasco Gutierrez**
+-   **E-mail: carlos.carrasco.gutierrez\@gmail.com**
 
-## Definição 12
+## Definição 12 (Probabilidade condicional)
 
 A probabilidade condicionada refere-se à probabilidade de um evento $(E_1)$ sabendo que ocorreu um outro evento $(E_2)$, e representa-se por $(P(E_1 | E_2 ))$, informalmente lida como "probabilidade condicional de $(E_1)$ dado $(E_2)$". É definido como:
 
 $P(E_1 | E_2 ) = \frac{P(E_1 \cap E_2 )}{P( E_2)}$
 
-\*Observação:\*
+**Observação**:
 
 $P(E_1 | E_2 ) \neq P(E_1)$
 
@@ -22,9 +22,9 @@ Ou também para o Evento 2:
 
 $P(E_2 | E_1 ) = \frac{P(E_2 \cap E_1 )}{P( E_1)} = \frac{P(E_1 \cap E_2 )}{P( E_1)}$
 
-\*Obs: $(P(E_1 | E_2 ) \neq P(E_1) )$\*
+\*Obs: $P(E_1 | E_2 ) \neq P(E_1)$
 
-*Exemplo 1:* 
+***Exemplo 1:***
 
 Consideremos 250 alunos que cursam o terceiro período da UCB. Destes alunos, 100 são homens (H) e 150 mulheres (M); 110 cursam Física (F) e 140 cursam Economia (E) das quais têm 40 homens que estudam Física e 80 mulheres que estudam Economia. Existem 40 homens estudando física e 80 mulheres estudando economia. Um aluno é sorteado ao acaso. Pede-se:
 
@@ -48,7 +48,7 @@ $P(E|M) = \frac{80}{150}$
 
 *Exemplo 2:*
 
-Seja $(P(A)=\frac{1}{3})$, $(P(B)=\frac{3}{4})$ e $(P(A \cup B)=\frac{11}{12})$. Calcule $(P(A | B))$.
+Seja $(P(A)=\frac{1}{3})$, $(P(B)=\frac{3}{4})$ e $(P(A \cup B)=\frac{11}{12})$. Calcule $P(A | B)$.
 
 *Solução:*
 
@@ -68,7 +68,7 @@ $P(A | B)=\frac{\frac{1}{6}}{\frac{3}{4}}=\frac{2}{9}$
 
 ## Definição 13 (Independência):
 
-Dois eventos $(A)$ e $(B)$ com probabilidades positivas são estatisticamente independentes se:
+Dois eventos A e B com probabilidades positivas são estatisticamente independentes se:
 
 $P(A | B)=P(A)$
 
@@ -84,7 +84,7 @@ $P(A | B)=P(A\cap B)/P(B) =P(A)$
 
 $P(A\cap B)=P(A)P(B)$
 
-\*Observação:\* $(P(A| B)=P(A))$
+\*Observação:\* $P(A| B)=P(A)$
 
 ## Teorema de Bayes:
 
@@ -94,17 +94,19 @@ $P(A|B) = \frac{P(B|A) \times P(A)}{P(B)}$
 
 *Demonstração:*
 
-Inicialmente, deve-se entender que $( (A\cap B)=(B\cap A) )$. Após, aplica-se a definição 12 de probabilidade condicional dada por $P(E_1 | E_2 )= P(E_1\cap E_2 )/(P( E_2))$.
+Inicialmente, deve-se entender que $( (A\cap B)=(B\cap A) )$. Após, aplica-se a definição 12 de probabilidade condicional dada por
+
+$P(E_1 | E_2 ) = P(E_1\cap E_2 )/(P( E_2)$.
 
 Desta forma,
 
 $P(A | B)= \frac{P(A\cap B)}{P(B)}$
 
-Todavia, sabemos que $(A \cap B)=(B \cap A)$, então
+Todavia, sabemos que $A \cap B = B \cap A$, então
 
 $P(B|A)= \frac{P(B\cap A)}{P(A)}$
 
-Quando aplicamos a regra vista anteriormente; $( P(B\cap A)=P(A)\times P(B|A) )$
+Quando aplicamos a regra vista anteriormente; $P(B\cap A)=P(A)\times P(B|A)$
 
 Portanto, o Teorema de Bayes,
 
@@ -134,10 +136,10 @@ Lembre da definição de probabilidade condicional:
 
 $P(B|A_j )=P(A_j\cap B)/(P(A_j))$
 
-Usando a definição de probabilidade condicional $( P({A_j\cap B})=P(B|A_j )\times P(A_j) )$ podemos reescrever $P(B)$:
+Usando a definição de probabilidade condicional $( P({A_j\cap B})=P(B|A_j )\times P(A_j) )$ podemos reescrever $P(B)$ da seguinte forma:
 
 $P(B)=P(B|A_1) \times P(A_1 ) + P(B|A_2 ) \times P(A_2 ) +...+ P(B|A_n ) \times P(A_n )$ = $\sum_{i=1}^n P(B|A_i) \times P(A_i)$
- 
+
 Substituímos $P(B)$ pela expressão acima:
 
 $P(A_j|B)= \frac{P(B|A_j) \times P(A_j)}{P(B)} = \frac{P(B|A_j) \times P(A_j)}{\sum\_{i=1}^n P(B|A_i) \times P(A_i)}$
@@ -154,19 +156,19 @@ $P(A_1|B) = \frac{P(B\cap A_1)}{P(B)}= \frac{P(A_1)\times P(B|A_1)}{P(A_1)\times
 
 Um mesmo produto é fabricado por três tipos de máquinas $(A_1, A_2)$ e $(A_3)$. Algumas informações a seguir são conhecidas:
 
-- 25% dos itens foram produzidos pela máquina $(A_1)$;
+-   25% dos itens foram produzidos pela máquina $(A_1)$;
 
-- 30% dos itens foram produzidos pela máquina $(A_2)$;
+-   30% dos itens foram produzidos pela máquina $(A_2)$;
 
-- 45% dos itens foram produzidos pela máquina $(A_3)$;
+-   45% dos itens foram produzidos pela máquina $(A_3)$;
 
 Além disso:
 
-- 2% dos itens fabricados por $(A_1)$ têm defeito.
+-   2% dos itens fabricados por $(A_1)$ têm defeito.
 
-- 4% dos itens fabricados por $(A_2)$ têm defeito.
+-   4% dos itens fabricados por $(A_2)$ têm defeito.
 
-- 6% dos itens fabricados por $(A_3)$ têm defeito.
+-   6% dos itens fabricados por $(A_3)$ têm defeito.
 
 Um produto é selecionado aleatoriamente e é defeituoso. Qual é a probabilidade de que este produto tenha sido fabricado por $(A_3)$?
 
@@ -207,5 +209,3 @@ $P(B)=P({A_1\cap B}\cup{A_2\cap B}\cup{A_3\cap B})=P({A_1\cap B})+P({A_2\cap B})
 $P(B)=P(B|A_1 )P(A_1 )+P(B|A_2 )P(A_2 )+P(B|A_3 )P(A_3)=\sum_{i=1}^3 P(B|A_i )P(A_i )$
 
 $P(B)=(2\%)(25\%)+(4\%)(30\%)+(6\%)(45\%)$
-
-
