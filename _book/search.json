@@ -1,0 +1,452 @@
+[
+  {
+    "objectID": "aula02.html#definição-12-probabilidade-condicional",
+    "href": "aula02.html#definição-12-probabilidade-condicional",
+    "title": "4  Aula 02",
+    "section": "4.1 Definição 12 (Probabilidade condicional)",
+    "text": "4.1 Definição 12 (Probabilidade condicional)\nA probabilidade condicionada refere-se à probabilidade de um evento \\((E_1)\\) sabendo que ocorreu um outro evento \\((E_2)\\), e representa-se por \\((P(E_1 | E_2 ))\\), informalmente lida como “probabilidade condicional de \\((E_1)\\) dado \\((E_2)\\)”. É definido como:\n\\(P(E_1 | E_2 ) = \\frac{P(E_1 \\cap E_2 )}{P( E_2)}\\)\nObservação:\n\\(P(E_1 | E_2 ) \\neq P(E_1)\\)\nOnde \\((P( E_2 ) &gt; 0)\\). A partir desta definição podemos encontrar a probabilidade da interseção de dois eventos:\n\\(P(E_1 \\cap E_2 ) = P(E_1 | E_2 ) \\times P( E_2)\\)\nOu também para o Evento 2:\n\\(P(E_2 | E_1 ) = \\frac{P(E_2 \\cap E_1 )}{P( E_1)} = \\frac{P(E_1 \\cap E_2 )}{P( E_1)}\\)\n*Obs: \\(P(E_1 | E_2 ) \\neq P(E_1)\\)\nExemplo 1:\nConsideremos 250 alunos que cursam o terceiro período da UCB. Destes alunos, 100 são homens (H) e 150 mulheres (M); 110 cursam Física (F) e 140 cursam Economia (E) das quais têm 40 homens que estudam Física e 80 mulheres que estudam Economia. Existem 40 homens estudando física e 80 mulheres estudando economia. Um aluno é sorteado ao acaso. Pede-se:\na) Qual é a probabilidade de que este cursando Economia dado que é mulher?\n\\(P(E|M) = \\frac{80}{150}\\)\nb) Qual é a probabilidade de que seja mulher e este cursando Economia?\n\\(P(M \\cap E) = \\frac{80}{250}\\)\nc) Qual é a probabilidade de ser mulher?\n\\(P(M) = \\frac{150}{250}\\)\nPodemos também encontrar a probabilidade condicional usando a definição de probabilidade condicional, definição 6, como:\n\\(P(E|M) = \\frac{P(E \\cap M)}{P(M)} = \\frac{\\frac{80}{250}}{\\frac{150}{250}}\\)\n\\(P(E|M) = \\frac{80}{150}\\)\nExemplo 2:\nSeja \\((P(A)=\\frac{1}{3})\\), \\((P(B)=\\frac{3}{4})\\) e \\((P(A \\cup B)=\\frac{11}{12})\\). Calcule \\(P(A | B)\\).\nSolução:\nPela definição de probabilidade condicional:\n\\(P(A | B)=\\frac{P(A \\cap B)}{P(B)} =\\frac{P(A \\cap B)}{\\frac{3}{4}}\\)\nPara encontrar a probabilidade condicionada devemos encontrar primeiramente \\((P(A\\cap B))\\). Podemos encontrar isso da relação: \\((P(A\\cup B)=P(A)+P(B)-P(A\\cap B))\\).\n\\(\\frac{11}{12} = \\frac{1}{3} + \\frac{3}{4} - P(A\\cap B)\\)\n\\(P(A\\cap B)=\\frac{1}{6}\\)\nLogo, em (1) temos:\n\\(P(A | B)=\\frac{\\frac{1}{6}}{\\frac{3}{4}}=\\frac{2}{9}\\)",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Aula 02</span>"
+    ]
+  },
+  {
+    "objectID": "aula02.html#definição-13-independência",
+    "href": "aula02.html#definição-13-independência",
+    "title": "4  Aula 02",
+    "section": "4.2 Definição 13 (Independência):",
+    "text": "4.2 Definição 13 (Independência):\nDois eventos A e B com probabilidades positivas são estatisticamente independentes se:\n\\(P(A | B)=P(A)\\)\nou de forma equivalente:\n\\(P(A\\cap B)=P(A)P(B)\\)\n*Lembre da definição de probabilidade condicional. Se \\((A)\\) e \\((B)\\) são eventos independentes, então:*\n\\(P(A | B)=P(A\\cap B)/P(B) =P(A)\\)\n*Logo:*\n\\(P(A\\cap B)=P(A)P(B)\\)\n*Observação:* \\(P(A| B)=P(A)\\)",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Aula 02</span>"
+    ]
+  },
+  {
+    "objectID": "aula02.html#teorema-de-bayes",
+    "href": "aula02.html#teorema-de-bayes",
+    "title": "4  Aula 02",
+    "section": "4.3 Teorema de Bayes:",
+    "text": "4.3 Teorema de Bayes:\nSe \\((A)\\) e \\((B)\\) são dois eventos com probabilidades conhecidas, então:\n\\(P(A|B) = \\frac{P(B|A) \\times P(A)}{P(B)}\\)\nDemonstração:\nInicialmente, deve-se entender que \\(( (A\\cap B)=(B\\cap A) )\\). Após, aplica-se a definição 12 de probabilidade condicional dada por\n\\(P(E_1 | E_2 ) = P(E_1\\cap E_2 )/(P( E_2)\\).\nDesta forma,\n\\(P(A | B)= \\frac{P(A\\cap B)}{P(B)}\\)\nTodavia, sabemos que \\(A \\cap B = B \\cap A\\), então\n\\(P(B|A)= \\frac{P(B\\cap A)}{P(A)}\\)\nQuando aplicamos a regra vista anteriormente; \\(P(B\\cap A)=P(A)\\times P(B|A)\\)\nPortanto, o Teorema de Bayes,\n\\(P(A | B)= \\frac{P(A\\cap B)}{P(B)}=\\frac{P(B\\cap A)}{P(B)}=\\frac{P(B|A) \\times P(A)}{P(B)}\\)",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Aula 02</span>"
+    ]
+  },
+  {
+    "objectID": "aula02.html#teorema-de-bayes-estendido",
+    "href": "aula02.html#teorema-de-bayes-estendido",
+    "title": "4  Aula 02",
+    "section": "4.4 Teorema de Bayes estendido:",
+    "text": "4.4 Teorema de Bayes estendido:\nSejam \\((A_1, A_2,..., A_n)\\) eventos que formam uma partição do espaço amostral. Seja \\((B)\\) um evento desse espaço. Então para cada \\((j=1, 2, ... ,n)\\):\n\\(P(A_j|B)=\\frac{P(B|A_j) \\times P(A_j)}{P(B)}=\\frac{P(B|A_j) \\times P(A_j)}{\\sum_{i=1}^n P(B|A_i) \\times P(A_i) }\\)\nDemonstração:\nAplicando o Teorema de Bayes em \\(P(A_j|B)\\):\n\\(P(A_j|B)=\\frac{P(A_j \\cap B)}{P(B)}=\\frac{P(B|A_j) \\times P(A_j)}{P(B)}\\)\nComo os \\((A_j)\\)’s constituem partição de \\((\\Omega)\\) podemos escrever \\((B)\\) como:\n\\(B=(A_1 \\cap B)\\cup(A_2\\cap B) \\cup...\\cup (A_j\\cap B)\\)\nAplicando o Axioma 3 de Kolmogorov (Definição 10):\n\\(P(B)=P({A_1\\cap B}\\cup{A_2\\cap B}\\cup...\\cup{A_j\\cap B})=P({A_1\\cap B})+P({A_2\\cap B})+...+P({A_j\\cap B})\\)\nLembre da definição de probabilidade condicional:\n\\(P(B|A_j )=P(A_j\\cap B)/(P(A_j))\\)\nUsando a definição de probabilidade condicional \\(( P({A_j\\cap B})=P(B|A_j )\\times P(A_j) )\\) podemos reescrever \\(P(B)\\) da seguinte forma:\n\\(P(B)=P(B|A_1) \\times P(A_1 ) + P(B|A_2 ) \\times P(A_2 ) +...+ P(B|A_n ) \\times P(A_n )\\) = \\(\\sum_{i=1}^n P(B|A_i) \\times P(A_i)\\)\nSubstituímos \\(P(B)\\) pela expressão acima:\n\\(P(A_j|B)= \\frac{P(B|A_j) \\times P(A_j)}{P(B)} = \\frac{P(B|A_j) \\times P(A_j)}{\\sum\\_{i=1}^n P(B|A_i) \\times P(A_i)}\\)\nExemplo:\nConsidere uma partição como mostrado na figura abaixo \\((A_1, A_2, A_3, A_4)\\).\n\\(Omega\\)\n\\(P(A_1|B) = \\frac{P(B\\cap A_1)}{P(B)}= \\frac{P(A_1)\\times P(B|A_1)}{P(A_1)\\times P(B|A_1)+P(A_2)\\times P(B|A_2)+P(A_3)\\times P(B|A_3)+P(A_4)\\times P(B|A_4)}\\)\nExercício (encontrando a fonte de um item com defeito):\nUm mesmo produto é fabricado por três tipos de máquinas \\((A_1, A_2)\\) e \\((A_3)\\). Algumas informações a seguir são conhecidas:\n\n25% dos itens foram produzidos pela máquina \\((A_1)\\);\n30% dos itens foram produzidos pela máquina \\((A_2)\\);\n45% dos itens foram produzidos pela máquina \\((A_3)\\);\n\nAlém disso:\n\n2% dos itens fabricados por \\((A_1)\\) têm defeito.\n4% dos itens fabricados por \\((A_2)\\) têm defeito.\n6% dos itens fabricados por \\((A_3)\\) têm defeito.\n\nUm produto é selecionado aleatoriamente e é defeituoso. Qual é a probabilidade de que este produto tenha sido fabricado por \\((A_3)\\)?\nSolução:\nConsidere os eventos:\n\\(A_i = {\\text{o item foi fabricado pela máquina } A_i}, \\quad i = 1,2,3\\)\n\\(B = {\\text{o item é defeituoso}}\\)\n\\(P(A_1)=25\\%\\)\n\\(P(A_2)=30\\%\\)\n\\(P(A_3)=45\\%\\)\n\\(P(B|A_1 )=2\\%\\)\n\\(P(B|A_2 )=4\\%\\)\n\\(P(B|A_3 )=6\\%\\)\n\\(P(A_3|B)=?\\)\nConsidere uma partição como mostrado na figura abaixo \\((A_1, A_2, A_3)\\).\n\\(\\Omega\\)\nFIGURA\nPede:\n\\(P(A_3|B)=\\frac{P(B|A_3 )P(A_3)}{P(B)}\\)\n\\(P(B)=P({A_1\\cap B}\\cup{A_2\\cap B}\\cup{A_3\\cap B})=P({A_1\\cap B})+P({A_2\\cap B})+P({A_3\\cap B})\\)\n\\(P(B)=P(B|A_1 )P(A_1 )+P(B|A_2 )P(A_2 )+P(B|A_3 )P(A_3)=\\sum_{i=1}^3 P(B|A_i )P(A_i )\\)\n\\(P(B)=(2\\%)(25\\%)+(4\\%)(30\\%)+(6\\%)(45\\%)\\)",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Aula 02</span>"
+    ]
+  },
+  {
+    "objectID": "aula03.html",
+    "href": "aula03.html",
+    "title": "5  Aula 03",
+    "section": "",
+    "text": "6 Variáveis aleatórias",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Aula 03</span>"
+    ]
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "1  Introduction",
+    "section": "",
+    "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "summary.html",
+    "href": "summary.html",
+    "title": "2  Summary",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Summary</span>"
+    ]
+  },
+  {
+    "objectID": "aula01.html#definição-1-espaço-amostral",
+    "href": "aula01.html#definição-1-espaço-amostral",
+    "title": "3  Aula 01",
+    "section": "3.1 Definição 1 (Espaço amostral):",
+    "text": "3.1 Definição 1 (Espaço amostral):\nO espaço amostral (denotado por Ω) é o conjunto de todos os possíveis resultados de um experimento. Como o espaço amostral é um conjunto, ele pode ser definido de dois tipos:\n\nFinito: possui um número finito de elementos\nInfinito: possui um número infinito de elementos\n\nOs conjuntos infinitos podem ser classificados em dois grupos:\n\nEnumeráveis (ou contáveis)\nNão enumeráveis (não contáveis)\n\nExemplos:\nConjuntos finitos - {1,2,3,4,5,6} - {2,4,6,8,10} - {Número de ganhadores da Mega Sena da virada} - {Número de mundiais do Flamengo} - {Número de mundiais do Palmeiras}\nConjuntos infinitos - Conjuntos enumeráveis ou contáveis - {1,2,3,4,5,…} - {1,1/2,1/3,1/4,…} - {0,1,-1,2,-2,3,-3,4,-4,…}\n\nConjuntos não enumeráveis\n\n{conjuntos de todos os números reais}\n{qualquer intervalo, aberto ou fechado, de números reais}\nExemplo: (1, 4), (-2, 10]\nO conjunto A=[1, 2] é não enumerável.\n{uniões e interseções de intervalos}\n\n\nPara o caso de conjuntos finitos, podemos calcular a partir do número de resultados (n) o número de eventos (subconjuntos do espaço amostral) que podem ser gerados por meio da fórmula:\n\\(\\text{Número de eventos} = 2^n\\) (inclui o vazio)\nExemplo:\n\\(A = \\{2,3\\}\\) Podemos formar Número de eventos = \\(2^2 = 4\\) elementos\nExperimento 1: Considere o experimento de jogar um dado e observar o resultado. Encontre o espaço amostral deste experimento.\nSolução: Como existem seis possíveis resultados, o espaço amostral é \\(\\Omega = \\{1,2,3,4,5,6\\}\\) Podemos afirmar que: \\(1 \\in \\Omega\\), \\(2 \\in \\Omega\\), etc. Usando a notação de {} definimos um subconjunto do espaço amostral e podemos fazer as seguintes afirmações: \\(\\{1\\} \\subseteq \\Omega\\), \\(\\{1,2\\} \\subseteq \\Omega\\)\nExperimento 2: Jogar uma moeda e ver o resultado. Encontre o espaço amostral deste experimento.\nSolução: \\(\\Omega = \\{\\text{cara, coroa}\\}\\). Podemos afirmar: cara \\(\\in \\Omega\\)\nExperimento 3: Jogar duas moedas simultaneamente e observar os resultados de cara (H) e coroa (T). Encontre o espaço amostral.\nSolução: \\(\\Omega = \\{HH, TT, HT, TH\\}\\)\nExperimento 4: Jogar uma moeda três vezes e observar a sequência de caras (H) e coroas (T). $ = {HHH, HHT, HTT, TTT, TTH, THH, HTH, THT} $\nExperimento 5: Registrar o tempo de vida de uma lâmpada (\\(t\\)) até queimar. O espaço amostral é \\(\\Omega = \\{t^*: t \\geq 0\\}\\) Este exemplo corresponde a um espaço amostral NÃO ENUMERÁVEL.\nExperimento 6: Programa para o fim de semana. Sair um domingo às 19 horas $ = {} $ Neste último experimento, as possibilidades são várias e não teríamos apenas três resultados. O número de resultados possíveis vai depender do estudo que o pesquisador deseje desenvolver.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Aula 01</span>"
+    ]
+  },
+  {
+    "objectID": "aula01.html#definição-2-evento",
+    "href": "aula01.html#definição-2-evento",
+    "title": "3  Aula 01",
+    "section": "3.2 Definição 2 (Evento)",
+    "text": "3.2 Definição 2 (Evento)\nUm evento (denotado por \\(E\\)), é a coleção de possíveis resultados de um experimento. Em outras palavras, um subconjunto do espaço amostral, isto é, \\(E \\subseteq \\Omega\\).\nExemplo: No experimento 1 “de jogar um dado”, definimos três eventos: Números pares, Números ímpares e Números maiores que 5. Lembre que o espaço amostral deste experimento é $ = {1, 2, 3, 4, 5, 6} $\n\nNúmeros pares → \\(E_1 = \\{2, 4, 6\\}\\)\nNúmeros ímpares → \\(E_2 = \\{1, 3, 5\\}\\)\nNúmeros maiores que 5 → \\(E_3 = \\{6\\}\\)\n\nEntão:\n\n\\(E_1 \\subseteq \\Omega\\)\n\\(E_2 \\subseteq \\Omega\\)\n\nObservações: Não confundir o resultado 6 como o evento \\(E_3 = \\{6\\}\\), \\(\\{6\\} \\in \\Omega\\) e \\(E_3 \\subseteq \\Omega\\).\nEventos simples e compostos: Os eventos 1 e 2 estão formados por mais de um resultado do espaço amostral e são chamados de eventos compostos. Por outro lado, o evento 3 é chamado de evento simples.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Aula 01</span>"
+    ]
+  },
+  {
+    "objectID": "aula01.html#definição-3-eventos-disjuntos",
+    "href": "aula01.html#definição-3-eventos-disjuntos",
+    "title": "3  Aula 01",
+    "section": "3.3 Definição 3 (Eventos disjuntos):",
+    "text": "3.3 Definição 3 (Eventos disjuntos):\nDois eventos \\(E_1\\) e \\(E_2\\) são disjuntos ou mutuamente exclusivos se a sua interseção \\(E_1 \\cap E_2\\) é igual ao conjunto vazio $ $. No exemplo, os eventos \\(E_1\\) e \\(E_2\\) são disjuntos, dado que a sua interseção é o conjunto vazio. Os eventos \\(E_1\\) e \\(E_3\\) não são disjuntos devido a que sua interseção é \\(\\{6\\}\\).",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Aula 01</span>"
+    ]
+  },
+  {
+    "objectID": "aula01.html#definição-4-partição",
+    "href": "aula01.html#definição-4-partição",
+    "title": "3  Aula 01",
+    "section": "3.4 Definição 4 (Partição):",
+    "text": "3.4 Definição 4 (Partição):\nSe os eventos \\(E_1, E_2, E_3, E_4, \\ldots\\) são dois a dois disjuntos e a sua união \\(E_1 \\cup E_2 \\cup E_3 \\cup E_4 \\ldots\\) é igual ao espaço amostral, então a coleção \\(E_1, E_2, E_3, E_4, \\ldots\\) forma uma partição do espaço amostral.\nExemplo 2: Para o experimento de jogar um dado e observar o resultado, considere os eventos definidos como: \\(E_1 = \\{1, 2, 3\\}\\), \\(E_2 = \\{4\\}\\), \\(E_3 = \\{5, 6\\}\\).\nVerifique se eles formam uma partição!",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Aula 01</span>"
+    ]
+  },
+  {
+    "objectID": "aula01.html#definição-5-complemento-de-um-conjunto",
+    "href": "aula01.html#definição-5-complemento-de-um-conjunto",
+    "title": "3  Aula 01",
+    "section": "3.5 Definição 5 (complemento de um conjunto):",
+    "text": "3.5 Definição 5 (complemento de um conjunto):\nO complementar de um conjunto \\(A\\), denotado como \\(A^c\\) ou \\(\\bar{A}\\), é definido como: \\(A^c = \\bar{A}\\) = {Elementos do espaço amostral que não pertencem ao conjunto A}.\nExemplo 3: No exemplo de jogar um dado. Encontre o complementar do evento \\(A = \\{3, 4, 5\\}\\).\nSolução:\n\\(\\bar{A} = \\{1, 2, 6\\}\\)\n\\(\\bar{A} \\cup A = \\{1, 2, 3, 4, 5, 6\\} = \\Omega\\)\n[FIGURA]",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Aula 01</span>"
+    ]
+  },
+  {
+    "objectID": "aula01.html#definição-6-σ-álgebra",
+    "href": "aula01.html#definição-6-σ-álgebra",
+    "title": "3  Aula 01",
+    "section": "3.6 Definição 6 (σ-álgebra):",
+    "text": "3.6 Definição 6 (σ-álgebra):\nUma coleção \\(F\\) de subconjuntos de \\(\\Omega\\) é uma σ-álgebra se satisfaz as seguintes condições:\n\nO conjunto vazio e o espaço amostral pertencem a \\(F\\), isto é, \\(\\emptyset \\in F\\) e \\(\\Omega \\in F\\).\nSe $E F $, então seu complemento \\(E^c = \\{w \\in \\Omega \\mid w \\notin E\\}\\) também está em \\(F\\) (onde \\(w\\) representa um resultado do espaço amostral).\n\\(F\\) é fechado na união contável, ou seja, se \\(E_1 \\in F\\), $E_2 F $, \\(E_3 \\in F\\), …, então \\(E_1 \\cup E_2 \\cup E_3 \\cup \\ldots = \\bigcup_{i=1}^{\\infty} E_i \\in F\\).\n\nNo item 3, se apenas a união finita está em \\(F\\), temos uma classe menos restrita, denominada álgebra.\nExercício 1: No experimento de jogar um dado \\(\\Omega = \\{1,2,3,4,5,6\\}\\): - \\(F_1 = \\{\\emptyset, \\Omega\\}\\) e \\(F_2 = \\{\\emptyset, \\Omega, \\{1\\}, \\{2,3,4,5,6\\}\\}\\) são σ-álgebras de subconjuntos de \\(\\Omega\\)?\nExemplo: \\(F = \\{\\{2,4,6\\}, \\{1,3,5\\}, \\{6\\}\\}\\)",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Aula 01</span>"
+    ]
+  },
+  {
+    "objectID": "aula01.html#definição-7-σ-álgebra-de-borel",
+    "href": "aula01.html#definição-7-σ-álgebra-de-borel",
+    "title": "3  Aula 01",
+    "section": "3.7 Definição 7 (σ-álgebra de Borel):",
+    "text": "3.7 Definição 7 (σ-álgebra de Borel):\nUma σ-álgebra de Borel é denotada por \\(B (\\mathbb{R}) = \\sigma{(-\\infty, x] : x \\in \\mathbb{R}}\\), ou seja, é a \\(\\sigma\\)-álgebra contendo conjuntos abertos da forma \\((- \\infty, x]\\). A medida de Borel também pode ser definida (gerada) pelos intervalos da forma \\((a, b)\\) ou \\((x, \\infty)\\).\nOutra σ-álgebra de importância é definida no espaço Euclidiano \\(\\mathbb{R}^n\\) de todos os conjuntos mensuráveis de Lebesgue. Essa σ-álgebra contém mais conjuntos que a σ-álgebra de Borel em \\(\\mathbb{R}^n\\) e é preferida na teoria de integração, posto que ela dá um espaço mensurável completo.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Aula 01</span>"
+    ]
+  },
+  {
+    "objectID": "aula01.html#definição-8-medida",
+    "href": "aula01.html#definição-8-medida",
+    "title": "3  Aula 01",
+    "section": "3.8 Definição 8 (Medida):",
+    "text": "3.8 Definição 8 (Medida):\nDefina \\(F\\) como uma σ-álgebra de subconjuntos de \\(\\Omega\\). A função \\(\\mu : F \\to \\mathbb{R}^+\\) é dita ser uma medida em \\(F\\) se satisfaz os seguintes axiomas:\n\n$(E) $ para todo \\(E \\in F\\)\n\\(\\mu (\\emptyset) = 0\\)\nSe \\(E_1, E_2, E_3, \\ldots\\) são eventos dois a dois disjuntos (mutuamente exclusivos), então \\(\\mu ( \\bigcup_{i=1}^{\\infty} E_i ) = \\sum_{i=1}^{\\infty} \\mu(E_i)\\). A terceira condição pode também ser representada como \\(\\mu (\\bigcup_{i=1}^{\\infty} E_i) = \\mu(E_1) + \\mu(E_2) + \\mu(E_3) + \\ldots\\)",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Aula 01</span>"
+    ]
+  },
+  {
+    "objectID": "aula01.html#definição-9-espaço-mensurável",
+    "href": "aula01.html#definição-9-espaço-mensurável",
+    "title": "3  Aula 01",
+    "section": "3.9 Definição 9 (Espaço mensurável):",
+    "text": "3.9 Definição 9 (Espaço mensurável):\nO espaço mensurável é definido como a tripla (\\(\\Omega, F, \\mu\\)), em que \\(\\Omega\\) é um conjunto arbitrário, \\(F\\) é a σ-álgebra de subconjuntos de \\(\\Omega\\), e \\(\\mu\\) é uma medida em \\(F\\).",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Aula 01</span>"
+    ]
+  },
+  {
+    "objectID": "aula01.html#definição-10-axiomas-de-kolmogorov",
+    "href": "aula01.html#definição-10-axiomas-de-kolmogorov",
+    "title": "3  Aula 01",
+    "section": "3.10 Definição 10: (Axiomas de Kolmogorov)",
+    "text": "3.10 Definição 10: (Axiomas de Kolmogorov)\nDado o espaço amostral \\(\\Omega\\) e uma σ-álgebra \\(F\\), a função (denotada por \\(P\\)) \\(P : F \\to [0,1]\\) é dita ser uma medida de probabilidade se satisfaz os seguintes axiomas:\n\n\\(P(E) \\geq 0, \\forall E \\in F\\)\n\\(P(\\Omega) = 1\\)\n$P( \\(\\bigcup_{i=1}^{\\infty} E_i ) = \\sum_{i=1}^{\\infty} P(E_i)\\), em que \\(E_1, E_2, E_3, \\ldots\\) são eventos dois a dois disjuntos ou mutuamente exclusivos. A terceira propriedade pode ser representada da seguinte forma: \\(P(E_1 \\cup E_2 \\cup E_3 \\ldots) = P(E_1) + P(E_2) + P(E_3) + \\ldots\\)",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Aula 01</span>"
+    ]
+  },
+  {
+    "objectID": "aula01.html#definição-11-espaço-de-probabilidade",
+    "href": "aula01.html#definição-11-espaço-de-probabilidade",
+    "title": "3  Aula 01",
+    "section": "3.11 Definição 11 (Espaço de probabilidade):",
+    "text": "3.11 Definição 11 (Espaço de probabilidade):\nO espaço de probabilidade é definido como a tripla (\\(\\Omega, F, P4\\)), em que \\(\\Omega\\) é o espaço amostral, \\(F\\) é a σ-álgebra de subconjuntos de \\(\\Omega\\), e \\(P\\) a medida de probabilidade.\nExemplo 4: Mostre a seguinte proposição:\ni) \\(P(\\emptyset) = 0\\); em que \\(\\emptyset\\) é o conjunto vazio.\nSolução::\nEncontrar que \\(P(\\emptyset) = 0\\), em que \\(\\emptyset\\) é o conjunto vazio.\nNote primeiro que:\n\\(\\Omega = \\Omega \\cup \\emptyset\\) e\n\\(\\Omega \\cap \\emptyset = \\emptyset\\)\n(\\(\\Omega\\) e \\(\\emptyset\\) são eventos disjuntos)\nEntão pelo axioma 2 e 3 temos:\n\\(P(\\Omega) = P(\\Omega \\cup \\emptyset) = P (\\emptyset) + P(\\Omega)\\)\n1 = \\(P(\\emptyset)\\) + 1\n\\(P (\\emptyset) = 0\\)\nExercício 2: Mostre as seguintes propriedades:",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Aula 01</span>"
+    ]
+  },
+  {
+    "objectID": "aula01.html#teorema-1",
+    "href": "aula01.html#teorema-1",
+    "title": "3  Aula 01",
+    "section": "3.12 Teorema 1",
+    "text": "3.12 Teorema 1\n\\(P(E^c) = 1 - P(E)\\)\n\\(P(E) \\leq 1, \\forall E \\in F\\)",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Aula 01</span>"
+    ]
+  },
+  {
+    "objectID": "aula01.html#teorema-2",
+    "href": "aula01.html#teorema-2",
+    "title": "3  Aula 01",
+    "section": "3.13 Teorema 2",
+    "text": "3.13 Teorema 2\nSe \\(P\\) é uma função probabilidade e \\(E_1, E_2 \\in F\\) então:\n\nSe \\(E_1 \\subseteq E_2\\) então \\(P(E_1) \\leq P(E_2)\\)\n\\(P(E_1 \\cup E_2) = P(E_1) + P(E_2) - P(E_1 \\cap E_2)\\)\n\\(P(E_1 \\cap E_2^c) = P(E_1) - P(E_1 \\cap E_2)\\)\n\nExemplo\nConsidere o experimento de jogar um dado. Sabendo que o dado não é “justo”, as probabilidades associadas aos resultados são:\n\\(P(\\{1\\}) = \\frac{1}{6}\\)\n\\(P(\\{2\\}) = \\frac{1}{6}\\)\n\\(P(\\{3\\}) = \\frac{1}{6}\\)\n\\(P(\\{4\\}) = \\frac{1}{6}\\)\n\\(P(\\{5\\}) = \\frac{1}{7}\\)\nUsando apenas os Axiomas de Kolmogorov, pede-se:\n\nEncontre a probabilidade de encontrar o número 6;\nEncontre a probabilidade de encontrar um número par.\n\nSolução:\n\nInicialmente, observa-se que o espaço amostral ( ) do experimento de jogar um dado é, \\(\\Omega = \\{1,2,3 \\overset{\\_}{,} 4,5,6\\}\\). O espaço amostral pode ser escrito como a união de eventos simples compostos pelos resultados:\n\n\n\\(\\Omega = \\{\\{1\\},\\{2\\},\\{3\\},\\{4\\},\\{5\\},\\{6\\}\\}\\) = \\(\\{1\\} \\cup \\{2\\} \\cup \\{3\\} \\cup \\{4\\} \\cup \\{5\\} \\cup \\{6\\}\\).\n\nConsiderando os eventos simples serem dois a dois disjuntos (mutuamente exclusivos), ou seja, \\(( \\{1\\} \\cap \\{2\\} = \\phi \\), \\( \\{1\\} \\cap \\{3\\} = \\phi \\)\\), …, temos que o terceiro axioma, \\(( P\\left(\\bigcup_{i=1}^{\\infty} E_i \\right) = \\sum_{i=1}^{\\infty} P(E_i) )\\), se cumpre.\nEntão:\n\\(P(\\Omega) = P(\\{1,2,3 \\overset{\\_}{,} 4,5,6\\}) = P(\\{1\\} \\cup \\{2\\} \\cup \\{3\\} \\cup \\{4\\} \\cup \\{5\\} \\cup \\{6\\}) =\\)\n\\(P\\{(1)\\} + P\\{(2)\\} + P\\{(3)\\} + P\\{(4)\\} + P\\{(5)\\} + P\\{(6)\\}\\)\nAlém disso, o segundo axioma dispõe que \\(P(\\Omega) = 1\\), portanto, \\(P(\\{1,2,3, 4,5,6\\}) = P(\\Omega) = 1\\)\nAssim,\n\\(P\\{(1)\\} + P\\{(2)\\} + P\\{(3)\\} + P\\{(4)\\} + P\\{(5)\\} + P\\{(6)\\} = 1\\) \\(\\frac{1}{6} + \\frac{1}{6} + \\frac{1}{6} + \\frac{1}{6} + \\frac{1}{7} + P\\{(6)\\} = 1\\) \\(\\frac{1}{6} + \\frac{1}{6} + \\frac{1}{6} + \\frac{1}{6} + \\frac{1}{7} + P\\{(6)\\} = 1\\) \\(P\\{(6)\\} = \\frac{4}{21}\\)\n\nPara calcular a probabilidade de um número ser par definimos o evento ( E ) dos números pares: \\(E = \\{2,4,6\\}\\) \\(P(E) = P(\\{2,4,6\\}) = P(\\{2\\} \\cup \\{4\\} \\cup \\{6\\})\\) Segundo Axioma 3, \\(P(E) = P(\\{2\\} \\cup \\{4\\} \\cup \\{6\\}) = P\\{(2)\\} + P\\{(4 \\{(6)\\}\\) \\(P(E) = \\frac{1}{6} + \\frac{1}{6} + \\frac{4}{21} = \\frac{11}{21}\\)\n\n\n3.13.1 Combinação de Eventos:\nSejam dois eventos \\(A\\) e \\(B\\), do espaço amostral \\(S\\). Como \\(A\\) e \\(B\\) são conjuntos, podemos aplicar a eles operações, tais como:\n\nUnião: \\(A \\cup B\\)\n\nExemplo\n\\(A = \\{2,3\\}\\)\n\\(B = \\{3,4\\}\\)\n\\(A \\cup B = \\{2,3,4\\}\\)\n\nIntersecção: \\(A \\cap B\\)\n\nExemplo\n\\(A = \\{2,3\\}\\)\n\\(B = \\{3,4\\}\\)\n\\(A \\cap B = \\{3\\}\\)\n\nComplementar de \\(A: A^c\\)\n\nExemplo\nSeja o espaço amostral:\n\\(S = \\Omega = \\{1,2,3,4,5,6\\}\\)\n\\(A = \\{2,3\\}\\)\n\\(A^c = \\{1,4,5,6\\}\\)\n\nSubtração: \\(A - B\\)\n\nExemplo\nSeja o espaço amostral:\n\\(\\Omega = \\{1,2,3,4,5,6\\}\\)\n\\(A = \\{2,3\\}\\)\n\\(B = \\{3,4\\}\\)\n\\(A - B = \\{2\\}\\)\nLeis de Morgan\n\n\\((A \\cup B)^c = A^c \\cap B^c\\)\n\\((A \\cap B)^c = A^c \\cup B^c\\)\n\\(A - B = A \\cap B^c\\)\n\\(A^c = \\Omega - A\\)\n\nExemplo\nLançam-se duas moedas honestas simultaneamente. Seja \\(A\\): saída de faces iguais; e \\(B\\): saída de cara na primeira moeda. Defina: \\(c =\\) cara e \\(r =\\) coroa. Determinar os eventos:\nEspaço amostral: \\(\\Omega = \\{cc,cr,rc,rr\\}\\) \\(A = \\{cc,rr\\}\\) \\(B = \\{cr,cc\\}\\) - ( A B ) \\(A \\cup B = \\{(cc),(rr),(cr)\\}\\) - ( A B ) \\(A \\cap B = \\{(cc)\\}\\)\n\n\\(A^c\\)\n\nO complementar de um evento \\(A\\) denotado por \\(A^c\\) ou \\(( A)^c\\), é a negação de \\(A\\). Então, o complementar de \\(A\\) é formado pelos elementos que não pertencem a \\(A\\).\n\\(A^c = \\text{saída de faces diferentes}\\) \\(A^c = \\{rc,cr\\}\\) - ( B^c ) \\(B^c = \\text{não saída de cara na 1ª moeda}\\) \\(B^c = \\{(rc),(rr)\\}\\)\n\n\\((A \\cup B)^c\\)\n\n\\((A \\cup B)^c = A^c \\cap B^c\\) \\((A \\cup B)^c = \\{rc\\}\\) - ( (A B)^c ) \\((A \\cap B)^c = A^c \\cup B^c\\) \\((A \\cap B)^c = \\{(rr),(cr),(rc)\\}\\)\nPara mais informações, consulte este link.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Aula 01</span>"
+    ]
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "crumbs": [
+      "References"
+    ]
+  },
+  {
+    "objectID": "aula03.html#variável-aleatória",
+    "href": "aula03.html#variável-aleatória",
+    "title": "5  Aula 03",
+    "section": "6.1 1. Variável Aleatória",
+    "text": "6.1 1. Variável Aleatória\nPara facilitar o cálculo da probabilidade de um evento, é conveniente trabalhar com valores numéricos associados aos eventos aleatórios. Dessa forma, muitas vezes é mais interessante atribuir um número a um evento aleatório.\n\n6.1.1 1.1 Definição (variável aleatória)\nConsidere o espaço de probabilidade (\\(\\Omega, \\mathcal{F}, P\\)), onde \\(\\Omega\\) é o espaço amostral, \\(\\mathcal{F}\\) é a \\(\\sigma\\)-álgebra de subconjuntos de \\(\\Omega\\), e \\(P\\) é a medida de probabilidade. Uma variável aleatória é uma função que associa um único número real a cada elemento do espaço amostral:\n\\(X: \\Omega \\rightarrow \\mathbb{R}\\)\n\n\nFormalmente, para algum evento \\(E\\) em \\(\\Omega\\) satisfaz \\(E=X\\^{-1} (I) = \\{\\omega \\in \\Omega : X(\\omega) \\in I\\} \\in \\mathcal{F}\\), para todo intervalo \\(I \\subset \\mathbb{R}\\). Em outras palavras, a imagem inversa de intervalos (\\(I \\subset \\mathbb{R}\\)) pertence a \\(\\mathcal{F}\\).\n\n\nNotação:\n\n\\(X\\) (maiúscula) = variável aleatória\n\\(x\\) (minúscula) = valor numérico da variável aleatória\n\\(\\omega\\) = resultado ou elemento do espaço amostral\n\n\n\nExemplo 1: Lançamento de uma Moeda\n\n\nConsidere o experimento de lançar uma moeda. Ao analisarmos o espaço amostral do experimento, observamos que existem dois resultados possíveis: \\(\\omega_1=\\text{cara}\\) e \\(\\omega_2=\\text{coroa}\\), assim:\n\n\n\\(\\Omega=\\{\\omega_1, \\omega_2\\}=\\{\\text{cara, coroa}\\}\\)\n\n\nVamos definir a variável aleatória \\(X\\) da seguinte forma:\n\n\n\\(X: \\text{Número de coroas}\\)\n\n\n\\(X(\\omega_1)=X(\\text{cara})=0, \\text{ se o evento for \\{cara\\}}\\)\n\\(X(\\omega_2)=X(\\text{coroa})=1, \\text{ se o evento for \\{coroa\\}}\\)\n\n\nAo invés de utilizar eventos para calcular as probabilidades, agora utilizaremos a variável aleatória \\(X\\), que assume valores na reta. Isso facilitará o cálculo das probabilidades. Podemos então calcular a probabilidade de sair cara como \\(P(\\{\\text{cara}\\})=P(X=0)\\).\n\n\nA figura a seguir apresenta esta situação:\n\n\nExemplo 2: Lançamento de uma Moeda Duas Vezes\n\n\nConsidere o experimento de lançar uma moeda duas vezes, onde definimos \\(H\\) com cara e \\(T\\) como coroa. O espaço amostral será composto pelos eventos simples \\(\\Omega=\\{\\omega_1, \\omega_2, \\omega_3, \\omega_4\\}=\\{\\text{HH, HT, TH, TT}\\}\\).\n\n\nDefinamos duas variáveis aleatórias:\n\n\\(X =\\) número de caras ao final do experimento\n\\(Y =\\) número de cara na primeira jogada menos o número de coroas na segunda jogada.\n\n\n\nEncontre os valores das variáveis aleatórias \\(X\\) e \\(Y\\).\n\n\nSolução:\nPara cada resultado \\(\\omega_i \\in \\Omega\\), \\(i=1,2,3,4\\), a variável aleatória \\(X\\) transformará um elemento de \\(\\Omega\\) em um valor real.\n\n\nPara \\(X\\):\n\\(X(\\omega_1)=X(\\text{HH})=2\\)\n\\(X(\\omega_2)=X(\\text{HT})=1\\)\n\\(X(\\omega_3)=X(\\text{TH})=1\\)\n\\(X(\\omega_4)=X(\\text{TT})=0\\)\n\n\nPortanto, \\(X=\\{0,1,2\\}\\).\n\n\nPara \\(Y\\):\n\\(Y(\\omega_1)=Y(\\text{HH})=2-0=2\\)\n\\(Y(\\omega_2)=Y(\\text{HT})=1-1=0\\)\n\\(Y(\\omega_3)=Y(\\text{TH})=1-1=0\\)\n\\(Y(\\omega_4)=Y(\\text{TT})=0-1=-1\\)\n\n\nE \\(Y=\\{-1,0,1\\}\\).\n\n\n\n\n6.1.2 1.2 Classificação:\n\n\nPodemos classificar as variáveis aleatórias como discreta ou contínua:\n\n\nVariável Aleatória Discreta:\nUma variável aleatória é considerada discreta quando seus possíveis valores podem ser um número finito ou enumerável (infinito, mas contável) de valores.\n\n\n*Exemplo:*\n\n\\(X\\) pode assumir valores finitos, como \\(\\{1, 2, 3, 4, 5, 6\\}\\).\n\\(X\\) pode assumir valores enumeráveis, como \\(\\{0, 1, 2, 3, 4, 5, \\ldots\\}\\).\n\\(X\\) pode assumir valores fracionários enumeráveis, como \\(\\{1/2, 1/4, 1/8, \\ldots\\}\\).\n\n\n\nVariáveis Aleatórias Contínuas:\nUma variável aleatória é considerada contínua quando pode assumir qualquer valor em um intervalo da reta real, ou seja, possui um conjunto infinito e não enumerável de valores possíveis.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Aula 03</span>"
+    ]
+  },
+  {
+    "objectID": "aula03.html#exemplo",
+    "href": "aula03.html#exemplo",
+    "title": "5  Aula 03",
+    "section": "5.2 Exemplo:",
+    "text": "5.2 Exemplo:\n\\(Y\\) pode assumir qualquer valor em um intervalo, como \\(0 \\leq Y \\leq 1\\).\n\\(Z\\) pode assumir valores em um intervalo não enumerável, como \\(Z \\in (-\\infty, \\infty)\\).\nNotação:\n\n“v.a” indica “variável aleatória”\n“v.a.d” indica “variável aleatória discreta”\n“v.a.c” indica “variável aleatória contínua”\n\nOutros exemplos de variáveis aleatórias discretas:\n\n\\(X\\): Número de alunos que passaram em um exame.\nPossíveis valores: \\(\\{0, 1, 2, 3, \\ldots\\}\\)\n\\(Y\\): Número de carros em um estacionamento.\nPossíveis valores: \\(\\{0, 1, 2, 3, \\ldots\\}\\)\n\\(Z\\): Número de peças defeituosas em um lote de produção.\nPossíveis valores: \\(\\{0, 1, 2, \\ldots\\}\\)\n\n\n\nOutros exemplos de Variáveis aleatórias contínuas:\n\n\\(X\\): altura de uma pessoa\nPossíveis valores: \\(X &gt; 0\\)\n\\(Y\\): peso de uma pessoa\nPossíveis valores: \\(Y &gt; 0\\)\n\\(Z\\): preço de um ativo financeiro\nPossíveis valores: \\(Z &gt; 0\\)\n\n\n\nEsses exemplos ilustram a distinção entre variáveis aleatórias discretas e contínuas, destacando que as primeiras assumem valores distintos e contáveis, enquanto as segundas podem assumir qualquer valor em um intervalo contínuo.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Aula 03</span>"
+    ]
+  },
+  {
+    "objectID": "aula03.html#função-de-distribuição",
+    "href": "aula03.html#função-de-distribuição",
+    "title": "5  Aula 03",
+    "section": "5.2 Função de distribuição",
+    "text": "5.2 Função de distribuição\nA função de distribuição \\(F: \\mathbb{R} \\rightarrow [0,1]\\) é definida pela relação:\n\\(F(x_0) = P(X \\leq x_0) = P(\\{\\omega \\in \\Omega : X(\\omega) \\leq x_0\\})\\)\nonde o conjunto \\(\\{X \\leq x_0\\}\\) na dimensão de \\(\\mathbb{R}\\) é equivalente ao evento \\(\\{\\omega \\in \\Omega : X(\\omega) \\leq x_0\\}\\).\nEssa igualdade descreve os resultados nos quais a desigualdade é satisfeita. É relevante notar que esta definição é aplicável tanto para variáveis aleatórias discretas quanto contínuas.\nDefinição:\nConsiderando a variável aleatória \\(X\\), que pode ser discreta ou contínua, a função de distribuição acumulada, denotada por \\(F(x)\\), é definida como segue:\n\\(F(x_0) = P(X \\leq x_0)\\), onde \\(x_0\\) representa o valor específico da variável aleatória.\nExemplo:\nConsidere o experimento de jogar uma moeda duas vezes, onde \\(H\\) é cara e \\(T\\) é coroa. Defina a variável aleatória como \\(X\\): número de caras em duas jogadas.\n\nEncontre o espaço amostral do experimento;\nPara a variável aleatória definida, encontre os valores que ela pode tomar;\nEncontre a função de distribuição de \\(X\\).\n\nSolução:\nIdentificamos que a variável aleatória \\(X\\) é do tipo discreto.\na) O espaço amostral é: \\(\\Omega = \\{\\omega_1, \\omega_2, \\omega_3, \\omega_4\\} = \\{HH, HT, TH, TT\\}\\)\nb) A variável aleatória \\(X\\) transforma cada resultado \\(\\omega \\in \\mathbb{R}\\), do espaço amostral \\(\\Omega\\) em um valor real. \\(X =\\) número de caras em duas jogadas.\nA variável aleatória assim definida transforma cada resultado em um número real.\n\n\\(X(HH) = 2\\)\n\\(X(HT) = X(TH) = 1\\)\n\\(X(TT) = 0\\)\n\nOs valores que a variável aleatória pode tomar são: \\(X = \\{0, 1, 2\\}\\)\nc) Para construir a função distribuição, precisamos conhecer os intervalos da forma \\(\\{X \\leq x_0\\} = \\{\\omega \\in \\Omega | X(\\omega) \\leq x_0\\}\\).\nPara os valores:\n\nPara \\(x_0=0\\), o intervalo \\(\\{X \\leq 0\\}\\) relaciona o evento: \\(\\{X \\leq x_0\\} = \\{X \\leq 0\\} = \\{\\omega \\in \\Omega : X(\\omega) \\leq 0\\} = \\{ {\\underbrace{TT}_{X=0}} \\}\\)\nPara \\(x_0=1\\), o intervalo \\(\\{X \\leq 1\\}\\) relaciona os eventos: \\(\\{X \\leq x_0\\} = \\{X \\leq 1\\} = \\{\\omega \\in \\Omega : X(\\omega) \\leq 1\\} =\\{ {\\underbrace{HT,TH}_{X=1}}, {\\underbrace{TT}_{X=0}}\\}\\)\nPara \\(x_0=2\\), o intervalo \\(\\{X \\leq 2\\}\\) relaciona os eventos: \\(\\{X \\leq x_0\\} = \\{X \\leq 2\\} =\\)\n\n\\(\\{\\omega \\in \\Omega : X(\\omega) \\leq 2\\} = \\{ {\\underbrace{HH}_{X=2}}, {\\underbrace{HT,TH}_{X=1}}, {\\underbrace{TT}_{X=0}}\\}\\)",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Aula 03</span>"
+    ]
+  },
+  {
+    "objectID": "aula03.html#tabela-da-distribuição",
+    "href": "aula03.html#tabela-da-distribuição",
+    "title": "5  Aula 03",
+    "section": "5.3 Tabela da distribuição:",
+    "text": "5.3 Tabela da distribuição:\n\n\n\n\n\n\n\n\n\n\nX\nF(x)\nP(X \\(\\leq\\) x)\nP(\\(\\omega \\in \\Omega | X(\\omega) \\leq 0\\))\nValor\n\n\n\n\n0\nF(0)\nP(X \\(\\leq\\) 0)\nP({TT}) = P(X \\(\\leq\\) 0) = P({TT})\n0.25\n\n\n1\nF(1)\nP(X \\(\\leq\\) 1)\nP({HT,TH,TT}) = P({HT} \\(\\cup\\) {TH} \\(\\cup\\) {TT}) = P({HT}) + P({TH}) + P({TT}) = 0.25 + 0.25 + 0.25\n0.75\n\n\n2\nF(2)\nP(X \\(\\leq\\) 2)\nP({HH,HT,TH,TT}) = P({HH} \\(\\cup\\) {HT} \\(\\cup\\) {TH} \\(\\cup\\) P{TT}) = P({HH}) + P({HT}) + P({TH}) + P({TT}) = 0.25 + 0.25 + 0.25 + 0.25\n1\n\n\n\nResumindo:\n\n\n\nX\nF(x)\n\n\n\n\n0\n0.25\n\n\n1\n0.75\n\n\n2\n1\n\n\n\n\n5.3.1 Exemplo:\nNo exemplo acima, encontre:\na) F(3)\nb) F(0.5)\nc) F(1.5)\nd) F(-10)\nSolução:\na) \\(F(3) = P(X \\leq 3) = P({HH,HT,TH,TT}) = 1\\)\nb) \\(F(0.5) = P(X \\leq 0.5) = P({TT}) = 0.25\\)\nc) \\(F(1.5) = P(X \\leq 1.5) = P(X \\leq 1) = P({HT,TH,TT}) = 0.75\\)\nd) \\(F(-10) = P(X \\leq -10) = P(\\{\\emptyset\\}) = 0\\)",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Aula 03</span>"
+    ]
+  },
+  {
+    "objectID": "aula03.html#propriedades-das-funções-de-distribuição-fx",
+    "href": "aula03.html#propriedades-das-funções-de-distribuição-fx",
+    "title": "5  Aula 03",
+    "section": "6.5 2.2 Propriedades das funções de distribuição (F(x))",
+    "text": "6.5 2.2 Propriedades das funções de distribuição (F(x))\n\n\na) ( _{{x -}} F(x) = 0 ); ( _{{x +}} F(x) = 1 )\n\n\nb) Se ( x &lt; y ) então ( F(x) F(y) );\n\n\nc) ( F ) é contínua à direita, ou seja, ( F(x+h) ), quando ( h ), é igual a ( F(x) ).\n\n\nDefinição de continuidade à direita e esquerda:\n\n( F(x_-) F(x) ), isto é, ( F ) é descontínua à esquerda.\n( F(x_+) = F(x) ), isto é, ( F ) é contínua à direita.\n\n\n\nEssas propriedades são essenciais para entender o comportamento e as características das funções de distribuição acumulada. Elas garantem que a função ( F ) seja não decrescente, limitada nos extremos e contínua à direita. A continuidade à direita é particularmente importante, pois significa que a probabilidade acumulada não salta de um valor para outro, tornando a função mais suave e interpretável.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Aula 03</span>"
+    ]
+  },
+  {
+    "objectID": "aula03.html#função-probabilidade-e-função-densidade-de-probabilidade",
+    "href": "aula03.html#função-probabilidade-e-função-densidade-de-probabilidade",
+    "title": "5  Aula 03",
+    "section": "5.5 Função Probabilidade e Função Densidade de Probabilidade:",
+    "text": "5.5 Função Probabilidade e Função Densidade de Probabilidade:\nA função de probabilidade é definida para uma variável aleatória discreta, enquanto a função densidade de probabilidade é utilizada para uma variável aleatória contínua. No entanto, em muitos textos, o termo “função densidade” é utilizado para ambas as situações.\n\n5.5.1 Função de Probabilidade:\nPara uma variável aleatória discreta \\(X\\), definimos a função probabilidade \\(f(x)\\). Essa função associa a cada valor possível da variável aleatória uma probabilidade.\nDefinição:\nA função de probabilidade de uma variável aleatória discreta \\(X\\) é definida como:\n\\(f(x_i) = P(X = x_i) \\quad \\text{para todo} \\ x_i\\)\nOu simplesmente:\n\\(f(x) = P(X = x)\\)\nA função \\(f(x)\\) é chamada função probabilidade da variável aleatória \\(X\\), e nesse contexto, dizemos que \\(X\\) é uma variável aleatória discreta.\nNotas:\n\nA função de probabilidade é conhecida também como função massa de probabilidade (fmp). Às vezes, para facilitar a comunicação, utilizamos o termo “função densidade de probabilidade” (fdp), como também é chamado no caso contínuo.\n\nPropriedades da função probabilidade:\n\n\\(0 \\leq f(x_i) \\quad \\text{para todo}\\) \\(x_i\\);\n\\(\\sum_{i=1}^n f(x_i) = f(x_1) + f(x_2) + \\ldots + f(x_n) = 1\\)\n\nPela definição \\(f(x_i) = P(X = x_i)\\), a propriedade (ii) pode também ser representada como:\n\\(f(x_1) + f(x_2) + \\ldots + f(x_n)\\) = \\(P(X = x_1) + P(X = x_2) + \\ldots + P(X = x_n) = 1\\),\nonde \\(n\\) é o número de valores que a variável aleatória toma. A função é uma probabilidade e, portanto, é sempre positiva e menor que um.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Aula 03</span>"
+    ]
+  },
+  {
+    "objectID": "aula03.html#função-densidade-de-probabilidade-fdp",
+    "href": "aula03.html#função-densidade-de-probabilidade-fdp",
+    "title": "5  Aula 03",
+    "section": "5.6 Função densidade de probabilidade (fdp)",
+    "text": "5.6 Função densidade de probabilidade (fdp)\nSeja \\(X\\) uma variável aleatória contínua. A função densidade de probabilidade (fdp) de \\(X\\) é representada pela função \\(f(x)\\) tal que, para quaisquer dois números \\(a\\) e \\(b\\) com \\(a \\leq b\\):\n\\(P(a \\leq X \\leq b) = P(a &lt; X &lt; b) = \\int_a^b f(x) \\, dx\\)\nA probabilidade de \\(X\\) pertencer ao intervalo \\([a,b]\\) é a área acima desse intervalo e abaixo do gráfico da função densidade, como ilustrado na Figura 1.\n\n\n\nFigura 1. Probabilidade de X pertencer ao intervalo [a,b].\n\n\n\n5.6.1 Propriedades da função densidade (fdp)\n1. \\(f(x) &gt; 0\\): A função densidade de probabilidade é sempre positiva.\n2. \\(\\int_{-\\infty}^{\\infty} f(x) \\, dx = 1\\): A área total sob o gráfico da função densidade é igual a um.\nObservação:\nPara a variável aleatória contínua, não é verdade a seguinte relação \\(f(a) = P(X = a)\\). Observe que, para a variável aleatória contínua, \\(P(X = a) = 0\\). No entanto, o valor de \\(f(a)\\) existe (ver Figura 1).\nLembrando da definição de função distribuição:\n\\(F(a) = P(X \\leq a) = \\int_{-\\infty}^a f(x) \\, dx\\)",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Aula 03</span>"
+    ]
+  },
+  {
+    "objectID": "aula03.html#exercícios",
+    "href": "aula03.html#exercícios",
+    "title": "5  Aula 03",
+    "section": "5.7 Exercícios",
+    "text": "5.7 Exercícios\n1) Para uma variável aleatória contínua, verifique a relação: \\(f(x) = \\frac{dF(x)}{dx}\\).\nPara uma variável aleatória contínua, temos a relação entre a função densidade de probabilidade \\(f(x)\\) e a função distribuição acumulada \\(F(x)\\) dada por:\n\\(f(x) = \\frac{dF(x)}{dx}\\)\nEssa relação expressa que a função densidade de probabilidade é a derivada da função distribuição acumulada.\n2) Verificação da Relação Integral:\nAlém disso, para uma variável aleatória contínua, a probabilidade de \\(X\\) estar no intervalo \\([a,b]\\) pode ser calculada pela integral da função densidade de probabilidade:\n\\(\\int_a^b f(x) \\, dx = F(b) - F(a) = P(X \\leq b) - P(X \\leq a)\\)\nEssa relação mostra que a integral da função densidade de probabilidade sobre um intervalo é igual à diferença entre os valores da função distribuição acumulada nos limites do intervalo.\nObservações:\n1) Probabilidade de Intervalos:\nPara uma variável aleatória contínua \\(X\\), a probabilidade de \\(a &lt; X \\leq b\\) é igual à probabilidade de \\(a &lt; X &lt; b\\) porque a probabilidade de \\(X\\) ser igual a um valor específico é zero, \\(P(X = b) = 0\\). Portanto, temos:\n\\(P(a &lt; X \\leq b) = P(a &lt; X &lt; b) + P(X = b)\\) \\(P(a &lt; X \\leq b) = P(a &lt; X &lt; b) + 0 = P(a &lt; X &lt; b)\\)\nIsso ocorre porque, para uma variável aleatória contínua, a probabilidade de um ponto específico é infinitesimal, isto é, o valor aproxima-se de zero.\n2) Cálculo da Probabilidade:\nAssim, podemos calcular a probabilidade de \\(a &lt; X &lt; b\\) de várias formas equivalentes:\n\\(P(a &lt; X &lt; b) = P(a &lt; X \\leq b) = P(a \\leq X &lt; b)\\) \\(= P(a \\leq X \\leq b) = \\int_a^b f(x) \\, dx = F(b) - F(a)\\)\nEssas expressões são todas equivalentes devido à definição da função de distribuição acumulada \\(F(x)\\). Aplicando essas definições para \\(a\\) e \\(b\\) temos:\n\n\\(F(a) = P(X \\leq a)\\)\n\\(F(b) = P(X \\leq b)\\)",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Aula 03</span>"
+    ]
+  },
+  {
+    "objectID": "aula03.html#função-probabilidade-vs.-função-densidade-de-probabilidade",
+    "href": "aula03.html#função-probabilidade-vs.-função-densidade-de-probabilidade",
+    "title": "5  Aula 03",
+    "section": "5.8 Função Probabilidade vs. Função Densidade de Probabilidade:",
+    "text": "5.8 Função Probabilidade vs. Função Densidade de Probabilidade:\nA diferença fundamental entre a função probabilidade e a função densidade de probabilidade é destacada pela natureza das variáveis aleatórias contínuas e discretas. Vamos considerar um exemplo para ilustrar essa distinção:\n\n5.8.1 Exemplo 1\nConsidere dois casos:\na) \\(X\\) é uma variável aleatória contínua que toma valores no intervalo \\([1,3]\\).\nb) \\(X\\) é uma variável aleatória discreta que toma valores {1,2,3}.\nEncontrar \\(P(1 \\leq X &lt; 3)\\) em função da Função Probabilidade e Função Densidade de Probabilidade, respectivamente.\nSolução:\na) Variável Aleatória Contínua (X contínuo):\n\\(P(1 \\leq X &lt; 3) = F(3) - F(1) = \\int_{1}^3 f(x) \\, dx\\)\nb) Variável Aleatória Discreta (X discreto):\n\\(P(1 \\leq X &lt; 3) = \\underbrace{P(X = 1)}_{f(1)} + \\underbrace{P(X = 2)}_{f(2)} = f(1) + f(2)\\)\nExemplo:\nConsidere uma variável aleatória uniforme no intervalo \\([a,b]\\), ou seja, \\(x \\sim \\text{uniforme}(a,b)\\), com \\(a\\) e \\(b\\) estritamente positivos e conhecidos. Encontre \\(f(x)\\) e \\(F(x)\\).\nSolução:\nCálculo de \\(f(x)\\):\n\\(f(x) = C, \\quad \\text{para o intervalo de} \\ (a,b)\\)\n\n\n\nFigura 2. Função de probabilidade do Exemplo 1.\n\n\nÁrea = 1 = \\((b-a) \\cdot h\\)\n\\(h = \\frac{1}{b-a}\\)\nLogo a função \\(f(x)\\) tem que satisfazer as propriedades: \ni) \\(f(x) &gt; 0\\) ii) \\(\\int_{-\\infty}^{\\infty} f(x) \\, dx = 1\\)\n\\(f(x) = h = \\frac{1}{b-a}\\)\nCálculo de \\(F(x)\\)\n\\(F(x) = P(X \\leq x)\\)\nPara \\(a &lt; x_0 &lt; b\\) temos:\n\\(F(x_0) = P(X \\leq x_0) = \\int_a^{x_0} f(x) \\, dx = \\int_a^{x_0} \\frac{1}{b-a} \\, dx =\\)\n\\(=\\frac{1}{b-a} \\int_a^{x_0} 1 \\, dx = \\frac{1}{b-a} (x \\big|_a^{x_0})\\)\n\\(=\\frac{1}{b-a}(x_0-a) = \\frac{x_0 - a}{b - a}\\)\nLogo,\n\\(F(x_0) = \\frac{x_0 - a}{b - a}\\)",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Aula 03</span>"
+    ]
+  },
+  {
+    "objectID": "aula03.html#como-se-relaciona-fx-com-fx",
+    "href": "aula03.html#como-se-relaciona-fx-com-fx",
+    "title": "5  Aula 03",
+    "section": "5.9 Como se relaciona \\(f(x)\\) com \\(F(x)\\)",
+    "text": "5.9 Como se relaciona \\(f(x)\\) com \\(F(x)\\)\n\n5.9.1 Variável aleatória discreta\nPara uma variável aleatória discreta \\(X\\), temos:\n\\(F(x_0) = P(X \\leq x_0) = \\sum_{x_i \\leq x_0} P(X = x_i) = \\sum_{x_i \\leq x_0} f(x_i)\\)\n\n\n5.9.2 Variável aleatória contínua\nA função de probabilidade associada a uma distribuição contínua pode ser expressa por:\n\\(F(x_0) = P(X \\leq x_0) = \\int_{-\\infty}^{x_0} f(x) \\, dx, \\quad x_0 \\in \\mathbb{R}\\)\ntal que \\(f(x)\\) é uma função integrável, chamada função densidade de probabilidade (fdp) de \\(X\\), com \\(f \\colon \\mathbb{R} \\to [0, +\\infty)\\). E também:\n\\(f(x) = \\frac{dF(x)}{dx}\\)\nExemplo 1:\nResolução:\na) O espaço amostral é definido da seguinte forma:\n\\[\\Omega = \\{(cc); (cr); (rc); (rr)\\}\\]\nDefinimos \\(X\\) como o número de caras.\n\\[\\Omega = \\{(cc); (cr); (rc); (rr)\\}\\]\nPara \\(x=0\\) temos o resultado \\(rr\\).\nPara \\(x=1\\) temos os resultados \\(cr\\) e \\(rc\\).\nPara \\(x=2\\) temos o resultado \\(cc\\).\nLogo \\(X\\) assume os valores:\n\\(X = \\{0, 1, 2\\}\\)\n\\(\\begin{array}{\\|c\\|c\\|c\\|} \\hline X & \\text{Evento Correspondente} & P(X=x) \\\\ \\hline 0 & A_1=\\{(rr)\\} & P(X=0) = \\frac{1}{4} \\\\ 1 & A_2=\\{(cr), (rc)\\} & P(X=1) = \\frac{2}{4} \\\\ 2 & A_3=\\{(cc)\\} & P(X=2) = \\frac{1}{4} \\\\ \\hline \\end{array}\\)\nConsiderando que as moedas são “justas”, temos:\n\\(P(A_1) = P(\\{(r, r)\\}) = \\frac{1}{4} \\implies P(X=0) = \\frac{1}{4}\\)\n\\(P(A_2) = P(\\{(c, r), (r, c)\\}) = \\frac{2}{4} \\implies P(X=1) = \\frac{2}{4}\\)\n\\(P(A_3) = P(\\{(c, c)\\}) = \\frac{1}{4} \\implies P(X=2) = \\frac{1}{4}\\)\nPodemos também associar, às probabilidades de \\(X\\) assumir valores, às probabilidades dos eventos correspondentes:\n\\(P(X=0) = P(A_1) = \\frac{1}{4}\\)\n\\(P(X=1) = P(A_2) = \\frac{2}{4}\\)\n\\(P(X=2) = P(A_3) = \\frac{1}{4}\\)\nb) Da definição da função de probabilidade \\(f(x) = P(X=x)\\) e função de distribuição \\(F(x) = P(X\\leq x)\\) elaboramos o seguinte quadro.\n\n\n\n\n\n\n\n\nv.a.d\nFunção probabilidade\nFunção distribuição\n\n\n\n\nX=0\n\\(f(0) = P(X=0) = \\frac{1}{4}\\)\n\\(F(0) = P(X\\leq 0) = P(X=0) = \\frac{1}{4}\\)\n\n\nX=1\n\\(f(1) = P(X=1) = \\frac{2}{4}\\)\n\\(F(1) = P(X\\leq 1) = P(X=0) + P(X=1) = \\frac{1}{4} + \\frac{2}{4} = \\frac{3}{4}\\)\n\n\nX=2\n\\(f(2) = P(X=2) = \\frac{1}{4}\\)\n\\(F(2) = P(X\\leq 2) = P(X=0) + P(X=1) + P(X=2) = \\frac{1}{4} + \\frac{2}{4} + \\frac{1}{4} = 1\\)\n\n\n\nd) Gráficos de \\(f(x)\\) e \\(F(x)\\):\n\n\n\nFunção de probabilidade do Exemplo 1\n\n\nElaboramos o gráfico da função distribuição \\(F(x)\\) por intervalos. Encontre o valor da função em:\n\\(F(0) = P(X\\leq 0) = P(X=0) = \\frac{1}{4}\\)\n\\(F(1) = P(X\\leq 1) = \\frac{3}{4}\\)\n\\(F(2) = P(X\\leq 2) = 1\\)\nQuanto vale?\n\\(F(0,5) = P(X\\leq 0,5) = P(X=0) = \\frac{1}{4}\\)\nQuanto vale?\n\\(F(0,9999999999..) = P(X\\leq 0,9999999999..) = P(X=0) = \\frac{1}{4}\\)\nQuanto vale?\n\\(F(1,5) = P(X\\leq 1,5) = P(X=0) + P(X=1) = \\frac{3}{4}\\)\n\n\n\nFunção de distribuição do Exemplo 1\n\n\n\\(F(3) = P(X\\leq 3) = P(X=0) + P(X=1) + P(X=2) = 1\\)",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Aula 03</span>"
+    ]
+  },
+  {
+    "objectID": "aula03.html#exemplo-1-2",
+    "href": "aula03.html#exemplo-1-2",
+    "title": "5  Aula 03",
+    "section": "5.11 Exemplo 1:",
+    "text": "5.11 Exemplo 1:\n\n\n\n5.11.1 Resolução:\n\n\na$ O espaço amostral é definido da seguinte forma:\n$ = {(cc); (cr); (rc); (rr)} $\nDefinimos \\(X\\) como o número de caras. \n$ = {(cc); (cr); (rc); (rr)} $\nPara \\(x=0\\) temos o resultado \\(rr\\).\nPara \\(x=1\\) temos os resultados \\(cr\\) e \\(rc\\).\nPara \\(x=2\\) temos o resultado \\(cc\\).\nLogo \\(X\\) assume os valores:\n$ X = {0, 1, 2} $\n\n\n$\n\\[\\begin{array}{\\|c\\|c\\|c\\|} \\hline X & \\text{Evento Correspondente} & P(X=x) \\\\ \\hline 0 & A_1=\\{(rr)\\} & P(X=0) = \\frac{1}{4} \\\\ 1 & A_2=\\{(cr), (rc)\\} & P(X=1) = \\frac{2}{4} \\\\ 2 & A_3=\\{(cc)\\} & P(X=2) = \\frac{1}{4} \\\\ \\hline \\end{array}\\]\n$\n\n\nConsiderando que as moedas são “justas”, temos:\n$ P(A_1) = P({(r, r)}) = P(X=0) = $\n$ P(A_2) = P({(c, r), (r, c)}) = P(X=1) = $\n$ P(A_3) = P({(c, c)}) = P(X=2) = $\n\n\nPodemos também associar, às probabilidades de \\(X\\) assumir valores, às probabilidades dos eventos correspondentes:\n$ P(X=0) = P(A_1) = $\n$ P(X=1) = P(A_2) = $\n$ P(X=2) = P(A_3) = $\n\n\nb$ Da definição da função de probabilidade \\(f(x) = P(X=x)\\) e função de distribuição \\(F(x) = P(X\\leq x)\\) elaboramos o seguinte quadro.\n\n\n| v.a.d | Função probabilidade | Função distribuição |\n|——-|———————–|———————|\n| X=0   | \\(f(0) = P(X=0) = \\frac{1}{4}\\) | \\(F(0) = P(X\\leq 0) = P(X=0) = \\frac{1}{4}\\) |\n| X=1   | \\(f(1) = P(X=1) = \\frac{2}{4}\\) | \\(F(1) = P(X\\leq 1) = P(X=0) + P(X=1) = \\frac{1}{4} + \\frac{2}{4} = \\frac{3}{4}\\) |\n| X=2   | \\(f(2) = P(X=2) = \\frac{1}{4}\\) | \\(F(2) = P(X\\leq 2) = P(X=0) + P(X=1) + P(X=2) = \\frac{1}{4} + \\frac{2}{4} + \\frac{1}{4} = 1\\) |\n\n\nd$ Gráficos de \\(f(x)\\) e \\(F(x)\\):\n\n\n![Função de probabilidade do Exemplo 1](image_link_1)\n\n\nElaboramos o gráfico da função distribuição \\(F(x)\\) por intervalos. Encontre o valor da função em:\n$ F(0) = P(X) = P(X=0) = $\n$ F(1) = P(X) = $\n$ F(2) = P(X) = 1 $\n\n\nQuanto vale \\(F(0,5) = P(X\\leq 0,5) = P(X=0) = \\frac{1}{4}\\)\nQuanto vale \\(F(0,9999999999..) = P(X\\leq 0,9999999999..) = P(X=0) = \\frac{1}{4}\\)\n\n\nQuanto vale \\(F(1,5) = P(X\\leq 1,5) = P(X=0) + P(X=1) = \\frac{3}{4}\\)\n\n\n![Função de distribuição do Exemplo 1](image_link_2)\n\n\n$ F(3) = P(X) = P(X=0) + P(X=1) + P(X=2) = 1 $",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Aula 03</span>"
+    ]
+  },
+  {
+    "objectID": "aula03.html#exemplo-2-1",
+    "href": "aula03.html#exemplo-2-1",
+    "title": "5  Aula 03",
+    "section": "5.11 Exemplo 2:",
+    "text": "5.11 Exemplo 2:\n\n\n\n5.11.1 Solução:\n\n\nPara o caso discreto, \\(F(x)\\) será o somatório das funções de probabilidade \\(f(x_0)\\). No exemplo de jogar duas moedas simultaneamente e \\(X\\) definido como:\n$ X = $\nEncontre \\(F(2)\\).\n\n\nPara este exemplo, identificamos que \\(X\\) é uma v.a.d com valores \\(X = \\{0, 1, 2\\}\\).\nPara \\(x_0=2\\) temos:\n$ F(2) = P(X) = _{x_i} P(X=x_i) = P(X=0) + P(X=1) + P(X=2) = f(0) + f(1) + f(2) = 1 $\n\n\nCalculando \\(f(0)\\), \\(f(1)\\) e \\(f(2)\\):\n$ f(0) = P(X=0) = P(TT) = 0,25 $\n$ f(1) = P(X=1) = P(TH) + P(HT) = 0,5 $\n$ f(2) = P(X=2) = P(HH) = 0,25 $\n\n\nPodemos agora terminar o cálculo de \\(F(2)\\):\n$ F(2) = P(X) = _{x_i} f(0) + f(1) + f(2) = 0,25 + 0,5 + 0,25 = 1 $",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Aula 03</span>"
+    ]
+  },
+  {
+    "objectID": "aula03.html#exemplo-3-estudar-em-casa",
+    "href": "aula03.html#exemplo-3-estudar-em-casa",
+    "title": "5  Aula 03",
+    "section": "5.11 Exemplo 3 (estudar em casa):",
+    "text": "5.11 Exemplo 3 (estudar em casa):\n\n5.11.1 Resolução:\na$O espaço amostral é definido da seguinte forma:\n\\(\\Omega = \\{(c, c, c), (c, c, r), (c, r, c), (c, r, r), (r, c, c), (r, c, r), (r, r, c), (r, r, r)\\}\\)\nComo \\(X\\) é o número de caras, assume valores:\n\\(X = \\{0, 1, 2, 3\\}\\)\n\\(n = 4\\)\n\\[\\begin{array}{\\|c\\|c\\|} \\hline X & \\text{Evento Correspondente} \\\\ \\hline 0 & A_1 = \\{(r, r, r)\\} \\\\ 1 & A_2 = \\{(c, r, r), (r, c, r), (r, r, c)\\} \\\\ 2 & A_3 = \\{(c, c, r), (c, r, c), (r, c, c)\\} \\\\ 3 & A_4 = \\{(c, c, c)\\} \\\\ \\hline \\end{array}\\]\nConsiderando que as moedas são “justas”, temos:\n\\(P(\\{(r, r, r)\\}) = P(\\{(c, r, r)\\}) = P(\\{(r, c, r)\\}) =\\) \\(= P(\\{(r, r, c)\\}) = P(\\{(c, c, r)\\}) = P(\\{(c, r, c)\\}) =\\) \\(= P(\\{(r, c, c)\\}) = P(\\{(c, c, c)\\}) = \\frac{1}{8}\\)\nAssim, as probabilidades para os eventos são:\n\\(P(A_1) = P(\\{(r, r, r)\\}) = \\frac{1}{8}\\)\n\\(P(A_2) = P(\\{(c, r, r), (r, c, r), (r, r, c)\\}) \\to\\)\n\\(P(A_2) = P(\\{(c, r, r)\\}) + P(\\{(r, c, r)\\}) + P(\\{(r, r, c)\\}) \\to\\)\n\\(P(A_2) = \\frac{1}{8} + \\frac{1}{8} + \\frac{1}{8} = \\frac{3}{8}\\)\n\\(P(A_3) = P(\\{(c, c, c)\\}) = \\frac{1}{8}\\)\nPodemos também associar, às probabilidades de \\(X\\) assumir valores, às probabilidades dos eventos correspondentes:\n\\(P(X=0) = P(A_1) = \\frac{1}{8}\\)\n\\(P(X=1) = P(A_2) = \\frac{3}{8}\\)\n\\(P(X=2) = P(A_3) = \\frac{3}{8}\\)\n\\(P(X=3) = P(A_4) = \\frac{1}{8}\\)\n\\(\\begin{array}{\\|c\\|c\\|c\\|} \\hline x & f(x) = P(X=x) & F(x) = P(X\\leq x) \\\\ \\hline 0 & \\frac{1}{8} & \\frac{1}{8} \\\\ 1 & \\frac{3}{8} & \\frac{1}{8} + \\frac{3}{8} = \\frac{4}{8} \\\\ 2 & \\frac{3}{8} & \\frac{1}{8} + \\frac{3}{8} + \\frac{3}{8} = \\frac{7}{8} \\\\ 3 & \\frac{1}{8} & \\frac{1}{8} + \\frac{3}{8} + \\frac{3}{8} + \\frac{1}{8} = 1 \\\\ \\hline \\end{array}\\)\n\n\n\nFunção de probabilidade do Exemplo 3\n\n\n\n\n\nFunção de densidade do Exemplo 3\n\n\n\nExemplo 4\nResolução:\nPara \\(x=0\\), temos: \\(f(0) = P(X=0) = k0^2 = 0\\)\nPara \\(x=1\\), temos: \\(f(1) = P(X=1) = k1^2 = k\\)\nPara \\(x=2\\), temos: \\(f(2) = P(X=2) = k2^2 = 4k\\)\nConsiderando que a função de probabilidade para uma variável aleatória discreta está definida como \\(f(x) = P(X=x)\\), logo, para o conjunto \\(\\{x_1, x_2, x_3\\} = \\{0, 1, 2\\}\\), temos:\n\\(f(0) + f(1) + f(2) = P(X=x_1) + P(X=x_2) + P(X=x_3) =\\)\n\\(= \\sum\\_{i=1}^{3} P(X=x_i) = 1\\)\n\\(0 + k + 4k = 1 \\rightarrow 5k = 1 \\rightarrow k = \\frac{1}{5} = 0,20\\)\n\n\\(P(X=2) = f(2) = 4k = 4(0,2) = 0,8 = 80%\\)\n\\(P(X\\geq 1) = P(X=1) + P(X=2) = f(1) + f(2) = k + 4k = 5k = 5(0,2) = 1 = 100%\\)\n\n\n\n5.11.2 Graficos\nGráfico de \\(f(x)\\):\n\n\n\nGráfico de f(x)\n\n\nGráfico de \\(F(x) = P(X\\leq x)\\):\nO gráfico é construído conforme os valores da tabela a seguir:\n\\(\\begin{array}{\\|c\\|c\\|c\\|} \\hline x & f(x) & F(x) \\\\ \\hline 0 & 0 & 0 \\\\ 1 & 0,2 & 0 + 0,2 = 0,2 \\\\ 2 & 0,8 & 0 + 0,2 + 0,8 = 1 \\\\ \\hline \\end{array}\\)\n\n\n\nGráfico de \\(F(x) = P(X\\leq x)\\)",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Aula 03</span>"
+    ]
+  },
+  {
+    "objectID": "aula03.html#exemplo-4",
+    "href": "aula03.html#exemplo-4",
+    "title": "5  Aula 03",
+    "section": "5.15 Exemplo",
+    "text": "5.15 Exemplo\nSeja a função de probabilidade de uma v.a.d.\n\\begin{array}{|c|c|} X & f(x) \\ & \\ 1 & \\ 2 & a",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Aula 03</span>"
+    ]
+  },
+  {
+    "objectID": "aula03.html#esperança-matemática-de-uma-variável-aleatória",
+    "href": "aula03.html#esperança-matemática-de-uma-variável-aleatória",
+    "title": "5  Aula 03",
+    "section": "5.12 Esperança matemática de uma variável aleatória",
+    "text": "5.12 Esperança matemática de uma variável aleatória\n\n5.12.1 Definição\nSeja \\(X\\) uma v.a com função de probabilidade \\(f(x)\\), então o valor esperado (ou esperança matemática) de \\(X\\) é definido como:\n\\(\\mu = E(X) = \\text{média populacional}\\)\nCálculo da Esperança\nO cálculo da esperança vai depender se a variável aleatória é contínua ou discreta.\n\nv.a. discreta:\n\n\\(\\mu = E(X) = \\sum_{i=1}^{n} x_i P(X=x_i) = \\sum_{i=1}^{n} x_i f(x_i)\\)\n\nv.a. contínua:\n\n\\(\\mu = E(X) = \\int_{-\\infty}^{\\infty} xf(x) \\,dx\\)\n\n\nPropriedades da esperança\nSeja \\(X\\), \\(Y\\) e \\(Z\\) variáveis aleatórias e \\(a\\) e \\(b\\) constantes:\n1) \\(E(a) = a\\)\n2) \\(E(aX) = aE(X)\\)\n3) \\(E(a+X) = a + E(X)\\)\n4) \\(E(X+Y) = E(X) + E(Y)\\)\n5) \\(E(aX + bY) = aE(X) + bE(Y)\\)\n6) \\(E(X+Y+Z) = E(X) + E(Y) + E(Z)\\)\nA propriedade (4) implica:\n\\(E(aX+(-bY)) = E(aX) + E(-bY) = aE(X) - bE(Y)\\)\nExemplo\nDemonstre que:\n\n\\(E(a) = a\\)\n\\(E(aX) = aE(X)\\)\n\nSolução:\nConsideraremos que a variável aleatória é contínua.\na) Da definição\n\\(E(a) = \\int_{-\\infty}^{\\infty} a f(x) \\,dx\\)\n\\(E(a) = a \\int_{-\\infty}^{\\infty} f(x) \\,dx\\)\nEm que,\n\\(\\int_{-\\infty}^{\\infty} f(x) \\,dx = 1\\)\nLogo,\n\\(E(a) = a\\)\nb) Demonstração da propriedade 2. Da definição de esperança:\n\\(E(aX) = \\int_{-\\infty}^{\\infty} ax f(x) \\,dx\\)\n\\(E(aX) = a \\int_{-\\infty}^{\\infty} x f(x) \\,dx\\)\n\\(E(aX) = aE(X)\\)\nA demonstração para o caso discreto será muito parecida, deixamos como exercício para o leitor.\nExemplo 1 – Calculando E(X) no caso discreto.\nNo exemplo do lançamento de duas moedas, obtivemos uma tabela com os valores de \\(f(x)\\):\n\\[\\begin{array}{\\|c\\|c\\|c\\|c\\|}\n\\hline X & 0 & 1 & 2 \\\\\n\\hline f(x_i) = P(X=x_i) & \\frac{1}{4} & \\frac{1}{2} & \\frac{1}{4} \\\\\n\\hline\n\\end{array}\\]\nDa definição de \\(E(X)\\) temos:\n$= E(X) = _{i=1}^{n} x_i f(x_i) = _{i=1}^{n} x_i P(X=x_i) = 0 () + 1 () + 2 () = 1 $\nQual é a diferença entre\\(\\bar{X}\\) e \\(\\mu\\)?\n\\(\\bar{X} = \\frac{X_1 + X_2 + \\ldots + X_n}{n}\\)\nExemplo 2 – Calculando E(X) no caso contínuo.\nA função densidade probabilidade de \\(X\\) é dada por:\nf(x) = \\(\\begin{cases}\n\\frac{3}{2} (1-x^2) & 0 \\leq x \\leq 1 \\\\\n0 & \\text{para } x \\notin [0,1] \\end{cases}\\)\nSolução:\n\\(E(X) = \\int_{-\\infty}^{\\infty} x f(x) \\,dx\\)\n\\(E(X) = \\int_{0}^{1} x \\left(\\frac{3}{2} (1-x^2)\\right) \\,dx\\)\n\\(E(X) = \\int_{-\\infty}^{\\infty} xf(x) \\,dx = \\int_{0}^{1} x \\frac{3}{2} (1-x^2) \\,dx\\)\n\\(E(X) = \\int_{0}^{1} x \\frac{3}{2} (1-x^2) \\,dx = \\frac{3}{2} \\int_{0}^{1} (x - x^3) \\,dx\\)\nIntegrais:\n\\(\\int dx = x\\)\n\\(\\int x \\,dx = \\frac{x^2}{2}\\)\n\\(\\int x^2 \\,dx = \\frac{x^3}{3}\\)\n\\(\\int x^3 \\,dx = \\frac{x^4}{4}\\)\n\\(\\ldots \\text{etc.}\\)\n\\(E(X) = \\frac{3}{2} [\\frac{x^2}{2} - \\frac{x^4}{4}]_{0}^{1}\\)\n\\(E(X) = \\frac{3}{2} [\\frac{1}{2} - \\frac{1}{4}] = \\frac{3}{8}\\)",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Aula 03</span>"
+    ]
+  },
+  {
+    "objectID": "aula03.html#variância-de-uma-variável-aleatória",
+    "href": "aula03.html#variância-de-uma-variável-aleatória",
+    "title": "5  Aula 03",
+    "section": "5.13 Variância de uma variável aleatória",
+    "text": "5.13 Variância de uma variável aleatória\n\n5.13.1 Definição\nA variância de uma v.a continua ou discreta é definida como:\n\\(\\sigma^2 = \\text{Var}(X) = E[(X-E(X))^2] = E[(X-\\mu)^2]\\)\nEm que \\(\\mu = E(X)\\)\n\n\n5.13.2 Proposição 1\nMostre que a variância pode ser escrita como:\n\\(\\sigma^2 = \\text{Var}(X) = E(X^2) - [E(X)]^2\\)\nou\n\\(\\sigma^2 = \\text{Var}(X) = E(X^2) - \\mu^2\\)\nDemonstração\nDa definição temos:\n\\(\\sigma^2 = \\text{Var}(X) = E[(X-E(X))^2]\\)\nLembre:\n\\((a-b)^2 = a^2 + b^2 - 2ab\\)\n\\(= E[X^2 + (E(X))^2 - 2XE(X)]\\)\n\\(= E[X^2 + (\\mu)^2 - 2X\\mu]\\)\n\\(= E(X^2) + E[(\\mu)^2] - E(2X\\mu)\\)\n\\(= E(X^2) + \\mu^2 - 2\\mu E(X)\\)\n\\(= E(X^2) + \\mu^2 - 2\\mu^2\\)\n\\(= E(X^2) - \\mu^2\\)\n\\(\\sigma^2 = \\text{Var}(X) = E(X^2) - [E(X)]^2\\)\n\n\n5.13.3 Corolário 1\nMostre que:\nSe \\(E(X) = 0\\) então \\(\\text{Var}(X) = E[X^2]\\)",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Aula 03</span>"
+    ]
+  },
+  {
+    "objectID": "aula03.html#cálculo-da-variância",
+    "href": "aula03.html#cálculo-da-variância",
+    "title": "5  Aula 03",
+    "section": "5.14 Cálculo da variância",
+    "text": "5.14 Cálculo da variância\n\n5.14.1 Caso discreto\nPodemos calcular a variância populacional de uma variável aleatória discreta como:\n\\(\\sigma^2 = \\text{Var}(X) = E[(X-\\mu)^2] = (X-\\mu)^2\\)\n\\(\\sigma^2 = E[(X-\\mu)^2] = \\sum_{i=1}^{n} (x_i-\\mu)^2 P(X=x_i) =\\) \\(= \\sum_{i=1}^{n} (x_i-\\mu)^2 f(x_i)\\)\nO número de operações necessárias para computar \\(\\sigma^2\\) pode ser reduzido utilizando uma fórmula alternativa.\n\n\n5.14.2 5.1.2 Caso contínuo\nPodemos calcular a variância populacional de uma variável aleatória contínua como:\n\\(\\sigma^2 = \\text{Var}(X) = E[(X-\\mu)^2] = (X-\\mu)^2\\)\n\\(\\sigma^2 = E[(X-\\mu)^2] = \\int_{-\\infty}^{\\infty} (X-\\mu)^2 f(x) \\,dx\\)\n\n\n5.14.3 5.3 Propriedades da variância\nConsidere \\(X\\), \\(Y\\) e \\(Z\\) variáveis aleatórias e \\(a\\) e \\(b\\) constantes em \\(R\\), temos as seguintes propriedades:\n1) \\(\\text{Var}(a) = 0\\) - a variância de toda constante é zero.\n2) \\(\\text{Var}(aX) = a^2 \\text{Var}(X)\\)\n3) \\(\\text{Var}(a+X) = \\text{Var}(X)\\)\n4) \\(\\text{Var}(X+Y) = \\text{Var}(X) + \\text{Var}(Y) + 2\\text{Cov}(X,Y)\\)\n5) \\(\\text{Var}(X-Y) = \\text{Var}(X) + \\text{Var}(Y) - 2\\text{Cov}(X,Y)\\)\nLembre dos produtos notáveis:\n\n\\((a+b)^2 = a^2 + b^2 + 2ab\\)\n\\((a-b)^2 = a^2 + b^2 - 2ab\\)\n\nDessa forma,\n\\(\\text{Var}(aX \\pm bY) = a^2 \\text{Var}(X) + b^2 \\text{Var}(Y) \\pm 2ab\\text{Cov}(X,Y)\\)\nExemplo\nDemonstre que:\n1. \\(\\text{Var}(a) = 0\\)\n2. \\(\\text{Var}(aX) = a^2 \\text{Var}(X)\\)\nSolução:\na)\n\\(\\text{Var}(a) = E[(a-E(a))^2]\\)\n\\(\\text{Var}(a) = E[(a-a)^2] = E[0^2] = 0\\)\nb)\n\\(\\text{Var}(aX) = E[(aX-E(aX))^2] = E[(a[X-E(X)])^2]\\)\n\\(\\text{Var}(aX) = (XY)^2 = (X)^2 (Y)^2\\)\n\\(\\text{Var}(aX) = E[(a(X-E(X)))^2] = E[a^2(X-E(X))^2]\\)\n\\(\\text{Var}(aX) = a^2 E[(X-E(X))^2] = a^2 \\text{Var}(X)\\)",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Aula 03</span>"
+    ]
+  },
+  {
+    "objectID": "aula03.html#exemplo-6",
+    "href": "aula03.html#exemplo-6",
+    "title": "5  Aula 03",
+    "section": "5.16 Exemplo",
+    "text": "5.16 Exemplo\nSeja a função de probabilidade de uma v.a.d.\n\\(\\begin{array}{\\|c\\|c\\|} \\hline X & f(x) \\\\ \\hline 0 & \\frac{1}{2} \\\\ 1 & \\frac{1}{4} \\\\ 2 & a\\)",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Aula 03</span>"
+    ]
+  },
+  {
+    "objectID": "aula03.html#variáveis-aleatórias",
+    "href": "aula03.html#variáveis-aleatórias",
+    "title": "5  Aula 03",
+    "section": "5.1 Variáveis aleatórias",
+    "text": "5.1 Variáveis aleatórias\n\n5.1.1 Variável Aleatória\nPara facilitar o cálculo da probabilidade de um evento, é conveniente trabalhar com valores numéricos associados aos eventos aleatórios. Dessa forma, muitas vezes é mais interessante atribuir um número a um evento aleatório.\n\n\n5.1.2 Definição (variável aleatória)\nConsidere o espaço de probabilidade (\\(\\Omega, \\mathcal{F}, P\\)), onde \\(\\Omega\\) é o espaço amostral, \\(\\mathcal{F}\\) é a \\(\\sigma\\)-álgebra de subconjuntos de \\(\\Omega\\), e \\(P\\) é a medida de probabilidade. Uma variável aleatória é uma função que associa um único número real a cada elemento do espaço amostral:\n\\(X: \\Omega \\rightarrow \\mathbb{R}\\)\nFormalmente, para algum evento \\(E\\) em \\(\\Omega\\) satisfaz \\(E=X^{-1} (I) = \\{\\omega \\in \\Omega : X(\\omega) \\in I\\} \\in \\mathcal{F}\\), para todo intervalo \\(I \\subset \\mathbb{R}\\). Em outras palavras, a imagem inversa de intervalos (\\(I \\subset \\mathbb{R}\\)) pertence a \\(\\mathcal{F}\\).\nNotação:\n\n\\(X\\) (maiúscula) = variável aleatória\n\\(x\\) (minúscula) = valor numérico da variável aleatória\n\\(\\omega\\) = resultado ou elemento do espaço amostral\n\nExemplo 1: Lançamento de uma Moeda\nConsidere o experimento de lançar uma moeda. Ao analisarmos o espaço amostral do experimento, observamos que existem dois resultados possíveis: \\(\\omega_1=\\text{cara}\\) e \\(\\omega_2=\\text{coroa}\\), assim:\n\\(\\Omega=\\{\\omega_1, \\omega_2\\}=\\{\\text{cara, coroa}\\}\\)\nVamos definir a variável aleatória \\(X\\) da seguinte forma:\n\\(X: \\text{Número de coroas}\\)\n\\(X(\\omega_1)=X(\\text{cara})=0, \\text{ se o evento for \\{cara\\}}\\)\n\\(X(\\omega_2)=X(\\text{coroa})=1, \\text{ se o evento for \\{coroa\\}}\\)\nAo invés de utilizar eventos para calcular as probabilidades, agora utilizaremos a variável aleatória \\(X\\), que assume valores na reta. Isso facilitará o cálculo das probabilidades. Podemos então calcular a probabilidade de sair cara como \\(P(\\{\\text{cara}\\})=P(X=0)\\).\nA figura a seguir apresenta esta situação:\n\n\n\nFigura 1. Espaço amostral e probabilidade.\n\n\nExemplo 2: Lançamento de uma Moeda Duas Vezes\nConsidere o experimento de lançar uma moeda duas vezes, onde definimos \\(H\\) com cara e \\(T\\) como coroa. O espaço amostral será composto pelos eventos simples \\(\\Omega=\\{\\omega_1, \\omega_2, \\omega_3, \\omega_4\\}=\\{\\text{HH, HT, TH, TT}\\}\\).\nDefinamos duas variáveis aleatórias:\n\n\\(X =\\) número de caras ao final do experimento;\n\\(Y =\\) número de cara na primeira jogada menos o número de coroas na segunda jogada.\n\nEncontre os valores das variáveis aleatórias \\(X\\) e \\(Y\\).\nSolução:\nPara cada resultado \\(\\omega_i \\in \\Omega\\), \\(i=1,2,3,4\\), a variável aleatória \\(X\\) transformará um elemento de \\(\\Omega\\) em um valor real.\nPara \\(X\\):\n\\(X(\\omega_1)=X(\\text{HH})=2\\)\n\\(X(\\omega_2)=X(\\text{HT})=1\\)\n\\(X(\\omega_3)=X(\\text{TH})=1\\)\n\\(X(\\omega_4)=X(\\text{TT})=0\\)\nPortanto, \\(X=\\{0,1,2\\}\\).\nPara \\(Y\\):\n\\(Y(\\omega_1)=Y(\\text{HH})=2-0=2\\)\n\\(Y(\\omega_2)=Y(\\text{HT})=1-1=0\\)\n\\(Y(\\omega_3)=Y(\\text{TH})=1-1=0\\)\n\\(Y(\\omega_4)=Y(\\text{TT})=0-1=-1\\), e\n\\(Y=\\{-1,0,1\\}\\).\n\n\n5.1.3 Classificação:\nPodemos classificar as variáveis aleatórias como discreta ou contínua:\nVariável Aleatória Discreta:\nUma variável aleatória é considerada discreta quando seus possíveis valores podem ser um número finito ou enumerável (infinito, mas contável) de valores.\nExemplo 3:\n\n\\(X\\) pode assumir valores finitos, como \\(\\{1, 2, 3, 4, 5, 6\\}\\).\n\\(X\\) pode assumir valores enumeráveis, como \\(\\{0, 1, 2, 3, 4, 5, \\ldots\\}\\).\n\\(X\\) pode assumir valores fracionários enumeráveis, como \\(\\{1/2, 1/4, 1/8, \\ldots\\}\\).\n\nVariáveis Aleatórias Contínuas:\nUma variável aleatória é considerada contínua quando pode assumir qualquer valor em um intervalo da reta real, ou seja, possui um conjunto infinito e não enumerável de valores possíveis.\nExemplo 4:\n\n\\(Y\\) pode assumir qualquer valor em um intervalo, como \\(0 \\leq Y \\leq 1\\).\n\\(Z\\) pode assumir valores em um intervalo não enumerável, como \\(Z \\in (-\\infty, \\infty)\\).\n\nNotação:\n\n“v.a” indica “variável aleatória”\n“v.a.d” indica “variável aleatória discreta”\n“v.a.c” indica “variável aleatória contínua”\n\nOutros exemplos de variáveis aleatórias discretas:\n\n\\(X\\): Número de alunos que passaram em um exame.\n\nPossíveis valores: \\(\\{0, 1, 2, 3, \\ldots\\}\\)\n\n\\(Y\\): Número de carros em um estacionamento.\n\nPossíveis valores: \\(\\{0, 1, 2, 3, \\ldots\\}\\)\n\n\\(Z\\): Número de peças defeituosas em um lote de produção.\n\nPossíveis valores: \\(\\{0, 1, 2, \\ldots\\}\\)\n\n\nOutros exemplos de Variáveis aleatórias contínuas:\n\n\\(X\\): altura de uma pessoa\n\nPossíveis valores: \\(X &gt; 0\\)\n\n\\(Y\\): peso de uma pessoa\n\nPossíveis valores: \\(Y &gt; 0\\)\n\n\\(Z\\): preço de um ativo financeiro\n\nPossíveis valores: \\(Z &gt; 0\\)\n\n\nEsses exemplos ilustram a distinção entre variáveis aleatórias discretas e contínuas, destacando que as primeiras assumem valores distintos e contáveis, enquanto as segundas podem assumir qualquer valor em um intervalo contínuo.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Aula 03</span>"
+    ]
+  },
+  {
+    "objectID": "aula03.html#propriedades-das-funções-de-distribuição-fx.",
+    "href": "aula03.html#propriedades-das-funções-de-distribuição-fx.",
+    "title": "5  Aula 03",
+    "section": "5.4 Propriedades das funções de distribuição F(x).",
+    "text": "5.4 Propriedades das funções de distribuição F(x).\na) \\(\\lim_{{x \\to -\\infty}} F(x) = 0\\); e \\(\\lim_{{x \\to +\\infty}} F(x) = 1\\)\nb) Se \\(x &lt; y\\) então \\(F(x) \\leq F(y)\\);\nc) \\(F\\) é contínua à direita, ou seja, \\(F(x+h)\\), quando \\(h \\to 0\\), é igual a \\(F(x)\\).\nDefinição de continuidade à direita e esquerda:\n\n\\(F(x_-) \\neq F(x)\\), isto é, \\(F\\) é descontínua à esquerda.\n\\(F(x_+) = F(x)\\), isto é, \\(F\\) é contínua à direita.\n\nEssas propriedades são essenciais para entender o comportamento e as características das funções de distribuição acumulada. Elas garantem que a função \\(F\\) seja não decrescente, limitada nos extremos e contínua à direita. A continuidade à direita é particularmente importante, pois significa que a probabilidade acumulada não salta de um valor para outro, tornando a função mais suave e interpretável.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Aula 03</span>"
+    ]
+  },
+  {
+    "objectID": "aula03.html#exemplo-1-1",
+    "href": "aula03.html#exemplo-1-1",
+    "title": "5  Aula 03",
+    "section": "5.10 Exemplo 1:",
+    "text": "5.10 Exemplo 1:\n\n\n\n5.10.1 Resolução:\n\n\na$ O espaço amostral é definido da seguinte forma:\n$ = {(cc); (cr); (rc); (rr)} $\nDefinimos \\(X\\) como o número de caras. \n$ = {(cc); (cr); (rc); (rr)} $\nPara \\(x=0\\) temos o resultado \\(rr\\).\nPara \\(x=1\\) temos os resultados \\(cr\\) e \\(rc\\).\nPara \\(x=2\\) temos o resultado \\(cc\\).\nLogo \\(X\\) assume os valores:\n$ X = {0, 1, 2} $\n\n\n$\n\\[\\begin{array}{\\|c\\|c\\|c\\|} \\hline X & \\text{Evento Correspondente} & P(X=x) \\\\ \\hline 0 & A_1=\\{(rr)\\} & P(X=0) = \\frac{1}{4} \\\\ 1 & A_2=\\{(cr), (rc)\\} & P(X=1) = \\frac{2}{4} \\\\ 2 & A_3=\\{(cc)\\} & P(X=2) = \\frac{1}{4} \\\\ \\hline \\end{array}\\]\n$\n\n\nConsiderando que as moedas são “justas”, temos:\n$ P(A_1) = P({(r, r)}) = P(X=0) = $\n$ P(A_2) = P({(c, r), (r, c)}) = P(X=1) = $\n$ P(A_3) = P({(c, c)}) = P(X=2) = $\n\n\nPodemos também associar, às probabilidades de \\(X\\) assumir valores, às probabilidades dos eventos correspondentes:\n$ P(X=0) = P(A_1) = $\n$ P(X=1) = P(A_2) = $\n$ P(X=2) = P(A_3) = $\n\n\nb$ Da definição da função de probabilidade \\(f(x) = P(X=x)\\) e função de distribuição \\(F(x) = P(X\\leq x)\\) elaboramos o seguinte quadro.\n\n\n| v.a.d | Função probabilidade | Função distribuição |\n|——-|———————–|———————|\n| X=0   | \\(f(0) = P(X=0) = \\frac{1}{4}\\) | \\(F(0) = P(X\\leq 0) = P(X=0) = \\frac{1}{4}\\) |\n| X=1   | \\(f(1) = P(X=1) = \\frac{2}{4}\\) | \\(F(1) = P(X\\leq 1) = P(X=0) + P(X=1) = \\frac{1}{4} + \\frac{2}{4} = \\frac{3}{4}\\) |\n| X=2   | \\(f(2) = P(X=2) = \\frac{1}{4}\\) | \\(F(2) = P(X\\leq 2) = P(X=0) + P(X=1) + P(X=2) = \\frac{1}{4} + \\frac{2}{4} + \\frac{1}{4} = 1\\) |\n\n\nd$ Gráficos de \\(f(x)\\) e \\(F(x)\\):\n\n\n![Função de probabilidade do Exemplo 1](image_link_1)\n\n\nElaboramos o gráfico da função distribuição \\(F(x)\\) por intervalos. Encontre o valor da função em:\n$ F(0) = P(X) = P(X=0) = $\n$ F(1) = P(X) = $\n$ F(2) = P(X) = 1 $\n\n\nQuanto vale \\(F(0,5) = P(X\\leq 0,5) = P(X=0) = \\frac{1}{4}\\)\nQuanto vale \\(F(0,9999999999..) = P(X\\leq 0,9999999999..) = P(X=0) = \\frac{1}{4}\\)\n\n\nQuanto vale \\(F(1,5) = P(X\\leq 1,5) = P(X=0) + P(X=1) = \\frac{3}{4}\\)\n\n\n![Função de distribuição do Exemplo 1](image_link_2)\n\n\n$ F(3) = P(X) = P(X=0) + P(X=1) + P(X=2) = 1 $",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Aula 03</span>"
+    ]
+  },
+  {
+    "objectID": "aula03.html#exemplo-2",
+    "href": "aula03.html#exemplo-2",
+    "title": "5  Aula 03",
+    "section": "5.10 Exemplo 2:",
+    "text": "5.10 Exemplo 2:\n\n5.10.1 Solução:\nPara o caso discreto, \\(F(x)\\) será o somatório das funções de probabilidade \\(f(x_0)\\). No exemplo de jogar duas moedas simultaneamente e \\(X\\) definido como:\n\\(X = \\text{número de caras em duas jogadas}\\)\nEncontre \\(F(2)\\).\nPara este exemplo, identificamos que \\(X\\) é uma v.a.d com valores \\(X = \\{0, 1, 2\\}\\).\nPara \\(x_0=2\\) temos:\n\\(F(2) = P(X\\leq 2) = \\sum_{x_i\\leq 2} P(X=x_i) =\\)\n\\(= P(X=0) + P(X=1) + P(X=2) =\\)\n\\(= f(0) + f(1) + f(2) = 1\\)\nCalculando \\(f(0)\\), \\(f(1)\\) e \\(f(2)\\):\n\\(f(0) = P(X=0) = P(TT) = 0,25\\)\n\\(f(1) = P(X=1) = P(TH) + P(HT) = 0,5\\)\n\\(f(2) = P(X=2) = P(HH) = 0,25\\)\nPodemos agora terminar o cálculo de \\(F(2)\\):\n\\(F(2) = P(X\\leq 2) = \\sum\\_{x_i\\leq 2} f(0) + f(1) + f(2) =\\)\n\\(F(2) = 0,25 + 0,5 + 0,25 = 1\\)",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Aula 03</span>"
+    ]
+  },
+  {
+    "objectID": "aula03.html#exemplo-5",
+    "href": "aula03.html#exemplo-5",
+    "title": "5  Aula 03",
+    "section": "5.16 Exemplo",
+    "text": "5.16 Exemplo\nSeja a função de probabilidade de uma v.a.d.\n\\(\\begin{array}{\\|c\\|c\\|} \\hline X & f(x) \\\\ \\hline 0 & \\frac{1}{2} \\\\ 1 & \\frac{1}{4} \\\\ 2 & a\\)",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Aula 03</span>"
+    ]
+  },
+  {
+    "objectID": "aula03.html#exemplo-3",
+    "href": "aula03.html#exemplo-3",
+    "title": "5  Aula 03",
+    "section": "5.15 Exemplo",
+    "text": "5.15 Exemplo\nSeja a função de probabilidade de uma v.a.d.\n\\[\\begin{array}{\\|c\\|c\\|} \\hline X & f(x) \\\\ \\hline 0 & \\frac{1}{2} \\\\ 1 & \\frac{1}{4} \\\\ 2 & a \\end{array}\\]",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Aula 03</span>"
+    ]
+  }
+]

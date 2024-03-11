@@ -1,0 +1,1375 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.533">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>metodos_quantitativos - 5&nbsp; Aula 03</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./references.html" rel="next">
+<link href="./aula02.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./aula03.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Aula 03</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">metodos_quantitativos</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./summary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./aula01.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Aula 01</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./aula02.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Aula 02</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./aula03.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Aula 03</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#variáveis-aleatórias" id="toc-variáveis-aleatórias" class="nav-link active" data-scroll-target="#variáveis-aleatórias"><span class="header-section-number">5.1</span> Variáveis aleatórias</a>
+  <ul class="collapse">
+  <li><a href="#variável-aleatória" id="toc-variável-aleatória" class="nav-link" data-scroll-target="#variável-aleatória"><span class="header-section-number">5.1.1</span> Variável Aleatória</a></li>
+  <li><a href="#definição-variável-aleatória" id="toc-definição-variável-aleatória" class="nav-link" data-scroll-target="#definição-variável-aleatória"><span class="header-section-number">5.1.2</span> Definição (variável aleatória)</a></li>
+  <li><a href="#classificação" id="toc-classificação" class="nav-link" data-scroll-target="#classificação"><span class="header-section-number">5.1.3</span> Classificação:</a></li>
+  </ul></li>
+  <li><a href="#função-de-distribuição" id="toc-função-de-distribuição" class="nav-link" data-scroll-target="#função-de-distribuição"><span class="header-section-number">5.2</span> Função de distribuição</a></li>
+  <li><a href="#tabela-da-distribuição" id="toc-tabela-da-distribuição" class="nav-link" data-scroll-target="#tabela-da-distribuição"><span class="header-section-number">5.3</span> Tabela da distribuição:</a>
+  <ul class="collapse">
+  <li><a href="#exemplo" id="toc-exemplo" class="nav-link" data-scroll-target="#exemplo"><span class="header-section-number">5.3.1</span> Exemplo:</a></li>
+  </ul></li>
+  <li><a href="#propriedades-das-funções-de-distribuição-fx." id="toc-propriedades-das-funções-de-distribuição-fx." class="nav-link" data-scroll-target="#propriedades-das-funções-de-distribuição-fx."><span class="header-section-number">5.4</span> Propriedades das funções de distribuição F(x).</a></li>
+  <li><a href="#função-probabilidade-e-função-densidade-de-probabilidade" id="toc-função-probabilidade-e-função-densidade-de-probabilidade" class="nav-link" data-scroll-target="#função-probabilidade-e-função-densidade-de-probabilidade"><span class="header-section-number">5.5</span> Função Probabilidade e Função Densidade de Probabilidade:</a>
+  <ul class="collapse">
+  <li><a href="#função-de-probabilidade" id="toc-função-de-probabilidade" class="nav-link" data-scroll-target="#função-de-probabilidade"><span class="header-section-number">5.5.1</span> Função de Probabilidade:</a></li>
+  </ul></li>
+  <li><a href="#função-densidade-de-probabilidade-fdp" id="toc-função-densidade-de-probabilidade-fdp" class="nav-link" data-scroll-target="#função-densidade-de-probabilidade-fdp"><span class="header-section-number">5.6</span> Função densidade de probabilidade (fdp)</a>
+  <ul class="collapse">
+  <li><a href="#propriedades-da-função-densidade-fdp" id="toc-propriedades-da-função-densidade-fdp" class="nav-link" data-scroll-target="#propriedades-da-função-densidade-fdp"><span class="header-section-number">5.6.1</span> Propriedades da função densidade (fdp)</a></li>
+  </ul></li>
+  <li><a href="#exercícios" id="toc-exercícios" class="nav-link" data-scroll-target="#exercícios"><span class="header-section-number">5.7</span> Exercícios</a></li>
+  <li><a href="#função-probabilidade-vs.-função-densidade-de-probabilidade" id="toc-função-probabilidade-vs.-função-densidade-de-probabilidade" class="nav-link" data-scroll-target="#função-probabilidade-vs.-função-densidade-de-probabilidade"><span class="header-section-number">5.8</span> Função Probabilidade vs.&nbsp;Função Densidade de Probabilidade:</a>
+  <ul class="collapse">
+  <li><a href="#exemplo-1" id="toc-exemplo-1" class="nav-link" data-scroll-target="#exemplo-1"><span class="header-section-number">5.8.1</span> Exemplo 1</a></li>
+  </ul></li>
+  <li><a href="#como-se-relaciona-fx-com-fx" id="toc-como-se-relaciona-fx-com-fx" class="nav-link" data-scroll-target="#como-se-relaciona-fx-com-fx"><span class="header-section-number">5.9</span> Como se relaciona <span class="math inline">\(f(x)\)</span> com <span class="math inline">\(F(x)\)</span></a>
+  <ul class="collapse">
+  <li><a href="#variável-aleatória-discreta" id="toc-variável-aleatória-discreta" class="nav-link" data-scroll-target="#variável-aleatória-discreta"><span class="header-section-number">5.9.1</span> Variável aleatória discreta</a></li>
+  <li><a href="#variável-aleatória-contínua" id="toc-variável-aleatória-contínua" class="nav-link" data-scroll-target="#variável-aleatória-contínua"><span class="header-section-number">5.9.2</span> Variável aleatória contínua</a></li>
+  </ul></li>
+  <li><a href="#exemplo-2" id="toc-exemplo-2" class="nav-link" data-scroll-target="#exemplo-2"><span class="header-section-number">5.10</span> Exemplo 2:</a>
+  <ul class="collapse">
+  <li><a href="#solução" id="toc-solução" class="nav-link" data-scroll-target="#solução"><span class="header-section-number">5.10.1</span> Solução:</a></li>
+  </ul></li>
+  <li><a href="#exemplo-3-estudar-em-casa" id="toc-exemplo-3-estudar-em-casa" class="nav-link" data-scroll-target="#exemplo-3-estudar-em-casa"><span class="header-section-number">5.11</span> Exemplo 3 (estudar em casa):</a>
+  <ul class="collapse">
+  <li><a href="#resolução" id="toc-resolução" class="nav-link" data-scroll-target="#resolução"><span class="header-section-number">5.11.1</span> Resolução:</a></li>
+  <li><a href="#graficos" id="toc-graficos" class="nav-link" data-scroll-target="#graficos"><span class="header-section-number">5.11.2</span> Graficos</a></li>
+  </ul></li>
+  <li><a href="#esperança-matemática-de-uma-variável-aleatória" id="toc-esperança-matemática-de-uma-variável-aleatória" class="nav-link" data-scroll-target="#esperança-matemática-de-uma-variável-aleatória"><span class="header-section-number">5.12</span> Esperança matemática de uma variável aleatória</a>
+  <ul class="collapse">
+  <li><a href="#definição" id="toc-definição" class="nav-link" data-scroll-target="#definição"><span class="header-section-number">5.12.1</span> Definição</a></li>
+  </ul></li>
+  <li><a href="#variância-de-uma-variável-aleatória" id="toc-variância-de-uma-variável-aleatória" class="nav-link" data-scroll-target="#variância-de-uma-variável-aleatória"><span class="header-section-number">5.13</span> Variância de uma variável aleatória</a>
+  <ul class="collapse">
+  <li><a href="#definição-1" id="toc-definição-1" class="nav-link" data-scroll-target="#definição-1"><span class="header-section-number">5.13.1</span> Definição</a></li>
+  <li><a href="#proposição-1" id="toc-proposição-1" class="nav-link" data-scroll-target="#proposição-1"><span class="header-section-number">5.13.2</span> Proposição 1</a></li>
+  <li><a href="#corolário-1" id="toc-corolário-1" class="nav-link" data-scroll-target="#corolário-1"><span class="header-section-number">5.13.3</span> Corolário 1</a></li>
+  </ul></li>
+  <li><a href="#cálculo-da-variância" id="toc-cálculo-da-variância" class="nav-link" data-scroll-target="#cálculo-da-variância"><span class="header-section-number">5.14</span> Cálculo da variância</a>
+  <ul class="collapse">
+  <li><a href="#caso-discreto" id="toc-caso-discreto" class="nav-link" data-scroll-target="#caso-discreto"><span class="header-section-number">5.14.1</span> Caso discreto</a></li>
+  <li><a href="#caso-contínuo" id="toc-caso-contínuo" class="nav-link" data-scroll-target="#caso-contínuo"><span class="header-section-number">5.14.2</span> 5.1.2 Caso contínuo</a></li>
+  <li><a href="#propriedades-da-variância" id="toc-propriedades-da-variância" class="nav-link" data-scroll-target="#propriedades-da-variância"><span class="header-section-number">5.14.3</span> 5.3 Propriedades da variância</a></li>
+  </ul></li>
+  <li><a href="#exemplo-3" id="toc-exemplo-3" class="nav-link" data-scroll-target="#exemplo-3"><span class="header-section-number">5.15</span> Exemplo</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Aula 03</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<ul>
+<li><strong>Aula 3: Probabilidade Condicionada e Independência</strong></li>
+<li><strong>Prof.&nbsp;Dr.&nbsp;Carlos Enrique Carrasco Gutierrez</strong></li>
+<li><strong>E-mail: carlos.carrasco.gutierrez@gmail.com</strong></li>
+</ul>
+<section id="variáveis-aleatórias" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="variáveis-aleatórias"><span class="header-section-number">5.1</span> Variáveis aleatórias</h2>
+<section id="variável-aleatória" class="level3" data-number="5.1.1">
+<h3 data-number="5.1.1" class="anchored" data-anchor-id="variável-aleatória"><span class="header-section-number">5.1.1</span> Variável Aleatória</h3>
+<p>Para facilitar o cálculo da probabilidade de um evento, é conveniente trabalhar com valores numéricos associados aos eventos aleatórios. Dessa forma, muitas vezes é mais interessante atribuir um número a um evento aleatório.</p>
+</section>
+<section id="definição-variável-aleatória" class="level3" data-number="5.1.2">
+<h3 data-number="5.1.2" class="anchored" data-anchor-id="definição-variável-aleatória"><span class="header-section-number">5.1.2</span> Definição (variável aleatória)</h3>
+<p>Considere o espaço de probabilidade (<span class="math inline">\(\Omega, \mathcal{F}, P\)</span>), onde <span class="math inline">\(\Omega\)</span> é o espaço amostral, <span class="math inline">\(\mathcal{F}\)</span> é a <span class="math inline">\(\sigma\)</span>-álgebra de subconjuntos de <span class="math inline">\(\Omega\)</span>, e <span class="math inline">\(P\)</span> é a medida de probabilidade. Uma variável aleatória é uma função que associa um único número real a cada elemento do espaço amostral:</p>
+<p><span class="math inline">\(X: \Omega \rightarrow \mathbb{R}\)</span></p>
+<p>Formalmente, para algum evento <span class="math inline">\(E\)</span> em <span class="math inline">\(\Omega\)</span> satisfaz <span class="math inline">\(E=X^{-1} (I) = \{\omega \in \Omega : X(\omega) \in I\} \in \mathcal{F}\)</span>, para todo intervalo <span class="math inline">\(I \subset \mathbb{R}\)</span>. Em outras palavras, a imagem inversa de intervalos (<span class="math inline">\(I \subset \mathbb{R}\)</span>) pertence a <span class="math inline">\(\mathcal{F}\)</span>.</p>
+<p><strong>Notação:</strong></p>
+<ul>
+<li><p><span class="math inline">\(X\)</span> (maiúscula) = variável aleatória</p></li>
+<li><p><span class="math inline">\(x\)</span> (minúscula) = valor numérico da variável aleatória</p></li>
+<li><p><span class="math inline">\(\omega\)</span> = resultado ou elemento do espaço amostral</p></li>
+</ul>
+<p><strong>Exemplo 1: Lançamento de uma Moeda</strong></p>
+<p>Considere o experimento de lançar uma moeda. Ao analisarmos o espaço amostral do experimento, observamos que existem dois resultados possíveis: <span class="math inline">\(\omega_1=\text{cara}\)</span> e <span class="math inline">\(\omega_2=\text{coroa}\)</span>, assim:</p>
+<p><span class="math inline">\(\Omega=\{\omega_1, \omega_2\}=\{\text{cara, coroa}\}\)</span></p>
+<p>Vamos definir a variável aleatória <span class="math inline">\(X\)</span> da seguinte forma:</p>
+<p><span class="math inline">\(X: \text{Número de coroas}\)</span></p>
+<p><span class="math inline">\(X(\omega_1)=X(\text{cara})=0, \text{ se o evento for \{cara\}}\)</span></p>
+<p><span class="math inline">\(X(\omega_2)=X(\text{coroa})=1, \text{ se o evento for \{coroa\}}\)</span></p>
+<p>Ao invés de utilizar eventos para calcular as probabilidades, agora utilizaremos a variável aleatória <span class="math inline">\(X\)</span>, que assume valores na reta. Isso facilitará o cálculo das probabilidades. Podemos então calcular a probabilidade de sair cara como <span class="math inline">\(P(\{\text{cara}\})=P(X=0)\)</span>.</p>
+<p>A figura a seguir apresenta esta situação:</p>
+<div class="img-fluid quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/a03_fig1.png" class="img-fluid figure-img"></p>
+<figcaption>Figura 1. Espaço amostral e probabilidade.</figcaption>
+</figure>
+</div>
+<p><strong>Exemplo 2: Lançamento de uma Moeda Duas Vezes</strong></p>
+<p>Considere o experimento de lançar uma moeda duas vezes, onde definimos <span class="math inline">\(H\)</span> com cara e <span class="math inline">\(T\)</span> como coroa. O espaço amostral será composto pelos eventos simples <span class="math inline">\(\Omega=\{\omega_1, \omega_2, \omega_3, \omega_4\}=\{\text{HH, HT, TH, TT}\}\)</span>.</p>
+<p>Definamos duas variáveis aleatórias:</p>
+<ul>
+<li><p><span class="math inline">\(X =\)</span> número de caras ao final do experimento;</p></li>
+<li><p><span class="math inline">\(Y =\)</span> número de cara na primeira jogada menos o número de coroas na segunda jogada.</p></li>
+</ul>
+<p>Encontre os valores das variáveis aleatórias <span class="math inline">\(X\)</span> e <span class="math inline">\(Y\)</span>.</p>
+<p><strong>Solução:</strong></p>
+<p>Para cada resultado <span class="math inline">\(\omega_i \in \Omega\)</span>, <span class="math inline">\(i=1,2,3,4\)</span>, a variável aleatória <span class="math inline">\(X\)</span> transformará um elemento de <span class="math inline">\(\Omega\)</span> em um valor real.</p>
+<p>Para <span class="math inline">\(X\)</span>:</p>
+<p><span class="math inline">\(X(\omega_1)=X(\text{HH})=2\)</span></p>
+<p><span class="math inline">\(X(\omega_2)=X(\text{HT})=1\)</span></p>
+<p><span class="math inline">\(X(\omega_3)=X(\text{TH})=1\)</span></p>
+<p><span class="math inline">\(X(\omega_4)=X(\text{TT})=0\)</span></p>
+<p>Portanto, <span class="math inline">\(X=\{0,1,2\}\)</span>.</p>
+<p>Para <span class="math inline">\(Y\)</span>:</p>
+<p><span class="math inline">\(Y(\omega_1)=Y(\text{HH})=2-0=2\)</span></p>
+<p><span class="math inline">\(Y(\omega_2)=Y(\text{HT})=1-1=0\)</span></p>
+<p><span class="math inline">\(Y(\omega_3)=Y(\text{TH})=1-1=0\)</span></p>
+<p><span class="math inline">\(Y(\omega_4)=Y(\text{TT})=0-1=-1\)</span>, e</p>
+<p><span class="math inline">\(Y=\{-1,0,1\}\)</span>.</p>
+</section>
+<section id="classificação" class="level3" data-number="5.1.3">
+<h3 data-number="5.1.3" class="anchored" data-anchor-id="classificação"><span class="header-section-number">5.1.3</span> Classificação:</h3>
+<p>Podemos classificar as variáveis aleatórias como discreta ou contínua:</p>
+<p><strong>Variável Aleatória Discreta:</strong></p>
+<p>Uma variável aleatória é considerada discreta quando seus possíveis valores podem ser um número finito ou enumerável (infinito, mas contável) de valores.</p>
+<p><strong>Exemplo 3:</strong></p>
+<ul>
+<li><p><span class="math inline">\(X\)</span> pode assumir valores finitos, como <span class="math inline">\(\{1, 2, 3, 4, 5, 6\}\)</span>.</p></li>
+<li><p><span class="math inline">\(X\)</span> pode assumir valores enumeráveis, como <span class="math inline">\(\{0, 1, 2, 3, 4, 5, \ldots\}\)</span>.</p></li>
+<li><p><span class="math inline">\(X\)</span> pode assumir valores fracionários enumeráveis, como <span class="math inline">\(\{1/2, 1/4, 1/8, \ldots\}\)</span>.</p></li>
+</ul>
+<p><strong>Variáveis Aleatórias Contínuas:</strong></p>
+<p>Uma variável aleatória é considerada contínua quando pode assumir qualquer valor em um intervalo da reta real, ou seja, possui um conjunto infinito e não enumerável de valores possíveis.</p>
+<p><strong>Exemplo 4:</strong></p>
+<ul>
+<li><p><span class="math inline">\(Y\)</span> pode assumir qualquer valor em um intervalo, como <span class="math inline">\(0 \leq Y \leq 1\)</span>.</p></li>
+<li><p><span class="math inline">\(Z\)</span> pode assumir valores em um intervalo não enumerável, como <span class="math inline">\(Z \in (-\infty, \infty)\)</span>.</p></li>
+</ul>
+<p><strong>Notação:</strong></p>
+<ul>
+<li><p>“v.a” indica “variável aleatória”</p></li>
+<li><p>“v.a.d” indica “variável aleatória discreta”</p></li>
+<li><p>“v.a.c” indica “variável aleatória contínua”</p></li>
+</ul>
+<p><strong>Outros exemplos de variáveis aleatórias discretas:</strong></p>
+<ul>
+<li><p><span class="math inline">\(X\)</span>: Número de alunos que passaram em um exame.</p>
+<ul>
+<li>Possíveis valores: <span class="math inline">\(\{0, 1, 2, 3, \ldots\}\)</span></li>
+</ul></li>
+<li><p><span class="math inline">\(Y\)</span>: Número de carros em um estacionamento.</p>
+<ul>
+<li>Possíveis valores: <span class="math inline">\(\{0, 1, 2, 3, \ldots\}\)</span></li>
+</ul></li>
+<li><p><span class="math inline">\(Z\)</span>: Número de peças defeituosas em um lote de produção.</p>
+<ul>
+<li>Possíveis valores: <span class="math inline">\(\{0, 1, 2, \ldots\}\)</span></li>
+</ul></li>
+</ul>
+<p><strong>Outros exemplos de Variáveis aleatórias contínuas:</strong></p>
+<ul>
+<li><p><span class="math inline">\(X\)</span>: altura de uma pessoa</p>
+<ul>
+<li>Possíveis valores: <span class="math inline">\(X &gt; 0\)</span></li>
+</ul></li>
+<li><p><span class="math inline">\(Y\)</span>: peso de uma pessoa</p>
+<ul>
+<li>Possíveis valores: <span class="math inline">\(Y &gt; 0\)</span></li>
+</ul></li>
+<li><p><span class="math inline">\(Z\)</span>: preço de um ativo financeiro</p>
+<ul>
+<li>Possíveis valores: <span class="math inline">\(Z &gt; 0\)</span></li>
+</ul></li>
+</ul>
+<p>Esses exemplos ilustram a distinção entre variáveis aleatórias discretas e contínuas, destacando que as primeiras assumem valores distintos e contáveis, enquanto as segundas podem assumir qualquer valor em um intervalo contínuo.</p>
+</section>
+</section>
+<section id="função-de-distribuição" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="função-de-distribuição"><span class="header-section-number">5.2</span> Função de distribuição</h2>
+<p>A função de distribuição <span class="math inline">\(F: \mathbb{R} \rightarrow [0,1]\)</span> é definida pela relação:</p>
+<p><span class="math inline">\(F(x_0) = P(X \leq x_0) = P(\{\omega \in \Omega : X(\omega) \leq x_0\})\)</span></p>
+<p>onde o conjunto <span class="math inline">\(\{X \leq x_0\}\)</span> na dimensão de <span class="math inline">\(\mathbb{R}\)</span> é equivalente ao evento <span class="math inline">\(\{\omega \in \Omega : X(\omega) \leq x_0\}\)</span>.</p>
+<p>Essa igualdade descreve os resultados nos quais a desigualdade é satisfeita. É relevante notar que esta definição é aplicável tanto para variáveis aleatórias discretas quanto contínuas.</p>
+<p><strong>Definição:</strong></p>
+<p>Considerando a variável aleatória <span class="math inline">\(X\)</span>, que pode ser discreta ou contínua, a função de distribuição acumulada, denotada por <span class="math inline">\(F(x)\)</span>, é definida como segue:</p>
+<p><span class="math inline">\(F(x_0) = P(X \leq x_0)\)</span>, onde <span class="math inline">\(x_0\)</span> representa o valor específico da variável aleatória.</p>
+<p><strong>Exemplo:</strong></p>
+<p>Considere o experimento de jogar uma moeda duas vezes, onde <span class="math inline">\(H\)</span> é cara e <span class="math inline">\(T\)</span> é coroa. Defina a variável aleatória como <span class="math inline">\(X\)</span>: número de caras em duas jogadas.</p>
+<ul>
+<li><p>Encontre o espaço amostral do experimento;</p></li>
+<li><p>Para a variável aleatória definida, encontre os valores que ela pode tomar;</p></li>
+<li><p>Encontre a função de distribuição de <span class="math inline">\(X\)</span>.</p></li>
+</ul>
+<p><strong>Solução:</strong></p>
+<p>Identificamos que a variável aleatória <span class="math inline">\(X\)</span> é do tipo discreto.</p>
+<p>a) O espaço amostral é: <span class="math inline">\(\Omega = \{\omega_1, \omega_2, \omega_3, \omega_4\} = \{HH, HT, TH, TT\}\)</span></p>
+<p>b) A variável aleatória <span class="math inline">\(X\)</span> transforma cada resultado <span class="math inline">\(\omega \in \mathbb{R}\)</span>, do espaço amostral <span class="math inline">\(\Omega\)</span> em um valor real. <span class="math inline">\(X =\)</span> número de caras em duas jogadas.</p>
+<p>A variável aleatória assim definida transforma cada resultado em um número real.</p>
+<ul>
+<li><p><span class="math inline">\(X(HH) = 2\)</span></p></li>
+<li><p><span class="math inline">\(X(HT) = X(TH) = 1\)</span></p></li>
+<li><p><span class="math inline">\(X(TT) = 0\)</span></p></li>
+</ul>
+<p>Os valores que a variável aleatória pode tomar são: <span class="math inline">\(X = \{0, 1, 2\}\)</span></p>
+<p>c) Para construir a função distribuição, precisamos conhecer os intervalos da forma <span class="math inline">\(\{X \leq x_0\} = \{\omega \in \Omega | X(\omega) \leq x_0\}\)</span>.</p>
+<p>Para os valores:</p>
+<ul>
+<li><p>Para <span class="math inline">\(x_0=0\)</span>, o intervalo <span class="math inline">\(\{X \leq 0\}\)</span> relaciona o evento: <span class="math inline">\(\{X \leq x_0\} = \{X \leq 0\} = \{\omega \in \Omega : X(\omega) \leq 0\} = \{ {\underbrace{TT}_{X=0}} \}\)</span></p></li>
+<li><p>Para <span class="math inline">\(x_0=1\)</span>, o intervalo <span class="math inline">\(\{X \leq 1\}\)</span> relaciona os eventos: <span class="math inline">\(\{X \leq x_0\} = \{X \leq 1\} = \{\omega \in \Omega : X(\omega) \leq 1\} =\{ {\underbrace{HT,TH}_{X=1}}, {\underbrace{TT}_{X=0}}\}\)</span></p></li>
+<li><p>Para <span class="math inline">\(x_0=2\)</span>, o intervalo <span class="math inline">\(\{X \leq 2\}\)</span> relaciona os eventos: <span class="math inline">\(\{X \leq x_0\} = \{X \leq 2\} =\)</span></p></li>
+</ul>
+<p><span class="math inline">\(\{\omega \in \Omega : X(\omega) \leq 2\} = \{ {\underbrace{HH}_{X=2}}, {\underbrace{HT,TH}_{X=1}}, {\underbrace{TT}_{X=0}}\}\)</span></p>
+</section>
+<section id="tabela-da-distribuição" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="tabela-da-distribuição"><span class="header-section-number">5.3</span> Tabela da distribuição:</h2>
+<table class="table">
+<colgroup>
+<col style="width: 5%">
+<col style="width: 10%">
+<col style="width: 26%">
+<col style="width: 44%">
+<col style="width: 12%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>X</th>
+<th>F(x)</th>
+<th>P(X <span class="math inline">\(\leq\)</span> x)</th>
+<th>P(<span class="math inline">\(\omega \in \Omega | X(\omega) \leq 0\)</span>)</th>
+<th>Valor</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0</td>
+<td>F(0)</td>
+<td>P(X <span class="math inline">\(\leq\)</span> 0)</td>
+<td>P({TT}) = P(X <span class="math inline">\(\leq\)</span> 0) = P({TT})</td>
+<td>0.25</td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td>F(1)</td>
+<td>P(X <span class="math inline">\(\leq\)</span> 1)</td>
+<td>P({HT,TH,TT}) = P({HT} <span class="math inline">\(\cup\)</span> {TH} <span class="math inline">\(\cup\)</span> {TT}) = P({HT}) + P({TH}) + P({TT}) = 0.25 + 0.25 + 0.25</td>
+<td>0.75</td>
+</tr>
+<tr class="odd">
+<td>2</td>
+<td>F(2)</td>
+<td>P(X <span class="math inline">\(\leq\)</span> 2)</td>
+<td>P({HH,HT,TH,TT}) = P({HH} <span class="math inline">\(\cup\)</span> {HT} <span class="math inline">\(\cup\)</span> {TH} <span class="math inline">\(\cup\)</span> P{TT}) = P({HH}) + P({HT}) + P({TH}) + P({TT}) = 0.25 + 0.25 + 0.25 + 0.25</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Resumindo:</strong></p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>X</th>
+<th>F(x)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0</td>
+<td>0.25</td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td>0.75</td>
+</tr>
+<tr class="odd">
+<td>2</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<section id="exemplo" class="level3" data-number="5.3.1">
+<h3 data-number="5.3.1" class="anchored" data-anchor-id="exemplo"><span class="header-section-number">5.3.1</span> Exemplo:</h3>
+<p>No exemplo acima, encontre:</p>
+<p>a) F(3)</p>
+<p>b) F(0.5)</p>
+<p>c) F(1.5)</p>
+<p>d) F(-10)</p>
+<p><strong>Solução:</strong></p>
+<p>a) <span class="math inline">\(F(3) = P(X \leq 3) = P({HH,HT,TH,TT}) = 1\)</span></p>
+<p>b) <span class="math inline">\(F(0.5) = P(X \leq 0.5) = P({TT}) = 0.25\)</span></p>
+<p>c) <span class="math inline">\(F(1.5) = P(X \leq 1.5) = P(X \leq 1) = P({HT,TH,TT}) = 0.75\)</span></p>
+<p>d) <span class="math inline">\(F(-10) = P(X \leq -10) = P(\{\emptyset\}) = 0\)</span></p>
+</section>
+</section>
+<section id="propriedades-das-funções-de-distribuição-fx." class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="propriedades-das-funções-de-distribuição-fx."><span class="header-section-number">5.4</span> Propriedades das funções de distribuição F(x).</h2>
+<p>a) <span class="math inline">\(\lim_{{x \to -\infty}} F(x) = 0\)</span>; e <span class="math inline">\(\lim_{{x \to +\infty}} F(x) = 1\)</span></p>
+<p>b) Se <span class="math inline">\(x &lt; y\)</span> então <span class="math inline">\(F(x) \leq F(y)\)</span>;</p>
+<p>c) <span class="math inline">\(F\)</span> é contínua à direita, ou seja, <span class="math inline">\(F(x+h)\)</span>, quando <span class="math inline">\(h \to 0\)</span>, é igual a <span class="math inline">\(F(x)\)</span>.</p>
+<p><strong>Definição de continuidade à direita e esquerda:</strong></p>
+<ul>
+<li><p><span class="math inline">\(F(x_-) \neq F(x)\)</span>, isto é, <span class="math inline">\(F\)</span> é descontínua à esquerda.</p></li>
+<li><p><span class="math inline">\(F(x_+) = F(x)\)</span>, isto é, <span class="math inline">\(F\)</span> é contínua à direita.</p></li>
+</ul>
+<p>Essas propriedades são essenciais para entender o comportamento e as características das funções de distribuição acumulada. Elas garantem que a função <span class="math inline">\(F\)</span> seja não decrescente, limitada nos extremos e contínua à direita. A continuidade à direita é particularmente importante, pois significa que a probabilidade acumulada não salta de um valor para outro, tornando a função mais suave e interpretável.</p>
+</section>
+<section id="função-probabilidade-e-função-densidade-de-probabilidade" class="level2" data-number="5.5">
+<h2 data-number="5.5" class="anchored" data-anchor-id="função-probabilidade-e-função-densidade-de-probabilidade"><span class="header-section-number">5.5</span> Função Probabilidade e Função Densidade de Probabilidade:</h2>
+<p>A função de probabilidade é definida para uma variável aleatória discreta, enquanto a função densidade de probabilidade é utilizada para uma variável aleatória contínua. No entanto, em muitos textos, o termo “função densidade” é utilizado para ambas as situações.</p>
+<section id="função-de-probabilidade" class="level3" data-number="5.5.1">
+<h3 data-number="5.5.1" class="anchored" data-anchor-id="função-de-probabilidade"><span class="header-section-number">5.5.1</span> Função de Probabilidade:</h3>
+<p>Para uma variável aleatória discreta <span class="math inline">\(X\)</span>, definimos a função probabilidade <span class="math inline">\(f(x)\)</span>. Essa função associa a cada valor possível da variável aleatória uma probabilidade.</p>
+<p><strong>Definição:</strong></p>
+<p>A função de probabilidade de uma variável aleatória discreta <span class="math inline">\(X\)</span> é definida como:</p>
+<p><span class="math inline">\(f(x_i) = P(X = x_i) \quad \text{para todo} \ x_i\)</span></p>
+<p>Ou simplesmente:</p>
+<p><span class="math inline">\(f(x) = P(X = x)\)</span></p>
+<p>A função <span class="math inline">\(f(x)\)</span> é chamada função probabilidade da variável aleatória <span class="math inline">\(X\)</span>, e nesse contexto, dizemos que <span class="math inline">\(X\)</span> é uma variável aleatória discreta.</p>
+<p><strong>Notas:</strong></p>
+<ul>
+<li>A função de probabilidade é conhecida também como função massa de probabilidade (fmp). Às vezes, para facilitar a comunicação, utilizamos o termo “função densidade de probabilidade” (fdp), como também é chamado no caso contínuo.</li>
+</ul>
+<p><strong>Propriedades da função probabilidade:</strong></p>
+<ul>
+<li><span class="math inline">\(0 \leq f(x_i) \quad \text{para todo}\)</span> <span class="math inline">\(x_i\)</span>;</li>
+<li><span class="math inline">\(\sum_{i=1}^n f(x_i) = f(x_1) + f(x_2) + \ldots + f(x_n) = 1\)</span></li>
+</ul>
+<p>Pela definição <span class="math inline">\(f(x_i) = P(X = x_i)\)</span>, a propriedade (ii) pode também ser representada como:</p>
+<p><span class="math inline">\(f(x_1) + f(x_2) + \ldots + f(x_n)\)</span> = <span class="math inline">\(P(X = x_1) + P(X = x_2) + \ldots + P(X = x_n) = 1\)</span>,</p>
+<p>onde <span class="math inline">\(n\)</span> é o número de valores que a variável aleatória toma. A função é uma probabilidade e, portanto, é sempre positiva e menor que um.</p>
+</section>
+</section>
+<section id="função-densidade-de-probabilidade-fdp" class="level2" data-number="5.6">
+<h2 data-number="5.6" class="anchored" data-anchor-id="função-densidade-de-probabilidade-fdp"><span class="header-section-number">5.6</span> Função densidade de probabilidade (fdp)</h2>
+<p>Seja <span class="math inline">\(X\)</span> uma variável aleatória contínua. A função densidade de probabilidade (fdp) de <span class="math inline">\(X\)</span> é representada pela função <span class="math inline">\(f(x)\)</span> tal que, para quaisquer dois números <span class="math inline">\(a\)</span> e <span class="math inline">\(b\)</span> com <span class="math inline">\(a \leq b\)</span>:</p>
+<p><span class="math inline">\(P(a \leq X \leq b) = P(a &lt; X &lt; b) = \int_a^b f(x) \, dx\)</span></p>
+<p>A probabilidade de <span class="math inline">\(X\)</span> pertencer ao intervalo <span class="math inline">\([a,b]\)</span> é a área acima desse intervalo e abaixo do gráfico da função densidade, como ilustrado na Figura 1.</p>
+<div class="img-fluid quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/a03_fig2.png" class="img-fluid figure-img"></p>
+<figcaption>Figura 1. Probabilidade de X pertencer ao intervalo [a,b].</figcaption>
+</figure>
+</div>
+<section id="propriedades-da-função-densidade-fdp" class="level3" data-number="5.6.1">
+<h3 data-number="5.6.1" class="anchored" data-anchor-id="propriedades-da-função-densidade-fdp"><span class="header-section-number">5.6.1</span> Propriedades da função densidade (fdp)</h3>
+<p>1. <span class="math inline">\(f(x) &gt; 0\)</span>: A função densidade de probabilidade é sempre positiva.</p>
+<p>2. <span class="math inline">\(\int_{-\infty}^{\infty} f(x) \, dx = 1\)</span>: A área total sob o gráfico da função densidade é igual a um.</p>
+<p><strong>Observação:</strong></p>
+<p>Para a variável aleatória contínua, não é verdade a seguinte relação <span class="math inline">\(f(a) = P(X = a)\)</span>. Observe que, para a variável aleatória contínua, <span class="math inline">\(P(X = a) = 0\)</span>. No entanto, o valor de <span class="math inline">\(f(a)\)</span> existe (ver Figura 1).</p>
+<p>Lembrando da definição de função distribuição:</p>
+<p><span class="math inline">\(F(a) = P(X \leq a) = \int_{-\infty}^a f(x) \, dx\)</span></p>
+</section>
+</section>
+<section id="exercícios" class="level2" data-number="5.7">
+<h2 data-number="5.7" class="anchored" data-anchor-id="exercícios"><span class="header-section-number">5.7</span> Exercícios</h2>
+<p>1) Para uma variável aleatória contínua, verifique a relação: <span class="math inline">\(f(x) = \frac{dF(x)}{dx}\)</span>.</p>
+<p>Para uma variável aleatória contínua, temos a relação entre a função densidade de probabilidade <span class="math inline">\(f(x)\)</span> e a função distribuição acumulada <span class="math inline">\(F(x)\)</span> dada por:</p>
+<p><span class="math inline">\(f(x) = \frac{dF(x)}{dx}\)</span></p>
+<p>Essa relação expressa que a função densidade de probabilidade é a derivada da função distribuição acumulada.</p>
+<p>2) Verificação da Relação Integral:</p>
+<p>Além disso, para uma variável aleatória contínua, a probabilidade de <span class="math inline">\(X\)</span> estar no intervalo <span class="math inline">\([a,b]\)</span> pode ser calculada pela integral da função densidade de probabilidade:</p>
+<p><span class="math inline">\(\int_a^b f(x) \, dx = F(b) - F(a) = P(X \leq b) - P(X \leq a)\)</span></p>
+<p>Essa relação mostra que a integral da função densidade de probabilidade sobre um intervalo é igual à diferença entre os valores da função distribuição acumulada nos limites do intervalo.</p>
+<p><strong>Observações:</strong></p>
+<p>1) <strong>Probabilidade de Intervalos:</strong></p>
+<p>Para uma variável aleatória contínua <span class="math inline">\(X\)</span>, a probabilidade de <span class="math inline">\(a &lt; X \leq b\)</span> é igual à probabilidade de <span class="math inline">\(a &lt; X &lt; b\)</span> porque a probabilidade de <span class="math inline">\(X\)</span> ser igual a um valor específico é zero, <span class="math inline">\(P(X = b) = 0\)</span>. Portanto, temos:</p>
+<p><span class="math inline">\(P(a &lt; X \leq b) = P(a &lt; X &lt; b) + P(X = b)\)</span> <span class="math inline">\(P(a &lt; X \leq b) = P(a &lt; X &lt; b) + 0 = P(a &lt; X &lt; b)\)</span></p>
+<p>Isso ocorre porque, para uma variável aleatória contínua, a probabilidade de um ponto específico é infinitesimal, isto é, o valor aproxima-se de zero.</p>
+<p>2) <strong>Cálculo da Probabilidade:</strong></p>
+<p>Assim, podemos calcular a probabilidade de <span class="math inline">\(a &lt; X &lt; b\)</span> de várias formas equivalentes:</p>
+<p><span class="math inline">\(P(a &lt; X &lt; b) = P(a &lt; X \leq b) = P(a \leq X &lt; b)\)</span> <span class="math inline">\(= P(a \leq X \leq b) = \int_a^b f(x) \, dx = F(b) - F(a)\)</span></p>
+<p>Essas expressões são todas equivalentes devido à definição da função de distribuição acumulada <span class="math inline">\(F(x)\)</span>. Aplicando essas definições para <span class="math inline">\(a\)</span> e <span class="math inline">\(b\)</span> temos:</p>
+<ul>
+<li><span class="math inline">\(F(a) = P(X \leq a)\)</span></li>
+<li><span class="math inline">\(F(b) = P(X \leq b)\)</span></li>
+</ul>
+</section>
+<section id="função-probabilidade-vs.-função-densidade-de-probabilidade" class="level2" data-number="5.8">
+<h2 data-number="5.8" class="anchored" data-anchor-id="função-probabilidade-vs.-função-densidade-de-probabilidade"><span class="header-section-number">5.8</span> Função Probabilidade vs.&nbsp;Função Densidade de Probabilidade:</h2>
+<p>A diferença fundamental entre a função probabilidade e a função densidade de probabilidade é destacada pela natureza das variáveis aleatórias contínuas e discretas. Vamos considerar um exemplo para ilustrar essa distinção:</p>
+<section id="exemplo-1" class="level3" data-number="5.8.1">
+<h3 data-number="5.8.1" class="anchored" data-anchor-id="exemplo-1"><span class="header-section-number">5.8.1</span> Exemplo 1</h3>
+<p>Considere dois casos:</p>
+<p>a) <span class="math inline">\(X\)</span> é uma variável aleatória contínua que toma valores no intervalo <span class="math inline">\([1,3]\)</span>.</p>
+<p>b) <span class="math inline">\(X\)</span> é uma variável aleatória discreta que toma valores {1,2,3}.</p>
+<p>Encontrar <span class="math inline">\(P(1 \leq X &lt; 3)\)</span> em função da Função Probabilidade e Função Densidade de Probabilidade, respectivamente.</p>
+<p><strong>Solução:</strong></p>
+<p>a) <strong>Variável Aleatória Contínua (X contínuo):</strong></p>
+<p><span class="math inline">\(P(1 \leq X &lt; 3) = F(3) - F(1) = \int_{1}^3 f(x) \, dx\)</span></p>
+<p>b) <strong>Variável Aleatória Discreta (X discreto):</strong></p>
+<p><span class="math inline">\(P(1 \leq X &lt; 3) = \underbrace{P(X = 1)}_{f(1)} + \underbrace{P(X = 2)}_{f(2)} = f(1) + f(2)\)</span></p>
+<p><strong>Exemplo:</strong></p>
+<p>Considere uma variável aleatória uniforme no intervalo <span class="math inline">\([a,b]\)</span>, ou seja, <span class="math inline">\(x \sim \text{uniforme}(a,b)\)</span>, com <span class="math inline">\(a\)</span> e <span class="math inline">\(b\)</span> estritamente positivos e conhecidos. Encontre <span class="math inline">\(f(x)\)</span> e <span class="math inline">\(F(x)\)</span>.</p>
+<p><strong>Solução:</strong></p>
+<p><strong>Cálculo de <span class="math inline">\(f(x)\)</span>:</strong></p>
+<p><span class="math inline">\(f(x) = C, \quad \text{para o intervalo de} \ (a,b)\)</span></p>
+<div class="img-fluid quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/a03_fig3.png" class="img-fluid figure-img"></p>
+<figcaption>Figura 2. Função de probabilidade do Exemplo 1.</figcaption>
+</figure>
+</div>
+<p>Área = 1 = <span class="math inline">\((b-a) \cdot h\)</span></p>
+<p><span class="math inline">\(h = \frac{1}{b-a}\)</span></p>
+<p>Logo a função <span class="math inline">\(f(x)\)</span> tem que satisfazer as propriedades:&nbsp;</p>
+<p>i) <span class="math inline">\(f(x) &gt; 0\)</span> ii) <span class="math inline">\(\int_{-\infty}^{\infty} f(x) \, dx = 1\)</span></p>
+<p><span class="math inline">\(f(x) = h = \frac{1}{b-a}\)</span></p>
+<p><strong>Cálculo de <span class="math inline">\(F(x)\)</span></strong></p>
+<p><span class="math inline">\(F(x) = P(X \leq x)\)</span></p>
+<p>Para <span class="math inline">\(a &lt; x_0 &lt; b\)</span> temos:</p>
+<p><span class="math inline">\(F(x_0) = P(X \leq x_0) = \int_a^{x_0} f(x) \, dx = \int_a^{x_0} \frac{1}{b-a} \, dx =\)</span></p>
+<p><span class="math inline">\(=\frac{1}{b-a} \int_a^{x_0} 1 \, dx = \frac{1}{b-a} (x \big|_a^{x_0})\)</span></p>
+<p><span class="math inline">\(=\frac{1}{b-a}(x_0-a) = \frac{x_0 - a}{b - a}\)</span></p>
+<p>Logo,</p>
+<p><span class="math inline">\(F(x_0) = \frac{x_0 - a}{b - a}\)</span></p>
+</section>
+</section>
+<section id="como-se-relaciona-fx-com-fx" class="level2" data-number="5.9">
+<h2 data-number="5.9" class="anchored" data-anchor-id="como-se-relaciona-fx-com-fx"><span class="header-section-number">5.9</span> Como se relaciona <span class="math inline">\(f(x)\)</span> com <span class="math inline">\(F(x)\)</span></h2>
+<section id="variável-aleatória-discreta" class="level3" data-number="5.9.1">
+<h3 data-number="5.9.1" class="anchored" data-anchor-id="variável-aleatória-discreta"><span class="header-section-number">5.9.1</span> Variável aleatória discreta</h3>
+<p>Para uma variável aleatória discreta <span class="math inline">\(X\)</span>, temos:</p>
+<p><span class="math inline">\(F(x_0) = P(X \leq x_0) = \sum_{x_i \leq x_0} P(X = x_i) = \sum_{x_i \leq x_0} f(x_i)\)</span></p>
+</section>
+<section id="variável-aleatória-contínua" class="level3" data-number="5.9.2">
+<h3 data-number="5.9.2" class="anchored" data-anchor-id="variável-aleatória-contínua"><span class="header-section-number">5.9.2</span> Variável aleatória contínua</h3>
+<p>A função de probabilidade associada a uma distribuição contínua pode ser expressa por:</p>
+<p><span class="math inline">\(F(x_0) = P(X \leq x_0) = \int_{-\infty}^{x_0} f(x) \, dx, \quad x_0 \in \mathbb{R}\)</span></p>
+<p>tal que <span class="math inline">\(f(x)\)</span> é uma função integrável, chamada função densidade de probabilidade (fdp) de <span class="math inline">\(X\)</span>, com <span class="math inline">\(f \colon \mathbb{R} \to [0, +\infty)\)</span>. E também:</p>
+<p><span class="math inline">\(f(x) = \frac{dF(x)}{dx}\)</span></p>
+<p><strong>Exemplo 1:</strong></p>
+<p><strong>Resolução:</strong></p>
+<p>a) O espaço amostral é definido da seguinte forma:</p>
+<p><span class="math display">\[\Omega = \{(cc); (cr); (rc); (rr)\}\]</span></p>
+<p>Definimos <span class="math inline">\(X\)</span> como o número de caras.</p>
+<p><span class="math display">\[\Omega = \{(cc); (cr); (rc); (rr)\}\]</span></p>
+<p>Para <span class="math inline">\(x=0\)</span> temos o resultado <span class="math inline">\(rr\)</span>.</p>
+<p>Para <span class="math inline">\(x=1\)</span> temos os resultados <span class="math inline">\(cr\)</span> e <span class="math inline">\(rc\)</span>.</p>
+<p>Para <span class="math inline">\(x=2\)</span> temos o resultado <span class="math inline">\(cc\)</span>.</p>
+<p>Logo <span class="math inline">\(X\)</span> assume os valores:</p>
+<p><span class="math inline">\(X = \{0, 1, 2\}\)</span></p>
+<p><span class="math inline">\(\begin{array}{\|c\|c\|c\|} \hline X &amp; \text{Evento Correspondente} &amp; P(X=x) \\ \hline 0 &amp; A_1=\{(rr)\} &amp; P(X=0) = \frac{1}{4} \\ 1 &amp; A_2=\{(cr), (rc)\} &amp; P(X=1) = \frac{2}{4} \\ 2 &amp; A_3=\{(cc)\} &amp; P(X=2) = \frac{1}{4} \\ \hline \end{array}\)</span></p>
+<p>Considerando que as moedas são “justas”, temos:</p>
+<p><span class="math inline">\(P(A_1) = P(\{(r, r)\}) = \frac{1}{4} \implies P(X=0) = \frac{1}{4}\)</span></p>
+<p><span class="math inline">\(P(A_2) = P(\{(c, r), (r, c)\}) = \frac{2}{4} \implies P(X=1) = \frac{2}{4}\)</span></p>
+<p><span class="math inline">\(P(A_3) = P(\{(c, c)\}) = \frac{1}{4} \implies P(X=2) = \frac{1}{4}\)</span></p>
+<p>Podemos também associar, às probabilidades de <span class="math inline">\(X\)</span> assumir valores, às probabilidades dos eventos correspondentes:</p>
+<p><span class="math inline">\(P(X=0) = P(A_1) = \frac{1}{4}\)</span></p>
+<p><span class="math inline">\(P(X=1) = P(A_2) = \frac{2}{4}\)</span></p>
+<p><span class="math inline">\(P(X=2) = P(A_3) = \frac{1}{4}\)</span></p>
+<p>b) Da definição da função de probabilidade <span class="math inline">\(f(x) = P(X=x)\)</span> e função de distribuição <span class="math inline">\(F(x) = P(X\leq x)\)</span> elaboramos o seguinte quadro.</p>
+<table class="table">
+<colgroup>
+<col style="width: 13%">
+<col style="width: 45%">
+<col style="width: 41%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>v.a.d</th>
+<th>Função probabilidade</th>
+<th>Função distribuição</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>X=0</td>
+<td><span class="math inline">\(f(0) = P(X=0) = \frac{1}{4}\)</span></td>
+<td><span class="math inline">\(F(0) = P(X\leq 0) = P(X=0) = \frac{1}{4}\)</span></td>
+</tr>
+<tr class="even">
+<td>X=1</td>
+<td><span class="math inline">\(f(1) = P(X=1) = \frac{2}{4}\)</span></td>
+<td><span class="math inline">\(F(1) = P(X\leq 1) = P(X=0) + P(X=1) = \frac{1}{4} + \frac{2}{4} = \frac{3}{4}\)</span></td>
+</tr>
+<tr class="odd">
+<td>X=2</td>
+<td><span class="math inline">\(f(2) = P(X=2) = \frac{1}{4}\)</span></td>
+<td><span class="math inline">\(F(2) = P(X\leq 2) = P(X=0) + P(X=1) + P(X=2) = \frac{1}{4} + \frac{2}{4} + \frac{1}{4} = 1\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>d) Gráficos de <span class="math inline">\(f(x)\)</span> e <span class="math inline">\(F(x)\)</span>:</p>
+<div class="img-fluid quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/a03_fig4.png" class="img-fluid figure-img"></p>
+<figcaption>Função de probabilidade do Exemplo 1</figcaption>
+</figure>
+</div>
+<p>Elaboramos o gráfico da função distribuição <span class="math inline">\(F(x)\)</span> por intervalos. Encontre o valor da função em:</p>
+<p><span class="math inline">\(F(0) = P(X\leq 0) = P(X=0) = \frac{1}{4}\)</span></p>
+<p><span class="math inline">\(F(1) = P(X\leq 1) = \frac{3}{4}\)</span></p>
+<p><span class="math inline">\(F(2) = P(X\leq 2) = 1\)</span></p>
+<p>Quanto vale?</p>
+<p><span class="math inline">\(F(0,5) = P(X\leq 0,5) = P(X=0) = \frac{1}{4}\)</span></p>
+<p>Quanto vale?</p>
+<p><span class="math inline">\(F(0,9999999999..) = P(X\leq 0,9999999999..) = P(X=0) = \frac{1}{4}\)</span></p>
+<p>Quanto vale?</p>
+<p><span class="math inline">\(F(1,5) = P(X\leq 1,5) = P(X=0) + P(X=1) = \frac{3}{4}\)</span></p>
+<div class="img-fluid quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/a03_fig5.png" class="img-fluid figure-img"></p>
+<figcaption>Função de distribuição do Exemplo 1</figcaption>
+</figure>
+</div>
+<p><span class="math inline">\(F(3) = P(X\leq 3) = P(X=0) + P(X=1) + P(X=2) = 1\)</span></p>
+</section>
+</section>
+<section id="exemplo-2" class="level2" data-number="5.10">
+<h2 data-number="5.10" class="anchored" data-anchor-id="exemplo-2"><span class="header-section-number">5.10</span> Exemplo 2:</h2>
+<section id="solução" class="level3" data-number="5.10.1">
+<h3 data-number="5.10.1" class="anchored" data-anchor-id="solução"><span class="header-section-number">5.10.1</span> Solução:</h3>
+<p>Para o caso discreto, <span class="math inline">\(F(x)\)</span> será o somatório das funções de probabilidade <span class="math inline">\(f(x_0)\)</span>. No exemplo de jogar duas moedas simultaneamente e <span class="math inline">\(X\)</span> definido como:</p>
+<p><span class="math inline">\(X = \text{número de caras em duas jogadas}\)</span></p>
+<p>Encontre <span class="math inline">\(F(2)\)</span>.</p>
+<p>Para este exemplo, identificamos que <span class="math inline">\(X\)</span> é uma v.a.d com valores <span class="math inline">\(X = \{0, 1, 2\}\)</span>.</p>
+<p>Para <span class="math inline">\(x_0=2\)</span> temos:</p>
+<p><span class="math inline">\(F(2) = P(X\leq 2) = \sum_{x_i\leq 2} P(X=x_i) =\)</span></p>
+<p><span class="math inline">\(= P(X=0) + P(X=1) + P(X=2) =\)</span></p>
+<p><span class="math inline">\(= f(0) + f(1) + f(2) = 1\)</span></p>
+<p>Calculando <span class="math inline">\(f(0)\)</span>, <span class="math inline">\(f(1)\)</span> e <span class="math inline">\(f(2)\)</span>:</p>
+<p><span class="math inline">\(f(0) = P(X=0) = P(TT) = 0,25\)</span></p>
+<p><span class="math inline">\(f(1) = P(X=1) = P(TH) + P(HT) = 0,5\)</span></p>
+<p><span class="math inline">\(f(2) = P(X=2) = P(HH) = 0,25\)</span></p>
+<p>Podemos agora terminar o cálculo de <span class="math inline">\(F(2)\)</span>:</p>
+<p><span class="math inline">\(F(2) = P(X\leq 2) = \sum\_{x_i\leq 2} f(0) + f(1) + f(2) =\)</span></p>
+<p><span class="math inline">\(F(2) = 0,25 + 0,5 + 0,25 = 1\)</span></p>
+</section>
+</section>
+<section id="exemplo-3-estudar-em-casa" class="level2" data-number="5.11">
+<h2 data-number="5.11" class="anchored" data-anchor-id="exemplo-3-estudar-em-casa"><span class="header-section-number">5.11</span> Exemplo 3 (estudar em casa):</h2>
+<section id="resolução" class="level3" data-number="5.11.1">
+<h3 data-number="5.11.1" class="anchored" data-anchor-id="resolução"><span class="header-section-number">5.11.1</span> Resolução:</h3>
+<p>a$O espaço amostral é definido da seguinte forma:</p>
+<p><span class="math inline">\(\Omega = \{(c, c, c), (c, c, r), (c, r, c), (c, r, r), (r, c, c), (r, c, r), (r, r, c), (r, r, r)\}\)</span></p>
+<p>Como <span class="math inline">\(X\)</span> é o número de caras, assume valores:</p>
+<p><span class="math inline">\(X = \{0, 1, 2, 3\}\)</span></p>
+<p><span class="math inline">\(n = 4\)</span></p>
+<span class="math display">\[\begin{array}{\|c\|c\|} \hline X &amp; \text{Evento Correspondente} \\ \hline 0 &amp; A_1 = \{(r, r, r)\} \\ 1 &amp; A_2 = \{(c, r, r), (r, c, r), (r, r, c)\} \\ 2 &amp; A_3 = \{(c, c, r), (c, r, c), (r, c, c)\} \\ 3 &amp; A_4 = \{(c, c, c)\} \\ \hline \end{array}\]</span>
+<p>Considerando que as moedas são “justas”, temos:</p>
+<p><span class="math inline">\(P(\{(r, r, r)\}) = P(\{(c, r, r)\}) = P(\{(r, c, r)\}) =\)</span> <span class="math inline">\(= P(\{(r, r, c)\}) = P(\{(c, c, r)\}) = P(\{(c, r, c)\}) =\)</span> <span class="math inline">\(= P(\{(r, c, c)\}) = P(\{(c, c, c)\}) = \frac{1}{8}\)</span></p>
+<p>Assim, as probabilidades para os eventos são:</p>
+<p><span class="math inline">\(P(A_1) = P(\{(r, r, r)\}) = \frac{1}{8}\)</span></p>
+<p><span class="math inline">\(P(A_2) = P(\{(c, r, r), (r, c, r), (r, r, c)\}) \to\)</span></p>
+<p><span class="math inline">\(P(A_2) = P(\{(c, r, r)\}) + P(\{(r, c, r)\}) + P(\{(r, r, c)\}) \to\)</span></p>
+<p><span class="math inline">\(P(A_2) = \frac{1}{8} + \frac{1}{8} + \frac{1}{8} = \frac{3}{8}\)</span></p>
+<p><span class="math inline">\(P(A_3) = P(\{(c, c, c)\}) = \frac{1}{8}\)</span></p>
+<p>Podemos também associar, às probabilidades de <span class="math inline">\(X\)</span> assumir valores, às probabilidades dos eventos correspondentes:</p>
+<p><span class="math inline">\(P(X=0) = P(A_1) = \frac{1}{8}\)</span></p>
+<p><span class="math inline">\(P(X=1) = P(A_2) = \frac{3}{8}\)</span></p>
+<p><span class="math inline">\(P(X=2) = P(A_3) = \frac{3}{8}\)</span></p>
+<p><span class="math inline">\(P(X=3) = P(A_4) = \frac{1}{8}\)</span></p>
+<p><span class="math inline">\(\begin{array}{\|c\|c\|c\|} \hline x &amp; f(x) = P(X=x) &amp; F(x) = P(X\leq x) \\ \hline 0 &amp; \frac{1}{8} &amp; \frac{1}{8} \\ 1 &amp; \frac{3}{8} &amp; \frac{1}{8} + \frac{3}{8} = \frac{4}{8} \\ 2 &amp; \frac{3}{8} &amp; \frac{1}{8} + \frac{3}{8} + \frac{3}{8} = \frac{7}{8} \\ 3 &amp; \frac{1}{8} &amp; \frac{1}{8} + \frac{3}{8} + \frac{3}{8} + \frac{1}{8} = 1 \\ \hline \end{array}\)</span></p>
+<div class="img-fluid quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/a03_fig06.png" class="img-fluid figure-img"></p>
+<figcaption>Função de probabilidade do Exemplo 3</figcaption>
+</figure>
+</div>
+<div class="img-fluid quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/a03_fig07.png" class="img-fluid figure-img"></p>
+<figcaption>Função de densidade do Exemplo 3</figcaption>
+</figure>
+</div>
+<hr>
+<p><strong>Exemplo 4</strong></p>
+<p><strong>Resolução:</strong></p>
+<p>Para <span class="math inline">\(x=0\)</span>, temos: <span class="math inline">\(f(0) = P(X=0) = k0^2 = 0\)</span></p>
+<p>Para <span class="math inline">\(x=1\)</span>, temos: <span class="math inline">\(f(1) = P(X=1) = k1^2 = k\)</span></p>
+<p>Para <span class="math inline">\(x=2\)</span>, temos: <span class="math inline">\(f(2) = P(X=2) = k2^2 = 4k\)</span></p>
+<p>Considerando que a função de probabilidade para uma variável aleatória discreta está definida como <span class="math inline">\(f(x) = P(X=x)\)</span>, logo, para o conjunto <span class="math inline">\(\{x_1, x_2, x_3\} = \{0, 1, 2\}\)</span>, temos:</p>
+<p><span class="math inline">\(f(0) + f(1) + f(2) = P(X=x_1) + P(X=x_2) + P(X=x_3) =\)</span></p>
+<p><span class="math inline">\(= \sum\_{i=1}^{3} P(X=x_i) = 1\)</span></p>
+<p><span class="math inline">\(0 + k + 4k = 1 \rightarrow 5k = 1 \rightarrow k = \frac{1}{5} = 0,20\)</span></p>
+<ul>
+<li><span class="math inline">\(P(X=2) = f(2) = 4k = 4(0,2) = 0,8 = 80%\)</span></li>
+<li><span class="math inline">\(P(X\geq 1) = P(X=1) + P(X=2) = f(1) + f(2) = k + 4k = 5k = 5(0,2) = 1 = 100%\)</span></li>
+</ul>
+</section>
+<section id="graficos" class="level3" data-number="5.11.2">
+<h3 data-number="5.11.2" class="anchored" data-anchor-id="graficos"><span class="header-section-number">5.11.2</span> Graficos</h3>
+<p><strong>Gráfico de <span class="math inline">\(f(x)\)</span>:</strong></p>
+<div class="img-fluid quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/a03_fig08.png" class="img-fluid figure-img"></p>
+<figcaption>Gráfico de f(x)</figcaption>
+</figure>
+</div>
+<p><strong>Gráfico de <span class="math inline">\(F(x) = P(X\leq x)\)</span>:</strong></p>
+<p>O gráfico é construído conforme os valores da tabela a seguir:</p>
+<p><span class="math inline">\(\begin{array}{\|c\|c\|c\|} \hline x &amp; f(x) &amp; F(x) \\ \hline 0 &amp; 0 &amp; 0 \\ 1 &amp; 0,2 &amp; 0 + 0,2 = 0,2 \\ 2 &amp; 0,8 &amp; 0 + 0,2 + 0,8 = 1 \\ \hline \end{array}\)</span></p>
+<div class="img-fluid quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/a03_fig09.png" class="img-fluid figure-img"></p>
+<figcaption>Gráfico de <span class="math inline">\(F(x) = P(X\leq x)\)</span></figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="esperança-matemática-de-uma-variável-aleatória" class="level2" data-number="5.12">
+<h2 data-number="5.12" class="anchored" data-anchor-id="esperança-matemática-de-uma-variável-aleatória"><span class="header-section-number">5.12</span> Esperança matemática de uma variável aleatória</h2>
+<section id="definição" class="level3" data-number="5.12.1">
+<h3 data-number="5.12.1" class="anchored" data-anchor-id="definição"><span class="header-section-number">5.12.1</span> Definição</h3>
+<p>Seja <span class="math inline">\(X\)</span> uma v.a com função de probabilidade <span class="math inline">\(f(x)\)</span>, então o valor esperado (ou esperança matemática) de <span class="math inline">\(X\)</span> é definido como:</p>
+<p><span class="math inline">\(\mu = E(X) = \text{média populacional}\)</span></p>
+<p><strong>Cálculo da Esperança</strong></p>
+<p>O cálculo da esperança vai depender se a variável aleatória é contínua ou discreta.</p>
+<ul>
+<li><p><strong>v.a. discreta:</strong></p>
+<ul>
+<li><span class="math inline">\(\mu = E(X) = \sum_{i=1}^{n} x_i P(X=x_i) = \sum_{i=1}^{n} x_i f(x_i)\)</span></li>
+</ul></li>
+<li><p><strong>v.a. contínua:</strong></p>
+<ul>
+<li><span class="math inline">\(\mu = E(X) = \int_{-\infty}^{\infty} xf(x) \,dx\)</span></li>
+</ul></li>
+</ul>
+<p><strong>Propriedades da esperança</strong></p>
+<p>Seja <span class="math inline">\(X\)</span>, <span class="math inline">\(Y\)</span> e <span class="math inline">\(Z\)</span> variáveis aleatórias e <span class="math inline">\(a\)</span> e <span class="math inline">\(b\)</span> constantes:</p>
+<p>1) <span class="math inline">\(E(a) = a\)</span></p>
+<p>2) <span class="math inline">\(E(aX) = aE(X)\)</span></p>
+<p>3) <span class="math inline">\(E(a+X) = a + E(X)\)</span></p>
+<p>4) <span class="math inline">\(E(X+Y) = E(X) + E(Y)\)</span></p>
+<p>5) <span class="math inline">\(E(aX + bY) = aE(X) + bE(Y)\)</span></p>
+<p>6) <span class="math inline">\(E(X+Y+Z) = E(X) + E(Y) + E(Z)\)</span></p>
+<p>A propriedade (4) implica:</p>
+<p><span class="math inline">\(E(aX+(-bY)) = E(aX) + E(-bY) = aE(X) - bE(Y)\)</span></p>
+<p><strong>Exemplo</strong></p>
+<p>Demonstre que:</p>
+<ul>
+<li><span class="math inline">\(E(a) = a\)</span></li>
+<li><span class="math inline">\(E(aX) = aE(X)\)</span></li>
+</ul>
+<p><strong>Solução:</strong></p>
+<p>Consideraremos que a variável aleatória é contínua.</p>
+<p>a) Da definição</p>
+<p><span class="math inline">\(E(a) = \int_{-\infty}^{\infty} a f(x) \,dx\)</span></p>
+<p><span class="math inline">\(E(a) = a \int_{-\infty}^{\infty} f(x) \,dx\)</span></p>
+<p>Em que,</p>
+<p><span class="math inline">\(\int_{-\infty}^{\infty} f(x) \,dx = 1\)</span></p>
+<p>Logo,</p>
+<p><span class="math inline">\(E(a) = a\)</span></p>
+<p>b) Demonstração da propriedade 2. Da definição de esperança:</p>
+<p><span class="math inline">\(E(aX) = \int_{-\infty}^{\infty} ax f(x) \,dx\)</span></p>
+<p><span class="math inline">\(E(aX) = a \int_{-\infty}^{\infty} x f(x) \,dx\)</span></p>
+<p><span class="math inline">\(E(aX) = aE(X)\)</span></p>
+<p>A demonstração para o caso discreto será muito parecida, deixamos como exercício para o leitor.</p>
+<p><strong>Exemplo 1 – Calculando E(X) no caso discreto.</strong></p>
+<p>No exemplo do lançamento de duas moedas, obtivemos uma tabela com os valores de <span class="math inline">\(f(x)\)</span>:</p>
+<span class="math display">\[\begin{array}{\|c\|c\|c\|c\|}
+\hline X &amp; 0 &amp; 1 &amp; 2 \\
+\hline f(x_i) = P(X=x_i) &amp; \frac{1}{4} &amp; \frac{1}{2} &amp; \frac{1}{4} \\
+\hline
+\end{array}\]</span>
+<p>Da definição de <span class="math inline">\(E(X)\)</span> temos:</p>
+<p>$= E(X) = _{i=1}^{n} x_i f(x_i) = _{i=1}^{n} x_i P(X=x_i) = 0 () + 1 () + 2 () = 1 $</p>
+<p><strong>Qual é a diferença entre<span class="math inline">\(\bar{X}\)</span> e <span class="math inline">\(\mu\)</span>?</strong></p>
+<p><span class="math inline">\(\bar{X} = \frac{X_1 + X_2 + \ldots + X_n}{n}\)</span></p>
+<p><strong>Exemplo 2 – Calculando E(X) no caso contínuo.</strong></p>
+<p>A função densidade probabilidade de <span class="math inline">\(X\)</span> é dada por:</p>
+<p>f(x) = <span class="math inline">\(\begin{cases}
+\frac{3}{2} (1-x^2) &amp; 0 \leq x \leq 1 \\
+0 &amp; \text{para } x \notin [0,1] \end{cases}\)</span></p>
+<p><strong>Solução:</strong></p>
+<p><span class="math inline">\(E(X) = \int_{-\infty}^{\infty} x f(x) \,dx\)</span></p>
+<p><span class="math inline">\(E(X) = \int_{0}^{1} x \left(\frac{3}{2} (1-x^2)\right) \,dx\)</span></p>
+<p><span class="math inline">\(E(X) = \int_{-\infty}^{\infty} xf(x) \,dx = \int_{0}^{1} x \frac{3}{2} (1-x^2) \,dx\)</span></p>
+<p><span class="math inline">\(E(X) = \int_{0}^{1} x \frac{3}{2} (1-x^2) \,dx = \frac{3}{2} \int_{0}^{1} (x - x^3) \,dx\)</span></p>
+<p>Integrais:</p>
+<p><span class="math inline">\(\int dx = x\)</span></p>
+<p><span class="math inline">\(\int x \,dx = \frac{x^2}{2}\)</span></p>
+<p><span class="math inline">\(\int x^2 \,dx = \frac{x^3}{3}\)</span></p>
+<p><span class="math inline">\(\int x^3 \,dx = \frac{x^4}{4}\)</span></p>
+<p><span class="math inline">\(\ldots \text{etc.}\)</span></p>
+<p><span class="math inline">\(E(X) = \frac{3}{2} [\frac{x^2}{2} - \frac{x^4}{4}]_{0}^{1}\)</span></p>
+<p><span class="math inline">\(E(X) = \frac{3}{2} [\frac{1}{2} - \frac{1}{4}] = \frac{3}{8}\)</span></p>
+</section>
+</section>
+<section id="variância-de-uma-variável-aleatória" class="level2" data-number="5.13">
+<h2 data-number="5.13" class="anchored" data-anchor-id="variância-de-uma-variável-aleatória"><span class="header-section-number">5.13</span> Variância de uma variável aleatória</h2>
+<section id="definição-1" class="level3" data-number="5.13.1">
+<h3 data-number="5.13.1" class="anchored" data-anchor-id="definição-1"><span class="header-section-number">5.13.1</span> Definição</h3>
+<p>A variância de uma v.a continua ou discreta é definida como:</p>
+<p><span class="math inline">\(\sigma^2 = \text{Var}(X) = E[(X-E(X))^2] = E[(X-\mu)^2]\)</span></p>
+<p>Em que <span class="math inline">\(\mu = E(X)\)</span></p>
+</section>
+<section id="proposição-1" class="level3" data-number="5.13.2">
+<h3 data-number="5.13.2" class="anchored" data-anchor-id="proposição-1"><span class="header-section-number">5.13.2</span> Proposição 1</h3>
+<p>Mostre que a variância pode ser escrita como:</p>
+<p><span class="math inline">\(\sigma^2 = \text{Var}(X) = E(X^2) - [E(X)]^2\)</span></p>
+<p>ou</p>
+<p><span class="math inline">\(\sigma^2 = \text{Var}(X) = E(X^2) - \mu^2\)</span></p>
+<p><strong>Demonstração</strong></p>
+<p>Da definição temos:</p>
+<p><span class="math inline">\(\sigma^2 = \text{Var}(X) = E[(X-E(X))^2]\)</span></p>
+<p>Lembre:</p>
+<p><span class="math inline">\((a-b)^2 = a^2 + b^2 - 2ab\)</span></p>
+<p><span class="math inline">\(= E[X^2 + (E(X))^2 - 2XE(X)]\)</span></p>
+<p><span class="math inline">\(= E[X^2 + (\mu)^2 - 2X\mu]\)</span></p>
+<p><span class="math inline">\(= E(X^2) + E[(\mu)^2] - E(2X\mu)\)</span></p>
+<p><span class="math inline">\(= E(X^2) + \mu^2 - 2\mu E(X)\)</span></p>
+<p><span class="math inline">\(= E(X^2) + \mu^2 - 2\mu^2\)</span></p>
+<p><span class="math inline">\(= E(X^2) - \mu^2\)</span></p>
+<p><span class="math inline">\(\sigma^2 = \text{Var}(X) = E(X^2) - [E(X)]^2\)</span></p>
+</section>
+<section id="corolário-1" class="level3" data-number="5.13.3">
+<h3 data-number="5.13.3" class="anchored" data-anchor-id="corolário-1"><span class="header-section-number">5.13.3</span> Corolário 1</h3>
+<p>Mostre que:</p>
+<p>Se <span class="math inline">\(E(X) = 0\)</span> então <span class="math inline">\(\text{Var}(X) = E[X^2]\)</span></p>
+</section>
+</section>
+<section id="cálculo-da-variância" class="level2" data-number="5.14">
+<h2 data-number="5.14" class="anchored" data-anchor-id="cálculo-da-variância"><span class="header-section-number">5.14</span> Cálculo da variância</h2>
+<section id="caso-discreto" class="level3" data-number="5.14.1">
+<h3 data-number="5.14.1" class="anchored" data-anchor-id="caso-discreto"><span class="header-section-number">5.14.1</span> Caso discreto</h3>
+<p>Podemos calcular a variância populacional de uma variável aleatória discreta como:</p>
+<p><span class="math inline">\(\sigma^2 = \text{Var}(X) = E[(X-\mu)^2] = (X-\mu)^2\)</span></p>
+<p><span class="math inline">\(\sigma^2 = E[(X-\mu)^2] = \sum_{i=1}^{n} (x_i-\mu)^2 P(X=x_i) =\)</span> <span class="math inline">\(= \sum_{i=1}^{n} (x_i-\mu)^2 f(x_i)\)</span></p>
+<p>O número de operações necessárias para computar <span class="math inline">\(\sigma^2\)</span> pode ser reduzido utilizando uma fórmula alternativa.</p>
+</section>
+<section id="caso-contínuo" class="level3" data-number="5.14.2">
+<h3 data-number="5.14.2" class="anchored" data-anchor-id="caso-contínuo"><span class="header-section-number">5.14.2</span> 5.1.2 Caso contínuo</h3>
+<p>Podemos calcular a variância populacional de uma variável aleatória contínua como:</p>
+<p><span class="math inline">\(\sigma^2 = \text{Var}(X) = E[(X-\mu)^2] = (X-\mu)^2\)</span></p>
+<p><span class="math inline">\(\sigma^2 = E[(X-\mu)^2] = \int_{-\infty}^{\infty} (X-\mu)^2 f(x) \,dx\)</span></p>
+</section>
+<section id="propriedades-da-variância" class="level3" data-number="5.14.3">
+<h3 data-number="5.14.3" class="anchored" data-anchor-id="propriedades-da-variância"><span class="header-section-number">5.14.3</span> 5.3 Propriedades da variância</h3>
+<p>Considere <span class="math inline">\(X\)</span>, <span class="math inline">\(Y\)</span> e <span class="math inline">\(Z\)</span> variáveis aleatórias e <span class="math inline">\(a\)</span> e <span class="math inline">\(b\)</span> constantes em <span class="math inline">\(R\)</span>, temos as seguintes propriedades:</p>
+<p>1) <span class="math inline">\(\text{Var}(a) = 0\)</span> - a variância de toda constante é zero.</p>
+<p>2) <span class="math inline">\(\text{Var}(aX) = a^2 \text{Var}(X)\)</span></p>
+<p>3) <span class="math inline">\(\text{Var}(a+X) = \text{Var}(X)\)</span></p>
+<p>4) <span class="math inline">\(\text{Var}(X+Y) = \text{Var}(X) + \text{Var}(Y) + 2\text{Cov}(X,Y)\)</span></p>
+<p>5) <span class="math inline">\(\text{Var}(X-Y) = \text{Var}(X) + \text{Var}(Y) - 2\text{Cov}(X,Y)\)</span></p>
+<p>Lembre dos produtos notáveis:</p>
+<ul>
+<li><p><span class="math inline">\((a+b)^2 = a^2 + b^2 + 2ab\)</span></p></li>
+<li><p><span class="math inline">\((a-b)^2 = a^2 + b^2 - 2ab\)</span></p></li>
+</ul>
+<p>Dessa forma,</p>
+<p><span class="math inline">\(\text{Var}(aX \pm bY) = a^2 \text{Var}(X) + b^2 \text{Var}(Y) \pm 2ab\text{Cov}(X,Y)\)</span></p>
+<p><strong>Exemplo</strong></p>
+<p>Demonstre que:</p>
+<p>1. <span class="math inline">\(\text{Var}(a) = 0\)</span></p>
+<p>2. <span class="math inline">\(\text{Var}(aX) = a^2 \text{Var}(X)\)</span></p>
+<p><strong>Solução:</strong></p>
+<p>a)</p>
+<p><span class="math inline">\(\text{Var}(a) = E[(a-E(a))^2]\)</span></p>
+<p><span class="math inline">\(\text{Var}(a) = E[(a-a)^2] = E[0^2] = 0\)</span></p>
+<p>b)</p>
+<p><span class="math inline">\(\text{Var}(aX) = E[(aX-E(aX))^2] = E[(a[X-E(X)])^2]\)</span></p>
+<p><span class="math inline">\(\text{Var}(aX) = (XY)^2 = (X)^2 (Y)^2\)</span></p>
+<p><span class="math inline">\(\text{Var}(aX) = E[(a(X-E(X)))^2] = E[a^2(X-E(X))^2]\)</span></p>
+<p><span class="math inline">\(\text{Var}(aX) = a^2 E[(X-E(X))^2] = a^2 \text{Var}(X)\)</span></p>
+</section>
+</section>
+<section id="exemplo-3" class="level2" data-number="5.15">
+<h2 data-number="5.15" class="anchored" data-anchor-id="exemplo-3"><span class="header-section-number">5.15</span> Exemplo</h2>
+<p>Seja a função de probabilidade de uma v.a.d.</p>
+<span class="math display">\[\begin{array}{\|c\|c\|} \hline X &amp; f(x) \\ \hline 0 &amp; \frac{1}{2} \\ 1 &amp; \frac{1}{4} \\ 2 &amp; a \end{array}\]</span>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      return note.innerHTML;
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./aula02.html" class="pagination-link  aria-label=" &lt;span="" 02&lt;="" span&gt;"="">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Aula 02</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./references.html" class="pagination-link" aria-label="References">
+        <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

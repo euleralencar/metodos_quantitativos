@@ -11,6 +11,7 @@ book:
     - summary.qmd
     - aula01.qmd
     - aula02.qmd
+    - aula03.qmd
     - references.qmd
 
 bibliography: references.bib
