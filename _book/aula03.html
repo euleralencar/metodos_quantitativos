@@ -242,7 +242,10 @@ window.Quarto = {
   <li><a href="#caso-contínuo" id="toc-caso-contínuo" class="nav-link" data-scroll-target="#caso-contínuo"><span class="header-section-number">5.14.2</span> 5.1.2 Caso contínuo</a></li>
   <li><a href="#propriedades-da-variância" id="toc-propriedades-da-variância" class="nav-link" data-scroll-target="#propriedades-da-variância"><span class="header-section-number">5.14.3</span> 5.3 Propriedades da variância</a></li>
   </ul></li>
-  <li><a href="#exemplo-3" id="toc-exemplo-3" class="nav-link" data-scroll-target="#exemplo-3"><span class="header-section-number">5.15</span> Exemplo</a></li>
+  <li><a href="#exemplo-3" id="toc-exemplo-3" class="nav-link" data-scroll-target="#exemplo-3"><span class="header-section-number">5.15</span> Exemplo</a>
+  <ul class="collapse">
+  <li><a href="#exemplo-4" id="toc-exemplo-4" class="nav-link" data-scroll-target="#exemplo-4"><span class="header-section-number">5.15.1</span> Exemplo</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -968,8 +971,197 @@ window.Quarto = {
 <h2 data-number="5.15" class="anchored" data-anchor-id="exemplo-3"><span class="header-section-number">5.15</span> Exemplo</h2>
 <p>Seja a função de probabilidade de uma v.a.d.</p>
 <span class="math display">\[\begin{array}{\|c\|c\|} \hline X &amp; f(x) \\ \hline 0 &amp; \frac{1}{2} \\ 1 &amp; \frac{1}{4} \\ 2 &amp; a \end{array}\]</span>
+<ul>
+<li>Encontre “a”:</li>
+<li>Mostre o gráfico de <span class="math inline">\(f(x)\)</span>;</li>
+<li>Encontre <span class="math inline">\(E(x)\)</span> e <span class="math inline">\(VAR(x)\)</span>;</li>
+<li>Encontre <span class="math inline">\(F(x)\)</span>.</li>
+</ul>
+<p><strong>Resolução:</strong> A propriedade é válida: <span class="math inline">\(\sum_{i} f(x_i) = 1\)</span>. Então:</p>
+<p><span class="math display">\[
+\frac{1}{2} + \frac{1}{4} + a = 1
+\]</span></p>
+<p><span class="math display">\[
+a = \frac{1}{4}
+\]</span><br>
+</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th><span class="math inline">\(X\)</span></th>
+<th><span class="math inline">\(f(x)\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0</td>
+<td><span class="math inline">\(\frac{1}{2}\)</span></td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td><span class="math inline">\(\frac{1}{4}\)</span></td>
+</tr>
+<tr class="odd">
+<td>2</td>
+<td><span class="math inline">\(\frac{1}{4}\)</span></td>
+</tr>
+</tbody>
+</table>
+<section id="cálculo-da-esperança" class="level4" data-number="5.15.0.1">
+<h4 data-number="5.15.0.1" class="anchored" data-anchor-id="cálculo-da-esperança"><span class="header-section-number">5.15.0.1</span> Cálculo da esperança:</h4>
+<p><span class="math inline">\(E(x) = \sum_{i} xP(X=x) = 0(\frac{1}{2}) + 1(\frac{1}{4}) + 2(\frac{1}{4}) = \frac{3}{4}\)</span></p>
+</section>
+<section id="cálculo-da-variância-1" class="level4" data-number="5.15.0.2">
+<h4 data-number="5.15.0.2" class="anchored" data-anchor-id="cálculo-da-variância-1"><span class="header-section-number">5.15.0.2</span> Cálculo da variância:</h4>
+<p><span class="math inline">\(Var(X) = E[(X-\mu)^2] = \sum_{i} (x_i - \mu)^2 P(X=x_i)\)</span></p>
+<p><span class="math inline">\(= (0 - \frac{3}{4})^2 \cdot \frac{1}{2} + (1 - \frac{3}{4})^2 \cdot \frac{1}{4} + (2 - \frac{3}{4})^2 \cdot \frac{1}{4}\)</span></p>
+<p><span class="math inline">\(= \frac{9}{32} + \frac{25}{16} \cdot \frac{1}{4} + \frac{70}{16} \cdot \frac{1}{4}\)</span></p>
+<p><span class="math inline">\(= \frac{9}{32} + \frac{25}{64} + \frac{70}{64}\)</span></p>
+<p><span class="math inline">\(= \frac{9}{32} + \frac{95}{64}\)</span></p>
+<p><span class="math inline">\(= \frac{113}{64}\)</span></p>
+<p><strong>Exemplo 2 (seguro de carro)</strong></p>
+<p>Defina a variável aleatória discreta <span class="math inline">\(X\)</span>: Lucro por carro de uma seguradora. Em caso de acidente, a seguradora deverá pagar R$ 29.000,00 e, em caso contrário, ela recebe R$ 1.000,00.</p>
+<p><br>
+</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Estado</th>
+<th>Probabilidade</th>
+<th>Resultado (<span class="math inline">\(X\)</span>) em R$</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Sem acidente</td>
+<td>97%</td>
+<td>1000</td>
+</tr>
+<tr class="even">
+<td>Com acidente</td>
+<td><span class="math inline">\(P\)</span></td>
+<td>-29000</td>
+</tr>
+</tbody>
+</table>
+<p><br>
+</p>
+<p><strong>Encontre “p”:</strong></p>
+<p><span class="math inline">\(p + 97\% = 1 \implies p = 0.03 = 3\%\)</span></p>
+<p><strong>Encontre o lucro médio:</strong></p>
+<p><span class="math inline">\(\mu = E(x) = \sum_{i} x_i P(X=x_i) = (1000 \times 0.97) + (-29000 \times 0.03) = 970 - 870 = \text{R\$ 100}\)</span></p>
+<p><strong>Encontre o risco de seguro (variância):</strong></p>
+<p><span class="math inline">\(\sigma^2 = Var(X) = E[(X - \mu)^2] = (1000 - 100)^2 \times 0.97 + (-29000 - 100)^2 \times 0.03\)</span></p>
+<p><span class="math inline">\(= 810000 \times 0.97 + 846810000 \times 0.03 = 785700 + 25404300 = \text{R\$ 29.190.000}^2\)</span></p>
+<p><strong>Exemplo</strong></p>
+<p>Considere a variável <span class="math inline">\(Z = X + 2Y\)</span>, em que <span class="math inline">\(E[X] = 1\)</span>, <span class="math inline">\(E[Y] = -2\)</span>, <span class="math inline">\(Var(X) = 3\)</span> e <span class="math inline">\(Var(Y) = 5\)</span>, sendo <span class="math inline">\(X\)</span> e <span class="math inline">\(Y\)</span> variáveis independentes.</p>
+<p>a) <span class="math inline">\(E(Z)\)</span></p>
+<p><span class="math inline">\(E(Z) = E(X + 2Y) = E(X) + 2E(Y) = 1 + 2(-2) = -3\)</span></p>
+<p>b) <span class="math inline">\(E(5Z)\)</span></p>
+<p><span class="math inline">\(E(5Z) = 5E(Z) = 5(-3) = -15\)</span></p>
+<p>c)</p>
+<p><span class="math display">\[
+\begin{align*}
+Var(Z) &amp; = Var(X + 2Y) \\
+&amp; = Var(X) + Var(2Y) + 2Cov(X,2Y) \\
+&amp; = Var(X) + Var(2Y) + 2(1)(2)Cov(X,Y) \\
+&amp; = Var(X) + 2^2 Var(Y) + 4Cov(X,Y) \\
+&amp; = (3) + 2^2 (5) + 4(0) \\
+&amp; = 3 + 4(5) \\
+&amp; = 23
+\end{align*}
+\]</span></p>
+<p>Como <span class="math inline">\(X\)</span> e <span class="math inline">\(Y\)</span> são independentes, <span class="math inline">\(Cov(X,Y)=0\)</span>.</p>
+<p>Outra abordagem para calcular <span class="math inline">\(Var(Z)\)</span> é usando a fórmula:</p>
+<p><span class="math display">\[
+Var(Z) = E(Z^2) - [E(Z)]^2
+\]</span></p>
+<p><span class="math display">\[
+\begin{align*}
+Z^2 &amp; = (X + 2Y)^2 \\
+&amp; = X^2 + 4Y^2 + 4XY \\
+E(Z^2) &amp; = E(X^2 + 4Y^2 + 4XY) \\
+&amp; = E(X^2) + 4E(Y^2) + 4E(XY)
+\end{align*}
+\]</span></p>
+<p>Como <span class="math inline">\(X\)</span> e <span class="math inline">\(Y\)</span> são independentes, <span class="math inline">\(E(XY) = E(X)E(Y)\)</span>:</p>
+<p><span class="math display">\[
+E(Z^2) = E(X^2) + 4E(Y^2) + 4E(X)E(Y)
+\]</span></p>
+<p>Substituindo as expressões para <span class="math inline">\(E(X^2)\)</span> e <span class="math inline">\(E(Y^2)\)</span>:</p>
+<p><span class="math display">\[
+E(Z^2) = VAR(X) + [E(X)]^2 + 4(VAR(Y) + [E(Y)]^2) + 4E(X)E(Y)
+\]</span></p>
+<p><span class="math display">\[
+E(Z^2) = (3) + (1)^2 + 4(5 + (-2)^2) + 4(1)(-2)
+\]</span></p>
+<p><span class="math display">\[
+VAR(Z) = E(Z^2) - 9 = 4 + 36 - 8 - 9 = 23
+\]</span></p>
+<p>d) <span class="math inline">\(Var(3Z + 2)\)</span></p>
+<p><span class="math display">\[
+Var(3Z + 2) = Var(3Z) = 3^2 Var(Z) = 9(23) = 207
+\]</span></p>
+<p>Os exemplos a seguir mostram algumas aplicações de processos estocásticos.</p>
+<hr>
+</section>
+<section id="exemplo-4" class="level3" data-number="5.15.1">
+<h3 data-number="5.15.1" class="anchored" data-anchor-id="exemplo-4"><span class="header-section-number">5.15.1</span> Exemplo</h3>
+<p>Considere um processo estocástico <span class="math inline">\(Y_t\)</span>:</p>
+<p><span class="math inline">\(Y_t = 4 + \varepsilon_t\)</span></p>
+<p>onde <span class="math inline">\(\varepsilon_t\)</span> é um processo ruído branco com média zero (<span class="math inline">\(E[\varepsilon_t]=0\)</span>) e variância constante <span class="math inline">\(\sigma^2\)</span>, ou seja, <span class="math inline">\(Var[\varepsilon_t]=\sigma^2\)</span>.</p>
+<p>a) Calcule a esperança <span class="math inline">\(E[Y_t]\)</span>, conhecida também como média incondicional de <span class="math inline">\(Y_t\)</span></p>
+<p><span class="math display">\[\begin{align*}
+E(Y_t) &amp; = E(4 + \varepsilon_t) \\
+&amp; = E(4) + E(\varepsilon_t) \\
+&amp; = 4
+\end{align*}\]</span></p>
+<p>b) Calcule a variância <span class="math inline">\(\gamma_0 = Var[Y_t]\)</span>, conhecida também como variância incondicional de <span class="math inline">\(Y_t\)</span></p>
+<p><span class="math display">\[\begin{align*}
+\gamma_0 &amp; = Var[Y_t] = E[(Y_t - E(Y_t))^2] \\
+&amp; = E[(Y_t - 4)^2] \\
+&amp; = E[(\varepsilon_t)^2] \\
+&amp; = Var(\varepsilon_t) \\
+&amp; = \sigma^2
+\end{align*}\]</span></p>
+<p>Por que <span class="math inline">\(E[(\varepsilon_t)^2] = Var(\varepsilon_t)\)</span>? Lembre-se mais uma vez da propriedade:</p>
+<p><span class="math inline">\(Var(\varepsilon_t) = E[(\varepsilon_t)^2] - [E(\varepsilon_t)]^2 = E[(\varepsilon_t)^2] - [0]^2 = E[(\varepsilon_t)^2]\)</span></p>
+<p>Outra forma até mais fácil de calcular a variância é usando a propriedade da variância:</p>
+<p><span class="math inline">\(\gamma_0 = Var[Y_t] = Var[4 + \varepsilon_t] = Var[\varepsilon_t] = \sigma^2\)</span></p>
+<p><strong>Exercício</strong></p>
+<p>Considere um processo estocástico <span class="math inline">\(Y_t\)</span>:</p>
+<p><span class="math inline">\(Y_t = \varepsilon_t + 4\varepsilon_{t-1}\)</span></p>
+<p>onde <span class="math inline">\(\varepsilon_t\)</span> é um processo ruído branco com média zero (<span class="math inline">\(E[\varepsilon_t]=0\)</span>) e variância constante <span class="math inline">\(\sigma^2\)</span> (Este modelo em econometria de séries temporais é conhecido também como modelo de médias móveis ou MA(1)). OBSERVAÇÃO: Outra propriedade do ruído branco é que não existe autocovariância, isto é: <span class="math inline">\(Cov(\varepsilon_t, \varepsilon_{t-1}) = 0\)</span>.</p>
+<p><strong>a) Calcule a esperança <span class="math inline">\(E[Y_t]\)</span>, conhecida também como média incondicional de <span class="math inline">\(Y_t\)</span></strong></p>
+<p><span class="math display">\[\begin{align*}
+E(Y_t) &amp; = E(\varepsilon_t + 4\varepsilon_{t-1}) \\
+&amp; = E(\varepsilon_t) + E(4\varepsilon_{t-1}) \\
+&amp; = E(\varepsilon_t) + 4E(\varepsilon_{t-1}) \\
+&amp; = 0
+\end{align*}\]</span></p>
+<p><strong>b) Calcule a variância <span class="math inline">\(\gamma_0 = Var[Y_t]\)</span>, conhecida também como variância incondicional de <span class="math inline">\(Y_t\)</span></strong></p>
+<p><span class="math display">\[\begin{align*}
+Var(Y_t) &amp; = Var(\varepsilon_t + 4\varepsilon_{t-1}) \\
+&amp; = Var(\varepsilon_t) + Var(4\varepsilon_{t-1}) + 2Cov(\varepsilon_t, 4\varepsilon_{t-1}) \\
+&amp; = Var(\varepsilon_t) + 16Var(\varepsilon_{t-1}) + 2(1)(4)Cov(\varepsilon_t, \varepsilon_{t-1}) \\
+&amp; = \sigma^2 + 16\sigma^2 + 2(4)(0) \\
+&amp; = 17\sigma^2
+\end{align*}\]</span></p>
+<p>Pela definição:</p>
+<p><span class="math display">\[
+\gamma_0 = Var[Y_t] = E[(Y_t - E(Y_t))^2] = E[(Y_t)^2] = E[(\varepsilon_t + 4\varepsilon_{t-1})^2]
+\]</span> <span class="math display">\[
+(\varepsilon_t + 4\varepsilon_{t-1})^2 = (\varepsilon_t)^2 + 16(\varepsilon_{t-1})^2 + 2\varepsilon_t (4\varepsilon_{t-1})
+\]</span></p>
+<p><span class="math display">\[
+\gamma_0 = Var[Y_t] = E[(\varepsilon_t)^2 + 16(\varepsilon_{t-1})^2 + 2\varepsilon_t (4\varepsilon_{t-1})] = E(\varepsilon_t^2) + 16E(\varepsilon_{t-1}^2) + 8E(\varepsilon_t \varepsilon_{t-1})
+\]</span></p>
+<p><span class="math display">\[
+= \sigma^2 + 16\sigma^2 + 0 = 17\sigma^2
+\]</span></p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

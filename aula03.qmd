@@ -914,3 +914,226 @@ $\text{Var}(aX) = a^2 E[(X-E(X))^2] = a^2 \text{Var}(X)$
 Seja a função de probabilidade de uma v.a.d.
 
 \begin{array}{\|c\|c\|} \hline X & f(x) \\ \hline 0 & \frac{1}{2} \\ 1 & \frac{1}{4} \\ 2 & a \end{array}
+
+- Encontre "a":
+- Mostre o gráfico de $f(x)$;
+- Encontre $E(x)$ e $VAR(x)$;
+- Encontre $F(x)$.
+
+**Resolução:**
+A propriedade é válida: $\sum_{i} f(x_i) = 1$. Então:
+
+$$
+\frac{1}{2} + \frac{1}{4} + a = 1
+$$
+
+$$
+a = \frac{1}{4}
+$$
+\
+
+| $X$ | $f(x)$ |
+| --- | ----- |
+| 0   | $\frac{1}{2}$ |
+| 1   | $\frac{1}{4}$ |
+| 2   | $\frac{1}{4}$ |
+
+#### Cálculo da esperança:
+
+$E(x) = \sum_{i} xP(X=x) = 0(\frac{1}{2}) + 1(\frac{1}{4}) + 2(\frac{1}{4}) = \frac{3}{4}$
+
+#### Cálculo da variância:
+
+$Var(X) = E[(X-\mu)^2] = \sum_{i} (x_i - \mu)^2 P(X=x_i)$
+
+$= (0 - \frac{3}{4})^2 \cdot \frac{1}{2} + (1 - \frac{3}{4})^2 \cdot \frac{1}{4} + (2 - \frac{3}{4})^2 \cdot \frac{1}{4}$
+
+$= \frac{9}{32} + \frac{25}{16} \cdot \frac{1}{4} + \frac{70}{16} \cdot \frac{1}{4}$
+
+$= \frac{9}{32} + \frac{25}{64} + \frac{70}{64}$
+
+$= \frac{9}{32} + \frac{95}{64}$
+
+$= \frac{113}{64}$
+
+**Exemplo 2 (seguro de carro)**
+
+Defina a variável aleatória discreta $X$: Lucro por carro de uma seguradora. Em caso de acidente, a seguradora deverá pagar R\$ 29.000,00 e, em caso contrário, ela recebe R$ 1.000,00.
+
+\
+
+| Estado        | Probabilidade | Resultado ($X$) em R$ |
+| ------------- | ------------- | ---------------------- |
+| Sem acidente  | 97%           | 1000                   |
+| Com acidente  | $P$           | -29000                 |
+
+\
+
+**Encontre "p":**
+
+$p + 97\% = 1 \implies p = 0.03 = 3\%$
+
+**Encontre o lucro médio:**
+
+$\mu = E(x) = \sum_{i} x_i P(X=x_i) = (1000 \times 0.97) + (-29000 \times 0.03) = 970 - 870 = \text{R\$ 100}$
+
+**Encontre o risco de seguro (variância):**
+
+$\sigma^2 = Var(X) = E[(X - \mu)^2] = (1000 - 100)^2 \times 0.97 + (-29000 - 100)^2 \times 0.03$
+
+$= 810000 \times 0.97 + 846810000 \times 0.03 = 785700 + 25404300 = \text{R\$ 29.190.000}^2$
+
+**Exemplo**
+
+Considere a variável $Z = X + 2Y$, em que $E[X] = 1$, $E[Y] = -2$, $Var(X) = 3$ e $Var(Y) = 5$, sendo $X$ e $Y$ variáveis independentes.
+
+a\) $E(Z)$
+
+$E(Z) = E(X + 2Y) = E(X) + 2E(Y) = 1 + 2(-2) = -3$
+
+b\) $E(5Z)$
+
+$E(5Z) = 5E(Z) = 5(-3) = -15$
+
+c\)
+
+$$
+\begin{align*}
+Var(Z) & = Var(X + 2Y) \\
+& = Var(X) + Var(2Y) + 2Cov(X,2Y) \\
+& = Var(X) + Var(2Y) + 2(1)(2)Cov(X,Y) \\
+& = Var(X) + 2^2 Var(Y) + 4Cov(X,Y) \\
+& = (3) + 2^2 (5) + 4(0) \\
+& = 3 + 4(5) \\
+& = 23
+\end{align*}
+$$
+
+Como $X$ e $Y$ são independentes, $Cov(X,Y)=0$.
+
+Outra abordagem para calcular $Var(Z)$ é usando a fórmula:
+
+$$
+Var(Z) = E(Z^2) - [E(Z)]^2
+$$
+
+$$
+\begin{align*}
+Z^2 & = (X + 2Y)^2 \\
+& = X^2 + 4Y^2 + 4XY \\
+E(Z^2) & = E(X^2 + 4Y^2 + 4XY) \\
+& = E(X^2) + 4E(Y^2) + 4E(XY)
+\end{align*}
+$$
+
+Como $X$ e $Y$ são independentes, $E(XY) = E(X)E(Y)$:
+
+$$
+E(Z^2) = E(X^2) + 4E(Y^2) + 4E(X)E(Y)
+$$
+
+Substituindo as expressões para $E(X^2)$ e $E(Y^2)$:
+
+$$
+E(Z^2) = VAR(X) + [E(X)]^2 + 4(VAR(Y) + [E(Y)]^2) + 4E(X)E(Y)
+$$
+
+$$
+E(Z^2) = (3) + (1)^2 + 4(5 + (-2)^2) + 4(1)(-2)
+$$
+
+$$
+VAR(Z) = E(Z^2) - 9 = 4 + 36 - 8 - 9 = 23
+$$
+
+d\) $Var(3Z + 2)$
+
+$$
+Var(3Z + 2) = Var(3Z) = 3^2 Var(Z) = 9(23) = 207
+$$
+
+Os exemplos a seguir mostram algumas aplicações de processos estocásticos.
+
+---
+
+### Exemplo
+
+Considere um processo estocástico $Y_t$:
+
+$Y_t = 4 + \varepsilon_t$
+
+onde $\varepsilon_t$ é um processo ruído branco com média zero ($E[\varepsilon_t]=0$) e variância constante $\sigma^2$, ou seja, $Var[\varepsilon_t]=\sigma^2$.
+
+a\) Calcule a esperança $E[Y_t]$, conhecida também como média incondicional de $Y_t$
+
+\begin{align*}
+E(Y_t) & = E(4 + \varepsilon_t) \\
+& = E(4) + E(\varepsilon_t) \\
+& = 4
+\end{align*}
+
+b\) Calcule a variância $\gamma_0 = Var[Y_t]$, conhecida também como variância incondicional de $Y_t$
+
+\begin{align*}
+\gamma_0 & = Var[Y_t] = E[(Y_t - E(Y_t))^2] \\
+& = E[(Y_t - 4)^2] \\
+& = E[(\varepsilon_t)^2] \\
+& = Var(\varepsilon_t) \\
+& = \sigma^2
+\end{align*}
+
+Por que $E[(\varepsilon_t)^2] = Var(\varepsilon_t)$? Lembre-se mais uma vez da propriedade:
+
+$Var(\varepsilon_t) = E[(\varepsilon_t)^2] - [E(\varepsilon_t)]^2 = E[(\varepsilon_t)^2] - [0]^2 = E[(\varepsilon_t)^2]$
+
+Outra forma até mais fácil de calcular a variância é usando a propriedade da variância:
+
+$\gamma_0 = Var[Y_t] = Var[4 + \varepsilon_t] = Var[\varepsilon_t] = \sigma^2$
+
+**Exercício**
+
+Considere um processo estocástico $Y_t$:
+
+$Y_t = \varepsilon_t + 4\varepsilon_{t-1}$
+
+onde $\varepsilon_t$ é um processo ruído branco com média zero ($E[\varepsilon_t]=0$) e variância constante $\sigma^2$ (Este modelo em econometria de séries temporais é conhecido também como modelo de médias móveis ou MA(1)). OBSERVAÇÃO: Outra propriedade do ruído branco é que não existe autocovariância, isto é: $Cov(\varepsilon_t, \varepsilon_{t-1}) = 0$.
+
+**a\) Calcule a esperança $E[Y_t]$, conhecida também como média incondicional de $Y_t$**
+
+\begin{align*}
+E(Y_t) & = E(\varepsilon_t + 4\varepsilon_{t-1}) \\
+& = E(\varepsilon_t) + E(4\varepsilon_{t-1}) \\
+& = E(\varepsilon_t) + 4E(\varepsilon_{t-1}) \\
+& = 0
+\end{align*}
+
+
+**b\) Calcule a variância $\gamma_0 = Var[Y_t]$, conhecida também como variância incondicional de $Y_t$**
+
+
+\begin{align*}
+Var(Y_t) & = Var(\varepsilon_t + 4\varepsilon_{t-1}) \\
+& = Var(\varepsilon_t) + Var(4\varepsilon_{t-1}) + 2Cov(\varepsilon_t, 4\varepsilon_{t-1}) \\
+& = Var(\varepsilon_t) + 16Var(\varepsilon_{t-1}) + 2(1)(4)Cov(\varepsilon_t, \varepsilon_{t-1}) \\
+& = \sigma^2 + 16\sigma^2 + 2(4)(0) \\
+& = 17\sigma^2
+\end{align*}
+
+Pela definição:
+
+$$
+\gamma_0 = Var[Y_t] = E[(Y_t - E(Y_t))^2] = E[(Y_t)^2] = E[(\varepsilon_t + 4\varepsilon_{t-1})^2]
+$$
+$$
+(\varepsilon_t + 4\varepsilon_{t-1})^2 = (\varepsilon_t)^2 + 16(\varepsilon_{t-1})^2 + 2\varepsilon_t (4\varepsilon_{t-1})
+$$
+
+$$
+\gamma_0 = Var[Y_t] = E[(\varepsilon_t)^2 + 16(\varepsilon_{t-1})^2 + 2\varepsilon_t (4\varepsilon_{t-1})] = E(\varepsilon_t^2) + 16E(\varepsilon_{t-1}^2) + 8E(\varepsilon_t \varepsilon_{t-1})
+$$
+
+$$
+= \sigma^2 + 16\sigma^2 + 0 = 17\sigma^2
+$$
+
+
