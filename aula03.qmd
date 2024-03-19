@@ -20,11 +20,11 @@ Formalmente, para algum evento $E$ em $\Omega$ satisfaz $E=X^{-1} (I) = \{\omega
 
 **Notação:**
 
-- $X$ (maiúscula) = variável aleatória
+-   $X$ (maiúscula) = variável aleatória
 
-- $x$ (minúscula) = valor numérico da variável aleatória
+-   $x$ (minúscula) = valor numérico da variável aleatória
 
-- $\omega$ = resultado ou elemento do espaço amostral
+-   $\omega$ = resultado ou elemento do espaço amostral
 
 **Exemplo 1: Lançamento de uma Moeda**
 
@@ -46,16 +46,15 @@ A figura a seguir apresenta esta situação:
 
 ![Figura 1. Espaço amostral e probabilidade.](images/a03_fig1.png)
 
-
 **Exemplo 2: Lançamento de uma Moeda Duas Vezes**
 
 Considere o experimento de lançar uma moeda duas vezes, onde definimos $H$ com cara e $T$ como coroa. O espaço amostral será composto pelos eventos simples $\Omega=\{\omega_1, \omega_2, \omega_3, \omega_4\}=\{\text{HH, HT, TH, TT}\}$.
 
 Definamos duas variáveis aleatórias:
 
-- $X =$ número de caras ao final do experimento;
+-   $X =$ número de caras ao final do experimento;
 
-- $Y =$ número de cara na primeira jogada menos o número de coroas na segunda jogada.
+-   $Y =$ número de cara na primeira jogada menos o número de coroas na segunda jogada.
 
 Encontre os valores das variáveis aleatórias $X$ e $Y$.
 
@@ -87,7 +86,6 @@ $Y(\omega_4)=Y(\text{TT})=0-1=-1$, e
 
 $Y=\{-1,0,1\}$.
 
-
 ### Classificação:
 
 Podemos classificar as variáveis aleatórias como discreta ou contínua:
@@ -98,12 +96,11 @@ Uma variável aleatória é considerada discreta quando seus possíveis valores 
 
 **Exemplo 3:**
 
-- $X$ pode assumir valores finitos, como $\{1, 2, 3, 4, 5, 6\}$.
+-   $X$ pode assumir valores finitos, como $\{1, 2, 3, 4, 5, 6\}$.
 
-- $X$ pode assumir valores enumeráveis, como $\{0, 1, 2, 3, 4, 5, \ldots\}$.
+-   $X$ pode assumir valores enumeráveis, como $\{0, 1, 2, 3, 4, 5, \ldots\}$.
 
-- $X$ pode assumir valores fracionários enumeráveis, como $\{1/2, 1/4, 1/8, \ldots\}$.
-
+-   $X$ pode assumir valores fracionários enumeráveis, como $\{1/2, 1/4, 1/8, \ldots\}$.
 
 **Variáveis Aleatórias Contínuas:**
 
@@ -111,45 +108,45 @@ Uma variável aleatória é considerada contínua quando pode assumir qualquer v
 
 **Exemplo 4:**
 
-- $Y$ pode assumir qualquer valor em um intervalo, como $0 \leq Y \leq 1$.
+-   $Y$ pode assumir qualquer valor em um intervalo, como $0 \leq Y \leq 1$.
 
-- $Z$ pode assumir valores em um intervalo não enumerável, como $Z \in (-\infty, \infty)$.
+-   $Z$ pode assumir valores em um intervalo não enumerável, como $Z \in (-\infty, \infty)$.
 
 **Notação:**
 
-- “v.a” indica “variável aleatória”
+-   “v.a” indica “variável aleatória”
 
-- “v.a.d” indica “variável aleatória discreta”
+-   “v.a.d” indica “variável aleatória discreta”
 
-- “v.a.c” indica “variável aleatória contínua”
+-   “v.a.c” indica “variável aleatória contínua”
 
 **Outros exemplos de variáveis aleatórias discretas:**
 
-- $X$: Número de alunos que passaram em um exame.
+-   $X$: Número de alunos que passaram em um exame.
 
-  - Possíveis valores: $\{0, 1, 2, 3, \ldots\}$
+    -   Possíveis valores: $\{0, 1, 2, 3, \ldots\}$
 
-- $Y$: Número de carros em um estacionamento.
+-   $Y$: Número de carros em um estacionamento.
 
-  - Possíveis valores: $\{0, 1, 2, 3, \ldots\}$
+    -   Possíveis valores: $\{0, 1, 2, 3, \ldots\}$
 
-- $Z$: Número de peças defeituosas em um lote de produção.
+-   $Z$: Número de peças defeituosas em um lote de produção.
 
-  - Possíveis valores: $\{0, 1, 2, \ldots\}$
+    -   Possíveis valores: $\{0, 1, 2, \ldots\}$
 
 **Outros exemplos de Variáveis aleatórias contínuas:**
 
-- $X$: altura de uma pessoa
+-   $X$: altura de uma pessoa
 
-  - Possíveis valores: $X > 0$
+    -   Possíveis valores: $X > 0$
 
-- $Y$: peso de uma pessoa
+-   $Y$: peso de uma pessoa
 
-  - Possíveis valores: $Y > 0$
+    -   Possíveis valores: $Y > 0$
 
-- $Z$: preço de um ativo financeiro
+-   $Z$: preço de um ativo financeiro
 
-  - Possíveis valores: $Z > 0$
+    -   Possíveis valores: $Z > 0$
 
 Esses exemplos ilustram a distinção entre variáveis aleatórias discretas e contínuas, destacando que as primeiras assumem valores distintos e contáveis, enquanto as segundas podem assumir qualquer valor em um intervalo contínuo.
 
@@ -173,12 +170,11 @@ $F(x_0) = P(X \leq x_0)$, onde $x_0$ representa o valor específico da variável
 
 Considere o experimento de jogar uma moeda duas vezes, onde $H$ é cara e $T$ é coroa. Defina a variável aleatória como $X$: número de caras em duas jogadas.
 
-- Encontre o espaço amostral do experimento;
+-   Encontre o espaço amostral do experimento;
 
-- Para a variável aleatória definida, encontre os valores que ela pode tomar;
+-   Para a variável aleatória definida, encontre os valores que ela pode tomar;
 
-- Encontre a função de distribuição de $X$.
-
+-   Encontre a função de distribuição de $X$.
 
 **Solução:**
 
@@ -190,11 +186,11 @@ b\) A variável aleatória $X$ transforma cada resultado $\omega \in \mathbb{R}$
 
 A variável aleatória assim definida transforma cada resultado em um número real.
 
-- $X(HH) = 2$
+-   $X(HH) = 2$
 
-- $X(HT) = X(TH) = 1$
+-   $X(HT) = X(TH) = 1$
 
-- $X(TT) = 0$
+-   $X(TT) = 0$
 
 Os valores que a variável aleatória pode tomar são: $X = \{0, 1, 2\}$
 
@@ -202,33 +198,31 @@ c\) Para construir a função distribuição, precisamos conhecer os intervalos 
 
 Para os valores:
 
-- Para $x_0=0$, o intervalo $\{X \leq 0\}$ relaciona o evento: $\{X \leq x_0\} = \{X \leq 0\} = \{\omega \in \Omega : X(\omega) \leq 0\} = \{ {\underbrace{TT}_{X=0}} \}$
+-   Para $x_0=0$, o intervalo $\{X \leq 0\}$ relaciona o evento: $\{X \leq x_0\} = \{X \leq 0\} = \{\omega \in \Omega : X(\omega) \leq 0\} = \{ {\underbrace{TT}_{X=0}} \}$
 
-- Para $x_0=1$, o intervalo $\{X \leq 1\}$ relaciona os eventos: $\{X \leq x_0\} = \{X \leq 1\} = \{\omega \in \Omega : X(\omega) \leq 1\} =\{ {\underbrace{HT,TH}_{X=1}}, {\underbrace{TT}_{X=0}}\}$
+-   Para $x_0=1$, o intervalo $\{X \leq 1\}$ relaciona os eventos: $\{X \leq x_0\} = \{X \leq 1\} = \{\omega \in \Omega : X(\omega) \leq 1\} =\{ {\underbrace{HT,TH}_{X=1}}, {\underbrace{TT}_{X=0}}\}$
 
-- Para $x_0=2$, o intervalo $\{X \leq 2\}$ relaciona os eventos: $\{X \leq x_0\} = \{X \leq 2\} =$ 
+-   Para $x_0=2$, o intervalo $\{X \leq 2\}$ relaciona os eventos: $\{X \leq x_0\} = \{X \leq 2\} =$
 
 $\{\omega \in \Omega : X(\omega) \leq 2\} = \{ {\underbrace{HH}_{X=2}}, {\underbrace{HT,TH}_{X=1}}, {\underbrace{TT}_{X=0}}\}$
 
-
 ## Tabela da distribuição:
 
-| X | F(x) | P(X $\leq$ x) | P($\omega \in \Omega | X(\omega) \leq 0$) | Valor |
-|---|------|---------------|-------------------------|-------|
-| 0 | F(0) | P(X $\leq$ 0) | P({TT}) = P(X $\leq$ 0) = P({TT}) | 0.25 |
-| 1 | F(1) | P(X $\leq$ 1) | P({HT,TH,TT}) = P({HT} $\cup$ {TH} $\cup$ {TT}) = P({HT}) + P({TH}) + P({TT}) = 0.25 + 0.25 + 0.25 | 0.75 |
-| 2 | F(2) | P(X $\leq$ 2) | P({HH,HT,TH,TT}) = P({HH} $\cup$ {HT} $\cup$ {TH} $\cup$ P{TT}) = P({HH}) + P({HT}) + P({TH}) + P({TT}) = 0.25 + 0.25 + 0.25 + 0.25 | 1 |
+| X   | F(x) | P(X $\leq$ x) | P($\omega \in \Omega | X(\omega) \leq 0$)                                                                                           | Valor |
+|----------|----------|----------|----------------------------------|----------|
+| 0   | F(0) | P(X $\leq$ 0) | P({TT}) = P(X $\leq$ 0) = P({TT})                                                                                                   | 0.25  |
+| 1   | F(1) | P(X $\leq$ 1) | P({HT,TH,TT}) = P({HT} $\cup$ {TH} $\cup$ {TT}) = P({HT}) + P({TH}) + P({TT}) = 0.25 + 0.25 + 0.25                                  | 0.75  |
+| 2   | F(2) | P(X $\leq$ 2) | P({HH,HT,TH,TT}) = P({HH} $\cup$ {HT} $\cup$ {TH} $\cup$ P{TT}) = P({HH}) + P({HT}) + P({TH}) + P({TT}) = 0.25 + 0.25 + 0.25 + 0.25 | 1     |
 
 **Resumindo:**
 
-|X | F(x) |
-|--|------------|
-|0 | 0.25 |
-|1 | 0.75 |
-|2 | 1 |
+| X   | F(x) |
+|-----|------|
+| 0   | 0.25 |
+| 1   | 0.75 |
+| 2   | 1    |
 
-
-### Exemplo:
+**Exemplo**:
 
 No exemplo acima, encontre:
 
@@ -239,7 +233,6 @@ b\) F(0.5)
 c\) F(1.5)
 
 d\) F(-10)
-
 
 **Solução:**
 
@@ -259,12 +252,11 @@ b\) Se $x < y$ então $F(x) \leq F(y)$;
 
 c\) $F$ é contínua à direita, ou seja, $F(x+h)$, quando $h \to 0$, é igual a $F(x)$.
 
-
 **Definição de continuidade à direita e esquerda:**
 
-- $F(x_-) \neq F(x)$, isto é, $F$ é descontínua à esquerda.
+-   $F(x_-) \neq F(x)$, isto é, $F$ é descontínua à esquerda.
 
-- $F(x_+) = F(x)$, isto é, $F$ é contínua à direita.
+-   $F(x_+) = F(x)$, isto é, $F$ é contínua à direita.
 
 Essas propriedades são essenciais para entender o comportamento e as características das funções de distribuição acumulada. Elas garantem que a função $F$ seja não decrescente, limitada nos extremos e contínua à direita. A continuidade à direita é particularmente importante, pois significa que a probabilidade acumulada não salta de um valor para outro, tornando a função mais suave e interpretável.
 
@@ -290,12 +282,12 @@ A função $f(x)$ é chamada função probabilidade da variável aleatória $X$,
 
 **Notas:**
 
-- A função de probabilidade é conhecida também como função massa de probabilidade (fmp). Às vezes, para facilitar a comunicação, utilizamos o termo “função densidade de probabilidade” (fdp), como também é chamado no caso contínuo.
+-   A função de probabilidade é conhecida também como função massa de probabilidade (fmp). Às vezes, para facilitar a comunicação, utilizamos o termo “função densidade de probabilidade” (fdp), como também é chamado no caso contínuo.
 
 **Propriedades da função probabilidade:**
 
-- $0 \leq f(x_i) \quad \text{para todo}$ $x_i$;
-- $\sum_{i=1}^n f(x_i) = f(x_1) + f(x_2) + \ldots + f(x_n) = 1$
+-   $0 \leq f(x_i) \quad \text{para todo}$ $x_i$;
+-   $\sum_{i=1}^n f(x_i) = f(x_1) + f(x_2) + \ldots + f(x_n) = 1$
 
 Pela definição $f(x_i) = P(X = x_i)$, a propriedade (ii) pode também ser representada como:
 
@@ -311,7 +303,7 @@ $P(a \leq X \leq b) = P(a < X < b) = \int_a^b f(x) \, dx$
 
 A probabilidade de $X$ pertencer ao intervalo $[a,b]$ é a área acima desse intervalo e abaixo do gráfico da função densidade, como ilustrado na Figura 1.
 
-![Figura 1. Probabilidade de X pertencer ao intervalo [a,b].](images/a03_fig2.png)    
+![Figura 1. Probabilidade de X pertencer ao intervalo \[a,b\].](images/a03_fig2.png)
 
 ### Propriedades da função densidade (fdp)
 
@@ -351,8 +343,7 @@ Essa relação mostra que a integral da função densidade de probabilidade sobr
 
 Para uma variável aleatória contínua $X$, a probabilidade de $a < X \leq b$ é igual à probabilidade de $a < X < b$ porque a probabilidade de $X$ ser igual a um valor específico é zero, $P(X = b) = 0$. Portanto, temos:
 
-$P(a < X \leq b) = P(a < X < b) + P(X = b)$
-$P(a < X \leq b) = P(a < X < b) + 0 = P(a < X < b)$
+$P(a < X \leq b) = P(a < X < b) + P(X = b)$ $P(a < X \leq b) = P(a < X < b) + 0 = P(a < X < b)$
 
 Isso ocorre porque, para uma variável aleatória contínua, a probabilidade de um ponto específico é infinitesimal, isto é, o valor aproxima-se de zero.
 
@@ -360,25 +351,24 @@ Isso ocorre porque, para uma variável aleatória contínua, a probabilidade de 
 
 Assim, podemos calcular a probabilidade de $a < X < b$ de várias formas equivalentes:
 
-$P(a < X < b) = P(a < X \leq b) = P(a \leq X < b)$ 
-$= P(a \leq X \leq b) = \int_a^b f(x) \, dx = F(b) - F(a)$
+$P(a < X < b) = P(a < X \leq b) = P(a \leq X < b)$ $= P(a \leq X \leq b) = \int_a^b f(x) \, dx = F(b) - F(a)$
 
 Essas expressões são todas equivalentes devido à definição da função de distribuição acumulada $F(x)$. Aplicando essas definições para $a$ e $b$ temos:
 
-- $F(a) = P(X \leq a)$
-- $F(b) = P(X \leq b)$
+-   $F(a) = P(X \leq a)$
+-   $F(b) = P(X \leq b)$
 
 ## Função Probabilidade vs. Função Densidade de Probabilidade:
 
 A diferença fundamental entre a função probabilidade e a função densidade de probabilidade é destacada pela natureza das variáveis aleatórias contínuas e discretas. Vamos considerar um exemplo para ilustrar essa distinção:
 
-### Exemplo 1
+**Exemplo** 1
 
 Considere dois casos:
 
 a\) $X$ é uma variável aleatória contínua que toma valores no intervalo $[1,3]$.
 
-b\) $X$ é uma variável aleatória discreta que toma valores \{1,2,3\}.
+b\) $X$ é uma variável aleatória discreta que toma valores {1,2,3}.
 
 Encontrar $P(1 \leq X < 3)$ em função da Função Probabilidade e Função Densidade de Probabilidade, respectivamente.
 
@@ -398,7 +388,7 @@ Considere uma variável aleatória uniforme no intervalo $[a,b]$, ou seja, $x \s
 
 **Solução:**
 
-**Cálculo de $f(x)$:**
+**Cálculo de** $f(x)$:
 
 $f(x) = C, \quad \text{para o intervalo de} \ (a,b)$
 
@@ -410,12 +400,11 @@ $h = \frac{1}{b-a}$
 
 Logo a função $f(x)$ tem que satisfazer as propriedades: 
 
-i\) $f(x) > 0$
-ii\) $\int_{-\infty}^{\infty} f(x) \, dx = 1$
+i\) $f(x) > 0$ ii) $\int_{-\infty}^{\infty} f(x) \, dx = 1$
 
 $f(x) = h = \frac{1}{b-a}$
 
-**Cálculo de $F(x)$**
+**Cálculo de** $F(x)$
 
 $F(x) = P(X \leq x)$
 
@@ -423,9 +412,7 @@ Para $a < x_0 < b$ temos:
 
 $F(x_0) = P(X \leq x_0) = \int_a^{x_0} f(x) \, dx = \int_a^{x_0} \frac{1}{b-a} \, dx =$
 
-
 $=\frac{1}{b-a} \int_a^{x_0} 1 \, dx = \frac{1}{b-a} (x \big|_a^{x_0})$
-
 
 $=\frac{1}{b-a}(x_0-a) = \frac{x_0 - a}{b - a}$
 
@@ -493,12 +480,11 @@ $P(X=2) = P(A_3) = \frac{1}{4}$
 
 b\) Da definição da função de probabilidade $f(x) = P(X=x)$ e função de distribuição $F(x) = P(X\leq x)$ elaboramos o seguinte quadro.
 
-| v.a.d | Função probabilidade | Função distribuição |
-|-------|-----------------------|---------------------|
-| X=0 | $f(0) = P(X=0) = \frac{1}{4}$ | $F(0) = P(X\leq 0) = P(X=0) = \frac{1}{4}$ |
-| X=1 | $f(1) = P(X=1) = \frac{2}{4}$ | $F(1) = P(X\leq 1) = P(X=0) + P(X=1) = \frac{1}{4} + \frac{2}{4} = \frac{3}{4}$ |
-| X=2 | $f(2) = P(X=2) = \frac{1}{4}$ | $F(2) = P(X\leq 2) = P(X=0) + P(X=1) + P(X=2) = \frac{1}{4} + \frac{2}{4} + \frac{1}{4} = 1$ |
-
+| v.a.d | Função probabilidade          | Função distribuição                                                                          |
+|----------------|----------------|-----------------------------------------|
+| X=0   | $f(0) = P(X=0) = \frac{1}{4}$ | $F(0) = P(X\leq 0) = P(X=0) = \frac{1}{4}$                                                   |
+| X=1   | $f(1) = P(X=1) = \frac{2}{4}$ | $F(1) = P(X\leq 1) = P(X=0) + P(X=1) = \frac{1}{4} + \frac{2}{4} = \frac{3}{4}$              |
+| X=2   | $f(2) = P(X=2) = \frac{1}{4}$ | $F(2) = P(X\leq 2) = P(X=0) + P(X=1) + P(X=2) = \frac{1}{4} + \frac{2}{4} + \frac{1}{4} = 1$ |
 
 d\) Gráficos de $f(x)$ e $F(x)$:
 
@@ -528,9 +514,9 @@ $F(1,5) = P(X\leq 1,5) = P(X=0) + P(X=1) = \frac{3}{4}$
 
 $F(3) = P(X\leq 3) = P(X=0) + P(X=1) + P(X=2) = 1$
 
-## Exemplo 2:
+**Exemplo 2:**
 
-### Solução:
+**Solução:**
 
 Para o caso discreto, $F(x)$ será o somatório das funções de probabilidade $f(x_0)$. No exemplo de jogar duas moedas simultaneamente e $X$ definido como:
 
@@ -558,15 +544,15 @@ $f(2) = P(X=2) = P(HH) = 0,25$
 
 Podemos agora terminar o cálculo de $F(2)$:
 
-$F(2) = P(X\leq 2) = \sum\_{x_i\leq 2} f(0) + f(1) + f(2) =$
+$F(2) = P(X\leq 2) = \sum_{x_i\leq 2} f(0) + f(1) + f(2) =$
 
 $F(2) = 0,25 + 0,5 + 0,25 = 1$
 
-## Exemplo 3 (estudar em casa):
+**Exemplo 3 (estudar em casa):**
 
-### Resolução:
+**Resolução:**
 
-a$O espaço amostral é definido da seguinte forma:
+a\$O espaço amostral é definido da seguinte forma:
 
 $\Omega = \{(c, c, c), (c, c, r), (c, r, c), (c, r, r), (r, c, c), (r, c, r), (r, r, c), (r, r, r)\}$
 
@@ -576,13 +562,12 @@ $X = \{0, 1, 2, 3\}$
 
 $n = 4$
 
+```{=tex}
 \begin{array}{\|c\|c\|} \hline X & \text{Evento Correspondente} \\ \hline 0 & A_1 = \{(r, r, r)\} \\ 1 & A_2 = \{(c, r, r), (r, c, r), (r, r, c)\} \\ 2 & A_3 = \{(c, c, r), (c, r, c), (r, c, c)\} \\ 3 & A_4 = \{(c, c, c)\} \\ \hline \end{array}
-
+```
 Considerando que as moedas são "justas", temos:
 
-$P(\{(r, r, r)\}) = P(\{(c, r, r)\}) = P(\{(r, c, r)\}) =$
-$= P(\{(r, r, c)\}) = P(\{(c, c, r)\}) = P(\{(c, r, c)\}) =$
-$= P(\{(r, c, c)\}) = P(\{(c, c, c)\}) = \frac{1}{8}$
+$P(\{(r, r, r)\}) = P(\{(c, r, r)\}) = P(\{(r, c, r)\}) =$ $= P(\{(r, r, c)\}) = P(\{(c, c, r)\}) = P(\{(c, r, c)\}) =$ $= P(\{(r, c, c)\}) = P(\{(c, c, c)\}) = \frac{1}{8}$
 
 Assim, as probabilidades para os eventos são:
 
@@ -608,12 +593,11 @@ $P(X=3) = P(A_4) = \frac{1}{8}$
 
 $\begin{array}{\|c\|c\|c\|} \hline x & f(x) = P(X=x) & F(x) = P(X\leq x) \\ \hline 0 & \frac{1}{8} & \frac{1}{8} \\ 1 & \frac{3}{8} & \frac{1}{8} + \frac{3}{8} = \frac{4}{8} \\ 2 & \frac{3}{8} & \frac{1}{8} + \frac{3}{8} + \frac{3}{8} = \frac{7}{8} \\ 3 & \frac{1}{8} & \frac{1}{8} + \frac{3}{8} + \frac{3}{8} + \frac{1}{8} = 1 \\ \hline \end{array}$
 
-
 ![Função de probabilidade do Exemplo 3](images/a03_fig06.png)
 
 ![Função de densidade do Exemplo 3](images/a03_fig07.png)
 
----
+------------------------------------------------------------------------
 
 **Exemplo 4**
 
@@ -629,20 +613,20 @@ Considerando que a função de probabilidade para uma variável aleatória discr
 
 $f(0) + f(1) + f(2) = P(X=x_1) + P(X=x_2) + P(X=x_3) =$
 
-$= \sum\_{i=1}^{3} P(X=x_i) = 1$
+$= \sum_{i=1}^{3} P(X=x_i) = 1$
 
 $0 + k + 4k = 1 \rightarrow 5k = 1 \rightarrow k = \frac{1}{5} = 0,20$
 
-- $P(X=2) = f(2) = 4k = 4(0,2) = 0,8 = 80%$
-- $P(X\geq 1) = P(X=1) + P(X=2) = f(1) + f(2) = k + 4k = 5k = 5(0,2) = 1 = 100%$
+-   $P(X=2) = f(2) = 4k = 4(0,2) = 0,8 = 80%$
+-   $P(X\geq 1) = P(X=1) + P(X=2) = f(1) + f(2) = k + 4k = 5k = 5(0,2) = 1 = 100%$
 
-### Graficos
+**Graficos**
 
-**Gráfico de $f(x)$:**
+**Gráfico de** $f(x)$:
 
 ![Gráfico de f(x)](images/a03_fig08.png)
 
-**Gráfico de $F(x) = P(X\leq x)$:**
+**Gráfico de** $F(x) = P(X\leq x)$:
 
 O gráfico é construído conforme os valores da tabela a seguir:
 
@@ -662,14 +646,13 @@ $\mu = E(X) = \text{média populacional}$
 
 O cálculo da esperança vai depender se a variável aleatória é contínua ou discreta.
 
-- **v.a. discreta:**
+-   **v.a. discreta:**
 
-  - $\mu = E(X) = \sum_{i=1}^{n} x_i P(X=x_i) = \sum_{i=1}^{n} x_i f(x_i)$
+    -   $\mu = E(X) = \sum_{i=1}^{n} x_i P(X=x_i) = \sum_{i=1}^{n} x_i f(x_i)$
 
-- **v.a. contínua:**
+-   **v.a. contínua:**
 
-  - $\mu = E(X) = \int_{-\infty}^{\infty} xf(x) \,dx$
-
+    -   $\mu = E(X) = \int_{-\infty}^{\infty} xf(x) \,dx$
 
 **Propriedades da esperança**
 
@@ -695,8 +678,8 @@ $E(aX+(-bY)) = E(aX) + E(-bY) = aE(X) - bE(Y)$
 
 Demonstre que:
 
-- $E(a) = a$
-- $E(aX) = aE(X)$
+-   $E(a) = a$
+-   $E(aX) = aE(X)$
 
 **Solução:**
 
@@ -730,17 +713,18 @@ A demonstração para o caso discreto será muito parecida, deixamos como exerc�
 
 No exemplo do lançamento de duas moedas, obtivemos uma tabela com os valores de $f(x)$:
 
+```{=tex}
 \begin{array}{\|c\|c\|c\|c\|} 
 \hline X & 0 & 1 & 2 \\ 
 \hline f(x_i) = P(X=x_i) & \frac{1}{4} & \frac{1}{2} & \frac{1}{4} \\ 
 \hline 
 \end{array}
-
+```
 Da definição de $E(X)$ temos:
 
-$\mu = E(X) = \sum\_{i=1}^{n} x_i f(x_i) = \sum\_{i=1}^{n} x_i P(X=x_i) = 0 \left(\frac{1}{4}\right) + 1 \left(\frac{1}{2}\right) + 2 \left(\frac{1}{4}\right) = 1 $
+\$\mu = E(X) = \sum_{i=1}\^{n} x_i f(x_i) = \sum_{i=1}\^{n} x_i P(X=x_i) = 0 \left(\frac{1}{4}\right) + 1 \left(\frac{1}{2}\right) + 2 \left(\frac{1}{4}\right) = 1 \$
 
-**Qual é a diferença entre$\bar{X}$ e $\mu$?**
+**Qual é a diferença entre**$\bar{X}$ e $\mu$?
 
 $\bar{X} = \frac{X_1 + X_2 + \ldots + X_n}{n}$
 
@@ -748,9 +732,7 @@ $\bar{X} = \frac{X_1 + X_2 + \ldots + X_n}{n}$
 
 A função densidade probabilidade de $X$ é dada por:
 
-f(x) = $\begin{cases} 
-\frac{3}{2} (1-x^2) & 0 \leq x \leq 1 \\ 
-0 & \text{para } x \notin [0,1] \end{cases}$
+f(x) = $\begin{cases} \frac{3}{2} (1-x^2) & 0 \leq x \leq 1 \\ 0 & \text{para } x \notin [0,1] \end{cases}$
 
 **Solução:**
 
@@ -777,7 +759,6 @@ $\ldots \text{etc.}$
 $E(X) = \frac{3}{2} [\frac{x^2}{2} - \frac{x^4}{4}]_{0}^{1}$
 
 $E(X) = \frac{3}{2} [\frac{1}{2} - \frac{1}{4}] = \frac{3}{8}$
-
 
 ## Variância de uma variável aleatória
 
@@ -823,16 +804,13 @@ $= E(X^2) - \mu^2$
 
 $\sigma^2 = \text{Var}(X) = E(X^2) - [E(X)]^2$
 
-
 ### Corolário 1
 
 Mostre que:
 
 Se $E(X) = 0$ então $\text{Var}(X) = E[X^2]$
 
-
 ## Cálculo da variância
-
 
 ### Caso discreto
 
@@ -840,13 +818,11 @@ Podemos calcular a variância populacional de uma variável aleatória discreta 
 
 $\sigma^2 = \text{Var}(X) = E[(X-\mu)^2] = (X-\mu)^2$
 
-$\sigma^2 = E[(X-\mu)^2] = \sum_{i=1}^{n} (x_i-\mu)^2 P(X=x_i) =$
-$= \sum_{i=1}^{n} (x_i-\mu)^2 f(x_i)$
+$\sigma^2 = E[(X-\mu)^2] = \sum_{i=1}^{n} (x_i-\mu)^2 P(X=x_i) =$ $= \sum_{i=1}^{n} (x_i-\mu)^2 f(x_i)$
 
 O número de operações necessárias para computar $\sigma^2$ pode ser reduzido utilizando uma fórmula alternativa.
 
-
-### 5.1.2 Caso contínuo
+### Caso contínuo
 
 Podemos calcular a variância populacional de uma variável aleatória contínua como:
 
@@ -854,8 +830,7 @@ $\sigma^2 = \text{Var}(X) = E[(X-\mu)^2] = (X-\mu)^2$
 
 $\sigma^2 = E[(X-\mu)^2] = \int_{-\infty}^{\infty} (X-\mu)^2 f(x) \,dx$
 
-
-### 5.3 Propriedades da variância
+### Propriedades da variância
 
 Considere $X$, $Y$ e $Z$ variáveis aleatórias e $a$ e $b$ constantes em $R$, temos as seguintes propriedades:
 
@@ -869,17 +844,15 @@ Considere $X$, $Y$ e $Z$ variáveis aleatórias e $a$ e $b$ constantes em $R$, t
 
 5\) $\text{Var}(X-Y) = \text{Var}(X) + \text{Var}(Y) - 2\text{Cov}(X,Y)$
 
-
 Lembre dos produtos notáveis:
 
-- $(a+b)^2 = a^2 + b^2 + 2ab$
+-   $(a+b)^2 = a^2 + b^2 + 2ab$
 
-- $(a-b)^2 = a^2 + b^2 - 2ab$
+-   $(a-b)^2 = a^2 + b^2 - 2ab$
 
 Dessa forma,
 
 $\text{Var}(aX \pm bY) = a^2 \text{Var}(X) + b^2 \text{Var}(Y) \pm 2ab\text{Cov}(X,Y)$
-
 
 **Exemplo**
 
@@ -888,7 +861,6 @@ Demonstre que:
 1\. $\text{Var}(a) = 0$
 
 2\. $\text{Var}(aX) = a^2 \text{Var}(X)$
-
 
 **Solução:**
 
@@ -908,20 +880,19 @@ $\text{Var}(aX) = E[(a(X-E(X)))^2] = E[a^2(X-E(X))^2]$
 
 $\text{Var}(aX) = a^2 E[(X-E(X))^2] = a^2 \text{Var}(X)$
 
-
-## Exemplo
+**Exemplo:**
 
 Seja a função de probabilidade de uma v.a.d.
 
+```{=tex}
 \begin{array}{\|c\|c\|} \hline X & f(x) \\ \hline 0 & \frac{1}{2} \\ 1 & \frac{1}{4} \\ 2 & a \end{array}
+```
+-   Encontre "a":
+-   Mostre o gráfico de $f(x)$;
+-   Encontre $E(x)$ e $VAR(x)$;
+-   Encontre $F(x)$.
 
-- Encontre "a":
-- Mostre o gráfico de $f(x)$;
-- Encontre $E(x)$ e $VAR(x)$;
-- Encontre $F(x)$.
-
-**Resolução:**
-A propriedade é válida: $\sum_{i} f(x_i) = 1$. Então:
+**Resolução:** A propriedade é válida: $\sum_{i} f(x_i) = 1$. Então:
 
 $$
 \frac{1}{2} + \frac{1}{4} + a = 1
@@ -929,11 +900,10 @@ $$
 
 $$
 a = \frac{1}{4}
-$$
-\
+$$\
 
-| $X$ | $f(x)$ |
-| --- | ----- |
+| $X$ | $f(x)$        |
+|-----|---------------|
 | 0   | $\frac{1}{2}$ |
 | 1   | $\frac{1}{4}$ |
 | 2   | $\frac{1}{4}$ |
@@ -958,14 +928,14 @@ $= \frac{113}{64}$
 
 **Exemplo 2 (seguro de carro)**
 
-Defina a variável aleatória discreta $X$: Lucro por carro de uma seguradora. Em caso de acidente, a seguradora deverá pagar R\$ 29.000,00 e, em caso contrário, ela recebe R$ 1.000,00.
+Defina a variável aleatória discreta $X$: Lucro por carro de uma seguradora. Em caso de acidente, a seguradora deverá pagar R\$ 29.000,00 e, em caso contrário, ela recebe R\$ 1.000,00.
 
 \
 
-| Estado        | Probabilidade | Resultado ($X$) em R$ |
-| ------------- | ------------- | ---------------------- |
-| Sem acidente  | 97%           | 1000                   |
-| Com acidente  | $P$           | -29000                 |
+| Estado       | Probabilidade | Resultado ($X$) em R\$ |
+|--------------|---------------|------------------------|
+| Sem acidente | 97%           | 1000                   |
+| Com acidente | $P$           | -29000                 |
 
 \
 
@@ -1054,9 +1024,9 @@ $$
 
 Os exemplos a seguir mostram algumas aplicações de processos estocásticos.
 
----
+------------------------------------------------------------------------
 
-### Exemplo
+**Exemplo**
 
 Considere um processo estocástico $Y_t$:
 
@@ -1066,14 +1036,16 @@ onde $\varepsilon_t$ é um processo ruído branco com média zero ($E[\varepsilo
 
 a\) Calcule a esperança $E[Y_t]$, conhecida também como média incondicional de $Y_t$
 
+```{=tex}
 \begin{align*}
 E(Y_t) & = E(4 + \varepsilon_t) \\
 & = E(4) + E(\varepsilon_t) \\
 & = 4
 \end{align*}
-
+```
 b\) Calcule a variância $\gamma_0 = Var[Y_t]$, conhecida também como variância incondicional de $Y_t$
 
+```{=tex}
 \begin{align*}
 \gamma_0 & = Var[Y_t] = E[(Y_t - E(Y_t))^2] \\
 & = E[(Y_t - 4)^2] \\
@@ -1081,7 +1053,7 @@ b\) Calcule a variância $\gamma_0 = Var[Y_t]$, conhecida também como variânci
 & = Var(\varepsilon_t) \\
 & = \sigma^2
 \end{align*}
-
+```
 Por que $E[(\varepsilon_t)^2] = Var(\varepsilon_t)$? Lembre-se mais uma vez da propriedade:
 
 $Var(\varepsilon_t) = E[(\varepsilon_t)^2] - [E(\varepsilon_t)]^2 = E[(\varepsilon_t)^2] - [0]^2 = E[(\varepsilon_t)^2]$
@@ -1098,19 +1070,19 @@ $Y_t = \varepsilon_t + 4\varepsilon_{t-1}$
 
 onde $\varepsilon_t$ é um processo ruído branco com média zero ($E[\varepsilon_t]=0$) e variância constante $\sigma^2$ (Este modelo em econometria de séries temporais é conhecido também como modelo de médias móveis ou MA(1)). OBSERVAÇÃO: Outra propriedade do ruído branco é que não existe autocovariância, isto é: $Cov(\varepsilon_t, \varepsilon_{t-1}) = 0$.
 
-**a\) Calcule a esperança $E[Y_t]$, conhecida também como média incondicional de $Y_t$**
+**a) Calcule a esperança** $E[Y_t]$, conhecida também como média incondicional de $Y_t$
 
+```{=tex}
 \begin{align*}
 E(Y_t) & = E(\varepsilon_t + 4\varepsilon_{t-1}) \\
 & = E(\varepsilon_t) + E(4\varepsilon_{t-1}) \\
 & = E(\varepsilon_t) + 4E(\varepsilon_{t-1}) \\
 & = 0
 \end{align*}
+```
+**b) Calcule a variância** $\gamma_0 = Var[Y_t]$, conhecida também como variância incondicional de $Y_t$
 
-
-**b\) Calcule a variância $\gamma_0 = Var[Y_t]$, conhecida também como variância incondicional de $Y_t$**
-
-
+```{=tex}
 \begin{align*}
 Var(Y_t) & = Var(\varepsilon_t + 4\varepsilon_{t-1}) \\
 & = Var(\varepsilon_t) + Var(4\varepsilon_{t-1}) + 2Cov(\varepsilon_t, 4\varepsilon_{t-1}) \\
@@ -1118,13 +1090,12 @@ Var(Y_t) & = Var(\varepsilon_t + 4\varepsilon_{t-1}) \\
 & = \sigma^2 + 16\sigma^2 + 2(4)(0) \\
 & = 17\sigma^2
 \end{align*}
-
+```
 Pela definição:
 
 $$
 \gamma_0 = Var[Y_t] = E[(Y_t - E(Y_t))^2] = E[(Y_t)^2] = E[(\varepsilon_t + 4\varepsilon_{t-1})^2]
-$$
-$$
+$$ $$
 (\varepsilon_t + 4\varepsilon_{t-1})^2 = (\varepsilon_t)^2 + 16(\varepsilon_{t-1})^2 + 2\varepsilon_t (4\varepsilon_{t-1})
 $$
 
@@ -1136,4 +1107,379 @@ $$
 = \sigma^2 + 16\sigma^2 + 0 = 17\sigma^2
 $$
 
+## Covariância e Correlação
 
+### Covariância
+
+**Definição:** A covariância populacional está definida como
+
+$$
+Cov(X,Y) = E[(X-E(X))(Y-E(Y))]
+$$
+
+Considerando que $\mu_x = E(X)$ e $\mu_y = E(Y)$, podemos escrever a definição como
+
+$$
+Cov(X,Y) = E[(X-\mu_x)(Y-\mu_y)]
+$$
+
+**Proposição 1:** Mostre que a covariância pode ser escrita como
+
+$$
+Cov(X,Y) = E(XY) - E(X)E(Y)
+$$
+
+**Demonstração:** Da definição da covariância:
+
+$$
+\begin{align*}
+Cov(X,Y) & = E[(X-\mu_x)(Y-\mu_y)] \\
+& = E[XY - X\mu_y - Y\mu_x + \mu_x\mu_y] \\
+& = E(XY) - E(X\mu_y) - E(Y\mu_x) + E(\mu_x\mu_y) \\
+& = E(XY) - \mu_yE(X) - \mu_xE(Y) + \mu_x\mu_y
+\end{align*}
+$$
+
+Observe que $\mu_x = E(X)$ e $\mu_y = E(Y)$, assim:
+
+$$
+Cov(X,Y) = E(XY) - E(Y)E(X) - E(X)E(Y) + E(X)E(Y) \\
+Cov(X,Y) = E(XY) - E(X)E(Y)
+$$
+
+**Corolário 1:** Mostre que:
+
+Se $E(X) = 0$ ou $E(Y) = 0$ então $Cov(X,Y) = E[XY]$
+
+### Propriedades da Covariância
+
+Sejam as seguintes variáveis aleatórias, $X$, $Y$, $Z$ e $W$. Considere as constantes: $a$, $b$, $c$, $d$, $e$, $f$, $g$.
+
+-   $Cov(X,a) = 0$: A covariância de uma constante com uma variável aleatória é zero.
+-   $Cov(X,X) = Var(X)$
+-   $Cov(X,Y) = Cov(Y,X)$
+-   $Cov(X+a,Y+b) = Cov(X,Y)$
+-   $Cov(aX,Y) = aCov(X,Y)$
+-   $Cov(aX,bY) = abCov(X,Y)$
+-   $Cov(aX+bY,cX) = Cov(aX,cX) + Cov(bY,cX)$
+
+Usando as propriedades anteriores:
+
+$$
+Cov(aX,cX) + Cov(bY,cX) = acCov(X,X) + bcCov(Y,X)
+$$
+
+-   $Cov(aX+bY,cZ+dW) = Cov(aX,cZ) + Cov(aX,dW) + Cov(bY,cZ) + Cov(bY,dW)$
+
+**Demonstração da propriedade (g):**
+
+$$
+\begin{align*}
+Cov(aX+bY,cX) & = Cov(aX,cX) + Cov(bY,cX) \\
+& = acCov(X,X) + bcCov(Y,X) \\
+& = acVar(X) + bcCov(Y,X)
+\end{align*}
+$$
+
+**Demonstrar:**
+
+$$
+Cov(X,X) = Var(X)
+$$
+
+**Solução:**
+
+Da definição temos:
+
+$$
+Cov(X,Y) = E[(X-E(X))(Y-E(Y))]
+$$
+
+Para $X = Y$ temos:
+
+$$
+Cov(X,X) = E[(X-E(X))(X-E(X))] = E[(X-E(X))^2] = Var(X)
+$$
+
+Exercícios
+
+A partir da definição demostrar as propriedades:
+
+a)  $Cov(X+a,Y+b) = Cov(X,Y)$
+
+b)  $Cov(aX,Y) = aCov(X,Y)$
+
+c)  $Cov(aX,bY) = abCov(X,Y)$
+
+**Exemplo**
+
+Seja $X,Y,Z$ variáveis aleatórias e $a,b,c,d,e$ constantes. Calcular $Cov(aX+bY,cZ+dX+e)$
+
+**Solução:**
+
+```{=tex}
+\begin{align*}
+Cov(aX+bY,cZ+dX+e) & = Cov(aX,cZ) + Cov(aX,dX) + Cov(aX,e) \\
+& \quad + Cov(bY,cZ) + Cov(bY,dX) + Cov(bY,e) \\
+& = acCov(X,Z) + adCov(X,X) + 0 + bcCov(Y,Z) + bdCov(Y,X) + 0 \\
+& = acCov(X,Z) + adVar(X) + bcCov(Y,Z) + bdCov(Y,X) \\
+\end{align*}
+```
+**Exemplo**
+
+Encontrar $\beta_1$ para $Y = \beta_0 + \beta_1 X + \varepsilon$. Considere que $\sigma_x^2$ e $\sigma_{xy}$ são conhecidos e definidos como:
+
+-   $Var(X) = \sigma_x^2$
+-   $Cov(X,Y) = \sigma_{xy}$
+
+Além disso, se satisfaz $Cov(X,\varepsilon) = 0$. Observe que $\beta_0$ e $\beta_1$ são parâmetros populacionais (constantes).
+
+**Solução:**
+
+Calculemos $Cov(X,Y)$:
+
+$\sigma_{xy} = Cov(X,Y) = Cov(X,\beta_0 + \beta_1 X + \varepsilon) = Cov(X,\beta_1 X) = \beta_1 Cov(X,X) = \beta_1 Var(X)$
+
+$Cov(X,Y) = \beta_1 Var(X)$
+
+Isolando $\beta_1$ obtemos:
+
+$\beta_1 = \frac{Cov(X,Y)}{Var(X)} = \frac{\sigma_{xy}}{\sigma_x^2}$
+
+Na prática, quando utilizamos dados, estimaremos o coeficiente $\beta_1$ pelo método de mínimos quadrados ordinários (MQO). O resultado do Método de MQO mostra o resultado seguinte:
+
+$\hat{\beta}_1 = \frac{\hat{Cov}(X,Y)}{\hat{Var}(X)}$
+
+Em que
+
+-   $\hat{Cov}(X,Y)$: é a covariância amostral
+-   $\hat{Var}(X)$: é a variância amostral
+
+E são definidos como:
+
+$S_{xy} = \hat{Cov}(X,Y) = \frac{1}{(n-1)} \sum_{i=1}^{n} (x_i - \bar{x})(y_i - \bar{y})$
+
+$S_{x}^2 = \hat{Var}(X) = \frac{1}{(n-1)} \sum_{i=1}^{n} (x_i - \bar{x})^2$
+
+$\hat{\beta}_1 = \frac{S_{xy}}{\sigma_x^2} = \frac{\sum_{i=1}^{n} (x_i - \bar{x})(y_i - \bar{y})}{\sum_{i=1}^{n} (x_i - \bar{x})^2}$
+
+É o resultado do estimador de Mínimos Quadrados Ordinários (MQO).
+
+**Exercício (Desafio)**
+
+No exemplo anterior, considerando a esperança de $Y$ e $X$ conhecido e $E(\varepsilon) = 0$, encontre o coeficiente $\beta_0$
+
+### Correlação
+
+Mede o grau de associação linear entre duas variáveis
+
+$\rho_{XY} = Corr(X,Y) = \frac{cov(X,Y)}{\sqrt{Var(X)} \sqrt{Var(Y)}} = \frac{cov(X,Y)}{\sigma_X \sigma_Y}$
+
+Onde:
+
+$-1 \leq Corr(X,Y) \leq 1$
+
+Mais na frente veremos formalmente como se define e calcula a correlação em função da função de probabilidade bivariada.
+
+**Observação:** Se $cov(X,Y) = 0$ então $corr(X,Y) = 0$, $X$ e $Y$ não são correlacionados, ou seja, $X$ e $Y$ não são independentes.
+
+**Teorema:** Se $X$ e $Y$ são independentes, então, $cov(X,Y) = corr(X,Y) = 0$.
+
+**Exemplo**
+
+Seja o seguinte processo estocástico:
+
+$Y_t = 4 - 2\epsilon_t$, $t = 1,2,\ldots$, em que $\epsilon_t$ é um processo ruído branco com média zero e variância constante igual a 4. Ou seja, $E(\epsilon_t) = 0$, $Var(\epsilon_t) = 4$ e $Cov(\epsilon_t,\epsilon_s) = 0$ para $t \neq s$.
+
+Pede-se:
+
+a)  $E(Y_t)$
+
+b)  $Var(Y_t)$
+
+c)  $\gamma_1 = Cov(Y_t,Y_{t-1})$
+
+d)  $\gamma_2 = Cov(Y_t,Y_{t-2})$
+
+e)  $\gamma_j = Cov(Y_t,Y_{t-j})$
+
+f)  Encontre a autocorrelação de primeira ordem $\rho_1 = Corr(Y_t,Y_{t-1})$
+
+**Solução**
+
+Sabemos do processo ruído branco: $E(\epsilon_t) = 0$ e $Var(\epsilon_t) = 4$. Então, calculamos a esperança e variância de $Y_t$
+
+a)  $E(Y_t) = E(4 - 2\epsilon_t) = 4 - 2E(\epsilon_t) = 4 - 0 = 4$
+
+b)  $Var(Y_t) = Var(4 - 2\epsilon_t)$
+
+Pela propriedade da Variância: $Var(a+X) = Var(X)$
+
+```{=tex}
+\begin{align*}
+Var(4 - 2\epsilon_t) & = Var(-2\epsilon_t) \\
+& = 4Var(\epsilon_t) \\
+& = 4(4) \\
+& = 16
+\end{align*}
+```
+Obs: Lembre-se da propriedade $Cov(a,\epsilon_t) = 0$, $a$ é uma constante.
+
+c)  $\gamma_1$ é definido como a autocovariância de primeira ordem e é definido como
+
+$$
+\gamma_1 = Cov(Y_t,Y_{t-1})
+$$
+
+Calculando o $Y_{t-1}$ da expressão $Y_t = 4 - 2\epsilon_t$
+
+$Y_{t-1} = 4 - 2\epsilon_{t-1}$
+
+Logo,
+
+$$
+\gamma_1 = Cov(Y_t,Y_{t-1}) = Cov(4-2\epsilon_t,4-2\epsilon_{t-1})
+$$
+
+$$
+\gamma_1 = Cov(Y_t,Y_{t-1}) = Cov(-2\epsilon_t,-2\epsilon_{t-1})
+$$
+
+$$
+= (-2)(-2)Cov(\epsilon_t,\epsilon_{t-1}) = 4(0) = 0
+$$
+
+Lembre-se da propriedade: $Cov(a+bX,c+dY) = bdCov(X,Y)$, em que que $a,b,c$ e $d$ são constantes.
+
+Segunda forma: podemos calcular a covariância de primeira ordem a partir da definição da covariância.
+
+```{=tex}
+\begin{align*}
+Cov(Y_t,Y_{t-1}) & = Cov(4-2\epsilon_t,4-2\epsilon_{t-1}) \\
+& = E[(4-2\epsilon_t)(4-2\epsilon_{t-1})] - E(4-2\epsilon_t)E(4-2\epsilon_{t-1}) \\
+& = E(16-8\epsilon_t-8\epsilon_{t-1}+4\epsilon_t\epsilon_{t-1}) - 4(4) \\
+& = 16-16 \\
+& = 0
+\end{align*}
+```
+d)  $\gamma_2 = Cov(Y_t,Y_{t-2})$
+
+\$ Cov(Y_t,Y_{t-2}) = Cov(4-2\epsilon_t, 4-2\epsilon_{t-2}) = 4Cov(\epsilon_t,\epsilon_{t-2}) = 0\$
+
+e)  Para algum $j \neq 0$
+
+$\gamma*j = Cov(Y_t,Y_{t-j}) = Cov(4-2\epsilon_t, 4-2\epsilon_{t-j}) = 4Cov(\epsilon_t,\epsilon_{t-j}) = 0$
+
+f)  $\rho_1 = Corr(Y_t,Y_{t-1}) = \frac{cov(Y_t,Y_{t-1})}{\sqrt{Var(Y_t)} \sqrt{Var(Y_{t-1})}} = \frac{0}{\sigma_X \sigma_Y} = 0$
+
+**Exemplo**
+
+Seja o seguinte processo estocástico:
+
+$Y_t = 2t + \epsilon_t \quad \text{para} \quad t = 1,2,3,\ldots$
+
+em que $\epsilon_t \sim iidN(0,\sigma^2)$.
+
+Pede-se:
+
+a)  $E(Y_t)$ e $\text{Var}(Y_t)$
+
+b)  $\gamma_1 = \text{Cov}(Y_t,Y_{t-1})$
+
+c)  $\gamma_2 = \text{Cov}(Y_t,Y_{t-2})$
+
+d)  $\gamma_3 = \text{Cov}(Y_t,Y_{t-3})$
+
+e)  Encontre a função de autocovariâncias $\gamma_j$
+
+**Solução**
+
+a)  
+
+Para $t = 1$: $Y_1 = 2(1) + \epsilon_1 = 2 + \epsilon_1$
+
+Então, $E(Y_1) = E(2 + \epsilon_1) = 2 + E(\epsilon_1) = 2 + 0 = 2$
+
+$\text{Var}(Y_1) = \text{Var}(2 + \epsilon_1) = \text{Var}(\epsilon_1) = \sigma^2$
+
+Para $t = 2$: $Y_2 = 2(2) + \epsilon_2 = 4 + \epsilon_2$
+
+Então, $E(Y_2) = E(4 + \epsilon_2) = 4 + E(\epsilon_2) = 4 + 0 = 2(2)$
+
+$\text{Var}(Y_2) = \text{Var}(4 + \epsilon_2) = \text{Var}(\epsilon_2) = \sigma^2$
+
+Para $t = 3$: $Y_3 = 2(3) + \epsilon_3 = 6 + \epsilon_3$
+
+Então, $E(Y_3) = E(6 + \epsilon_3) = 6 + E(\epsilon_3) = 6 + 0 = 2(3)$
+
+$\text{Var}(Y_3) = \text{Var}(6 + \epsilon_3) = \text{Var}(\epsilon_3) = \sigma^2$
+
+Em geral:
+
+Para $t$, $Y_t = 2t + \epsilon_t$
+
+$E(Y_t) = E(2t + \epsilon_t) = E(2t) + E(\epsilon_t) = 2t$
+
+$\text{Var}(2t + \epsilon_t) = \text{Var}(\epsilon_t) = \sigma^2$
+
+b)  
+
+$\gamma^1 = \text{Cov}(Y_t,Y{t-1})$
+
+Solução:
+
+Para $t$: $Y_t = 2t + \epsilon_t$
+
+Para $t - 1$: $Y_{t-1} = 2(t-1) + \epsilon_{t-1}$
+
+Autocovariância de primeira ordem $\gamma_1$:
+
+$\gamma_1 = \text{Cov}(Y_t,Y_{t-1}) = \text{Cov}(2t + \epsilon_t, 2(t-1) + \epsilon_{t-1}) = \text{Cov}(\epsilon_t, \epsilon_{t-1}) = 0$
+
+c)  
+
+$\gamma_2 = \text{Cov}(Y_t,Y_{t-2})$
+
+Autocovariância de segunda ordem $\gamma_2$:
+
+$\gamma_2 = \text{Cov}(Y_t,Y_{t-2}) = \text{Cov}(2t + \epsilon_t, 2(t-2) + \epsilon_{t-2}) = \text{Cov}(\epsilon_t, \epsilon_{t-2}) = 0$
+
+d)  
+
+$\gamma_3 = \text{Cov}(Y_t,Y_{t-3})$
+
+Autocovariância de terceira ordem $\gamma_3$:
+
+$\gamma_3 = \text{Cov}(Y_t,Y_{t-3}) = \text{Cov}(2t + \epsilon_t, 2(t-3) + \epsilon_{t-3}) = \text{Cov}(\epsilon_t, \epsilon_{t-3}) = 0$
+
+e)  
+
+Encontre a função de autocovariâncias $\gamma_j$
+
+$\gamma_j = \text{Cov}(Y_t,Y_{t-j}) = \text{Cov}(2t + \epsilon_t, 2(t-j) + \epsilon_{t-j}) = \text{Cov}(\epsilon_t, \epsilon_{t-j}) = 0, \forall t,j$
+
+**Matriz de covariância**
+
+A matriz variância-covariância fica definida como:
+
+$\text{Cov}(X) = E[(X-E(X))(X-E(X))^T]$
+
+Em que $X$ em um vetor coluna:
+
+$X = \begin{bmatrix} X_1 \\ \vdots \\ X_n \end{bmatrix}$
+
+$E(X) = \begin{bmatrix} E(X_1) \\ \vdots \\ E(X_n) \end{bmatrix} = \begin{bmatrix} \mu_1 \\ \vdots \\ \mu_n \end{bmatrix}$
+
+Para cada elemento desta matriz temos:
+
+$E(X_i) = \mu_i$
+
+$\sigma_{ij} = \text{Cov}(X_i,X_j) = E[(X_i-E(X_i))(X_j-E(X_j))^T]$
+
+A matriz $\text{Cov}(X)$ terá na diagonal as variâncias de cada variável e fora da diagonal as covariâncias entre elas.
+
+Para $i = 1,2,\ldots,n$
+
+Caso particular: Se $E(X) = 0$, então
+
+$\text{Cov}(X) = E[XX^T]$
